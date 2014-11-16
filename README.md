@@ -18,7 +18,6 @@ put into
 
 OS| Location
 :---|:---|:---|
-Windows|%USERPROFILE%\Documents\Bitwig Studio\Controller Scripts\Stairways Software
 Mac| ~/Documents/Bitwig Studio/Controller Scripts/Stairways Software
 
 
