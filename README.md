@@ -32,7 +32,7 @@ This macro library and controller script depends on Bitwig Studio Version.
 ```
     data: grunt.file.readJSON('actions/bitwig-studio-actions-${version}.json')
 ```
-- generate macro library and generated-actions.js.
+- generate macro library and generated-action-ids.js.
 ```
     grunt generate
 ```
