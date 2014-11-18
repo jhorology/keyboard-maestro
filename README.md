@@ -28,7 +28,7 @@ This macro library and controller script depends on Bitwig Studio Version.
 - copy JSON string from Script Console.
 - beautify JOSN at [here](http://archive.dojotoolkit.org/nightly/checkout/dojox/gfx/demos/beautify.html). - (optional)
 - create JSON file. actions/bitwig-studio-actions-${version}.json
-- modify 'template' section in Grunt.js.
+- modify 'template' section in Gruntfile.js.
 ```
     data: grunt.file.readJSON('actions/bitwig-studio-actions-${version}.json')
 ```
