@@ -1912,7 +1912,7 @@ if (typeof JSON !== 'object') {
 (function(root) {
     'use strict';
     root.KeyboardMaestro || (root.KeyboardMaestro = {});
-    root.KeyboardMaestro.ActionVersion = '1.1 RC 1';
+    root.KeyboardMaestro.ActionVersion = '1.1 RC 3';
     root.KeyboardMaestro.ActionIds = [
 		'New',
 		'Open',
@@ -2253,7 +2253,7 @@ if (typeof JSON !== 'object') {
         init: function() {
             var ver = String(Bitwig.getHostVersion());
             if (ver !== $.ActionVersion) {
-                throw new Error('Invalid version. host:[' + ver + ']' + 'actions:[' + $.ActionVersion + ']' );
+                throw new Error('Invalid version. host:[' + ver + ']' + ' actions:[' + $.ActionVersion + ']' );
             }
             this.application = Bitwig.createApplication();
         },

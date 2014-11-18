@@ -4,7 +4,7 @@
         init: function() {
             var ver = String(Bitwig.getHostVersion());
             if (ver !== $.ActionVersion) {
-                throw new Error('Invalid version. host:[' + ver + ']' + 'actions:[' + $.ActionVersion + ']' );
+                throw new Error('Invalid version. host:[' + ver + ']' + ' actions:[' + $.ActionVersion + ']' );
             }
             this.application = Bitwig.createApplication();
         },

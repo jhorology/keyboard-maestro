@@ -1,7 +1,7 @@
 (function(root) {
     'use strict';
     root.KeyboardMaestro || (root.KeyboardMaestro = {});
-    root.KeyboardMaestro.ActionVersion = '1.1 RC 1';
+    root.KeyboardMaestro.ActionVersion = '1.1 RC 3';
     root.KeyboardMaestro.ActionIds = [
 		'New',
 		'Open',

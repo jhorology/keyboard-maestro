@@ -40,7 +40,7 @@ module.exports = function (grunt) {
         template: {
             generate: {
                 options: {
-                    data: grunt.file.readJSON('actions/bitwig-studio-actions-1.1RC1.json')
+                    data: grunt.file.readJSON('actions/bitwig-studio-actions-1.1RC3.json')
                 },
                 files: {
                     'BitwigStudioActions(Safe).kmlibrary': ['template/BitwigStudioActions(Safe).kmlibrary.tpl'],
