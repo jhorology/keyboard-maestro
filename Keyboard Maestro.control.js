@@ -1912,7 +1912,7 @@ if (typeof JSON !== 'object') {
 (function(root) {
     'use strict';
     root.KeyboardMaestro || (root.KeyboardMaestro = {});
-    root.KeyboardMaestro.ActionVersion = '1.1';
+    root.KeyboardMaestro.ActionVersion = '1.1.1';
     root.KeyboardMaestro.ActionIds = [
 		'New',
 		'Open',
