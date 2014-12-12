@@ -1,6 +1,5 @@
-// workaround for browserify's global
+/*! keyboard-maestro - v0.0.1 - 2014-12-13 */
 var window = this;
-
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 // cycle.js
 // 2011-08-24
@@ -2106,405 +2105,159 @@ module.exports = JSON2;
 }.call(this));
 
 },{}],5:[function(require,module,exports){
-var bitwig = require('./bitwig'),
-    actions = require('./actions');
+var actions, bitwig;
+
+bitwig = require('./bitwig');
+
+actions = require('./actions');
 
 module.exports = {
-    init: function() {
-        var ver = String(bitwig.getHostVersion());
-        if (ver !== actions.version) {
-            throw new Error('Invalid version. host:[' + ver + ']' + ' actions:[' + actions.version + ']' );
-        }
-        this.application = bitwig.createApplication();
-    },
-
-    midi: function(s, d1, d2) {
-        var index = (d1 << 7) + d2;
-        if (s=== 0xB0 && index < actions.ids.length) {
-            this.application.getAction(actions.ids[index]).invoke();
-        }
+  init: function() {
+    var ver;
+    ver = String(bitwig.getHostVersion());
+    if (ver !== actions.version) {
+      throw new Error("Invalid version. host:[" + ver + "] actions:[" + actions.version + "]");
     }
+    return this.application = bitwig.createApplication();
+  },
+  midi: function(s, d1, d2) {
+    var index;
+    index = (d1 << 7) + d2;
+    if (s === 0xB0 && index < actions.ids.length) {
+      return this.application.getAction(actions.ids[index]).invoke();
+    }
+  }
 };
+
+
 
 },{"./actions":6,"./bitwig":7}],6:[function(require,module,exports){
 exports.version = '1.1.2';
-exports.ids = [
-    'New',
-    'Open',
-    'Save',
-    'Save as',
-    'Close',
-    'Preferences',
-    'Quit',
-    'Undo',
-    'Redo',
-    'Cut',
-    'Cut Special',
-    'Copy',
-    'Copy Special',
-    'Paste',
-    'Paste Special',
-    'Duplicate',
-    'Duplicate Special',
-    'Group',
-    'Ungroup',
-    'Toggle Active',
-    'Activate',
-    'Deactivate',
-    'Delete',
-    'Delete Special',
-    'Select All',
-    'Unselect All',
-    'Rename',
-    'Click button',
-    'Activate item',
-    'Cancel Dialog',
-    'Dialog: Yes',
-    'Dialog: No',
-    'Dialog: OK',
-    'Delete character to left of cursor',
-    'Delete character to right of cursor',
-    'Insert new line',
-    'Commit text',
-    'Reload',
-    'Previous history entry',
-    'Next history entry',
-    'Move cursor left',
-    'Move cursor right',
-    'Move cursor up',
-    'Move cursor down',
-    'Move cursor to start of document',
-    'Move cursor to end of document',
-    'Move cursor to start of line',
-    'Move cursor to end of line',
-    'Move cursor word left',
-    'Move cursor word right',
-    'Move cursor and extend selection left',
-    'Move cursor and extend selection right',
-    'Move cursor and extend selection up',
-    'Move cursor and extend selection down',
-    'Move cursor and extend selection to start of document',
-    'Move cursor and extend selection to end of document',
-    'Move cursor and extend selection to start of document',
-    'Move cursor and extend selection to end of document',
-    'Move cursor and extend selection word left',
-    'Move cursor and extend selection word right',
-    'Select first item',
-    'Select last item',
-    'move_selection_cursor_to_first_item',
-    'move_selection_cursor_to_last_item',
-    'move_selection_cursor_to_next_item',
-    'move_selection_cursor_to_previous_item',
-    'Extend selection range to first item',
-    'Extend selection range to last item',
-    'Extend selection to next item',
-    'Extend selection range to previous item',
-    'Extend selection to first item',
-    'Extend selection to last item',
-    'Select previous item',
-    'Select next item',
-    'Extend selection to next item',
-    'Extend selection to previous item',
-    'Toggle selection of item at cursor',
-    'Select item in next lane',
-    'Select item in previous lane',
-    'Select item in first lane',
-    'Select item in last lane',
-    'Move cursor to next lane',
-    'Move cursor to previous lane',
-    'Move cursor to first lane',
-    'Move cursor to last lane',
-    'Extend selection to next lane',
-    'Extend selection to previous lane',
-    'Extend selection to first lane',
-    'Extend selection to last lane',
-    'Extend selection range to next lane',
-    'Extend selection range to previous lane',
-    'Extend selection range to first lane',
-    'Extend selection range to last lane',
-    'Select item to left',
-    'Select item to right',
-    'Select item above',
-    'Select item below',
-    'Move selection cursor left',
-    'Move selection cursor right',
-    'Move selection cursor up',
-    'Move selection cursor down',
-    'Extend selection range to item to left',
-    'Extend selection range to item to right',
-    'Extend selection range to item above',
-    'Extend selection range to item below',
-    'Extend selection to item to left',
-    'Extend selection to item to right',
-    'Extend selection to item above',
-    'Extend selection to item below',
-    'Focus panel to the left',
-    'Focus panel to the right',
-    'Focus panel above',
-    'Focus panel below',
-    'Focus next panel',
-    'Focus previous panel',
-    'Focus next field',
-    'Focus previous field',
-    'Focus widget to the left',
-    'Focus widget to the right',
-    'Focus widget above',
-    'Focus widget below',
-    'Toggle expanded state',
-    'Zoom In',
-    'Zoom Out',
-    'Zoom to Fit',
-    'Maximize window',
-    'Minimize window',
-    'Full screen',
-    'Select Next Project',
-    'Select Previous Project',
-    'select_next_tab',
-    'select_previous_tab',
-    'Connect to Remote Project',
-    'Show Controller Script Console',
-    'help_user_guide',
-    'help_user_guide_jp',
-    'check_for_updates',
-    'invoke_action',
-    'Collect and Save',
-    'Activate Engine For Project',
-    'Create Instrument Track',
-    'Create Audio Track',
-    'Create Effect Track',
-    'Create Scene',
-    'Create Event',
-    'Select previous track',
-    'Select next track',
-    'focus_track_header_area',
-    'toggle_clip_launcher',
-    'focus_or_toggle_clip_launcher',
-    'Play Transport',
-    'Continue Play Transport',
-    'Play Transport From Start',
-    'Stop Transport',
-    'Play or Stop Transport',
-    'Play or Pause Transport',
-    'Continue Playback or Stop',
-    'Play From Start or Stop Transport',
-    'Toggle Record',
-    'Tap Tempo',
-    'Export Audio',
-    'export_midi',
-    'Select Pointer Tool',
-    'select_time_selection_tool',
-    'Select Pen Tool',
-    'Select Eraser Tool',
-    'Select Knife Tool',
-    'toggle_browser_panel',
-    'toggle_device_panel',
-    'toggle_arranger',
-    'toggle_detail_editor',
-    'toggle_automation_editor',
-    'toggle_mixer',
-    'toggle_inspector',
-    'toggle_studio_io',
-    'toggle_song_panel',
-    'focus_or_toggle_browser_panel',
-    'focus_or_toggle_device_panel',
-    'focus_or_toggle_arranger',
-    'focus_or_toggle_detail_editor',
-    'focus_or_toggle_automation_editor',
-    'focus_or_toggle_mixer',
-    'focus_or_toggle_inspector',
-    'focus_or_toggle_studio_io',
-    'focus_or_toggle_song_panel',
-    'Switch to Mode 1',
-    'Switch to Mode 2',
-    'Switch to Mode 3',
-    'Switch to Mode 4',
-    'Select Next Mode',
-    'Select Previous Mode',
-    'Toggle maximized editing mode',
-    'Select sub panel 1',
-    'Select sub panel 2',
-    'Select sub panel 3',
-    'Select sub panel 4',
-    'Select next sub panel',
-    'Select previous sub panel',
-    'Show Track Inputs and Outputs',
-    'Show Sends',
-    'Show Crossfades',
-    'Show Effect Tracks',
-    'Split',
-    'Consolidate',
-    'bounce_in_place',
-    'bounce',
-    'Transpose Semitone Down',
-    'Transpose Semitone Up',
-    'Transpose Octave Down',
-    'Transpose Octave Up',
-    'Quantize',
-    'legato',
-    'fixed_length',
-    'Loop Selection',
-    'Toggle Track Timeline vs. Clip Content Editing',
-    'Toggle Arranger Cue Marker Visibility',
-    'nudge_events_one_bar_earlier',
-    'nudge_events_one_step_earlier',
-    'nudge_events_one_bar_later',
-    'nudge_events_one_step_later',
-    'make_events_one_bar_shorter',
-    'make_events_one_step_shorter',
-    'make_events_one_bar_longer',
-    'make_events_one_step_longer',
-    'double_grid_size',
-    'half_grid_size',
-    'toggle_object_snapping',
-    'toggle_absolute_grid_snapping',
-    'toggle_relative_grid_snapping',
-    'toggle_adaptive_grid',
-    'prev_grid_subdivision',
-    'next_grid_subdivision',
-    'adjust_event_value_step_up',
-    'adjust_event_value_step_down',
-    'adjust_event_value_fine_step_up',
-    'adjust_event_value_fine_step_down',
-    'Create New Instrument',
-    'Create New Audio Effect',
-    'Create New Note Effect',
-    'Create New Detector',
-    'Nudge Left',
-    'Nudge Right',
-    'Nudge Up',
-    'Nudge Down',
-    'Nudge Left (coarse)',
-    'Nudge Right (coarse)',
-    'Nudge Up (coarse)',
-    'Nudge Down (coarse)',
-    'Increase Width',
-    'Decrease Width',
-    'Increase Height',
-    'Decrease Height',
-    'Bring To Front',
-    'Send To Back',
-    'focus_browser_search_field',
-    'focus_file_overview',
-    'focus_file_list',
-    'toggle_preview_playback_of_selected_file',
-    'open_containing_folder',
-    'edit_file_meta_data',
-    'Launch slot',
-    'slice_to_drum_track',
-    'slice_to_multi_sampler_track',
-    'insert_silence',
-    'cut_and_pull',
-    'paste_and_push',
-    'duplicate_and_push',
-    'delete_and_pull',
-    'toggle_folded_note_lanes',
-    'toggle_double_or_single_row_track_height',
-    'unlock_all_layers',
-    'toggle_layer_lock',
-    'toggle_layer_visibility'
-];
+
+exports.ids = ['New', 'Open', 'Save', 'Save as', 'Close', 'Preferences', 'Quit', 'Undo', 'Redo', 'Cut', 'Cut Special', 'Copy', 'Copy Special', 'Paste', 'Paste Special', 'Duplicate', 'Duplicate Special', 'Group', 'Ungroup', 'Toggle Active', 'Activate', 'Deactivate', 'Delete', 'Delete Special', 'Select All', 'Unselect All', 'Rename', 'Click button', 'Activate item', 'Cancel Dialog', 'Dialog: Yes', 'Dialog: No', 'Dialog: OK', 'Delete character to left of cursor', 'Delete character to right of cursor', 'Insert new line', 'Commit text', 'Reload', 'Previous history entry', 'Next history entry', 'Move cursor left', 'Move cursor right', 'Move cursor up', 'Move cursor down', 'Move cursor to start of document', 'Move cursor to end of document', 'Move cursor to start of line', 'Move cursor to end of line', 'Move cursor word left', 'Move cursor word right', 'Move cursor and extend selection left', 'Move cursor and extend selection right', 'Move cursor and extend selection up', 'Move cursor and extend selection down', 'Move cursor and extend selection to start of document', 'Move cursor and extend selection to end of document', 'Move cursor and extend selection to start of document', 'Move cursor and extend selection to end of document', 'Move cursor and extend selection word left', 'Move cursor and extend selection word right', 'Select first item', 'Select last item', 'move_selection_cursor_to_first_item', 'move_selection_cursor_to_last_item', 'move_selection_cursor_to_next_item', 'move_selection_cursor_to_previous_item', 'Extend selection range to first item', 'Extend selection range to last item', 'Extend selection to next item', 'Extend selection range to previous item', 'Extend selection to first item', 'Extend selection to last item', 'Select previous item', 'Select next item', 'Extend selection to next item', 'Extend selection to previous item', 'Toggle selection of item at cursor', 'Select item in next lane', 'Select item in previous lane', 'Select item in first lane', 'Select item in last lane', 'Move cursor to next lane', 'Move cursor to previous lane', 'Move cursor to first lane', 'Move cursor to last lane', 'Extend selection to next lane', 'Extend selection to previous lane', 'Extend selection to first lane', 'Extend selection to last lane', 'Extend selection range to next lane', 'Extend selection range to previous lane', 'Extend selection range to first lane', 'Extend selection range to last lane', 'Select item to left', 'Select item to right', 'Select item above', 'Select item below', 'Move selection cursor left', 'Move selection cursor right', 'Move selection cursor up', 'Move selection cursor down', 'Extend selection range to item to left', 'Extend selection range to item to right', 'Extend selection range to item above', 'Extend selection range to item below', 'Extend selection to item to left', 'Extend selection to item to right', 'Extend selection to item above', 'Extend selection to item below', 'Focus panel to the left', 'Focus panel to the right', 'Focus panel above', 'Focus panel below', 'Focus next panel', 'Focus previous panel', 'Focus next field', 'Focus previous field', 'Focus widget to the left', 'Focus widget to the right', 'Focus widget above', 'Focus widget below', 'Toggle expanded state', 'Zoom In', 'Zoom Out', 'Zoom to Fit', 'Maximize window', 'Minimize window', 'Full screen', 'Select Next Project', 'Select Previous Project', 'select_next_tab', 'select_previous_tab', 'Connect to Remote Project', 'Show Controller Script Console', 'help_user_guide', 'help_user_guide_jp', 'check_for_updates', 'invoke_action', 'Collect and Save', 'Activate Engine For Project', 'Create Instrument Track', 'Create Audio Track', 'Create Effect Track', 'Create Scene', 'Create Event', 'Select previous track', 'Select next track', 'focus_track_header_area', 'toggle_clip_launcher', 'focus_or_toggle_clip_launcher', 'Play Transport', 'Continue Play Transport', 'Play Transport From Start', 'Stop Transport', 'Play or Stop Transport', 'Play or Pause Transport', 'Continue Playback or Stop', 'Play From Start or Stop Transport', 'Toggle Record', 'Tap Tempo', 'Export Audio', 'export_midi', 'Select Pointer Tool', 'select_time_selection_tool', 'Select Pen Tool', 'Select Eraser Tool', 'Select Knife Tool', 'toggle_browser_panel', 'toggle_device_panel', 'toggle_arranger', 'toggle_detail_editor', 'toggle_automation_editor', 'toggle_mixer', 'toggle_inspector', 'toggle_studio_io', 'toggle_song_panel', 'focus_or_toggle_browser_panel', 'focus_or_toggle_device_panel', 'focus_or_toggle_arranger', 'focus_or_toggle_detail_editor', 'focus_or_toggle_automation_editor', 'focus_or_toggle_mixer', 'focus_or_toggle_inspector', 'focus_or_toggle_studio_io', 'focus_or_toggle_song_panel', 'Switch to Mode 1', 'Switch to Mode 2', 'Switch to Mode 3', 'Switch to Mode 4', 'Select Next Mode', 'Select Previous Mode', 'Toggle maximized editing mode', 'Select sub panel 1', 'Select sub panel 2', 'Select sub panel 3', 'Select sub panel 4', 'Select next sub panel', 'Select previous sub panel', 'Show Track Inputs and Outputs', 'Show Sends', 'Show Crossfades', 'Show Effect Tracks', 'Split', 'Consolidate', 'bounce_in_place', 'bounce', 'Transpose Semitone Down', 'Transpose Semitone Up', 'Transpose Octave Down', 'Transpose Octave Up', 'Quantize', 'legato', 'fixed_length', 'Loop Selection', 'Toggle Track Timeline vs. Clip Content Editing', 'Toggle Arranger Cue Marker Visibility', 'nudge_events_one_bar_earlier', 'nudge_events_one_step_earlier', 'nudge_events_one_bar_later', 'nudge_events_one_step_later', 'make_events_one_bar_shorter', 'make_events_one_step_shorter', 'make_events_one_bar_longer', 'make_events_one_step_longer', 'double_grid_size', 'half_grid_size', 'toggle_object_snapping', 'toggle_absolute_grid_snapping', 'toggle_relative_grid_snapping', 'toggle_adaptive_grid', 'prev_grid_subdivision', 'next_grid_subdivision', 'adjust_event_value_step_up', 'adjust_event_value_step_down', 'adjust_event_value_fine_step_up', 'adjust_event_value_fine_step_down', 'Create New Instrument', 'Create New Audio Effect', 'Create New Note Effect', 'Create New Detector', 'Nudge Left', 'Nudge Right', 'Nudge Up', 'Nudge Down', 'Nudge Left (coarse)', 'Nudge Right (coarse)', 'Nudge Up (coarse)', 'Nudge Down (coarse)', 'Increase Width', 'Decrease Width', 'Increase Height', 'Decrease Height', 'Bring To Front', 'Send To Back', 'focus_browser_search_field', 'focus_file_overview', 'focus_file_list', 'toggle_preview_playback_of_selected_file', 'open_containing_folder', 'edit_file_meta_data', 'Launch slot', 'slice_to_drum_track', 'slice_to_multi_sampler_track', 'insert_silence', 'cut_and_pull', 'paste_and_push', 'duplicate_and_push', 'delete_and_pull', 'toggle_folded_note_lanes', 'toggle_double_or_single_row_track_height', 'unlock_all_layers', 'toggle_layer_lock', 'toggle_layer_visibility'];
+
+
 
 },{}],7:[function(require,module,exports){
 (function (global){
 global.loadAPI(1);
+
 module.exports = global.host;
+
+
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],8:[function(require,module,exports){
 (function (global){
-// variables
-var controllers;
-var bitwig = require('./bitwig');
-var _ = require('underscore');
+var bitwig, controllers, _;
 
-bitwig.defineController(
-    'Stairways Software',
-    'Keyboard Maestro',
-    '0.1',
-    'af04a470-6b45-11e4-9803-0800200c9a66',
-    'jhorology jhorology2014@gmail.com'
-);
+bitwig = require('./bitwig');
+
+_ = require('underscore');
+
+controllers = [require('./util'), require('./action')];
+
+bitwig.defineController('Stairways Software', 'Keyboard Maestro', '0.1', 'af04a470-6b45-11e4-9803-0800200c9a66', 'jhorology jhorology2014@gmail.com');
 
 bitwig.defineMidiPorts(1, 0);
-bitwig.platformIsMac() && bitwig.addDeviceNameBasedDiscoveryPair(['Keyboard Maestro'],[]);
+
+if (bitwig.platformIsMac()) {
+  bitwig.addDeviceNameBasedDiscoveryPair(['Keyboard Maestro'], []);
+}
 
 global.init = function() {
-    var in0 = bitwig.getMidiInPort(0);
-    controllers = [
-        require('./util'),
-        require('./action')
-    ];
-    in0.setMidiCallback(function (s, d1, d2) {
-        _.each(controllers, function(c) {
-            _.isFunction(c.midi) && c.midi(s, d1, d2);
-        });
+  var in0;
+  in0 = bitwig.getMidiInPort(0);
+  bitwig.getMidiInPort(0).setMidiCallback(function(s, d1, d2) {
+    return _.each(controllers, function(c) {
+      if (_.isFunction(c.midi)) {
+        return c.midi(s, d1, d2);
+      }
     });
-    _.each(controllers, function(c) {
-        _.isFunction(c.init) && c.init();
-    });
+  });
+  return _.each(controllers, function(c) {
+    if (_.isFunction(c.init)) {
+      return c.init();
+    }
+  });
 };
 
 global.flush = function() {
-    _.each(controllers, function(c) {
-        _.isFunction(c.flush) && c.flush();
-    });
+  return _.each(controllers, function(c) {
+    if (_.isFunction(c.flush)) {
+      return c.flush();
+    }
+  });
 };
 
 global.exit = function() {
-    _.each(controllers.reverse(), function(c) {
-        _.isFunction(c.exit) && c.exit();
-    });
-    controllers = undefined;
+  return _.each(controllers.reverse(), function(c) {
+    if (_.isFunction(c.exit)) {
+      return c.exit();
+    }
+  });
 };
+
+
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"./action":5,"./bitwig":7,"./util":9,"underscore":4}],9:[function(require,module,exports){
-var bitwig = require('./bitwig');
-var _ = require('underscore');
-var JSON2 = require('JSON2');
+var JSON2, bitwig, _;
+
+bitwig = require('./bitwig');
+
+_ = require('underscore');
+
+JSON2 = require('JSON2');
 
 module.exports = {
-    init: function() {
-        this.application = bitwig.createApplication();
-    },
-    
-    midi: function(s, d1, d2) {
-        // CC ch 16 for utility
-        s === 0xBF && d1 < this.handlers.length &&
-            this.handlers[d1].call(this, d2);
-    },
-
-    handlers: [
-        // CC# 0 list all actions as JSON
-        function() {this.print();}
-    ],
-
-    print: function() {
-        var json = this.actions();
-        bitwig.println(JSON2.stringify(json));
-        bitwig.println('\ncopy above line and paste in http://archive.dojotoolkit.org/nightly/checkout/dojox/gfx/demos/beautify.html');
-        var categories = _.groupBy(json.actions, 'category');
-        _.each(_.keys(categories), function(key) {
-            bitwig.println(key + ' : ' + categories[key].length + ' actions.');
-        });
-        bitwig.println('total ' + json.actions.length + ' actions.');
-    },
-    
-    actions: function() {
-        var index = 0;
-        return {
-            hostVersion: String(bitwig.getHostVersion()),
-            hostApiVersion: Number(bitwig.getHostApiVersion()),
-            actions: _.map(this.application.getActions(), function(action) {
-                var obj = {};
-                obj.id = String(action.getId());
-                obj.category = String(action.getCategory().getId());
-                obj.on = {ch:1, cc:index >> 7, value: index & 0x7f};
-                index++;
-                return obj;
-            })
-        };
+  init: function() {
+    return this.application = bitwig.createApplication();
+  },
+  midi: function(s, d1, d2) {
+    if (s === 0xBF && d1 < this.handlers.length) {
+      return this.handlers[d1].call(this, d2);
     }
+  },
+  handlers: [
+    function() {
+      return this.print();
+    }
+  ],
+  print: function() {
+    var categories, json;
+    json = this.actions();
+    bitwig.println(JSON2.stringify(json));
+    bitwig.println('\ncopy above line and paste in http://archive.dojotoolkit.org/nightly/checkout/dojox/gfx/demos/beautify.html\n');
+    categories = _.groupBy(json.actions, 'category');
+    _.each(_.keys(categories), function(key) {
+      return bitwig.println("" + key + " : " + categories[key].length + " actions.");
+    });
+    return bitwig.println("total " + json.actions.length + " actions.");
+  },
+  actions: function() {
+    var actions, index;
+    index = 0;
+    return actions = {
+      hostVersion: String(bitwig.getHostVersion()),
+      hostApiVersion: Number(bitwig.getHostApiVersion()),
+      actions: _.map(this.application.getActions(), function(action) {
+        action = {
+          id: String(action.getId()),
+          category: String(action.getCategory().getId()),
+          on: {
+            ch: 1,
+            cc: index >> 7,
+            value: index & 0x7f
+          }
+        };
+        index++;
+        return action;
+      })
+    };
+  }
 };
+
+
 
 },{"./bitwig":7,"JSON2":2,"underscore":4}]},{},[4,3,7,6,9,5,8]);

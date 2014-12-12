@@ -1,4 +1,4 @@
-exports.version = '1.1.2';
+exports.version = '1.1.2'
 exports.ids = [
     'New',
     'Open',
@@ -273,4 +273,4 @@ exports.ids = [
     'unlock_all_layers',
     'toggle_layer_lock',
     'toggle_layer_visibility'
-];
+]

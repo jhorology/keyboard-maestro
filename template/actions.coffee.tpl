@@ -1,8 +1,8 @@
-exports.version = '<%= hostVersion %>';
+exports.version = '<%= hostVersion %>'
 exports.ids = [
 <%
     print(_.map(actions, function(action) {
-        return '\t\t\'' + action.id + '\'';
+        return '    \'' + action.id + '\'';
     }).join(',\n'));
 %>
-];
+]
