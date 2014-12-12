@@ -16,18 +16,29 @@ module.exports = function (grunt) {
                 jshintrc: '.jshintrc'
             }
         },
+        browserify: {
+            dist: {
+                files: {
+                    '<%= distJs%>': [
+                        'node_modules/underscore/underscore.js',
+                        'node_modules/JSON2/json2.js',
+                        'src/bitwig.js',
+                        'src/actions.js',
+                        'src/util.js',
+                        'src/action.js',
+                        'src/main.js'
+                    ]
+                }
+            }
+        },
         concat: {
-            files: {
-                src: [
-                    'node_modules/underscore/underscore.js',
-                    'lib/json2.js',
-                    'src/directive.js',
-                    'src/generated-action-ids.js',
-                    'src/util.js',
-                    'src/action.js',
-                    'src/main.js'
-                ],
-                dest: '<%= distJs%>'
+            dist: {
+                files: {
+                    '<%= distJs%>': [
+                        'src/directive.js',
+                        '<%= distJs%>'
+                    ]
+                }
             }
         },
         uglify: {
@@ -40,12 +51,12 @@ module.exports = function (grunt) {
         template: {
             generate: {
                 options: {
-                    data: grunt.file.readJSON('actions/bitwig-studio-actions-1.1.1.json')
+                    data: grunt.file.readJSON('actions/bitwig-studio-actions-1.1.2.json')
                 },
                 files: {
                     'BitwigStudioActions(Safe).kmlibrary': ['template/BitwigStudioActions(Safe).kmlibrary.tpl'],
                     'BitwigStudioActions.kmlibrary': ['template/BitwigStudioActions.kmlibrary.tpl'],
-                    'src/generated-action-ids.js': ['template/bitwig-studio-action-ids.js.tpl']
+                    'src/actions.js': ['template/actions.js.tpl']
                 }
             }
         },
@@ -60,11 +71,12 @@ module.exports = function (grunt) {
         }
     });
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-template');
-    grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
+    grunt.registerTask('default', ['jshint', 'browserify', 'concat', 'uglify']);
     grunt.registerTask('generate', ['template:generate']);
     grunt.registerTask('integration-test', ['shell:test']);
 };

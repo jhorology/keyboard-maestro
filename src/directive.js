@@ -1,4 +1,2 @@
-(function(root) {
-    'use strict';
-    root.loadAPI(1);
-}(this));
+// workaround for browserify's global
+var window = this;

@@ -20,6 +20,12 @@ OS| Location
 :---|:---|:---|
 Mac| ~/Documents/Bitwig Studio/Controller Scripts/Stairways Software
 
+### Build
+```
+    npm install
+    grunt generate
+    grunt
+```
 
 ### Update Procedure
 This macro library and controller script depends on Bitwig Studio Version.
@@ -32,7 +38,7 @@ This macro library and controller script depends on Bitwig Studio Version.
 ```
     data: grunt.file.readJSON('actions/bitwig-studio-actions-${version}.json')
 ```
-- generate macro library and generated-action-ids.js.
+- generate macro library and actions.js.
 ```
     grunt generate
 ```
