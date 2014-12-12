@@ -1,28 +1,19 @@
-(function(root, Bitwig, $, _) {
-    'use strict';
-    var action = {
-        init: function() {
-            var ver = String(Bitwig.getHostVersion());
-            if (ver !== $.ActionVersion) {
-                throw new Error('Invalid version. host:[' + ver + ']' + ' actions:[' + $.ActionVersion + ']' );
-            }
-            this.application = Bitwig.createApplication();
-        },
-        
-        midi: function(s, d1, d2) {
-            var index = (d1 << 7) + d2;
-            if (s=== 0xB0 && index < $.ActionIds.length) {
-                this.application.getAction($.ActionIds[index]).invoke();
-            }
-        },
-        
-        flush: function() {
-        },
+var bitwig = require('./bitwig'),
+    actions = require('./actions');
 
-        exit: function() {
+module.exports = {
+    init: function() {
+        var ver = String(bitwig.getHostVersion());
+        if (ver !== actions.version) {
+            throw new Error('Invalid version. host:[' + ver + ']' + ' actions:[' + actions.version + ']' );
         }
-    };
-    
-    root.KeyboardMaestro || (root.KeyboardMaestro = {});
-    root.KeyboardMaestro.action = action;
-}(this, host, this.KeyboardMaestro, _));
+        this.application = bitwig.createApplication();
+    },
+
+    midi: function(s, d1, d2) {
+        var index = (d1 << 7) + d2;
+        if (s=== 0xB0 && index < actions.ids.length) {
+            this.application.getAction(actions.ids[index]).invoke();
+        }
+    }
+};
