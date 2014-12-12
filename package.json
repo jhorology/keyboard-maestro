@@ -1,6 +1,6 @@
 {
     "name": "keyboard-maestro",
-    "version": "0.0.1",
+    "version": "0.2",
     "description": "Keyboard Maestro Macro Library and Controller Script for Bitwig Studio.",
     "main": "Keyboard Maestro.control.js",
     "scripts": {

@@ -1,4 +1,5 @@
-/*! keyboard-maestro - v0.0.1 - 2014-12-13 */
+/*! keyboard-maestro - v0.2 - 2014-12-13 */
+// workaround for browserify's global.
 var window = this;
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 // cycle.js
@@ -2157,7 +2158,7 @@ _ = require('underscore');
 
 controllers = [require('./util'), require('./action')];
 
-bitwig.defineController('Stairways Software', 'Keyboard Maestro', '0.1', 'af04a470-6b45-11e4-9803-0800200c9a66', 'jhorology jhorology2014@gmail.com');
+bitwig.defineController('Stairways Software', 'Keyboard Maestro', '0.2', 'af04a470-6b45-11e4-9803-0800200c9a66', 'jhorology jhorology2014@gmail.com');
 
 bitwig.defineMidiPorts(1, 0);
 
@@ -2166,8 +2167,6 @@ if (bitwig.platformIsMac()) {
 }
 
 global.init = function() {
-  var in0;
-  in0 = bitwig.getMidiInPort(0);
   bitwig.getMidiInPort(0).setMidiCallback(function(s, d1, d2) {
     return _.each(controllers, function(c) {
       if (_.isFunction(c.midi)) {

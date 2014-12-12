@@ -9,7 +9,7 @@ controllers = [
 bitwig.defineController(
     'Stairways Software',
     'Keyboard Maestro',
-    '0.1',
+    '0.2',
     'af04a470-6b45-11e4-9803-0800200c9a66',
     'jhorology jhorology2014@gmail.com'
 )
@@ -18,7 +18,6 @@ bitwig.defineMidiPorts 1, 0
 bitwig.addDeviceNameBasedDiscoveryPair ['Keyboard Maestro'],[] if bitwig.platformIsMac()
 
 global.init = () ->
-    in0 = bitwig.getMidiInPort(0)
     bitwig.getMidiInPort(0).setMidiCallback (s, d1, d2) ->
         _.each controllers, (c) ->
             c.midi s, d1, d2 if _.isFunction(c.midi)

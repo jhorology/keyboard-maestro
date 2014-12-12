@@ -34,8 +34,12 @@ module.exports = (grunt) ->
         concat:
             options:
                 stripBanners: true
-                banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */\nvar window = this;\n'
+                banner: '''
+/*! <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */
+// workaround for browserify's global.
+var window = this;
 
+'''
             dist:
                 files:
                     '<%= distJs%>': [
