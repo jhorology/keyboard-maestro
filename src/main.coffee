@@ -1,9 +1,8 @@
 bitwig = require './bitwig'
-_ = require 'underscore'
 
 controllers = [
-    require('./util'),
-    require('./action')
+    require './util'
+    require './action'
 ]
 
 bitwig.defineController(
@@ -19,16 +18,11 @@ bitwig.addDeviceNameBasedDiscoveryPair ['Keyboard Maestro'],[] if bitwig.platfor
 
 global.init = () ->
     bitwig.getMidiInPort(0).setMidiCallback (s, d1, d2) ->
-        _.each controllers, (c) ->
-            c.midi s, d1, d2 if _.isFunction(c.midi)
-            
-    _.each controllers, (c) ->
-        c.init() if _.isFunction(c.init)
+        c.midi?(s, d1, d2) for c in controllers
+    c.init?() for c in controllers
 
 global.flush = () ->
-    _.each controllers, (c) ->
-        c.flush() if _.isFunction(c.flush)
+    c.flush?() for c in controllers
 
 global.exit = () ->
-    _.each controllers.reverse(), (c) ->
-        c.exit() if _.isFunction(c.exit)
+    c.exit?() for c in controllers.reverse()

@@ -1,5 +1,4 @@
 bitwig = require './bitwig'
-_ = require 'underscore'
 JSON2 = require 'JSON2'
 
 module.exports =
@@ -8,7 +7,7 @@ module.exports =
     
     midi: (s, d1, d2) ->
         # CC ch 16 for utility
-        if s is 0xBF and d1 < this.handlers.length
+        if s is 0xBF and d1 < @handlers.length
             @handlers[d1].call @, d2
 
     handlers: [
@@ -24,9 +23,6 @@ module.exports =
 copy above line and paste in http://archive.dojotoolkit.org/nightly/checkout/dojox/gfx/demos/beautify.html
 
 '''
-        categories = _.groupBy json.actions, 'category'
-        _.each _.keys(categories), (key) ->
-            bitwig.println "#{key} : #{categories[key].length} actions."
         bitwig.println "total #{json.actions.length} actions."
     
     actions: () ->
@@ -34,13 +30,10 @@ copy above line and paste in http://archive.dojotoolkit.org/nightly/checkout/doj
         actions =
             hostVersion: String bitwig.getHostVersion()
             hostApiVersion: Number bitwig.getHostApiVersion()
-            actions: _.map this.application.getActions(), (action) ->
-                action =
-                    id: String action.getId()
-                    category: String action.getCategory().getId()
-                    on:
-                        ch: 1
-                        cc: index >> 7
-                        value: index & 0x7f
-                index++
-                return action
+            actions: for action, i in @application.getActions()
+                id: String action.getId()
+                category: String action.getCategory().getId()
+                on:
+                    ch: 1
+                    cc: i >> 7
+                    value: i & 0x7f

@@ -7,30 +7,27 @@ module.exports = (grunt) ->
         testDir: '${HOME}/Documents/Bitwig Studio/Controller Scripts/Debug'
         jshint:
             files: [
-                'src/**/*.js',
-                'package.json',
+                'src/**/*.js'
+                'package.json'
                 '.jshintrc'
             ]
             options:
                 jshintrc: '.jshintrc'
-
         browserify:
             dist:
                 files:
                     '<%= distJs%>': [
-                        'node_modules/underscore/underscore.js',
-                        'node_modules/JSON2/json2.js',
-                        'src/bitwig.coffee',
-                        'src/actions.coffee',
-                        'src/util.coffee',
-                        'src/action.coffee',
+                        'node_modules/JSON2/json2.js'
+                        'src/bitwig.coffee'
+                        'src/actions.coffee'
+                        'src/util.coffee'
+                        'src/action.coffee'
                         'src/main.coffee'
                     ]
                 options:
                     transform: ['coffeeify']
                     browserifyOptions:
                         extensions: ['.coffee']
-
         concat:
             options:
                 stripBanners: true
@@ -45,27 +42,24 @@ var window = this;
                     '<%= distJs%>': [
                         '<%= distJs%>'
                     ]
-
         uglify:
             dist:
                 files:
                     '<%= distMiniJs%>': '<%= distJs%>'
-
         template:
             generate:
                 options:
                     data: grunt.file.readJSON 'actions/bitwig-studio-actions-1.1.2.json'
 
                 files:
-                    'BitwigStudioActions(Safe).kmlibrary': ['template/BitwigStudioActions(Safe).kmlibrary.tpl'],
-                    'BitwigStudioActions.kmlibrary': ['template/BitwigStudioActions.kmlibrary.tpl'],
+                    'BitwigStudioActions(Safe).kmlibrary': ['template/BitwigStudioActions(Safe).kmlibrary.tpl']
+                    'BitwigStudioActions.kmlibrary': ['template/BitwigStudioActions.kmlibrary.tpl']
                     'src/actions.coffee': ['template/actions.coffee.tpl']
-
         shell:
             test:
                 command: [
-                    'mkdir -p "<%= testDir%>"',
-                    'cp -f "<%= distJs%>" "<%= testDir%>"',
+                    'mkdir -p "<%= testDir%>"'
+                    'cp -f "<%= distMiniJs%>" "<%= testDir%>"'
                     'ls -l "<%= testDir%>"'
                 ].join '&&'
 

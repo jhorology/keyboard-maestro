@@ -3,6 +3,6 @@ exports.ids = [
 <%
     print(_.map(actions, function(action) {
         return '    \'' + action.id + '\'';
-    }).join(',\n'));
+    }).join('\n'));
 %>
 ]
