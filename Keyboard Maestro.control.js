@@ -812,16 +812,8 @@ module.exports = {
     }
   ],
   print: function() {
-    var json;
-    json = this.actions();
-    bitwig.println(JSON2.stringify(json));
-    bitwig.println('\ncopy above line and paste in http://archive.dojotoolkit.org/nightly/checkout/dojox/gfx/demos/beautify.html\n');
-    return bitwig.println("total " + json.actions.length + " actions.");
-  },
-  actions: function() {
-    var action, actions, i, index;
-    index = 0;
-    return actions = {
+    var action, i, json;
+    json = {
       hostVersion: String(bitwig.getHostVersion()),
       hostApiVersion: Number(bitwig.getHostApiVersion()),
       actions: (function() {
@@ -843,6 +835,9 @@ module.exports = {
         return _results;
       }).call(this)
     };
+    bitwig.println(JSON2.stringify(json));
+    bitwig.println('\ncopy above line and paste in http://archive.dojotoolkit.org/nightly/checkout/dojox/gfx/demos/beautify.html\n');
+    return bitwig.println("total " + json.actions.length + " actions.");
   }
 };
 

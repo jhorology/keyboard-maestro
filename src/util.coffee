@@ -16,18 +16,7 @@ module.exports =
     ]
 
     print: () ->
-        json = @actions();
-        bitwig.println JSON2.stringify(json)
-        bitwig.println '''
-
-copy above line and paste in http://archive.dojotoolkit.org/nightly/checkout/dojox/gfx/demos/beautify.html
-
-'''
-        bitwig.println "total #{json.actions.length} actions."
-    
-    actions: () ->
-        index = 0
-        actions =
+        json =
             hostVersion: String bitwig.getHostVersion()
             hostApiVersion: Number bitwig.getHostApiVersion()
             actions: for action, i in @application.getActions()
@@ -37,3 +26,10 @@ copy above line and paste in http://archive.dojotoolkit.org/nightly/checkout/doj
                     ch: 1
                     cc: i >> 7
                     value: i & 0x7f
+        bitwig.println JSON2.stringify(json)
+        bitwig.println '''
+
+copy above line and paste in http://archive.dojotoolkit.org/nightly/checkout/dojox/gfx/demos/beautify.html
+
+'''
+        bitwig.println "total #{json.actions.length} actions."
