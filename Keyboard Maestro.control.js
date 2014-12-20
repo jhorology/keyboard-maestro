@@ -914,25 +914,6 @@ module.exports = {
       return this.printActions();
     }
   ],
-  bitwigActions: function() {},
-  extendedActions: function() {
-    var action, i, _i, _len, _ref, _results;
-    _ref = this.application.getActions();
-    _results = [];
-    for (i = _i = 0, _len = _ref.length; _i < _len; i = ++_i) {
-      action = _ref[i];
-      _results.push({
-        id: String(action.getId()),
-        category: String(action.getCategory().getId()),
-        on: {
-          ch: 1,
-          cc: i >> 7,
-          value: i & 0x7f
-        }
-      });
-    }
-    return _results;
-  },
   printActions: function() {
     var action, i, j;
     bitwig.println(JSON2.stringify({
