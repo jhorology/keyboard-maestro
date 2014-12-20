@@ -16,17 +16,6 @@ module.exports =
         -> @printActions()
     ]
 
-    bitwigActions: ->
-
-    extendedActions: ->
-        for action, i in @application.getActions()
-            id: String action.getId()
-            category: String action.getCategory().getId()
-            on:
-                ch: 1
-                cc: i >> 7
-                value: i & 0x7f
-        
     printActions: ->
         bitwig.println JSON2.stringify
             hostVersion: String bitwig.getHostVersion()
