@@ -22,6 +22,7 @@ module.exports = (grunt) ->
                         'src/actions.coffee'
                         'src/util.coffee'
                         'src/action.coffee'
+                        'src/extended_action.coffee'
                         'src/main.coffee'
                     ]
                 options:
@@ -49,10 +50,9 @@ var window = this;
         template:
             generate:
                 options:
-                    data: grunt.file.readJSON 'actions/bitwig-studio-actions-1.1.2.json'
+                    data: grunt.file.readJSON 'actions/bitwig-studio-actions-1.1.3RC1.json'
 
                 files:
-                    'BitwigStudioActions(Safe).kmlibrary': ['template/BitwigStudioActions(Safe).kmlibrary.tpl']
                     'BitwigStudioActions.kmlibrary': ['template/BitwigStudioActions.kmlibrary.tpl']
                     'src/actions.coffee': ['template/actions.coffee.tpl']
         shell:

@@ -3,6 +3,7 @@ bitwig = require './bitwig'
 controllers = [
     require './util'
     require './action'
+    require './extended_action'
 ]
 
 bitwig.defineController(
@@ -16,13 +17,13 @@ bitwig.defineController(
 bitwig.defineMidiPorts 1, 0
 bitwig.addDeviceNameBasedDiscoveryPair ['Keyboard Maestro'],[] if bitwig.platformIsMac()
 
-global.init = () ->
+global.init = ->
     bitwig.getMidiInPort(0).setMidiCallback (s, d1, d2) ->
         c.midi?(s, d1, d2) for c in controllers
     c.init?() for c in controllers
 
-global.flush = () ->
+global.flush = ->
     c.flush?() for c in controllers
 
-global.exit = () ->
+global.exit = ->
     c.exit?() for c in controllers.reverse()

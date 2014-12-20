@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
 	<key>Author</key>
-	<string>jhorology</string>
+	<string>jhorology &lt;jhorology2014@gmail.com&gt;</string>
 	<key>AuthorURL</key>
 	<string>https://github.com/jhorology/keyboard-maestro</string>
 	<key>CanDragToMacroGroup</key>
@@ -11,17 +11,23 @@
 	<key>Category1</key>
 	<string>Interface Control</string>
 	<key>Category2</key>
-	<string></string>
+	<string>Application Control</string>
 	<key>Description</key>
-	<string>Bitwig Studio <%= hostVersion%> Actions</string>
+	<string></string>
 	<key>Items</key>
 	<array>
       <% _.forEach(actions, function(action) { %>
-      <dict>
+	  <dict>
 		<key>Activate</key>
-		<string>Normal</string>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
 		<key>IsActive</key>
 		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
 		<key>Macros</key>
 		<array>
 		  <dict>
@@ -44,25 +50,51 @@
 				<integer><%= action.on.value %></integer>
 			  </dict>
 			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
 			<key>IsActive</key>
 			<true/>
 			<key>ModificationDate</key>
-			<real>437819669.77276301</real>
+			<real>440732432.86673301</real>
 			<key>Name</key>
 			<string><%= action.category %> - <%= action.id %></string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
 		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
 		<key>Name</key>
 		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
 	  </dict>
       <% }); %>
 	  <dict>
 		<key>Activate</key>
-		<string>Normal</string>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
 		<key>IsActive</key>
 		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
 		<key>Macros</key>
 		<array>
 		  <dict>
@@ -99,7 +131,7 @@
 				<key>IsActive</key>
 				<true/>
 				<key>IsDisclosed</key>
-				<true/>
+				<false/>
 				<key>MIDIMessageType</key>
 				<string>ControlChange</string>
 				<key>MacroActionType</key>
@@ -113,7 +145,7 @@
 			<key>IsActive</key>
 			<true/>
 			<key>ModificationDate</key>
-			<real>437812745.12949598</real>
+			<real>437842817.06119698</real>
 			<key>Name</key>
 			<string>Utility - Print JSON in Console</string>
 			<key>Triggers</key>
@@ -122,13 +154,31 @@
 			<string>BDD72774-2346-4A9F-8658-776A0E207A58</string>
 		  </dict>
 		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
 		<key>Name</key>
 		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
 		<key>UID</key>
-		<string>F2B13F81-FE79-44AD-BE85-ABCCF9EFEA81</string>
+		<string>30651478-0D07-4947-88B5-87994C91A719</string>
 	  </dict>
 	</array>
 	<key>UID</key>
-	<string>336790C2-5DA8-4D78-A395-92FB4C8B4ED1</string>
+	<string>D9C2F3ED-3ED8-4A70-93C8-7BD2604825B4</string>
   </dict>
 </plist>

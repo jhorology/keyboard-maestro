@@ -1,2 +1,2 @@
-global.loadAPI(1)
+global.loadAPI 1
 module.exports = global.host

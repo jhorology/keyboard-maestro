@@ -2,7 +2,7 @@ bitwig = require './bitwig'
 actions = require './actions'
 
 module.exports =
-    init: () ->
+    init: ->
         ver = String bitwig.getHostVersion()
         if ver isnt actions.version
             throw new Error "Invalid version. host:[#{ver}] actions:[#{actions.version}]" 

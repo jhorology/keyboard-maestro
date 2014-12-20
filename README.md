@@ -2,9 +2,7 @@
 
 
 ### Install Macro Library
-- BitwigStudioActions(Safe).kmlibrary - execute only if Bitwig Studio is at the front.
-<br/>or
-- BitwigStudioActions.kmlibrary
+- [BitwigStudioActions.kmlibrary](BitwigStudioActions.kmlibrary)
 
 import via "Import to Macro Library" menu in Keybord Maestro Editor.
 

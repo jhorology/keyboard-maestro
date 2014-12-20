@@ -1,4 +1,4 @@
-exports.version = '1.1.2'
+exports.version = '1.1.3 RC 1'
 exports.ids = [
     'New'
     'Open'
@@ -273,4 +273,17 @@ exports.ids = [
     'unlock_all_layers'
     'toggle_layer_lock'
     'toggle_layer_visibility'
+    'cursor track - toggle activated'
+    'cursor track - up volume 10%'
+    'cursor track - up volume 1%'
+    'cursor track - down volume 1%'
+    'cursor track - down volume 10%'
+    'cursor track - reset volume'
+    'cursor track - pan right 10%'
+    'cursor track - pan right 1%'
+    'cursor track - pan left 1%'
+    'cursor track - pan left 10%'
+    'cursor track - reset pan'
+    'cursor track - toggle mute'
+    'cursor track - toggle solo'
 ]
