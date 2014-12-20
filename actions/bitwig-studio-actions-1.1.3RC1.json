@@ -2613,7 +2613,7 @@
 			}
 		},
 		{
-			"id": "cursor track - send S2 - +10%",
+			"id": "cursor track - send S1 - reset",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2622,7 +2622,7 @@
 			}
 		},
 		{
-			"id": "cursor track - send S2 - +1%",
+			"id": "cursor track - send S2 - +10%",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2631,7 +2631,7 @@
 			}
 		},
 		{
-			"id": "cursor track - send S2 - -1%",
+			"id": "cursor track - send S2 - +1%",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2640,7 +2640,7 @@
 			}
 		},
 		{
-			"id": "cursor track - send S2 - -10%",
+			"id": "cursor track - send S2 - -1%",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2649,7 +2649,7 @@
 			}
 		},
 		{
-			"id": "cursor track - send S3 - +10%",
+			"id": "cursor track - send S2 - -10%",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2658,7 +2658,7 @@
 			}
 		},
 		{
-			"id": "cursor track - send S3 - +1%",
+			"id": "cursor track - send S2 - reset",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2667,7 +2667,7 @@
 			}
 		},
 		{
-			"id": "cursor track - send S3 - +1%",
+			"id": "cursor track - send S3 - +10%",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2676,7 +2676,7 @@
 			}
 		},
 		{
-			"id": "cursor track - send S3 - +10%",
+			"id": "cursor track - send S3 - +1%",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2685,7 +2685,7 @@
 			}
 		},
 		{
-			"id": "cursor track - send S4 - +10%",
+			"id": "cursor track - send S3 - +1%",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2694,7 +2694,7 @@
 			}
 		},
 		{
-			"id": "cursor track - send S4 - +1%",
+			"id": "cursor track - send S3 - +10%",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2703,7 +2703,7 @@
 			}
 		},
 		{
-			"id": "cursor track - send S4 - -1%",
+			"id": "cursor track - send S3 - reset",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2712,7 +2712,7 @@
 			}
 		},
 		{
-			"id": "cursor track - send S4 - -10%",
+			"id": "cursor track - send S4 - +10%",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2721,7 +2721,7 @@
 			}
 		},
 		{
-			"id": "cursor track - arm - toggle",
+			"id": "cursor track - send S4 - +1%",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2730,7 +2730,7 @@
 			}
 		},
 		{
-			"id": "cursor track - monitor - toggle",
+			"id": "cursor track - send S4 - -1%",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2739,7 +2739,7 @@
 			}
 		},
 		{
-			"id": "cursor track - auto monitor - toggle",
+			"id": "cursor track - send S4 - -10%",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2748,7 +2748,7 @@
 			}
 		},
 		{
-			"id": "cursor track - crossfade - mode A",
+			"id": "cursor track - send S4 - reset",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2757,7 +2757,7 @@
 			}
 		},
 		{
-			"id": "cursor track - crossfade - mode B",
+			"id": "cursor track - arm - toggle",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2766,7 +2766,7 @@
 			}
 		},
 		{
-			"id": "cursor track - crossfade - mode AB",
+			"id": "cursor track - monitor - toggle",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2775,7 +2775,7 @@
 			}
 		},
 		{
-			"id": "cursor track - clip launcher - stop",
+			"id": "cursor track - auto monitor - toggle",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -2784,12 +2784,48 @@
 			}
 		},
 		{
-			"id": "cursor track - clip laucner - preturn to arrangement",
+			"id": "cursor track - crossfade - mode A",
 			"category": "extended",
 			"on": {
 				"ch": 2,
 				"cc": 0,
 				"value": 36
+			}
+		},
+		{
+			"id": "cursor track - crossfade - mode B",
+			"category": "extended",
+			"on": {
+				"ch": 2,
+				"cc": 0,
+				"value": 37
+			}
+		},
+		{
+			"id": "cursor track - crossfade - mode AB",
+			"category": "extended",
+			"on": {
+				"ch": 2,
+				"cc": 0,
+				"value": 38
+			}
+		},
+		{
+			"id": "cursor track - clip launcher - stop",
+			"category": "extended",
+			"on": {
+				"ch": 2,
+				"cc": 0,
+				"value": 39
+			}
+		},
+		{
+			"id": "cursor track - clip laucner - preturn to arrangement",
+			"category": "extended",
+			"on": {
+				"ch": 2,
+				"cc": 0,
+				"value": 40
 			}
 		}
 	]

@@ -19487,7 +19487,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - send S2 - +10%</string>
+			<string>extended - cursor track - send S1 - reset</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -19554,7 +19554,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - send S2 - +1%</string>
+			<string>extended - cursor track - send S2 - +10%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -19621,7 +19621,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - send S2 - -1%</string>
+			<string>extended - cursor track - send S2 - +1%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -19688,7 +19688,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - send S2 - -10%</string>
+			<string>extended - cursor track - send S2 - -1%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -19755,7 +19755,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - send S3 - +10%</string>
+			<string>extended - cursor track - send S2 - -10%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -19822,7 +19822,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - send S3 - +1%</string>
+			<string>extended - cursor track - send S2 - reset</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -19889,7 +19889,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - send S3 - +1%</string>
+			<string>extended - cursor track - send S3 - +10%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -19956,7 +19956,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - send S3 - +10%</string>
+			<string>extended - cursor track - send S3 - +1%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -20023,7 +20023,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - send S4 - +10%</string>
+			<string>extended - cursor track - send S3 - +1%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -20090,7 +20090,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - send S4 - +1%</string>
+			<string>extended - cursor track - send S3 - +10%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -20157,7 +20157,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - send S4 - -1%</string>
+			<string>extended - cursor track - send S3 - reset</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -20224,7 +20224,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - send S4 - -10%</string>
+			<string>extended - cursor track - send S4 - +10%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -20291,7 +20291,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - arm - toggle</string>
+			<string>extended - cursor track - send S4 - +1%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -20358,7 +20358,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - monitor - toggle</string>
+			<string>extended - cursor track - send S4 - -1%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -20425,7 +20425,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - auto monitor - toggle</string>
+			<string>extended - cursor track - send S4 - -10%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -20492,7 +20492,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - crossfade - mode A</string>
+			<string>extended - cursor track - send S4 - reset</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -20559,7 +20559,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - crossfade - mode B</string>
+			<string>extended - cursor track - arm - toggle</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -20626,7 +20626,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - crossfade - mode AB</string>
+			<string>extended - cursor track - monitor - toggle</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -20693,7 +20693,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>extended - cursor track - clip launcher - stop</string>
+			<string>extended - cursor track - auto monitor - toggle</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -20751,6 +20751,274 @@
 				<integer>0</integer>
 				<key>Value</key>
 				<integer>36</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - crossfade - mode A</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>37</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - crossfade - mode B</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>38</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - crossfade - mode AB</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>39</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - clip launcher - stop</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>40</integer>
 			  </dict>
 			</array>
 			<key>CustomIconData</key>
