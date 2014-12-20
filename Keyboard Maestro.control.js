@@ -812,7 +812,7 @@ module.exports = {
       id: 'cursor track - pan - reset',
       fn: function() {
         var _ref;
-        return (_ref = this.track.getVolume()) != null ? _ref.reset() : void 0;
+        return (_ref = this.track.getPan()) != null ? _ref.reset() : void 0;
       }
     }, {
       id: 'cursor track - mute - toggle',
@@ -851,6 +851,12 @@ module.exports = {
         return (_ref = this.track.getSend(0)) != null ? _ref.inc(-10, 100) : void 0;
       }
     }, {
+      id: 'cursor track - send S1 - reset',
+      fn: function() {
+        var _ref;
+        return (_ref = this.track.getSend(0)) != null ? _ref.reset() : void 0;
+      }
+    }, {
       id: 'cursor track - send S2 - +10%',
       fn: function() {
         var _ref;
@@ -873,6 +879,12 @@ module.exports = {
       fn: function() {
         var _ref;
         return (_ref = this.track.getSend(1)) != null ? _ref.inc(-10, 100) : void 0;
+      }
+    }, {
+      id: 'cursor track - send S2 - reset',
+      fn: function() {
+        var _ref;
+        return (_ref = this.track.getSend(1)) != null ? _ref.reset() : void 0;
       }
     }, {
       id: 'cursor track - send S3 - +10%',
@@ -899,6 +911,12 @@ module.exports = {
         return (_ref = this.track.getSend(2)) != null ? _ref.inc(-10, 100) : void 0;
       }
     }, {
+      id: 'cursor track - send S3 - reset',
+      fn: function() {
+        var _ref;
+        return (_ref = this.track.getSend(2)) != null ? _ref.reset() : void 0;
+      }
+    }, {
       id: 'cursor track - send S4 - +10%',
       fn: function() {
         var _ref;
@@ -921,6 +939,12 @@ module.exports = {
       fn: function() {
         var _ref;
         return (_ref = this.track.getSend(3)) != null ? _ref.inc(-10, 100) : void 0;
+      }
+    }, {
+      id: 'cursor track - send S4 - reset',
+      fn: function() {
+        var _ref;
+        return (_ref = this.track.getSend(3)) != null ? _ref.reset() : void 0;
       }
     }, {
       id: 'cursor track - arm - toggle',

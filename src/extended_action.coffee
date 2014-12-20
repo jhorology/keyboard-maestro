@@ -54,7 +54,7 @@ module.exports =
         }
         {
             id: 'cursor track - pan - reset'
-            fn: -> @track.getVolume()?.reset()
+            fn: -> @track.getPan()?.reset()
         }
         {
             id: 'cursor track - mute - toggle'
@@ -81,6 +81,10 @@ module.exports =
             fn: -> @track.getSend(0)?.inc -10, 100
         }
         {
+            id: 'cursor track - send S1 - reset'
+            fn: -> @track.getSend(0)?.reset()
+        }
+        {
             id: 'cursor track - send S2 - +10%'
             fn: -> @track.getSend(1)?.inc 10, 100
         }
@@ -95,6 +99,10 @@ module.exports =
         {
             id: 'cursor track - send S2 - -10%'
             fn: -> @track.getSend(1)?.inc -10, 100
+        }
+        {
+            id: 'cursor track - send S2 - reset'
+            fn: -> @track.getSend(1)?.reset()
         }
         {
             id: 'cursor track - send S3 - +10%'
@@ -113,6 +121,10 @@ module.exports =
             fn: -> @track.getSend(2)?.inc -10, 100
         }
         {
+            id: 'cursor track - send S3 - reset'
+            fn: -> @track.getSend(2)?.reset()
+        }
+        {
             id: 'cursor track - send S4 - +10%'
             fn: -> @track.getSend(3)?.inc 10, 100
         }
@@ -127,6 +139,10 @@ module.exports =
         {
             id: 'cursor track - send S4 - -10%'
             fn: -> @track.getSend(3)?.inc -10, 100
+        }
+        {
+            id: 'cursor track - send S4 - reset'
+            fn: -> @track.getSend(3)?.reset()
         }
         {
             id: 'cursor track - arm - toggle'
