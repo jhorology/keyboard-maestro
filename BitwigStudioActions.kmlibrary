@@ -18348,7 +18348,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>Extended - cursor track - toggle activated</string>
+			<string>extended - cursor track - activated - toggle</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -18415,7 +18415,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>Extended - cursor track - up volume 10%</string>
+			<string>extended - cursor track - volume - +10%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -18482,7 +18482,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>Extended - cursor track - up volume 1%</string>
+			<string>extended - cursor track - volume - +1%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -18549,7 +18549,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>Extended - cursor track - down volume 1%</string>
+			<string>extended - cursor track - volume - -1%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -18616,7 +18616,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>Extended - cursor track - down volume 10%</string>
+			<string>extended - cursor track - volume - -10%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -18683,7 +18683,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>Extended - cursor track - reset volume</string>
+			<string>extended - cursor track - volume - reset</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -18750,7 +18750,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>Extended - cursor track - pan right 10%</string>
+			<string>extended - cursor track - pan - right 10%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -18817,7 +18817,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>Extended - cursor track - pan right 1%</string>
+			<string>extended - cursor track - pan - right 1%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -18884,7 +18884,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>Extended - cursor track - pan left 1%</string>
+			<string>extended - cursor track - pan - left 1%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -18951,7 +18951,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>Extended - cursor track - pan left 10%</string>
+			<string>extended - cursor track - pan - left 10%</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -19018,7 +19018,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>Extended - cursor track - reset pan</string>
+			<string>extended - cursor track - pan - reset</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -19085,7 +19085,7 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>Extended - cursor track - toggle mute</string>
+			<string>extended - cursor track - mute - toggle</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>
@@ -19152,7 +19152,1615 @@
 			<key>ModificationDate</key>
 			<real>440732432.86673301</real>
 			<key>Name</key>
-			<string>Extended - cursor track - toggle solo</string>
+			<string>extended - cursor track - solo - toggle</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>13</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - send S1 - +10%</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>14</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - send S1 - +1%</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>15</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - send S1 - -1%</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>16</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - send S1 - -10%</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>17</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - send S2 - +10%</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>18</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - send S2 - +1%</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>19</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - send S2 - -1%</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>20</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - send S2 - -10%</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>21</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - send S3 - +10%</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>22</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - send S3 - +1%</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>23</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - send S3 - +1%</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>24</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - send S3 - +10%</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>25</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - send S4 - +10%</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>26</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - send S4 - +1%</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>27</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - send S4 - -1%</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>28</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - send S4 - -10%</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>29</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - arm - toggle</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>30</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - monitor - toggle</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>31</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - auto monitor - toggle</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>32</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - crossfade - mode A</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>33</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - crossfade - mode B</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>34</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - crossfade - mode AB</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>35</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - clip launcher - stop</string>
+			<key>Triggers</key>
+			<array/>
+		  </dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Bitwig Actions</string>
+		<key>Targeting</key>
+		<dict>
+		  <key>Targeting</key>
+		  <string>Included</string>
+		  <key>TargetingApps</key>
+		  <array>
+			<dict>
+			  <key>BundleIdentifier</key>
+			  <string>com.bitwig.studio</string>
+			  <key>Name</key>
+			  <string>Bitwig Studio</string>
+			  <key>NewFile</key>
+			  <string>/Applications/Bitwig Studio.app</string>
+			</dict>
+		  </array>
+		</dict>
+	  </dict>
+      
+	  <dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+		  <dict>
+			<key>Actions</key>
+			<array>
+			  <dict>
+				<key>Channel</key>
+				<integer>2</integer>
+				<key>IsActive</key>
+				<true/>
+				<key>IsDisclosed</key>
+				<true/>
+				<key>MIDIMessageType</key>
+				<string>ControlChange</string>
+				<key>MacroActionType</key>
+				<string>SendMIDIMessage</string>
+				<key>Note</key>
+				<integer>0</integer>
+				<key>Value</key>
+				<integer>36</integer>
+			  </dict>
+			</array>
+			<key>CustomIconData</key>
+			<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+			<key>IsActive</key>
+			<true/>
+			<key>ModificationDate</key>
+			<real>440732432.86673301</real>
+			<key>Name</key>
+			<string>extended - cursor track - clip laucner - preturn to arrangement</string>
 			<key>Triggers</key>
 			<array/>
 		  </dict>

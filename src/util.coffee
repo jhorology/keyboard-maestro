@@ -3,7 +3,7 @@ JSON2 = require 'JSON2'
 extendedActions = require('./extended_action').actions
 
 module.exports =
-    init: () ->
+    init: ->
         @application = bitwig.createApplication()
 
     midi: (s, d1, d2) ->
@@ -31,7 +31,7 @@ module.exports =
              ).concat(
                 for action, j in extendedActions
                     id: action.id
-                    category: 'Extended'
+                    category: 'extended'
                     on:
                         ch: 2
                         cc: j >> 7
