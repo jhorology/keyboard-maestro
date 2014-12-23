@@ -4,7 +4,9 @@ module.exports = (grunt) ->
     distName: 'Keyboard Maestro'
     distJs: '<%= distName%>.control.js'
     distMiniJs: '<%= distName%>.min.control.js'
-    testDir: '${HOME}/Documents/Bitwig Studio/Controller Scripts/Debug'
+    jsTestDir: '${HOME}/Documents/Bitwig Studio/Controller Scripts/Debug'
+    distKmLib: 'BitwigStudioActions.kmlibrary'
+    kmLibDir: '${HOME}/Library/Application Support/Keyboard Maestro/Keyboard Maestro Libraries'
     
     jshint:
       files: [
@@ -63,17 +65,19 @@ var window = this;
     template:
       generate:
         options:
-          data: grunt.file.readJSON 'actions/bitwig-studio-actions-1.1.3RC1.json'
+          data: grunt.file.readJSON 'actions/bitwig-studio-actions-1.1.3RC2.json'
         files:
-          'BitwigStudioActions.kmlibrary': ['template/BitwigStudioActions.kmlibrary.tpl']
+          '<%= distKmLib%>': ['template/<%= distKmLib%>.tpl']
           'src/actions.coffee': ['template/actions.coffee.tpl']
 
     shell:
       test:
         command: [
-          'mkdir -p "<%= testDir%>"'
-          'cp -f "<%= distMiniJs%>" "<%= testDir%>"'
-          'ls -l "<%= testDir%>"'
+          'mkdir -p "<%= jsTestDir%>"'
+          'cp -f "<%= distMiniJs%>" "<%= jsTestDir%>"'
+          'ls -l "<%= jsTestDir%>"'
+          'cp -f "<%= distKmLib%>" "<%= kmLibDir%>"'
+          'ls -l "<%= kmLibDir%>"'
         ].join '&&'
 
     grunt.loadNpmTasks 'grunt-contrib-jshint'

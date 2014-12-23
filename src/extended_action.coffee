@@ -3,12 +3,14 @@ bitwig = require './bitwig'
 module.exports =
   init: ->
     @track = bitwig.createArrangerCursorTrack 4, 0
+    @track.addIsSelectedObserver (selected) =>
+      @trackSelected = selected
 
   midi: (s, d1, d2) ->
-    index = (d1 << 7) + d2;
     # ch.2 for extended action
-    if s is 0xB1 and index < @actions.length
-      @actions[index].fn.call @
+    if s is 0xB1 and @trackSelected
+      index = (d1 << 7) + d2
+      @actions[index].fn.call @ if index < @actions.length
 
   actions: [
     ## cursor track
@@ -18,19 +20,19 @@ module.exports =
     }
     {
       id: 'cursor track - volume - +10%'
-      fn: -> @track.getVolume()?.inc 10, 100
+      fn: -> @track.getVolume()?.inc 10, 101
     }
     {
       id: 'cursor track - volume - +1%'
-      fn: -> @track.getVolume()?.inc 1, 100
+      fn: -> @track.getVolume()?.inc 1, 101
     }
     {
       id: 'cursor track - volume - -1%'
-      fn: -> @track.getVolume()?.inc -1, 100
+      fn: -> @track.getVolume()?.inc -1, 101
     }
     {
       id: 'cursor track - volume - -10%'
-      fn: -> @track.getVolume()?.inc -10, 100
+      fn: -> @track.getVolume()?.inc -10, 101
     }
     {
       id: 'cursor track - volume - reset'
@@ -38,19 +40,19 @@ module.exports =
     }
     {
       id: 'cursor track - pan - right 10%'
-      fn: -> @track.getPan()?.inc 10, 200
+      fn: -> @track.getPan()?.inc 10, 201
     }
     {
       id: 'cursor track - pan - right 1%'
-      fn: -> @track.getPan()?.inc 1, 200
+      fn: -> @track.getPan()?.inc 1, 201
     }
     {
       id: 'cursor track - pan - left 1%'
-      fn: -> @track.getPan()?.inc -1, 200
+      fn: -> @track.getPan()?.inc -1, 201
     }
     {
       id: 'cursor track - pan - left 10%'
-      fn: -> @track.getPan()?.inc -10, 200
+      fn: -> @track.getPan()?.inc -10, 201
     }
     {
       id: 'cursor track - pan - reset'
@@ -66,19 +68,19 @@ module.exports =
     }
     {
       id: 'cursor track - send S1 - +10%'
-      fn: -> @track.getSend(0)?.inc 10, 100
+      fn: -> @track.getSend(0)?.inc 10, 101
     }
     {
       id: 'cursor track - send S1 - +1%'
-      fn: -> @track.getSend(0)?.inc 1, 100
+      fn: -> @track.getSend(0)?.inc 1, 101
     }
     {
       id: 'cursor track - send S1 - -1%'
-      fn: -> @track.getSend(0)?.inc -1, 100
+      fn: -> @track.getSend(0)?.inc -1, 101
     }
     {
       id: 'cursor track - send S1 - -10%'
-      fn: -> @track.getSend(0)?.inc -10, 100
+      fn: -> @track.getSend(0)?.inc -10, 101
     }
     {
       id: 'cursor track - send S1 - reset'
@@ -86,19 +88,19 @@ module.exports =
     }
     {
       id: 'cursor track - send S2 - +10%'
-      fn: -> @track.getSend(1)?.inc 10, 100
+      fn: -> @track.getSend(1)?.inc 10, 101
     }
     {
       id: 'cursor track - send S2 - +1%'
-      fn: -> @track.getSend(1)?.inc 1, 100
+      fn: -> @track.getSend(1)?.inc 1, 101
     }
     {
       id: 'cursor track - send S2 - -1%'
-      fn: -> @track.getSend(1)?.inc -1, 100
+      fn: -> @track.getSend(1)?.inc -1, 101
     }
     {
       id: 'cursor track - send S2 - -10%'
-      fn: -> @track.getSend(1)?.inc -10, 100
+      fn: -> @track.getSend(1)?.inc -10, 101
     }
     {
       id: 'cursor track - send S2 - reset'
@@ -106,19 +108,19 @@ module.exports =
     }
     {
       id: 'cursor track - send S3 - +10%'
-      fn: -> @track.getSend(2)?.inc 10, 100
+      fn: -> @track.getSend(2)?.inc 10, 101
     }
     {
       id: 'cursor track - send S3 - +1%'
-      fn: -> @track.getSend(2)?.inc 1, 100
+      fn: -> @track.getSend(2)?.inc 1, 101
     }
     {
       id: 'cursor track - send S3 - +1%'
-      fn: -> @track.getSend(2)?.inc -1, 100
+      fn: -> @track.getSend(2)?.inc -1, 101
     }
     {
       id: 'cursor track - send S3 - +10%'
-      fn: -> @track.getSend(2)?.inc -10, 100
+      fn: -> @track.getSend(2)?.inc -10, 101
     }
     {
       id: 'cursor track - send S3 - reset'
@@ -126,19 +128,19 @@ module.exports =
     }
     {
       id: 'cursor track - send S4 - +10%'
-      fn: -> @track.getSend(3)?.inc 10, 100
+      fn: -> @track.getSend(3)?.inc 10, 101
     }
     {
       id: 'cursor track - send S4 - +1%'
-      fn: -> @track.getSend(3)?.inc 1, 100
+      fn: -> @track.getSend(3)?.inc 1, 101
     }
     {
       id: 'cursor track - send S4 - -1%'
-      fn: -> @track.getSend(3)?.inc -1, 100
+      fn: -> @track.getSend(3)?.inc -1, 101
     }
     {
       id: 'cursor track - send S4 - -10%'
-      fn: -> @track.getSend(3)?.inc -10, 100
+      fn: -> @track.getSend(3)?.inc -10, 101
     }
     {
       id: 'cursor track - send S4 - reset'

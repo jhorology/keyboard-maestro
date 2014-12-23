@@ -1,6 +1,6 @@
 {
     "name": "keyboard-maestro",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "Keyboard Maestro Macro Library and Controller Script for Bitwig Studio.",
     "main": "Keyboard Maestro.control.js",
     "scripts": {
@@ -22,7 +22,8 @@
     },
     "homepage": "https://github.com/jhorology/keyboard-maestro",
     "dependencies": {
-        "JSON2": "^0.1.0"
+        "JSON2": "^0.1.0",
+        "uuid": "^2.0.1"
     },
     "devDependencies": {
         "coffeeify": "^1.0.0",

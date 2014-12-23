@@ -1,5 +1,7 @@
 bitwig = require './bitwig'
 JSON2 = require 'JSON2'
+uuid = require 'uuid'
+actions = require('./actions')
 extendedActions = require('./extended_action').actions
 
 module.exports =
@@ -22,7 +24,9 @@ module.exports =
       hostApiVersion: Number bitwig.getHostApiVersion()
       actions: (
         for action, i in @application.getActions()
-          id: String action.getId()
+          id = String action.getId()
+          id: id
+          uuid: createOrReuseUuid actions.ids, id
           category: String action.getCategory().getId()
           on:
             ch: 1
@@ -31,6 +35,7 @@ module.exports =
       ).concat(
         for action, j in extendedActions
           id: action.id
+          uuid: createOrReuseUuid actions.extended_ids, action.id
           category: 'extended'
           on:
             ch: 2
@@ -44,3 +49,10 @@ copy above line and paste in http://archive.dojotoolkit.org/nightly/checkout/doj
 
 '''
     bitwig.println "total #{i} + #{j} actions."
+
+createOrReuseUuid = (ids, id) ->
+  try
+    uuid = ids[id]
+    uuid ? uuid.v4().toUpperCase()
+  catch
+    uuid.v4().toUpperCase()
