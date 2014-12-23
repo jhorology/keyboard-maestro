@@ -52,7 +52,6 @@ copy above line and paste in http://archive.dojotoolkit.org/nightly/checkout/doj
 
 createOrReuseUuid = (ids, id) ->
   try
-    uuid = ids[id]
-    uuid ? uuid.v4().toUpperCase()
+    ids[id] ? uuid.v4().toUpperCase()
   catch
     uuid.v4().toUpperCase()
