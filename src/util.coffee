@@ -51,7 +51,7 @@ copy above line and paste in http://archive.dojotoolkit.org/nightly/checkout/doj
     bitwig.println "total #{i} + #{j} actions."
 
 createOrReuseUuid = (ids, id) ->
-  try
-    ids[id] ? uuid.v4().toUpperCase()
-  catch
-    uuid.v4().toUpperCase()
+  for action in ids
+    if action.id is id
+      return action.uuid
+  uuid.v4().toUpperCase()

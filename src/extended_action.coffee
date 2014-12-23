@@ -11,6 +11,7 @@ module.exports =
     if s is 0xB1 and @trackSelected
       index = (d1 << 7) + d2
       @actions[index].fn.call @ if index < @actions.length
+        
 
   actions: [
     ## cursor track
