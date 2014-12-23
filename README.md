@@ -48,6 +48,6 @@ This macro library and controller script depends on Bitwig Studio Version.
 ### Example macro
 Here is an example macro using library.
 
-- [Bitwig Studio - Channel Strip.kmmacros](exsample/Bitwig Studio - Channel Strip.kmmacros)
+- [Bitwig Studio - Channel Strip.kmmacros](example/Bitwig Studio - Channel Strip.kmmacros)
 
 [Option + T] for activate/deactvate macro.

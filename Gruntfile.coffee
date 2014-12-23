@@ -28,15 +28,7 @@ module.exports = (grunt) ->
     browserify:
       dist:
         files:
-          '<%= distJs%>': [
-            'node_modules/JSON2/json2.js'
-            'src/bitwig.coffee'
-            'src/actions.coffee'
-            'src/util.coffee'
-            'src/action.coffee'
-            'src/extended_action.coffee'
-            'src/main.coffee'
-          ]
+          '<%= distJs%>': 'src/main.coffee'
         options:
           transform: ['coffeeify']
           browserifyOptions:

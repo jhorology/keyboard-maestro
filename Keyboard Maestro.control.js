@@ -2322,4 +2322,4 @@ createOrReuseUuid = function(ids, id) {
 
 
 
-},{"./actions":7,"./bitwig":8,"./extended_action":9,"JSON2":2,"uuid":5}]},{},[3,8,7,11,6,9,10]);
+},{"./actions":7,"./bitwig":8,"./extended_action":9,"JSON2":2,"uuid":5}]},{},[10]);
