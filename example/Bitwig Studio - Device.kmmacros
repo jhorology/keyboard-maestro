@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -83,7 +83,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -233,7 +233,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -383,7 +383,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -533,7 +533,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -683,7 +683,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -833,7 +833,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -983,7 +983,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -1133,7 +1133,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -1283,7 +1283,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -1433,7 +1433,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -1583,7 +1583,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -1733,7 +1733,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -1883,7 +1883,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2033,7 +2033,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2183,7 +2183,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2333,7 +2333,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2483,7 +2483,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2562,7 +2562,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2641,7 +2641,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2720,7 +2720,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2799,7 +2799,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2878,7 +2878,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2957,7 +2957,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -3036,7 +3036,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -3115,7 +3115,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>WithPalette</string>
+		<string>AlwaysWithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
