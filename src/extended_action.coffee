@@ -3,15 +3,25 @@ bitwig = require './bitwig'
 module.exports =
   init: ->
     @track = bitwig.createArrangerCursorTrack 4, 0
-    @track.addIsSelectedObserver (selected) =>
+    @device = bitwig.createEditorCursorDevice()
+    @track.addIsSelectedInMixerObserver (selected) =>
       @trackSelected = selected
+    @device.addHasSelectedDeviceObserver (selected) =>
+      @deviceSelected = selected
+    @macroValues = for index in [0..7]
+      @device.getMacro(index).getAmount()
+    @macroIndicated = false
+    @parameterValues = for index in [0..7]
+      @device.getParameter index
+    @parameterIndicated = false
 
   midi: (s, d1, d2) ->
     # ch.2 for extended action
     if s is 0xB1 and @trackSelected
       index = (d1 << 7) + d2
+      return if @actions[index].id.indexOf('cursor track') is 0 and not @trackSelected
+      return if @actions[index].id.indexOf('cursor device') is 0 and not @deviceSelected
       @actions[index].fn.call @ if index < @actions.length
-        
 
   actions: [
     ## cursor track
@@ -116,11 +126,11 @@ module.exports =
       fn: -> @track.getSend(2)?.inc 1, 101
     }
     {
-      id: 'cursor track - send S3 - +1%'
+      id: 'cursor track - send S3 - -1%'
       fn: -> @track.getSend(2)?.inc -1, 101
     }
     {
-      id: 'cursor track - send S3 - +10%'
+      id: 'cursor track - send S3 - -10%'
       fn: -> @track.getSend(2)?.inc -10, 101
     }
     {
@@ -176,7 +186,165 @@ module.exports =
       fn: -> @track.stop()
     }
     {
-      id: 'cursor track - clip laucner - preturn to arrangement'
+      id: 'cursor track - clip laucner - return to arrangement'
       fn: -> @track.returnToArrangement()
+    }
+    {
+      id: 'cursor device - enable state - toggle'
+      fn: -> @device.toggleEnabledState()
+    }
+    {
+      id: 'cursor device - window - toggle'
+      fn: -> @device.isWindowOpen().toggle()
+    }
+    {
+      id: 'cursor device - expanded - toggle'
+      fn: -> @device.isExpanded().toggle()
+    }
+    {
+      id: 'cursor device - macro section - toggle'
+      fn: -> @device.isMacroSectionVisible().toggle()
+    }
+    {
+      id: 'cursor device - paramater page section - toggle'
+      fn: -> @device.isParameterPageSectionVisible().toggle()
+    }
+    {
+      id: 'cursor device - paramater page - prev'
+      fn: -> @device.previousParameterPage()
+    }
+    {
+      id: 'cursor device - paramater page - next'
+      fn: -> @device.nextParameterPage()
+    }
+    {
+      id: 'cursor device - preset - prev'
+      fn: -> @device.switchToPreviousPreset()
+    }
+    {
+      id: 'cursor device - preset - next'
+      fn: -> @device.switchToNextPreset()
+    }
+    {
+      id: 'cursor device - preset category - prev'
+      fn: -> @device.switchToPreviousPresetCategory()
+    }
+    {
+      id: 'cursor device - preset category - next'
+      fn: -> @device.switchToNextPresetCategory()
+    }
+    {
+      id: 'cursor device - preset creator - prev'
+      fn: -> @device.switchToPreviousPresetCreator()
+    }
+    {
+      id: 'cursor device - preset creator - next'
+      fn: -> @device.switchToNextPresetCreator()
+    }
+    {
+      id: 'cursor device - macro/param indication - toggle'
+      fn: ->
+        @macroIndicated = not @macroIndicated
+        @parameterIndicated = not @macroIndicated
+        @device.isMacroSectionVisible().set @macroIndicated
+        macro.setIndication @macroIndicated for macro in @macroValues
+        @device.isParameterPageSectionVisible().set @parameterIndicated
+        param.setIndication @parameterIndicated for param in @parameterValues
+    }
+    {
+      id: 'cursor device - macro/param 1 - up'
+      fn: ->
+        @macroValues[0].inc 1, 101 if @macroIndicated
+        @parameterValues[0].inc 1, 128 if @parameterIndicated
+    }
+    {
+      id: 'cursor device - macro/param 1 - down'
+      fn: ->
+        @macroValues[0].inc -1, 101 if @macroIndicated
+        @parameterValues[0].inc -1, 128 if @parameterIndicated
+    }
+    {
+      id: 'cursor device - macro/param 2 - up'
+      fn: ->
+        @macroValues[1].inc 1, 101 if @macroIndicated
+        @parameterValues[1].inc 1, 128 if @parameterIndicated
+    }
+    {
+      id: 'cursor device - macro/param 2 - down'
+      fn: ->
+        @macroValues[1].inc -1, 101 if @macroIndicated
+        @parameterValues[1].inc -1, 128 if @parameterIndicated
+    }
+    {
+      id: 'cursor device - macro/param 3 - up'
+      fn: ->
+        @macroValues[2].inc 1, 101 if @macroIndicated
+        @parameterValues[2].inc 1, 128 if @parameterIndicated
+    }
+    {
+      id: 'cursor device - macro/param 3 - down'
+      fn: ->
+        @macroValues[2].inc -1, 101 if @macroIndicated
+        @parameterValues[2].inc -1, 128 if @parameterIndicated
+    }
+    {
+      id: 'cursor device - macro/param 4 - up'
+      fn: ->
+        @macroValues[3].inc 1, 101 if @macroIndicated
+        @parameterValues[3].inc 1, 128 if @parameterIndicated
+    }
+    {
+      id: 'cursor device - macro/param 4 - down'
+      fn: ->
+        @macroValues[3].inc -1, 101 if @macroIndicated
+        @parameterValues[3].inc -1, 128 if @parameterIndicated
+    }
+    {
+      id: 'cursor device - macro/param 5 - up'
+      fn: ->
+        @macroValues[4].inc 1, 101 if @macroIndicated
+        @parameterValues[4].inc 1, 128 if @parameterIndicated
+    }
+    {
+      id: 'cursor device - macro/param 5 - down'
+      fn: ->
+        @macroValues[4].inc -1, 101 if @macroIndicated
+        @parameterValues[4].inc -1, 128 if @parameterIndicated
+    }
+    {
+      id: 'cursor device - macro/param 6 - up'
+      fn: ->
+        @macroValues[5].inc 1, 101 if @macroIndicated
+        @parameterValues[5].inc 1, 128 if @parameterIndicated
+    }
+    {
+      id: 'cursor device - macro/param 6 - down'
+      fn: ->
+        @macroValues[5].inc -1, 101 if @macroIndicated
+        @parameterValues[5].inc -1, 128 if @parameterIndicated
+    }
+    {
+      id: 'cursor device - macro/param 7 - up'
+      fn: ->
+        @macroValues[6].inc 1, 101 if @macroIndicated
+        @parameterValues[6].inc 1, 128 if @parameterIndicated
+    }
+    {
+      id: 'cursor device - macro/param 7 - down'
+      fn: ->
+        @macroValues[6].inc -1, 101 if @macroIndicated
+        @parameterValues[6].inc -1, 128 if @parameterIndicated
+    }
+    {
+      id: 'cursor device - macro/param 8 - up'
+      fn: ->
+        @macroValues[7].inc 1, 101 if @macroIndicated
+        @parameterValues[7].inc 1, 128 if @parameterIndicated
+    }
+    {
+      id: 'cursor device - macro/param 8 - down'
+      fn: ->
+        @macroValues[7].inc -1, 101 if @macroIndicated
+        @parameterValues[7].inc -1, 128 if @parameterIndicated
     }
   ]

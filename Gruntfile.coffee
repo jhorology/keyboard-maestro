@@ -57,7 +57,7 @@ var window = this;
     template:
       generate:
         options:
-          data: grunt.file.readJSON 'actions/bitwig-studio-actions-1.1.3RC2.json'
+          data: grunt.file.readJSON 'actions/bitwig-studio-actions-1.1.3.json'
         files:
           '<%= distKmLib%>': ['template/<%= distKmLib%>.tpl']
           'src/actions.coffee': ['template/actions.coffee.tpl']

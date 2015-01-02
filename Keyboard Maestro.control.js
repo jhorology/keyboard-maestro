@@ -1,4 +1,4 @@
-/*! keyboard-maestro - v0.3.0 - 2014-12-24 */
+/*! keyboard-maestro - v0.3.0 - 2015-01-02 */
 // workaround for browserify's global.
 var window = this;
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
@@ -938,7 +938,7 @@ module.exports = {
 
 
 },{"./actions":7,"./bitwig":8}],7:[function(require,module,exports){
-exports.version = '1.1.3 RC 2';
+exports.version = '1.1.3';
 
 exports.ids = [
   {
@@ -1840,10 +1840,10 @@ exports.extended_ids = [
     id: 'cursor track - send S3 - +1%',
     uuid: '195C9AF8-0D5A-4DE9-8DBA-E431703426ED'
   }, {
-    id: 'cursor track - send S3 - +1%',
+    id: 'cursor track - send S3 - -1%',
     uuid: '195C9AF8-0D5A-4DE9-8DBA-E431703426ED'
   }, {
-    id: 'cursor track - send S3 - +10%',
+    id: 'cursor track - send S3 - -10%',
     uuid: 'B2ED547C-6CA7-43BF-9E01-50AC956A36A5'
   }, {
     id: 'cursor track - send S3 - reset',
@@ -1885,8 +1885,98 @@ exports.extended_ids = [
     id: 'cursor track - clip launcher - stop',
     uuid: 'A4F4B48D-F0D6-4F79-9A36-896D15C49415'
   }, {
-    id: 'cursor track - clip laucner - preturn to arrangement',
+    id: 'cursor track - clip laucner - return to arrangement',
     uuid: '3C05B39A-9E85-4252-A1F3-CE855696FF17'
+  }, {
+    id: 'cursor device - enable state - toggle',
+    uuid: 'A3735F3D-E90E-4A80-BE7E-6BA19BAAEF4A'
+  }, {
+    id: 'cursor device - window - toggle',
+    uuid: '3D4CFEA9-36B1-42CA-A0E9-3E55534BFDCB'
+  }, {
+    id: 'cursor device - expanded - toggle',
+    uuid: '3A30CE3D-BD01-4A0B-823F-832A04A57101'
+  }, {
+    id: 'cursor device - macro section - toggle',
+    uuid: '4508D271-7D92-477B-9585-C6B95F8E09DD'
+  }, {
+    id: 'cursor device - paramater page section - toggle',
+    uuid: 'EC91056F-58C6-48F9-916F-EE08C6B1C533'
+  }, {
+    id: 'cursor device - paramater page - prev',
+    uuid: '237606D5-A8DD-4057-B07D-8A324EE3DEC3'
+  }, {
+    id: 'cursor device - paramater page - next',
+    uuid: 'CEF29766-3A11-4E6F-A3B1-192CF8844070'
+  }, {
+    id: 'cursor device - preset - prev',
+    uuid: 'C813C3E6-79C0-4546-82CB-25A077FA3AF6'
+  }, {
+    id: 'cursor device - preset - next',
+    uuid: 'B17A9547-4DAD-49DF-9C1C-56CB8A2E6086'
+  }, {
+    id: 'cursor device - preset category - prev',
+    uuid: '0EB7C0A9-C448-487A-9AE5-DB4D8D27BC15'
+  }, {
+    id: 'cursor device - preset category - next',
+    uuid: 'D12F9C92-650F-4AFD-9848-DAEC87ABDBF0'
+  }, {
+    id: 'cursor device - preset creator - prev',
+    uuid: 'D39A4B2C-6EF5-4DFA-BAC9-AB51A8F45216'
+  }, {
+    id: 'cursor device - preset creator - next',
+    uuid: '45060C5A-5FE3-4630-AB5F-27EF1475B622'
+  }, {
+    id: 'cursor device - macro/param indication - toggle',
+    uuid: 'C870E9E8-F643-4CCD-9C12-475797AD3724'
+  }, {
+    id: 'cursor device - macro/param 1 - up',
+    uuid: '50F15E2B-1D9E-4FB8-B22E-D27536105880'
+  }, {
+    id: 'cursor device - macro/param 1 - down',
+    uuid: 'D870A3DC-B843-49F9-8E03-ED5648F46332'
+  }, {
+    id: 'cursor device - macro/param 2 - up',
+    uuid: 'B8F1A43E-580C-4E03-9035-B05AF89DA70D'
+  }, {
+    id: 'cursor device - macro/param 2 - down',
+    uuid: 'E868F403-7C23-4013-AC9B-29F9644E905A'
+  }, {
+    id: 'cursor device - macro/param 3 - up',
+    uuid: '712624BD-5EE3-4CE2-84B3-6884066C2B1A'
+  }, {
+    id: 'cursor device - macro/param 3 - down',
+    uuid: '6DCD5A2F-69C2-4921-8FA1-78A84BB5B577'
+  }, {
+    id: 'cursor device - macro/param 4 - up',
+    uuid: 'E2DC1C30-1F50-42A3-ACBE-69C3C7842C74'
+  }, {
+    id: 'cursor device - macro/param 4 - down',
+    uuid: 'B3C88E60-3840-49F5-A2B9-CC916E2713A4'
+  }, {
+    id: 'cursor device - macro/param 5 - up',
+    uuid: '22A1B168-7788-4E3A-804A-41166E3EDEEB'
+  }, {
+    id: 'cursor device - macro/param 5 - down',
+    uuid: 'C44B5C21-7B8C-4C4D-956F-FA149436B783'
+  }, {
+    id: 'cursor device - macro/param 6 - up',
+    uuid: 'A04CF371-315A-4E0B-9F3F-5AF6D8CA892F'
+  }, {
+    id: 'cursor device - macro/param 6 - down',
+    uuid: '901D2185-E8F6-405E-BD4A-0766A5998D84'
+  }, {
+    id: 'cursor device - macro/param 7 - up',
+    uuid: 'FA17115E-65BB-41E8-B189-1D8EE4C8BD49'
+  }, {
+    id: 'cursor device - macro/param 7 - down',
+    uuid: 'FEEBEEC5-08C0-4B9C-B2DD-5C6034BBF07C'
+  }, {
+    id: 'cursor device - macro/param 8 - up',
+    uuid: '47A9ACFF-BA5A-4665-9A23-77F9B2D3814A'
+  }, {
+    id: 'cursor device - macro/param 8 - down',
+    uuid: '9E5951AE-BFA8-46DB-AAD2-DFCCAA4ABF51'
   }
 ];
 
@@ -1908,17 +1998,48 @@ bitwig = require('./bitwig');
 
 module.exports = {
   init: function() {
+    var index;
     this.track = bitwig.createArrangerCursorTrack(4, 0);
-    return this.track.addIsSelectedObserver((function(_this) {
+    this.device = bitwig.createEditorCursorDevice();
+    this.track.addIsSelectedInMixerObserver((function(_this) {
       return function(selected) {
         return _this.trackSelected = selected;
       };
     })(this));
+    this.device.addHasSelectedDeviceObserver((function(_this) {
+      return function(selected) {
+        return _this.deviceSelected = selected;
+      };
+    })(this));
+    this.macroValues = (function() {
+      var _i, _results;
+      _results = [];
+      for (index = _i = 0; _i <= 7; index = ++_i) {
+        _results.push(this.device.getMacro(index).getAmount());
+      }
+      return _results;
+    }).call(this);
+    this.macroIndicated = false;
+    this.parameterValues = (function() {
+      var _i, _results;
+      _results = [];
+      for (index = _i = 0; _i <= 7; index = ++_i) {
+        _results.push(this.device.getParameter(index));
+      }
+      return _results;
+    }).call(this);
+    return this.parameterIndicated = false;
   },
   midi: function(s, d1, d2) {
     var index;
     if (s === 0xB1 && this.trackSelected) {
       index = (d1 << 7) + d2;
+      if (this.actions[index].id.indexOf('cursor track') === 0 && !this.trackSelected) {
+        return;
+      }
+      if (this.actions[index].id.indexOf('cursor device') === 0 && !this.deviceSelected) {
+        return;
+      }
       if (index < this.actions.length) {
         return this.actions[index].fn.call(this);
       }
@@ -2076,13 +2197,13 @@ module.exports = {
         return (_ref = this.track.getSend(2)) != null ? _ref.inc(1, 101) : void 0;
       }
     }, {
-      id: 'cursor track - send S3 - +1%',
+      id: 'cursor track - send S3 - -1%',
       fn: function() {
         var _ref;
         return (_ref = this.track.getSend(2)) != null ? _ref.inc(-1, 101) : void 0;
       }
     }, {
-      id: 'cursor track - send S3 - +10%',
+      id: 'cursor track - send S3 - -10%',
       fn: function() {
         var _ref;
         return (_ref = this.track.getSend(2)) != null ? _ref.inc(-10, 101) : void 0;
@@ -2165,9 +2286,255 @@ module.exports = {
         return this.track.stop();
       }
     }, {
-      id: 'cursor track - clip laucner - preturn to arrangement',
+      id: 'cursor track - clip laucner - return to arrangement',
       fn: function() {
         return this.track.returnToArrangement();
+      }
+    }, {
+      id: 'cursor device - enable state - toggle',
+      fn: function() {
+        return this.device.toggleEnabledState();
+      }
+    }, {
+      id: 'cursor device - window - toggle',
+      fn: function() {
+        return this.device.isWindowOpen().toggle();
+      }
+    }, {
+      id: 'cursor device - expanded - toggle',
+      fn: function() {
+        return this.device.isExpanded().toggle();
+      }
+    }, {
+      id: 'cursor device - macro section - toggle',
+      fn: function() {
+        return this.device.isMacroSectionVisible().toggle();
+      }
+    }, {
+      id: 'cursor device - paramater page section - toggle',
+      fn: function() {
+        return this.device.isParameterPageSectionVisible().toggle();
+      }
+    }, {
+      id: 'cursor device - paramater page - prev',
+      fn: function() {
+        return this.device.previousParameterPage();
+      }
+    }, {
+      id: 'cursor device - paramater page - next',
+      fn: function() {
+        return this.device.nextParameterPage();
+      }
+    }, {
+      id: 'cursor device - preset - prev',
+      fn: function() {
+        return this.device.switchToPreviousPreset();
+      }
+    }, {
+      id: 'cursor device - preset - next',
+      fn: function() {
+        return this.device.switchToNextPreset();
+      }
+    }, {
+      id: 'cursor device - preset category - prev',
+      fn: function() {
+        return this.device.switchToPreviousPresetCategory();
+      }
+    }, {
+      id: 'cursor device - preset category - next',
+      fn: function() {
+        return this.device.switchToNextPresetCategory();
+      }
+    }, {
+      id: 'cursor device - preset creator - prev',
+      fn: function() {
+        return this.device.switchToPreviousPresetCreator();
+      }
+    }, {
+      id: 'cursor device - preset creator - next',
+      fn: function() {
+        return this.device.switchToNextPresetCreator();
+      }
+    }, {
+      id: 'cursor device - macro/param indication - toggle',
+      fn: function() {
+        var macro, param, _i, _j, _len, _len1, _ref, _ref1, _results;
+        this.macroIndicated = !this.macroIndicated;
+        this.parameterIndicated = !this.macroIndicated;
+        this.device.isMacroSectionVisible().set(this.macroIndicated);
+        _ref = this.macroValues;
+        for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+          macro = _ref[_i];
+          macro.setIndication(this.macroIndicated);
+        }
+        this.device.isParameterPageSectionVisible().set(this.parameterIndicated);
+        _ref1 = this.parameterValues;
+        _results = [];
+        for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
+          param = _ref1[_j];
+          _results.push(param.setIndication(this.parameterIndicated));
+        }
+        return _results;
+      }
+    }, {
+      id: 'cursor device - macro/param 1 - up',
+      fn: function() {
+        if (this.macroIndicated) {
+          this.macroValues[0].inc(1, 101);
+        }
+        if (this.parameterIndicated) {
+          return this.parameterValues[0].inc(1, 128);
+        }
+      }
+    }, {
+      id: 'cursor device - macro/param 1 - down',
+      fn: function() {
+        if (this.macroIndicated) {
+          this.macroValues[0].inc(-1, 101);
+        }
+        if (this.parameterIndicated) {
+          return this.parameterValues[0].inc(-1, 128);
+        }
+      }
+    }, {
+      id: 'cursor device - macro/param 2 - up',
+      fn: function() {
+        if (this.macroIndicated) {
+          this.macroValues[1].inc(1, 101);
+        }
+        if (this.parameterIndicated) {
+          return this.parameterValues[1].inc(1, 128);
+        }
+      }
+    }, {
+      id: 'cursor device - macro/param 2 - down',
+      fn: function() {
+        if (this.macroIndicated) {
+          this.macroValues[1].inc(-1, 101);
+        }
+        if (this.parameterIndicated) {
+          return this.parameterValues[1].inc(-1, 128);
+        }
+      }
+    }, {
+      id: 'cursor device - macro/param 3 - up',
+      fn: function() {
+        if (this.macroIndicated) {
+          this.macroValues[2].inc(1, 101);
+        }
+        if (this.parameterIndicated) {
+          return this.parameterValues[2].inc(1, 128);
+        }
+      }
+    }, {
+      id: 'cursor device - macro/param 3 - down',
+      fn: function() {
+        if (this.macroIndicated) {
+          this.macroValues[2].inc(-1, 101);
+        }
+        if (this.parameterIndicated) {
+          return this.parameterValues[2].inc(-1, 128);
+        }
+      }
+    }, {
+      id: 'cursor device - macro/param 4 - up',
+      fn: function() {
+        if (this.macroIndicated) {
+          this.macroValues[3].inc(1, 101);
+        }
+        if (this.parameterIndicated) {
+          return this.parameterValues[3].inc(1, 128);
+        }
+      }
+    }, {
+      id: 'cursor device - macro/param 4 - down',
+      fn: function() {
+        if (this.macroIndicated) {
+          this.macroValues[3].inc(-1, 101);
+        }
+        if (this.parameterIndicated) {
+          return this.parameterValues[3].inc(-1, 128);
+        }
+      }
+    }, {
+      id: 'cursor device - macro/param 5 - up',
+      fn: function() {
+        if (this.macroIndicated) {
+          this.macroValues[4].inc(1, 101);
+        }
+        if (this.parameterIndicated) {
+          return this.parameterValues[4].inc(1, 128);
+        }
+      }
+    }, {
+      id: 'cursor device - macro/param 5 - down',
+      fn: function() {
+        if (this.macroIndicated) {
+          this.macroValues[4].inc(-1, 101);
+        }
+        if (this.parameterIndicated) {
+          return this.parameterValues[4].inc(-1, 128);
+        }
+      }
+    }, {
+      id: 'cursor device - macro/param 6 - up',
+      fn: function() {
+        if (this.macroIndicated) {
+          this.macroValues[5].inc(1, 101);
+        }
+        if (this.parameterIndicated) {
+          return this.parameterValues[5].inc(1, 128);
+        }
+      }
+    }, {
+      id: 'cursor device - macro/param 6 - down',
+      fn: function() {
+        if (this.macroIndicated) {
+          this.macroValues[5].inc(-1, 101);
+        }
+        if (this.parameterIndicated) {
+          return this.parameterValues[5].inc(-1, 128);
+        }
+      }
+    }, {
+      id: 'cursor device - macro/param 7 - up',
+      fn: function() {
+        if (this.macroIndicated) {
+          this.macroValues[6].inc(1, 101);
+        }
+        if (this.parameterIndicated) {
+          return this.parameterValues[6].inc(1, 128);
+        }
+      }
+    }, {
+      id: 'cursor device - macro/param 7 - down',
+      fn: function() {
+        if (this.macroIndicated) {
+          this.macroValues[6].inc(-1, 101);
+        }
+        if (this.parameterIndicated) {
+          return this.parameterValues[6].inc(-1, 128);
+        }
+      }
+    }, {
+      id: 'cursor device - macro/param 8 - up',
+      fn: function() {
+        if (this.macroIndicated) {
+          this.macroValues[7].inc(1, 101);
+        }
+        if (this.parameterIndicated) {
+          return this.parameterValues[7].inc(1, 128);
+        }
+      }
+    }, {
+      id: 'cursor device - macro/param 8 - down',
+      fn: function() {
+        if (this.macroIndicated) {
+          this.macroValues[7].inc(-1, 101);
+        }
+        if (this.parameterIndicated) {
+          return this.parameterValues[7].inc(-1, 128);
+        }
       }
     }
   ]
