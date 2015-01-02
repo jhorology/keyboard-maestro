@@ -1977,6 +1977,30 @@ exports.extended_ids = [
   }, {
     id: 'cursor device - macro/param 8 - down',
     uuid: '9E5951AE-BFA8-46DB-AAD2-DFCCAA4ABF51'
+  }, {
+    id: 'cursor device - macro 1 mapping - toggle',
+    uuid: 'DEF6F21E-69CD-439D-A960-00521F0D5188'
+  }, {
+    id: 'cursor device - macro 2 mapping - toggle',
+    uuid: 'AB6DF8D0-22B3-479D-8E94-691E8EE24176'
+  }, {
+    id: 'cursor device - macro 3 mapping - toggle',
+    uuid: '8C547C35-3381-4FB0-8035-89032A63A33F'
+  }, {
+    id: 'cursor device - macro 4 mapping - toggle',
+    uuid: 'FBEA09C3-BB87-4AB6-9D44-63AA4816B7E1'
+  }, {
+    id: 'cursor device - macro 5 mapping - toggle',
+    uuid: '14A9CA92-5216-4031-9644-63BCDA0ED2C6'
+  }, {
+    id: 'cursor device - macro 6 mapping - toggle',
+    uuid: 'AF28DC01-DE07-4C3A-BA0A-9A986E9DC7F6'
+  }, {
+    id: 'cursor device - macro 7 mapping - toggle',
+    uuid: 'B7590CA8-5E1B-427E-B0DB-766CA9D207E6'
+  }, {
+    id: 'cursor device - macro 8 mapping - toggle',
+    uuid: '4409766C-F91F-4243-BDDA-15467CD21B78'
   }
 ];
 
@@ -2019,6 +2043,14 @@ module.exports = {
       }
       return _results;
     }).call(this);
+    this.macroSources = (function() {
+      var _i, _results;
+      _results = [];
+      for (index = _i = 0; _i <= 7; index = ++_i) {
+        _results.push(this.device.getMacro(index).getModulationSource());
+      }
+      return _results;
+    }).call(this);
     this.macroIndicated = false;
     this.parameterValues = (function() {
       var _i, _results;
@@ -2043,6 +2075,14 @@ module.exports = {
       if (index < this.actions.length) {
         return this.actions[index].fn.call(this);
       }
+    }
+  },
+  deviceValue: function(i, delta) {
+    if (this.macroIndicated) {
+      this.macroValues[i].inc(delta, 101);
+    }
+    if (this.parameterIndicated) {
+      return this.parameterValues[i].inc(delta, 101);
     }
   },
   actions: [
@@ -2379,162 +2419,122 @@ module.exports = {
     }, {
       id: 'cursor device - macro/param 1 - up',
       fn: function() {
-        if (this.macroIndicated) {
-          this.macroValues[0].inc(1, 101);
-        }
-        if (this.parameterIndicated) {
-          return this.parameterValues[0].inc(1, 128);
-        }
+        return this.deviceValue(0, 1);
       }
     }, {
       id: 'cursor device - macro/param 1 - down',
       fn: function() {
-        if (this.macroIndicated) {
-          this.macroValues[0].inc(-1, 101);
-        }
-        if (this.parameterIndicated) {
-          return this.parameterValues[0].inc(-1, 128);
-        }
+        return this.deviceValue(0, -1);
       }
     }, {
       id: 'cursor device - macro/param 2 - up',
       fn: function() {
-        if (this.macroIndicated) {
-          this.macroValues[1].inc(1, 101);
-        }
-        if (this.parameterIndicated) {
-          return this.parameterValues[1].inc(1, 128);
-        }
+        return this.deviceValue(1, 1);
       }
     }, {
       id: 'cursor device - macro/param 2 - down',
       fn: function() {
-        if (this.macroIndicated) {
-          this.macroValues[1].inc(-1, 101);
-        }
-        if (this.parameterIndicated) {
-          return this.parameterValues[1].inc(-1, 128);
-        }
+        return this.deviceValue(1, -1);
       }
     }, {
       id: 'cursor device - macro/param 3 - up',
       fn: function() {
-        if (this.macroIndicated) {
-          this.macroValues[2].inc(1, 101);
-        }
-        if (this.parameterIndicated) {
-          return this.parameterValues[2].inc(1, 128);
-        }
+        return this.deviceValue(2, 1);
       }
     }, {
       id: 'cursor device - macro/param 3 - down',
       fn: function() {
-        if (this.macroIndicated) {
-          this.macroValues[2].inc(-1, 101);
-        }
-        if (this.parameterIndicated) {
-          return this.parameterValues[2].inc(-1, 128);
-        }
+        return this.deviceValue(2, -1);
       }
     }, {
       id: 'cursor device - macro/param 4 - up',
       fn: function() {
-        if (this.macroIndicated) {
-          this.macroValues[3].inc(1, 101);
-        }
-        if (this.parameterIndicated) {
-          return this.parameterValues[3].inc(1, 128);
-        }
+        return this.deviceValue(3, 1);
       }
     }, {
       id: 'cursor device - macro/param 4 - down',
       fn: function() {
-        if (this.macroIndicated) {
-          this.macroValues[3].inc(-1, 101);
-        }
-        if (this.parameterIndicated) {
-          return this.parameterValues[3].inc(-1, 128);
-        }
+        return this.deviceValue(3, -1);
       }
     }, {
       id: 'cursor device - macro/param 5 - up',
       fn: function() {
-        if (this.macroIndicated) {
-          this.macroValues[4].inc(1, 101);
-        }
-        if (this.parameterIndicated) {
-          return this.parameterValues[4].inc(1, 128);
-        }
+        return this.deviceValue(4, 1);
       }
     }, {
       id: 'cursor device - macro/param 5 - down',
       fn: function() {
-        if (this.macroIndicated) {
-          this.macroValues[4].inc(-1, 101);
-        }
-        if (this.parameterIndicated) {
-          return this.parameterValues[4].inc(-1, 128);
-        }
+        return this.deviceValue(4, -1);
       }
     }, {
       id: 'cursor device - macro/param 6 - up',
       fn: function() {
-        if (this.macroIndicated) {
-          this.macroValues[5].inc(1, 101);
-        }
-        if (this.parameterIndicated) {
-          return this.parameterValues[5].inc(1, 128);
-        }
+        return this.deviceValue(5, 1);
       }
     }, {
       id: 'cursor device - macro/param 6 - down',
       fn: function() {
-        if (this.macroIndicated) {
-          this.macroValues[5].inc(-1, 101);
-        }
-        if (this.parameterIndicated) {
-          return this.parameterValues[5].inc(-1, 128);
-        }
+        return this.deviceValue(5, -1);
       }
     }, {
       id: 'cursor device - macro/param 7 - up',
       fn: function() {
-        if (this.macroIndicated) {
-          this.macroValues[6].inc(1, 101);
-        }
-        if (this.parameterIndicated) {
-          return this.parameterValues[6].inc(1, 128);
-        }
+        return this.deviceValue(6, 1);
       }
     }, {
       id: 'cursor device - macro/param 7 - down',
       fn: function() {
-        if (this.macroIndicated) {
-          this.macroValues[6].inc(-1, 101);
-        }
-        if (this.parameterIndicated) {
-          return this.parameterValues[6].inc(-1, 128);
-        }
+        return this.deviceValue(6, -1);
       }
     }, {
       id: 'cursor device - macro/param 8 - up',
       fn: function() {
-        if (this.macroIndicated) {
-          this.macroValues[7].inc(1, 101);
-        }
-        if (this.parameterIndicated) {
-          return this.parameterValues[7].inc(1, 128);
-        }
+        return this.deviceValue(7, 1);
       }
     }, {
       id: 'cursor device - macro/param 8 - down',
       fn: function() {
-        if (this.macroIndicated) {
-          this.macroValues[7].inc(-1, 101);
-        }
-        if (this.parameterIndicated) {
-          return this.parameterValues[7].inc(-1, 128);
-        }
+        return this.deviceValue(7, -1);
+      }
+    }, {
+      id: 'cursor device - macro 1 mapping - toggle',
+      fn: function() {
+        return this.macroSources[0].toggleIsMapping();
+      }
+    }, {
+      id: 'cursor device - macro 2 mapping - toggle',
+      fn: function() {
+        return this.macroSources[1].toggleIsMapping();
+      }
+    }, {
+      id: 'cursor device - macro 3 mapping - toggle',
+      fn: function() {
+        return this.macroSources[2].toggleIsMapping();
+      }
+    }, {
+      id: 'cursor device - macro 4 mapping - toggle',
+      fn: function() {
+        return this.macroSources[3].toggleIsMapping();
+      }
+    }, {
+      id: 'cursor device - macro 5 mapping - toggle',
+      fn: function() {
+        return this.macroSources[4].toggleIsMapping();
+      }
+    }, {
+      id: 'cursor device - macro 6 mapping - toggle',
+      fn: function() {
+        return this.macroSources[5].toggleIsMapping();
+      }
+    }, {
+      id: 'cursor device - macro 7 mapping - toggle',
+      fn: function() {
+        return this.macroSources[6].toggleIsMapping();
+      }
+    }, {
+      id: 'cursor device - macro 8 mapping - toggle',
+      fn: function() {
+        return this.macroSources[7].toggleIsMapping();
       }
     }
   ]

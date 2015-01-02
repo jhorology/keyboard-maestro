@@ -10,6 +10,8 @@ module.exports =
       @deviceSelected = selected
     @macroValues = for index in [0..7]
       @device.getMacro(index).getAmount()
+    @macroSources = for index in [0..7]
+      @device.getMacro(index).getModulationSource()
     @macroIndicated = false
     @parameterValues = for index in [0..7]
       @device.getParameter index
@@ -23,6 +25,10 @@ module.exports =
       return if @actions[index].id.indexOf('cursor device') is 0 and not @deviceSelected
       @actions[index].fn.call @ if index < @actions.length
 
+  deviceValue: (i, delta) ->
+    @macroValues[i].inc delta, 101 if @macroIndicated
+    @parameterValues[i].inc delta, 101 if @parameterIndicated
+    
   actions: [
     ## cursor track
     {
@@ -253,98 +259,98 @@ module.exports =
     }
     {
       id: 'cursor device - macro/param 1 - up'
-      fn: ->
-        @macroValues[0].inc 1, 101 if @macroIndicated
-        @parameterValues[0].inc 1, 128 if @parameterIndicated
+      fn: -> @deviceValue 0, 1
     }
     {
       id: 'cursor device - macro/param 1 - down'
-      fn: ->
-        @macroValues[0].inc -1, 101 if @macroIndicated
-        @parameterValues[0].inc -1, 128 if @parameterIndicated
+      fn: -> @deviceValue 0, -1
     }
     {
       id: 'cursor device - macro/param 2 - up'
-      fn: ->
-        @macroValues[1].inc 1, 101 if @macroIndicated
-        @parameterValues[1].inc 1, 128 if @parameterIndicated
+      fn: -> @deviceValue 1, 1
     }
     {
       id: 'cursor device - macro/param 2 - down'
-      fn: ->
-        @macroValues[1].inc -1, 101 if @macroIndicated
-        @parameterValues[1].inc -1, 128 if @parameterIndicated
+      fn: -> @deviceValue 1, -1
     }
     {
       id: 'cursor device - macro/param 3 - up'
-      fn: ->
-        @macroValues[2].inc 1, 101 if @macroIndicated
-        @parameterValues[2].inc 1, 128 if @parameterIndicated
+      fn: -> @deviceValue 2, 1
     }
     {
       id: 'cursor device - macro/param 3 - down'
-      fn: ->
-        @macroValues[2].inc -1, 101 if @macroIndicated
-        @parameterValues[2].inc -1, 128 if @parameterIndicated
+      fn: -> @deviceValue 2, -1
     }
     {
       id: 'cursor device - macro/param 4 - up'
-      fn: ->
-        @macroValues[3].inc 1, 101 if @macroIndicated
-        @parameterValues[3].inc 1, 128 if @parameterIndicated
+      fn: -> @deviceValue 3, 1
     }
     {
       id: 'cursor device - macro/param 4 - down'
-      fn: ->
-        @macroValues[3].inc -1, 101 if @macroIndicated
-        @parameterValues[3].inc -1, 128 if @parameterIndicated
+      fn: -> @deviceValue 3, -1
     }
     {
       id: 'cursor device - macro/param 5 - up'
-      fn: ->
-        @macroValues[4].inc 1, 101 if @macroIndicated
-        @parameterValues[4].inc 1, 128 if @parameterIndicated
+      fn: -> @deviceValue 4, 1
     }
     {
       id: 'cursor device - macro/param 5 - down'
-      fn: ->
-        @macroValues[4].inc -1, 101 if @macroIndicated
-        @parameterValues[4].inc -1, 128 if @parameterIndicated
+      fn: -> @deviceValue 4, -1
     }
     {
       id: 'cursor device - macro/param 6 - up'
-      fn: ->
-        @macroValues[5].inc 1, 101 if @macroIndicated
-        @parameterValues[5].inc 1, 128 if @parameterIndicated
+      fn: -> @deviceValue 5, 1
     }
     {
       id: 'cursor device - macro/param 6 - down'
-      fn: ->
-        @macroValues[5].inc -1, 101 if @macroIndicated
-        @parameterValues[5].inc -1, 128 if @parameterIndicated
+      fn: -> @deviceValue 5, -1
     }
     {
       id: 'cursor device - macro/param 7 - up'
-      fn: ->
-        @macroValues[6].inc 1, 101 if @macroIndicated
-        @parameterValues[6].inc 1, 128 if @parameterIndicated
+      fn: -> @deviceValue 6, 1
     }
     {
       id: 'cursor device - macro/param 7 - down'
-      fn: ->
-        @macroValues[6].inc -1, 101 if @macroIndicated
-        @parameterValues[6].inc -1, 128 if @parameterIndicated
+      fn: -> @deviceValue 6, -1
     }
     {
       id: 'cursor device - macro/param 8 - up'
-      fn: ->
-        @macroValues[7].inc 1, 101 if @macroIndicated
-        @parameterValues[7].inc 1, 128 if @parameterIndicated
+      fn: -> @deviceValue 7, 1
     }
     {
       id: 'cursor device - macro/param 8 - down'
-      fn: ->
-        @macroValues[7].inc -1, 101 if @macroIndicated
-        @parameterValues[7].inc -1, 128 if @parameterIndicated
+      fn: -> @deviceValue 7, -1
+    }
+    {
+      id: 'cursor device - macro 1 mapping - toggle'
+      fn: -> @macroSources[0].toggleIsMapping()
+    }
+    {
+      id: 'cursor device - macro 2 mapping - toggle'
+      fn: -> @macroSources[1].toggleIsMapping()
+    }
+    {
+      id: 'cursor device - macro 3 mapping - toggle'
+      fn: -> @macroSources[2].toggleIsMapping()
+    }
+    {
+      id: 'cursor device - macro 4 mapping - toggle'
+      fn: -> @macroSources[3].toggleIsMapping()
+    }
+    {
+      id: 'cursor device - macro 5 mapping - toggle'
+      fn: -> @macroSources[4].toggleIsMapping()
+    }
+    {
+      id: 'cursor device - macro 6 mapping - toggle'
+      fn: -> @macroSources[5].toggleIsMapping()
+    }
+    {
+      id: 'cursor device - macro 7 mapping - toggle'
+      fn: -> @macroSources[6].toggleIsMapping()
+    }
+    {
+      id: 'cursor device - macro 8 mapping - toggle'
+      fn: -> @macroSources[7].toggleIsMapping()
     }
   ]
