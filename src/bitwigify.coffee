@@ -48,7 +48,7 @@ class ApiWrapper extends require 'events'
 
 class Host extends ApiWrapper
   constructor: (api) ->
-    super Host, host, ['notificationSettings','preferences','documentState']
+    super Host, api, ['notificationSettings','preferences','documentState']
     
   prepare: (defs) ->
     @defineController defs.vender, defs.name, defs.version, defs.uuid, defs.author
