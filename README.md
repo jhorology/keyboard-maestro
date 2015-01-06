@@ -2,15 +2,13 @@
 
 
 ### Install Macro Library
-- [BitwigStudioActions.kmlibrary](BitwigStudioActions.kmlibrary)
+- [BitwigStudioActions.kmlibrary](dist)
 
 import via "Import to Macro Library" menu in Keybord Maestro Editor.
 
 
 ### Install Controller Script
-- [Keyboard Maestro.control.js](Keyboard Maestro.control.js)
-<br/>or
-- [Keyboard Maestro.min.control.js](Keyboard Maestro.min.control.js) (minified script)
+- [Keyboard Maestro.control.js](dist)
 
 put into
 
@@ -21,8 +19,7 @@ Mac| ~/Documents/Bitwig Studio/Controller Scripts/Stairways Software
 ### Build
 ```
     npm install
-    grunt generate
-    grunt
+    gulp
 ```
 
 ### Update Procedure
@@ -32,17 +29,13 @@ This macro library and controller script depends on Bitwig Studio Version.
 - copy JSON string from Script Console.
 - beautify JOSN at [here](http://archive.dojotoolkit.org/nightly/checkout/dojox/gfx/demos/beautify.html). - (optional)
 - create JSON file. actions/bitwig-studio-actions-${version}.json
-- modify 'template' section in Gruntfile.coffee.
+- modify settings section in gulpfile.coffee.
 ```
-    data: grunt.file.readJSON 'actions/bitwig-studio-actions-${version}.json'
+    json: 'bitwig-studio-actions-${version}.json'
 ```
-- generate macro library and actions.coffee.
+- build controller script and macro library
 ```
-    grunt generate
-```
-- build controller script
-```
-    grunt
+    gulp
 ```
 
 ### Example macro

@@ -1,6 +1,8 @@
 .DS_Store
 *~
 *.log
+*.debug.control.js
+*.browserify.control.js
 target/
 build/
 components/
