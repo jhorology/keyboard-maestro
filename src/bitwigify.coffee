@@ -30,7 +30,7 @@ class ApiWrapper extends require 'events'
             clazz::[propertyName] = ((func) =>
               if /^java\.lang\.String/m.test func.toString()
                 =>
-                  console.info # #{func}" if DEBUG
+                  console.info "## #{func}" if DEBUG
                   String func.apply @api, arguments
               else if /^void/m.test func.toString()
                 =>
@@ -52,40 +52,33 @@ class Host extends ApiWrapper
     
   prepare: (defs) ->
     @defineController defs.vender, defs.name, defs.version, defs.uuid, defs.author
-    @defineMidiPorts defs.numInPorts, defs.numOutPorts
-    @numInPorts = defs.numInPorts
-    @numOutPorts = defs.numOutPorts
-    if @platformIsMac()
-      @addDeviceNameBasedDiscoveryPair defs.macInPortNames, defs.macOutPortNames
-    if @platformIsWindows()
-      @addDeviceNameBasedDiscoveryPair defs.windowsInPortNames, defs.windowOutPortNames
-    if @platformIsLinux()
-      @addDeviceNameBasedDiscoveryPair defs.linuxInPortNames, defs.linuxOutPortNames
+    @numInPorts = 1
+    @numOutPorts = 0
+    defineMidi = (pairs) =>
+      for pair in pairs
+        @numInPorts = pair.in.length if @numInPorts < pair.in.length
+        @numOutPorts = pair.out.length if @numOutPorts < pair.out.length
+      @defineMidiPorts @numInPorts, @numOutPorts
+      for pair in defs.macPortNames
+        @addDeviceNameBasedDiscoveryPair pair.in, pair.out
+    
+    defineMidi defs.macPortNames if @platformIsMac()
+    defineMidi defs.windowsPortNames if @platformIsWindows()
+    defineMidi defs.linuxPortNames if @platformIsLinux()
     @
-
-  init: ->
-    @getMidiInPort(0).setMidiCallback (s, d1, d2) =>
-      @emit 'midi', 0, s, d1, d2
-    if @numMidiInPorts > 1
-      @api.getMidiInPort(1).setMidiCallback (s, d1, d2) =>
-        @emit 'midi', 1, s, d1, d2
-    @emit 'init'
-    
-  flush: ->
-    @emit 'flush'
-    
-  exit: ->
-    @emit 'exit'
 
 bitwig = new Host(host)
 
 global.init = ->
-  bitwig.init()
+  for port in [0..(bitwig.numInPorts - 1)]
+    bitwig.getMidiInPort(port).setMidiCallback (s, d1, d2) -> bitwig.emit 'midi', port, s, d1, d2
+    bitwig.getMidiInPort(port).setSysexCallback (data) -> bitwig.emit 'sysex', port, data
+  bitwig.emit 'init'
 
 global.flush = ->
-  bitwig.flush()
+  bitwig.emit 'flush'
 
 global.exit = ->
-  bitwig.exit()
+  bitwig.emit 'exit'
 
 module.exports = bitwig
