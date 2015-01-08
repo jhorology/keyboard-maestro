@@ -9993,11 +9993,11 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>general - Create Event</string>
+            <string>document - Create Scene From Playing Launcher Clips</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>DD377D1A-D10A-4637-8333-D4A9AE0CAE38</string>
+            <string>B98A8A0C-5563-44D3-BB19-DEB61E741A23</string>
           </dict>
         </array>
         <key>Modifiers</key>

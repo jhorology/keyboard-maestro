@@ -1,4 +1,4 @@
-exports.version = '1.1.4'
+exports.version = '1.1.5 RC 1'
 exports.ids = [
   {
     id: 'New'
@@ -577,8 +577,8 @@ exports.ids = [
     uuid: 'A0DEA1FB-682A-4FE5-BDB6-5E2E5E8C0D39'
   }
   {
-    id: 'Create Event'
-    uuid: 'DD377D1A-D10A-4637-8333-D4A9AE0CAE38'
+    id: 'Create Scene From Playing Launcher Clips'
+    uuid: 'B98A8A0C-5563-44D3-BB19-DEB61E741A23'
   }
   {
     id: 'Select previous track'

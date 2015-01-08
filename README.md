@@ -33,10 +33,12 @@ This macro library and controller script depends on Bitwig Studio Version.
 ```
     json: 'bitwig-studio-actions-${version}.json'
 ```
-- build controller script and macro library
+- install controller script and macro library.
 ```
-    gulp
+    gulp deploy
 ```
+- delete 'Bitwig Actions' group in Keybord Maestro Editor.
+- open Macro Library Window, and then select & insert 'BitwigStudioActions'.
 
 ### Example macro
 [Here](example) are some example of how to use library.

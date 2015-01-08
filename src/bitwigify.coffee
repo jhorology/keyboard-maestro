@@ -59,12 +59,12 @@ class Host extends ApiWrapper
         @numInPorts = pair.in.length if @numInPorts < pair.in.length
         @numOutPorts = pair.out.length if @numOutPorts < pair.out.length
       @defineMidiPorts @numInPorts, @numOutPorts
-      for pair in defs.macPortNames
+      for pair in pairs
         @addDeviceNameBasedDiscoveryPair pair.in, pair.out
     
-    defineMidi defs.macPortNames if @platformIsMac()
-    defineMidi defs.windowsPortNames if @platformIsWindows()
-    defineMidi defs.linuxPortNames if @platformIsLinux()
+    defineMidi defs.midiPort.mac if @platformIsMac()
+    defineMidi defs.midiPort.windows if @platformIsWindows()
+    defineMidi defs.midiPort.linux if @platformIsLinux()
     @
 
 bitwig = new Host(host)

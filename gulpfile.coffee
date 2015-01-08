@@ -19,7 +19,7 @@ pkg         = require './package.json'
 $ =
   actions:
     dir: 'actions'
-    json: 'bitwig-studio-actions-1.1.4.json'
+    json: 'bitwig-studio-actions-1.1.5RC1.json'
   src:
     dir: 'src'
     bitwigActions: 'bitwig-actions.coffee'
