@@ -1,16 +1,23 @@
 bitwig = require './bitwigify'
 
-track = device = trackSelected = deviceSelected = macroValues = macroSources = undefined
-macroIndicated = parameterValues = parameterIndicated = undefined
+track =
+device =
+macroValues =
+macroSources =
+macroIndicated =
+parameterValues =
+parameterIndicated = undefined
+NUM_SENDS = 4
 
 bitwig
   .on 'init', ->
-    track = bitwig.createArrangerCursorTrack 4, 0
-    device = bitwig.createEditorCursorDevice()
-    track.addIsSelectedInMixerObserver (selected) ->
-      trackSelected = selected
-    device.addHasSelectedDeviceObserver (selected) ->
-      deviceSelected = selected
+    track = bitwig.createArrangerCursorTrack NUM_SENDS, 0
+    device = bitwig.createEditorCursorDevice NUM_SENDS
+    track.attribify 'isSelectedInMixer'
+    device.attribify 'hasSelectedDevice'
+    device.attribify 'isMacroSectionVisible', device.isMacroSectionVisible(), 'value'
+    device.attribify 'isParameterPageSectionVisible', device.isParameterPageSectionVisible(), 'value'
+    
     macroValues = for index in [0..7]
       device.getMacro(index).getAmount()
     macroSources = for index in [0..7]
@@ -22,10 +29,10 @@ bitwig
 
   .on 'midi', (port, s, d1, d2) ->
     # ch.2 for extended action
-    if s is 0xB1 and trackSelected
+    if s is 0xB1 and track.get('isSelectedInMixer')
       index = (d1 << 7) + d2
-      return if actions[index].id.indexOf('cursor track') is 0 and not trackSelected
-      return if actions[index].id.indexOf('cursor device') is 0 and not deviceSelected
+      return if actions[index].id.indexOf('cursor track') is 0 and not track.get('isSelectedInMixer')
+      return if actions[index].id.indexOf('cursor device') is 0 and not device.get('hasSelectedDevice')
       actions[index].fn.call null if index < actions.length
 
 deviceValue = (i, delta) ->
@@ -255,9 +262,9 @@ exports.actions = actions = [
     fn: ->
       macroIndicated = not macroIndicated
       parameterIndicated = not macroIndicated
-      device.isMacroSectionVisible().set macroIndicated
+      device.set 'isMacroSectionVisible', macroIndicated
       macro.setIndication macroIndicated for macro in macroValues
-      device.isParameterPageSectionVisible().set parameterIndicated
+      device.set 'isParameterPageSectionVisible', parameterIndicated
       param.setIndication parameterIndicated for param in parameterValues
   }
   {

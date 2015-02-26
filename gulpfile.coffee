@@ -19,7 +19,7 @@ pkg         = require './package.json'
 $ =
   actions:
     dir: 'actions'
-    json: 'bitwig-studio-actions-1.1.5RC1.json'
+    json: 'bitwig-studio-actions-1.1.6.json'
   src:
     dir: 'src'
     bitwigActions: 'bitwig-actions.coffee'
@@ -124,12 +124,6 @@ gulp.task 'browserify', ->
     .pipe source $.build.browserifyJs
     .pipe header $.banner, pkg: pkg
     .pipe gulp.dest $.build.dir
-    
-gulp.task 'banner', ->
-  gulp.src ["#{$.build.dir}/#{$.build.browserifyJs}"]
-    .pipe uglify $.uglify.dist
-    .pipe rename $.dist.js
-    .pipe gulp.dest $.dist.dir
 
 gulp.task 'uglify-dist-js', ->
   gulp.src ["#{$.build.dir}/#{$.build.browserifyJs}"]

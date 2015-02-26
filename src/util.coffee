@@ -1,6 +1,8 @@
-bitwig = require './bitwigify'
-uuid   = require 'uuid'
-
+bitwig          = require './bitwigify'
+uuid            = require 'uuid'
+bitwigActions   = require './bitwig-actions'
+extendedActions = require './extended-actions'
+extendedModule  = require './extended'
 application = undefined
 bitwig
   .on 'init', ->
@@ -22,18 +24,17 @@ printActions = ->
     hostApiVersion: Number bitwig.getHostApiVersion()
     actions: (
       for action, i in application.getActions()
-        id = String action.getId()
-        id: id
-        uuid: createOrReuseUuid require('./bitwig-actions').ids, id
-        category: String action.getCategory().getId()
+        id: action.getId()
+        uuid: createOrReuseUuid bitwigActions.ids, action.getId()
+        category: action.getCategory().getId()
         on:
           ch: 1
           cc: i >> 7
           value: i & 0x7f
     ).concat(
-      for action, j in (require('./extended').actions)
+      for action, j in extendedModule.actions
         id: action.id
-        uuid: createOrReuseUuid require('./extended-actions').ids, action.id
+        uuid: createOrReuseUuid extenedActions.ids, action.id
         category: 'extended'
         on:
           ch: 2

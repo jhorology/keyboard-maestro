@@ -25,7 +25,7 @@
         <key>AddToStatusMenu</key>
         <false/>
         <key>IsActive</key>
-        <true/>
+        <false/>
         <key>KeyCode</key>
         <integer>32767</integer>
         <key>Macros</key>
@@ -94,7 +94,7 @@
         <key>AddToStatusMenu</key>
         <false/>
         <key>IsActive</key>
-        <true/>
+        <false/>
         <key>KeyCode</key>
         <integer>32767</integer>
         <key>Macros</key>
