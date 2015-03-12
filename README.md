@@ -45,3 +45,9 @@ This macro library and controller script depends on Bitwig Studio Version.
 
 - Bitwig Studio - Channel Strip.kmmacros  - [Option + T] to activate/deactivate macro.
 - Bitwig Studio - Device.kmmacros  - [Option + D] to activate/deactivate macro.
+
+### Credit
+Following codes are modified for use with Bitwig Studio.
+- lib/assert.js based on [defunctzombie/commonjs-assert](https://github.com/defunctzombie/commonjs-assert).
+- lib/process.js based on [shtylman/node-process](https://github.com/shtylman/node-process).
+- lib/timers.js based on [jscissr/timers-browserify-full](https://github.com/jscissr/timers-browserify-full).

@@ -1,4 +1,4 @@
-bitwig = require './bitwigify'
+host = require './host'
 
 track =
 device =
@@ -9,25 +9,37 @@ parameterValues =
 parameterIndicated = undefined
 NUM_SENDS = 4
 
-bitwig
-  .on 'init', ->
-    track = bitwig.createArrangerCursorTrack NUM_SENDS, 0
-    device = bitwig.createEditorCursorDevice NUM_SENDS
-    track.attribify 'isSelectedInMixer'
-    device.attribify 'hasSelectedDevice'
-    device.attribify 'isMacroSectionVisible', device.isMacroSectionVisible(), 'value'
-    device.attribify 'isParameterPageSectionVisible', device.isParameterPageSectionVisible(), 'value'
-    
-    macroValues = for index in [0..7]
-      device.getMacro(index).getAmount()
-    macroSources = for index in [0..7]
-      device.getMacro(index).getModulationSource()
-    macroIndicated = false
-    parameterValues = for index in [0..7]
-      device.getParameter index
-    parameterIndicated = false
+process.on 'init', ->
+  host.getNotificationSettings()
+    .setShouldShowSelectionNotifications true
+    .setShouldShowChannelSelectionNotifications true
+    .setShouldShowTrackSelectionNotifications true
+    .setShouldShowDeviceSelectionNotifications true
+    .setShouldShowDeviceLayerSelectionNotifications true
+    .setShouldShowPresetNotifications true
+    .setShouldShowMappingNotifications true
+    .setShouldShowValueNotifications true
 
-  .on 'midi', (port, s, d1, d2) ->
+  track = host.createArrangerCursorTrack NUM_SENDS, 0
+  device = host.createEditorCursorDevice NUM_SENDS
+  track.attribify 'isSelectedInMixer'
+  device.attribify 'hasSelectedDevice'
+  device.attribify 'isMacroSectionVisible', device.isMacroSectionVisible(), 'value'
+  device.attribify 'isParameterPageSectionVisible', device.isParameterPageSectionVisible(), 'value'
+  device.attribify 'presetName', 64, ''
+  device.attribify 'presetCategory', 64, ''
+  device.attribify 'presetCreator', 64, ''
+
+  macroValues = for index in [0..7]
+    device.getMacro(index).getAmount()
+  macroSources = for index in [0..7]
+    device.getMacro(index).getModulationSource()
+  macroIndicated = false
+  parameterValues = for index in [0..7]
+    device.getParameter index
+  parameterIndicated = false
+
+  host.on 'midi', (port, s, d1, d2) ->
     # ch.2 for extended action
     if s is 0xB1 and track.get('isSelectedInMixer')
       index = (d1 << 7) + d2
@@ -235,27 +247,33 @@ exports.actions = actions = [
   }
   {
     id: 'cursor device - preset - prev'
-    fn: -> device.switchToPreviousPreset()
+    fn: ->
+      device.switchToPreviousPreset()
   }
   {
     id: 'cursor device - preset - next'
-    fn: -> device.switchToNextPreset()
+    fn: ->
+      device.switchToNextPreset()
   }
   {
     id: 'cursor device - preset category - prev'
-    fn: -> device.switchToPreviousPresetCategory()
+    fn: ->
+      device.switchToPreviousPresetCategory()
   }
   {
     id: 'cursor device - preset category - next'
-    fn: -> device.switchToNextPresetCategory()
+    fn: ->
+      device.switchToNextPresetCategory()
   }
   {
     id: 'cursor device - preset creator - prev'
-    fn: -> device.switchToPreviousPresetCreator()
+    fn: ->
+      device.switchToPreviousPresetCreator()
   }
   {
     id: 'cursor device - preset creator - next'
-    fn: -> device.switchToNextPresetCreator()
+    fn: ->
+      device.switchToNextPresetCreator()
   }
   {
     id: 'cursor device - macro/param indication - toggle'

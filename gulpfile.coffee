@@ -7,12 +7,21 @@ template    = require 'gulp-template'
 data        = require 'gulp-data'
 rename      = require 'gulp-rename'
 browserify  = require 'browserify'
+builtins    = require 'browserify/lib/builtins.js'
 source      = require 'vinyl-source-stream'
 uglify      = require 'gulp-uglify'
 header      = require 'gulp-header'
 del         = require 'del'
 runSequence = require 'run-sequence'
 pkg         = require './package.json'
+
+# replace browserify builtin modules
+# ==================
+builtins.assert = require.resolve './lib/assert'
+builtins.timers = require.resolve './lib/timers'
+builtins.process = require.resolve './lib/process'
+builtins._process = require.resolve './lib/process'
+
 
 # paths/misc settings
 # ==================
@@ -119,7 +128,6 @@ gulp.task 'browserify', ->
   b.transform 'coffeeify'
     .require 'es5-shim'
     .require 'JSON'
-    .require './lib/assert', expose: 'assert'
     .bundle()
     .pipe source $.build.browserifyJs
     .pipe header $.banner, pkg: pkg

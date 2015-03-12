@@ -1,4 +1,8 @@
-require('./bitwigify').prepare
+# shim for node.js way in Bitwig Studio
+require './bitwigify'
+
+# host interface
+require('./host').prepare
   vender: 'Stairways Software'
   name: 'Keyboard Maestro'
   version: '0.3'
@@ -9,6 +13,7 @@ require('./bitwigify').prepare
       { in: ['Keyboard Maestro'], out: [] }
     ]
 
+# function modules
 require './util'
 require './action'
 require './extended'

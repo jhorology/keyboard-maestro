@@ -23,8 +23,37 @@ exports.Model =
 class Model extends Backbone.Model
   constructor: (@api, opts) ->
     @_class()
-    super(null, opts)
+    super null, opts
 
+  # attribify attr,valueObject, valueSpecifire[,opts]
+  # attribify attr[,observer params...]
+  # attribify attr[,observer params...][, setter]
+  attribify: (attr) ->
+    args = Array::slice.call arguments
+    if args.length > 1 and _.isObject args[1]
+      # observe value object inherited from Value or RangedValue
+      vo = args[1]
+      opts = args[3] if args.length > 3
+      opts or (opts = {})
+      @["_#{args[2]}"]  attr, vo, opts
+    else
+      observer = @api["add#{attr[0].toUpperCase()}#{attr[1..]}Observer"]
+      args = args[1..]
+      setter = undefined
+      if args.length > 0 and _.isFunction args[args.length - 1]
+        setter = args.pop()
+        
+      cb = (value)=> @set attr, value, observed: true
+      if attr in @constructor.cbFirstObservers
+        args.unshift cb
+      else
+        args.push cb
+      observer.apply @api, args
+      if setter
+        @on "change:#{attr}", (model, value, opts) ->
+          setter.call model, value, opts unless opts.observed
+    @
+    
   _class: ->
     # _wapped is a class variable.
     return if @constructor._wrapped
@@ -40,35 +69,6 @@ class Model extends Backbone.Model
         console.info "# unsupported property:#{prop} error:#{error}" if DEBUG
     @constructor._wrapped = true
 
-  # attribify attr,valueObject, valueSpecifire, [opts]
-  # attribify attr,[observer params...]
-  # attribify attr,[observer params...], setter
-  attribify: (attr) ->
-    args = Array::slice.call arguments
-    if args.length > 1 and _.isObject args[1]
-      # observe value object inherited from Value or RangedValue
-      vo = args[1]
-      opts = args[3] if args.length > 3
-      opts or (opts = {})
-      @["_#{args[2]}"]  attr, vo, opts
-    else
-      observer = @api["add#{attr.charAt(0).toUpperCase()}#{attr.substring(1)}Observer"]
-      args = args.slice 1
-      setter = undefined
-      if args.length > 0 and _.isFunction args[args.length = 1]
-        setter = args.pop()
-        
-      cb = (value)=> @set attr, value, observed: true
-      if @constructor.cbFirstObservers.indexOf(attr) >= 0
-        args.unshift cb
-      else
-        args.push cb
-      observer.apply @api, args
-      if setter
-        @on "change:#{attr}", (model, value, opts) ->
-          setter.call model, value, opts unless opts.observed
-    @
-    
   _function: (fn) ->
     # return java type of function
     match = /(\S+) \w+\(([^\)]*)\)/.exec @api[fn].toString().split('\n',2)[1]
@@ -80,14 +80,14 @@ class Model extends Backbone.Model
       # observer ?
       if match = /add(\w+)(?=Observer)/.exec fn
         if paramTypes.indexOf('org.mozilla.javascript.Callable') is 0
-          @constructor.cbFirstObservers.push "#{match[1].charAt(0).toLowerCase()}#{match[1].substring(1)}"
+          @constructor.cbFirstObservers.push "#{match[1][0].toLowerCase()}#{match[1][1..]}"
       return ->
         @api[fn].apply @api, arguments
         @ # returning instance is useful.
 
     # return type of array?
     isArray = returnType.indexOf('[]', returnType.length - 2) isnt -1
-    returnType = returnType.slice 0, -2 if isArray
+    returnType = returnType[..-3] if isArray
     if returnType is 'java.lang.String'
       # java string to javascript string
       if isArray
@@ -101,7 +101,7 @@ class Model extends Backbone.Model
         return -> new clazz api for api in @api[fn].apply @api, arguments
       return -> new clazz @api[fn].apply @api, arguments
     if returnType.indexOf('com.bitwig.') is 0
-      console.info "\t## unwrap class:#{returnType} function:#{fn}"
+      console.info "  ## unwrap class:#{returnType} function:#{fn}(#{paramTypes})" if DEBUG
     return ->
       @api[fn].apply @api, arguments
         
@@ -145,7 +145,7 @@ class Model extends Backbone.Model
       beatsLen: 1
       subdivisionLen: 1
       ticksLen: 0
-    vo.addTimeObserver opts.separator, opts.barLen, opts.beatsLen.fallback, (value) =>
+    vo.addTimeObserver opts.separator, opts.barLen, opts.beatsLen, opts.subdivisionLen, opts.ticksLen, (value) =>
       @set attr, value, observed: true
     @
     
@@ -159,6 +159,7 @@ class Model extends Backbone.Model
 #  Host
 # ============================
 exports.Host = class Host extends Model
+
   prepare: (def) ->
     @defineController def.vender, def.name, def.version, def.uuid, def.author
     @numInPorts = 1
@@ -170,10 +171,18 @@ exports.Host = class Host extends Model
       @defineMidiPorts @numInPorts, @numOutPorts
       for pair in pairs
         @addDeviceNameBasedDiscoveryPair pair.in, pair.out
-
+        
     defineMidi def.midi.mac if @platformIsMac()
     defineMidi def.midi.windows if @platformIsWindows()
     defineMidi def.midi.linux if @platformIsLinux()
+
+    process.on 'init', =>
+      for index in [0...@numInPorts]
+        port = @getMidiInPort(index)
+        port.setMidiCallback (s, d1, d2) =>
+          @trigger 'midi', port, s, d1, d2
+        port.setSysexCallback (d) =>
+          @trigger 'sysex', port, d
     @
 
 #  Action
@@ -301,6 +310,12 @@ exports.DeviceLayerBank =
 classes['com.bitwig.base.control_surface.iface.DeviceLayerBank'] =
 class DeviceLayerBank extends Model
 
+#  DirectParameterValueDisplayObserver
+# ============================
+exports.DirectParameterValueDisplayObserver =
+classes['com.bitwig.base.control_surface.iface.DirectParameterValueDisplayObserver'] =
+class DirectParameterValueDisplayObserver extends Model
+
 #  DocumentState
 # ============================
 exports.DocumentState =
@@ -348,7 +363,7 @@ class MasterTrack extends Model
 exports.MidiIn =
 classes['com.bitwig.base.control_surface.iface.MidiIn'] =
 class MidiIn extends Model
-
+  
 #  MidiOut
 # ============================
 exports.MidiOut =
@@ -377,7 +392,6 @@ class NoteInput extends Model
 # ============================
 exports.NotificationSettings =
 classes['com.bitwig.base.control_surface.iface.NotificationSettings'] =
-
 classes['com.bitwig.flt.control_surface.intention.sections.NotificationSettingsIntention'] =
 class NotificationSettings extends Model
 

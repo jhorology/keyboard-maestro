@@ -1,14 +1,13 @@
-bitwig          = require './bitwigify'
 uuid            = require 'uuid'
+host            = require './host'
 bitwigActions   = require './bitwig-actions'
 extendedActions = require './extended-actions'
 extendedModule  = require './extended'
 application = undefined
-bitwig
-  .on 'init', ->
-    application = bitwig.createApplication()
 
-  .on 'midi', (port, s, d1, d2) ->
+process.on 'init', ->
+  application = host.createApplication()
+  host.on 'midi', (port, s, d1, d2) ->
     # CC ch 16 for utility
     if s is 0xBF and d1 < handlers.length
       handlers[d1].call null, d2
@@ -20,8 +19,8 @@ handlers = [
 
 printActions = ->
   console.info JSON.stringify
-    hostVersion: bitwig.getHostVersion()
-    hostApiVersion: Number bitwig.getHostApiVersion()
+    hostVersion: host.getHostVersion()
+    hostApiVersion: host.getHostApiVersion()
     actions: (
       for action, i in application.getActions()
         id: action.getId()
@@ -34,7 +33,7 @@ printActions = ->
     ).concat(
       for action, j in extendedModule.actions
         id: action.id
-        uuid: createOrReuseUuid extenedActions.ids, action.id
+        uuid: createOrReuseUuid extendedActions.ids, action.id
         category: 'extended'
         on:
           ch: 2
