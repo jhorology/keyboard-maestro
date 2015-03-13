@@ -62,40 +62,24 @@ exports.actions = actions = [
     fn: -> track.isActivated()?.toggle()
   }
   {
-    id: 'cursor track - volume - +10%'
-    fn: -> track.getVolume()?.inc 10, 101
-  }
-  {
-    id: 'cursor track - volume - +1%'
+    id: 'cursor track - volume - up'
     fn: -> track.getVolume()?.inc 1, 101
   }
   {
-    id: 'cursor track - volume - -1%'
+    id: 'cursor track - volume - down'
     fn: -> track.getVolume()?.inc -1, 101
-  }
-  {
-    id: 'cursor track - volume - -10%'
-    fn: -> track.getVolume()?.inc -10, 101
   }
   {
     id: 'cursor track - volume - reset'
     fn: -> track.getVolume()?.reset()
   }
   {
-    id: 'cursor track - pan - right 10%'
-    fn: -> track.getPan()?.inc 10, 201
-  }
-  {
-    id: 'cursor track - pan - right 1%'
+    id: 'cursor track - pan - right'
     fn: -> track.getPan()?.inc 1, 201
   }
   {
-    id: 'cursor track - pan - left 1%'
+    id: 'cursor track - pan - left'
     fn: -> track.getPan()?.inc -1, 201
-  }
-  {
-    id: 'cursor track - pan - left 10%'
-    fn: -> track.getPan()?.inc -10, 201
   }
   {
     id: 'cursor track - pan - reset'
@@ -110,80 +94,48 @@ exports.actions = actions = [
     fn: -> track.getSolo()?.toggle()
   }
   {
-    id: 'cursor track - send S1 - +10%'
-    fn: -> track.getSend(0)?.inc 10, 101
-  }
-  {
-    id: 'cursor track - send S1 - +1%'
+    id: 'cursor track - send S1 - up'
     fn: -> track.getSend(0)?.inc 1, 101
   }
   {
-    id: 'cursor track - send S1 - -1%'
+    id: 'cursor track - send S1 - down'
     fn: -> track.getSend(0)?.inc -1, 101
-  }
-  {
-    id: 'cursor track - send S1 - -10%'
-    fn: -> track.getSend(0)?.inc -10, 101
   }
   {
     id: 'cursor track - send S1 - reset'
     fn: -> track.getSend(0)?.reset()
   }
   {
-    id: 'cursor track - send S2 - +10%'
-    fn: -> track.getSend(1)?.inc 10, 101
-  }
-  {
-    id: 'cursor track - send S2 - +1%'
+    id: 'cursor track - send S2 - up'
     fn: -> track.getSend(1)?.inc 1, 101
   }
   {
-    id: 'cursor track - send S2 - -1%'
+    id: 'cursor track - send S2 - down'
     fn: -> track.getSend(1)?.inc -1, 101
-  }
-  {
-    id: 'cursor track - send S2 - -10%'
-    fn: -> track.getSend(1)?.inc -10, 101
   }
   {
     id: 'cursor track - send S2 - reset'
     fn: -> track.getSend(1)?.reset()
   }
   {
-    id: 'cursor track - send S3 - +10%'
-    fn: -> track.getSend(2)?.inc 10, 101
-  }
-  {
-    id: 'cursor track - send S3 - +1%'
+    id: 'cursor track - send S3 - up'
     fn: -> track.getSend(2)?.inc 1, 101
   }
   {
-    id: 'cursor track - send S3 - -1%'
+    id: 'cursor track - send S3 - down'
     fn: -> track.getSend(2)?.inc -1, 101
-  }
-  {
-    id: 'cursor track - send S3 - -10%'
-    fn: -> track.getSend(2)?.inc -10, 101
   }
   {
     id: 'cursor track - send S3 - reset'
     fn: -> track.getSend(2)?.reset()
   }
   {
-    id: 'cursor track - send S4 - +10%'
-    fn: -> track.getSend(3)?.inc 10, 101
-  }
-  {
-    id: 'cursor track - send S4 - +1%'
+    id: 'cursor track - send S4 - up'
     fn: -> track.getSend(3)?.inc 1, 101
   }
   {
-    id: 'cursor track - send S4 - -1%'
+    id: 'cursor track - send S4 - down'
     fn: -> track.getSend(3)?.inc -1, 101
-  }
-  {
-    id: 'cursor track - send S4 - -10%'
-    fn: -> track.getSend(3)?.inc -10, 101
   }
   {
     id: 'cursor track - send S4 - reset'

@@ -18963,76 +18963,7 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>extended - cursor track - volume - +10%</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>8802040A-2266-4F70-A19D-71C34E04D9B1</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>2</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>0</integer>
-                <key>Value</key>
-                <integer>2</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>extended - cursor track - volume - +1%</string>
+            <string>extended - cursor track - volume - up</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
@@ -19091,7 +19022,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>3</integer>
+                <integer>2</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -19101,7 +19032,7 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>extended - cursor track - volume - -1%</string>
+            <string>extended - cursor track - volume - down</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
@@ -19160,76 +19091,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>4</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>extended - cursor track - volume - -10%</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>2F2531B9-824E-4CC0-B5F2-F59959FFAAFB</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>2</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>0</integer>
-                <key>Value</key>
-                <integer>5</integer>
+                <integer>3</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -19298,7 +19160,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>6</integer>
+                <integer>4</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -19308,76 +19170,7 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>extended - cursor track - pan - right 10%</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>A51FA179-0ED8-4667-9503-95081ECA987A</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>2</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>0</integer>
-                <key>Value</key>
-                <integer>7</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>extended - cursor track - pan - right 1%</string>
+            <string>extended - cursor track - pan - right</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
@@ -19436,7 +19229,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>8</integer>
+                <integer>5</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -19446,7 +19239,7 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>extended - cursor track - pan - left 1%</string>
+            <string>extended - cursor track - pan - left</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
@@ -19505,76 +19298,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>9</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>extended - cursor track - pan - left 10%</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>83CE33B6-AA8C-4606-B256-586CAE21DD91</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>2</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>0</integer>
-                <key>Value</key>
-                <integer>10</integer>
+                <integer>6</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -19643,7 +19367,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>11</integer>
+                <integer>7</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -19712,7 +19436,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>12</integer>
+                <integer>8</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -19781,7 +19505,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>13</integer>
+                <integer>9</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -19791,76 +19515,7 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>extended - cursor track - send S1 - +10%</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>F2940EAF-5950-427A-8DB6-5F371C61C135</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>2</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>0</integer>
-                <key>Value</key>
-                <integer>14</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>extended - cursor track - send S1 - +1%</string>
+            <string>extended - cursor track - send S1 - up</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
@@ -19919,7 +19574,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>15</integer>
+                <integer>10</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -19929,7 +19584,7 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>extended - cursor track - send S1 - -1%</string>
+            <string>extended - cursor track - send S1 - down</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
@@ -19988,76 +19643,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>16</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>extended - cursor track - send S1 - -10%</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>75852150-E10F-4619-8C06-8F7CD7AA03BD</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>2</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>0</integer>
-                <key>Value</key>
-                <integer>17</integer>
+                <integer>11</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -20126,7 +19712,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>18</integer>
+                <integer>12</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -20136,76 +19722,7 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>extended - cursor track - send S2 - +10%</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>02AD4A52-836D-49ED-AADE-31ADB69A1A4C</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>2</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>0</integer>
-                <key>Value</key>
-                <integer>19</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>extended - cursor track - send S2 - +1%</string>
+            <string>extended - cursor track - send S2 - up</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
@@ -20264,7 +19781,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>20</integer>
+                <integer>13</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -20274,7 +19791,7 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>extended - cursor track - send S2 - -1%</string>
+            <string>extended - cursor track - send S2 - down</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
@@ -20333,76 +19850,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>21</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>extended - cursor track - send S2 - -10%</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>B1CFFE09-F177-4DD8-B423-DBC495FE0D29</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>2</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>0</integer>
-                <key>Value</key>
-                <integer>22</integer>
+                <integer>14</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -20471,7 +19919,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>23</integer>
+                <integer>15</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -20481,76 +19929,7 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>extended - cursor track - send S3 - +10%</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>B2ED547C-6CA7-43BF-9E01-50AC956A36A5</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>2</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>0</integer>
-                <key>Value</key>
-                <integer>24</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>extended - cursor track - send S3 - +1%</string>
+            <string>extended - cursor track - send S3 - up</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
@@ -20609,7 +19988,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>25</integer>
+                <integer>16</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -20619,11 +19998,11 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>extended - cursor track - send S3 - -1%</string>
+            <string>extended - cursor track - send S3 - down</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>195C9AF8-0D5A-4DE9-8DBA-E431703426ED</string>
+            <string>DC9A3790-18D7-457E-B0F1-F011A9412ECA</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -20678,76 +20057,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>26</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>extended - cursor track - send S3 - -10%</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>B2ED547C-6CA7-43BF-9E01-50AC956A36A5</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>2</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>0</integer>
-                <key>Value</key>
-                <integer>27</integer>
+                <integer>17</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -20816,7 +20126,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>28</integer>
+                <integer>18</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -20826,11 +20136,11 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>extended - cursor track - send S4 - +10%</string>
+            <string>extended - cursor track - send S4 - up</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>397464DB-2BF1-42BA-9CDE-943777CB45D9</string>
+            <string>9153B027-D958-446E-A5EA-5224489EA289</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -20885,7 +20195,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>29</integer>
+                <integer>19</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -20895,11 +20205,11 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>extended - cursor track - send S4 - +1%</string>
+            <string>extended - cursor track - send S4 - down</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>72540A20-EAE0-4673-9BBD-37B3B96F528F</string>
+            <string>86FD6DB2-608B-4C1A-9DDA-831BC0AFD95B</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -20954,145 +20264,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>30</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>extended - cursor track - send S4 - -1%</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>18976E8D-E117-4014-BB89-8F6A79DDFA18</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>2</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>0</integer>
-                <key>Value</key>
-                <integer>31</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>extended - cursor track - send S4 - -10%</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>529622EC-40A2-4AFD-BBB3-951C36A502FF</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>2</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>0</integer>
-                <key>Value</key>
-                <integer>32</integer>
+                <integer>20</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -21161,7 +20333,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>33</integer>
+                <integer>21</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -21230,7 +20402,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>34</integer>
+                <integer>22</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -21299,7 +20471,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>35</integer>
+                <integer>23</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -21368,7 +20540,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>36</integer>
+                <integer>24</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -21437,7 +20609,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>37</integer>
+                <integer>25</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -21506,7 +20678,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>38</integer>
+                <integer>26</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -21575,7 +20747,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>39</integer>
+                <integer>27</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -21644,7 +20816,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>40</integer>
+                <integer>28</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -21713,7 +20885,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>41</integer>
+                <integer>29</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -21782,7 +20954,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>42</integer>
+                <integer>30</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -21851,7 +21023,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>43</integer>
+                <integer>31</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -21920,7 +21092,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>44</integer>
+                <integer>32</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -21989,7 +21161,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>45</integer>
+                <integer>33</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -22058,7 +21230,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>46</integer>
+                <integer>34</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -22127,7 +21299,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>47</integer>
+                <integer>35</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -22196,7 +21368,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>48</integer>
+                <integer>36</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -22265,7 +21437,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>49</integer>
+                <integer>37</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -22334,7 +21506,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>50</integer>
+                <integer>38</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -22403,7 +21575,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>51</integer>
+                <integer>39</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -22472,7 +21644,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>52</integer>
+                <integer>40</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -22541,7 +21713,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>53</integer>
+                <integer>41</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -22610,7 +21782,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>54</integer>
+                <integer>42</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -22679,7 +21851,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>55</integer>
+                <integer>43</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -22748,7 +21920,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>56</integer>
+                <integer>44</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -22817,7 +21989,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>57</integer>
+                <integer>45</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -22886,7 +22058,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>58</integer>
+                <integer>46</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -22955,7 +22127,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>59</integer>
+                <integer>47</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -23024,7 +22196,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>60</integer>
+                <integer>48</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -23093,7 +22265,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>61</integer>
+                <integer>49</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -23162,7 +22334,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>62</integer>
+                <integer>50</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -23231,7 +22403,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>63</integer>
+                <integer>51</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -23300,7 +22472,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>64</integer>
+                <integer>52</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -23369,7 +22541,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>65</integer>
+                <integer>53</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -23438,7 +22610,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>66</integer>
+                <integer>54</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -23507,7 +22679,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>67</integer>
+                <integer>55</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -23576,7 +22748,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>68</integer>
+                <integer>56</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -23645,7 +22817,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>69</integer>
+                <integer>57</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -23714,7 +22886,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>70</integer>
+                <integer>58</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -23783,7 +22955,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>71</integer>
+                <integer>59</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -23852,7 +23024,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>72</integer>
+                <integer>60</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -23921,7 +23093,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>73</integer>
+                <integer>61</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -23990,7 +23162,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>74</integer>
+                <integer>62</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -24059,7 +23231,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>75</integer>
+                <integer>63</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -24128,7 +23300,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>76</integer>
+                <integer>64</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -24197,7 +23369,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>77</integer>
+                <integer>65</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -24266,7 +23438,7 @@
                 <key>Note</key>
                 <integer>0</integer>
                 <key>Value</key>
-                <integer>78</integer>
+                <integer>66</integer>
               </dict>
             </array>
             <key>CustomIconData</key>

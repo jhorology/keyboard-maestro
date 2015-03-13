@@ -5,40 +5,24 @@ exports.ids = [
     uuid: 'E46C6522-03F7-4056-9F94-FBE8D3674AFB'
   }
   {
-    id: 'cursor track - volume - +10%'
-    uuid: '8802040A-2266-4F70-A19D-71C34E04D9B1'
-  }
-  {
-    id: 'cursor track - volume - +1%'
+    id: 'cursor track - volume - up'
     uuid: 'C4EA90F9-34B5-4DF2-B218-4C7AE00DE7AE'
   }
   {
-    id: 'cursor track - volume - -1%'
+    id: 'cursor track - volume - down'
     uuid: 'BAB65BCD-8C25-43A7-BE0D-5599DB12B7E8'
-  }
-  {
-    id: 'cursor track - volume - -10%'
-    uuid: '2F2531B9-824E-4CC0-B5F2-F59959FFAAFB'
   }
   {
     id: 'cursor track - volume - reset'
     uuid: 'E843DDFE-0D70-4FEE-B452-EB618A388956'
   }
   {
-    id: 'cursor track - pan - right 10%'
-    uuid: 'A51FA179-0ED8-4667-9503-95081ECA987A'
-  }
-  {
-    id: 'cursor track - pan - right 1%'
+    id: 'cursor track - pan - right'
     uuid: 'E3047EB3-7956-43BA-BAF3-E4C3ACA166AD'
   }
   {
-    id: 'cursor track - pan - left 1%'
+    id: 'cursor track - pan - left'
     uuid: '09507833-DEC1-48BC-B77E-2E3CF4DB45A2'
-  }
-  {
-    id: 'cursor track - pan - left 10%'
-    uuid: '83CE33B6-AA8C-4606-B256-586CAE21DD91'
   }
   {
     id: 'cursor track - pan - reset'
@@ -53,80 +37,48 @@ exports.ids = [
     uuid: '49C65227-C8A4-48CD-8C98-24A63E4E2916'
   }
   {
-    id: 'cursor track - send S1 - +10%'
-    uuid: 'F2940EAF-5950-427A-8DB6-5F371C61C135'
-  }
-  {
-    id: 'cursor track - send S1 - +1%'
+    id: 'cursor track - send S1 - up'
     uuid: '92C3B055-295C-446D-9DE0-E0ED91FBF9AB'
   }
   {
-    id: 'cursor track - send S1 - -1%'
+    id: 'cursor track - send S1 - down'
     uuid: '882E41F7-7A8C-474A-AB65-A65AC6213F7E'
-  }
-  {
-    id: 'cursor track - send S1 - -10%'
-    uuid: '75852150-E10F-4619-8C06-8F7CD7AA03BD'
   }
   {
     id: 'cursor track - send S1 - reset'
     uuid: '4A2C3ED8-2D95-4C46-8D5E-E887C71C3F1D'
   }
   {
-    id: 'cursor track - send S2 - +10%'
-    uuid: '02AD4A52-836D-49ED-AADE-31ADB69A1A4C'
-  }
-  {
-    id: 'cursor track - send S2 - +1%'
+    id: 'cursor track - send S2 - up'
     uuid: '7CB6EB8E-0DC4-4BBC-AC4F-163B26DF9ECD'
   }
   {
-    id: 'cursor track - send S2 - -1%'
+    id: 'cursor track - send S2 - down'
     uuid: '36AEF03D-40DF-4432-93F2-DD35AA4A75BF'
-  }
-  {
-    id: 'cursor track - send S2 - -10%'
-    uuid: 'B1CFFE09-F177-4DD8-B423-DBC495FE0D29'
   }
   {
     id: 'cursor track - send S2 - reset'
     uuid: '0BDE4FA5-731B-411C-A894-93A4B80ABD9A'
   }
   {
-    id: 'cursor track - send S3 - +10%'
-    uuid: 'B2ED547C-6CA7-43BF-9E01-50AC956A36A5'
-  }
-  {
-    id: 'cursor track - send S3 - +1%'
+    id: 'cursor track - send S3 - up'
     uuid: '195C9AF8-0D5A-4DE9-8DBA-E431703426ED'
   }
   {
-    id: 'cursor track - send S3 - -1%'
-    uuid: '195C9AF8-0D5A-4DE9-8DBA-E431703426ED'
-  }
-  {
-    id: 'cursor track - send S3 - -10%'
-    uuid: 'B2ED547C-6CA7-43BF-9E01-50AC956A36A5'
+    id: 'cursor track - send S3 - down'
+    uuid: 'DC9A3790-18D7-457E-B0F1-F011A9412ECA'
   }
   {
     id: 'cursor track - send S3 - reset'
     uuid: '40A8CEE1-D169-4C70-BE1B-434FFBAE438F'
   }
   {
-    id: 'cursor track - send S4 - +10%'
-    uuid: '397464DB-2BF1-42BA-9CDE-943777CB45D9'
+    id: 'cursor track - send S4 - up'
+    uuid: '9153B027-D958-446E-A5EA-5224489EA289'
   }
   {
-    id: 'cursor track - send S4 - +1%'
-    uuid: '72540A20-EAE0-4673-9BBD-37B3B96F528F'
-  }
-  {
-    id: 'cursor track - send S4 - -1%'
-    uuid: '18976E8D-E117-4014-BB89-8F6A79DDFA18'
-  }
-  {
-    id: 'cursor track - send S4 - -10%'
-    uuid: '529622EC-40A2-4AFD-BBB3-951C36A502FF'
+    id: 'cursor track - send S4 - down'
+    uuid: '86FD6DB2-608B-4C1A-9DDA-831BC0AFD95B'
   }
   {
     id: 'cursor track - send S4 - reset'
