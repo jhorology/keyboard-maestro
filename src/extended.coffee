@@ -26,9 +26,6 @@ process.on 'init', ->
   device.attribify 'hasSelectedDevice'
   device.attribify 'isMacroSectionVisible', device.isMacroSectionVisible(), 'value'
   device.attribify 'isParameterPageSectionVisible', device.isParameterPageSectionVisible(), 'value'
-  device.attribify 'presetName', 64, ''
-  device.attribify 'presetCategory', 64, ''
-  device.attribify 'presetCreator', 64, ''
 
   macroValues = for index in [0..7]
     device.getMacro(index).getAmount()
@@ -37,6 +34,8 @@ process.on 'init', ->
   macroIndicated = false
   parameterValues = for index in [0..7]
     device.getParameter index
+      .attribify 'name', 32, ''
+      .attribify 'valueDisplay', 32, ''
   parameterIndicated = false
 
   host.on 'midi', (port, s, d1, d2) ->
@@ -48,9 +47,14 @@ process.on 'init', ->
       actions[index].fn.call null if index < actions.length
 
 deviceValue = (i, delta) ->
-  macroValues[i].inc delta, 101 if macroIndicated
-  parameterValues[i].inc delta, 101 if parameterIndicated
-    
+  if macroIndicated
+    macroValues[i].inc delta, 101
+  else if  parameterIndicated
+    parameterValues[i].inc delta, 101
+      # workarround for VST parameter dosen't display correctly.
+      .once 'change:valueDisplay', (o, value) ->
+        host.showPopupNotification "#{o.get('name')}: #{value}"
+      
 exports.actions = actions = [
   ## cursor track
   {

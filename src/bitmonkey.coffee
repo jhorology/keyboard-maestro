@@ -43,7 +43,7 @@ class Model extends Backbone.Model
       if args.length > 0 and _.isFunction args[args.length - 1]
         setter = args.pop()
         
-      cb = (value)=> @set attr, value, observed: true
+      cb = (value) => @set attr, value, observed: true
       if attr in @constructor.cbFirstObservers
         args.unshift cb
       else
