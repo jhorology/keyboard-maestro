@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -83,7 +83,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -113,89 +113,20 @@
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>Pause</string>
-						<key>Time</key>
-						<string>0.5</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>Asynchronously</key>
-								<false/>
-								<key>Count</key>
-								<integer>1</integer>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>ExecuteMacro</string>
-								<key>MacroUID</key>
-								<string>50F15E2B-1D9E-4FB8-B22E-D27536105880</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.02</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-						</array>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>ConditionType</key>
-									<string>Key</string>
-									<key>KeyCode</key>
-									<integer>18</integer>
-									<key>KeyConditionType</key>
-									<string>Down</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>While</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
 				</array>
 				<key>CustomIconData</key>
 				<string>KMEC=Circle=KMCOLOR:206,0,36,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441879687.62840402</real>
+				<real>447943958.78922802</real>
 				<key>Name</key>
 				<string>01 [1] Param/Macro 1 up</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>Pressed</string>
+						<string>WhileDown</string>
 						<key>KeyCode</key>
 						<integer>18</integer>
 						<key>MacroTriggerType</key>
@@ -233,7 +164,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -263,89 +194,20 @@
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>Pause</string>
-						<key>Time</key>
-						<string>0.5</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>Asynchronously</key>
-								<false/>
-								<key>Count</key>
-								<integer>1</integer>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>ExecuteMacro</string>
-								<key>MacroUID</key>
-								<string>D870A3DC-B843-49F9-8E03-ED5648F46332</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.02</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-						</array>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>ConditionType</key>
-									<string>Key</string>
-									<key>KeyCode</key>
-									<integer>12</integer>
-									<key>KeyConditionType</key>
-									<string>Down</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>While</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
 				</array>
 				<key>CustomIconData</key>
 				<string>KMEC=Circle=KMCOLOR:206,0,36,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441879692.75531203</real>
+				<real>447944038.13249201</real>
 				<key>Name</key>
 				<string>02 [Q] Param/Macro 1 down</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>Pressed</string>
+						<string>WhileDown</string>
 						<key>KeyCode</key>
 						<integer>12</integer>
 						<key>MacroTriggerType</key>
@@ -383,7 +245,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -413,89 +275,20 @@
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>Pause</string>
-						<key>Time</key>
-						<string>0.5</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>Asynchronously</key>
-								<false/>
-								<key>Count</key>
-								<integer>1</integer>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>ExecuteMacro</string>
-								<key>MacroUID</key>
-								<string>B8F1A43E-580C-4E03-9035-B05AF89DA70D</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.02</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-						</array>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>ConditionType</key>
-									<string>Key</string>
-									<key>KeyCode</key>
-									<integer>19</integer>
-									<key>KeyConditionType</key>
-									<string>Down</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>While</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
 				</array>
 				<key>CustomIconData</key>
 				<string>KMEC=Circle=KMCOLOR:251,108,0,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441879794.52139902</real>
+				<real>447944048.11094099</real>
 				<key>Name</key>
 				<string>03 [2] Param/Macro 2 up</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>Pressed</string>
+						<string>WhileDown</string>
 						<key>KeyCode</key>
 						<integer>19</integer>
 						<key>MacroTriggerType</key>
@@ -533,7 +326,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -563,89 +356,20 @@
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>Pause</string>
-						<key>Time</key>
-						<string>0.5</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>Asynchronously</key>
-								<false/>
-								<key>Count</key>
-								<integer>1</integer>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>ExecuteMacro</string>
-								<key>MacroUID</key>
-								<string>E868F403-7C23-4013-AC9B-29F9644E905A</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.02</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-						</array>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>ConditionType</key>
-									<string>Key</string>
-									<key>KeyCode</key>
-									<integer>13</integer>
-									<key>KeyConditionType</key>
-									<string>Down</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>While</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
 				</array>
 				<key>CustomIconData</key>
 				<string>KMEC=Circle=KMCOLOR:251,108,0,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441879798.21135497</real>
+				<real>447944078.527951</real>
 				<key>Name</key>
 				<string>04 [W] Param/Macro 2 down</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>Pressed</string>
+						<string>WhileDown</string>
 						<key>KeyCode</key>
 						<integer>13</integer>
 						<key>MacroTriggerType</key>
@@ -683,7 +407,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -713,89 +437,20 @@
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>Pause</string>
-						<key>Time</key>
-						<string>0.5</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>Asynchronously</key>
-								<false/>
-								<key>Count</key>
-								<integer>1</integer>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>ExecuteMacro</string>
-								<key>MacroUID</key>
-								<string>712624BD-5EE3-4CE2-84B3-6884066C2B1A</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.02</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-						</array>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>ConditionType</key>
-									<string>Key</string>
-									<key>KeyCode</key>
-									<integer>20</integer>
-									<key>KeyConditionType</key>
-									<string>Down</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>While</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
 				</array>
 				<key>CustomIconData</key>
 				<string>KMEC=Circle=KMCOLOR:251,237,0,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441879810.38586497</real>
+				<real>447944086.04783899</real>
 				<key>Name</key>
 				<string>05 [3] Param/Macro 3 up</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>Pressed</string>
+						<string>WhileDown</string>
 						<key>KeyCode</key>
 						<integer>20</integer>
 						<key>MacroTriggerType</key>
@@ -833,7 +488,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -863,89 +518,20 @@
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>Pause</string>
-						<key>Time</key>
-						<string>0.5</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>Asynchronously</key>
-								<false/>
-								<key>Count</key>
-								<integer>1</integer>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>ExecuteMacro</string>
-								<key>MacroUID</key>
-								<string>6DCD5A2F-69C2-4921-8FA1-78A84BB5B577</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.02</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-						</array>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>ConditionType</key>
-									<string>Key</string>
-									<key>KeyCode</key>
-									<integer>14</integer>
-									<key>KeyConditionType</key>
-									<string>Down</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>While</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
 				</array>
 				<key>CustomIconData</key>
 				<string>KMEC=Circle=KMCOLOR:251,237,0,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441879814.24288303</real>
+				<real>447944093.21637398</real>
 				<key>Name</key>
 				<string>06 [E] Param/Macro 3 down</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>Pressed</string>
+						<string>WhileDown</string>
 						<key>KeyCode</key>
 						<integer>14</integer>
 						<key>MacroTriggerType</key>
@@ -983,7 +569,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -1013,89 +599,20 @@
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>Pause</string>
-						<key>Time</key>
-						<string>0.5</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>Asynchronously</key>
-								<false/>
-								<key>Count</key>
-								<integer>1</integer>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>ExecuteMacro</string>
-								<key>MacroUID</key>
-								<string>E2DC1C30-1F50-42A3-ACBE-69C3C7842C74</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.02</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-						</array>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>ConditionType</key>
-									<string>Key</string>
-									<key>KeyCode</key>
-									<integer>21</integer>
-									<key>KeyConditionType</key>
-									<string>Down</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>While</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
 				</array>
 				<key>CustomIconData</key>
 				<string>KMEC=Circle=KMCOLOR:70,165,0,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441879833.63194197</real>
+				<real>447944105.54451799</real>
 				<key>Name</key>
 				<string>07 [4] Param/Macro 4 up</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>Pressed</string>
+						<string>WhileDown</string>
 						<key>KeyCode</key>
 						<integer>21</integer>
 						<key>MacroTriggerType</key>
@@ -1133,7 +650,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -1163,89 +680,20 @@
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>Pause</string>
-						<key>Time</key>
-						<string>0.5</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>Asynchronously</key>
-								<false/>
-								<key>Count</key>
-								<integer>1</integer>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>ExecuteMacro</string>
-								<key>MacroUID</key>
-								<string>B3C88E60-3840-49F5-A2B9-CC916E2713A4</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.02</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-						</array>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>ConditionType</key>
-									<string>Key</string>
-									<key>KeyCode</key>
-									<integer>15</integer>
-									<key>KeyConditionType</key>
-									<string>Down</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>While</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
 				</array>
 				<key>CustomIconData</key>
 				<string>KMEC=Circle=KMCOLOR:70,165,0,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441879837.42238599</real>
+				<real>447944117.16897202</real>
 				<key>Name</key>
 				<string>08 [R] Param/Macro 4 down</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>Pressed</string>
+						<string>WhileDown</string>
 						<key>KeyCode</key>
 						<integer>15</integer>
 						<key>MacroTriggerType</key>
@@ -1283,7 +731,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -1313,89 +761,20 @@
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>Pause</string>
-						<key>Time</key>
-						<string>0.5</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>Asynchronously</key>
-								<false/>
-								<key>Count</key>
-								<integer>1</integer>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>ExecuteMacro</string>
-								<key>MacroUID</key>
-								<string>22A1B168-7788-4E3A-804A-41166E3EDEEB</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.02</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-						</array>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>ConditionType</key>
-									<string>Key</string>
-									<key>KeyCode</key>
-									<integer>23</integer>
-									<key>KeyConditionType</key>
-									<string>Down</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>While</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
 				</array>
 				<key>CustomIconData</key>
 				<string>KMEC=Circle=KMCOLOR:89,200,120,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441879852.68519598</real>
+				<real>447944131.68158001</real>
 				<key>Name</key>
 				<string>09 [5] Param/Macro 5 up</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>Pressed</string>
+						<string>WhileDown</string>
 						<key>KeyCode</key>
 						<integer>23</integer>
 						<key>MacroTriggerType</key>
@@ -1433,7 +812,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -1463,89 +842,20 @@
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>Pause</string>
-						<key>Time</key>
-						<string>0.5</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>Asynchronously</key>
-								<false/>
-								<key>Count</key>
-								<integer>1</integer>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>ExecuteMacro</string>
-								<key>MacroUID</key>
-								<string>C44B5C21-7B8C-4C4D-956F-FA149436B783</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.02</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-						</array>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>ConditionType</key>
-									<string>Key</string>
-									<key>KeyCode</key>
-									<integer>17</integer>
-									<key>KeyConditionType</key>
-									<string>Down</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>While</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
 				</array>
 				<key>CustomIconData</key>
 				<string>KMEC=Circle=KMCOLOR:89,200,120,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441879856.727714</real>
+				<real>447944171.57878298</real>
 				<key>Name</key>
 				<string>10 [T] Param/Macro 5 down</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>Pressed</string>
+						<string>WhileDown</string>
 						<key>KeyCode</key>
 						<integer>17</integer>
 						<key>MacroTriggerType</key>
@@ -1583,7 +893,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -1613,89 +923,20 @@
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>Pause</string>
-						<key>Time</key>
-						<string>0.5</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>Asynchronously</key>
-								<false/>
-								<key>Count</key>
-								<integer>1</integer>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>ExecuteMacro</string>
-								<key>MacroUID</key>
-								<string>A04CF371-315A-4E0B-9F3F-5AF6D8CA892F</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.02</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-						</array>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>ConditionType</key>
-									<string>Key</string>
-									<key>KeyCode</key>
-									<integer>22</integer>
-									<key>KeyConditionType</key>
-									<string>Down</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>While</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
 				</array>
 				<key>CustomIconData</key>
 				<string>KMEC=Circle=KMCOLOR:69,131,214,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441879871.00571901</real>
+				<real>447944181.49103099</real>
 				<key>Name</key>
 				<string>11 [6] Param/Macro 6 up</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>Pressed</string>
+						<string>WhileDown</string>
 						<key>KeyCode</key>
 						<integer>22</integer>
 						<key>MacroTriggerType</key>
@@ -1733,7 +974,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -1763,89 +1004,20 @@
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>Pause</string>
-						<key>Time</key>
-						<string>0.5</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>Asynchronously</key>
-								<false/>
-								<key>Count</key>
-								<integer>1</integer>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>ExecuteMacro</string>
-								<key>MacroUID</key>
-								<string>901D2185-E8F6-405E-BD4A-0766A5998D84</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.02</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-						</array>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>ConditionType</key>
-									<string>Key</string>
-									<key>KeyCode</key>
-									<integer>16</integer>
-									<key>KeyConditionType</key>
-									<string>Down</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>While</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
 				</array>
 				<key>CustomIconData</key>
 				<string>KMEC=Circle=KMCOLOR:69,131,214,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441879874.27775401</real>
+				<real>447944191.507357</real>
 				<key>Name</key>
 				<string>12 [Y] Param/Macro 6 down</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>Pressed</string>
+						<string>WhileDown</string>
 						<key>KeyCode</key>
 						<integer>16</integer>
 						<key>MacroTriggerType</key>
@@ -1883,7 +1055,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -1913,89 +1085,20 @@
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>Pause</string>
-						<key>Time</key>
-						<string>0.5</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>Asynchronously</key>
-								<false/>
-								<key>Count</key>
-								<integer>1</integer>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>ExecuteMacro</string>
-								<key>MacroUID</key>
-								<string>FA17115E-65BB-41E8-B189-1D8EE4C8BD49</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.02</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-						</array>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>ConditionType</key>
-									<string>Key</string>
-									<key>KeyCode</key>
-									<integer>26</integer>
-									<key>KeyConditionType</key>
-									<string>Down</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>While</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
 				</array>
 				<key>CustomIconData</key>
 				<string>KMEC=Circle=KMCOLOR:147,55,223,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441879890.92806</real>
+				<real>447944197.42117202</real>
 				<key>Name</key>
 				<string>13 [7] Param/Macro 7 up</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>Pressed</string>
+						<string>WhileDown</string>
 						<key>KeyCode</key>
 						<integer>26</integer>
 						<key>MacroTriggerType</key>
@@ -2033,7 +1136,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2063,89 +1166,20 @@
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>Pause</string>
-						<key>Time</key>
-						<string>0.5</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>Asynchronously</key>
-								<false/>
-								<key>Count</key>
-								<integer>1</integer>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>ExecuteMacro</string>
-								<key>MacroUID</key>
-								<string>FEEBEEC5-08C0-4B9C-B2DD-5C6034BBF07C</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.02</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-						</array>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>ConditionType</key>
-									<string>Key</string>
-									<key>KeyCode</key>
-									<integer>32</integer>
-									<key>KeyConditionType</key>
-									<string>Down</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>While</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
 				</array>
 				<key>CustomIconData</key>
 				<string>KMEC=Circle=KMCOLOR:147,55,223,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441879894.13379002</real>
+				<real>447944204.53974903</real>
 				<key>Name</key>
 				<string>14 [U] Param/Macro 7 down</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>Pressed</string>
+						<string>WhileDown</string>
 						<key>KeyCode</key>
 						<integer>32</integer>
 						<key>MacroTriggerType</key>
@@ -2183,7 +1217,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2213,89 +1247,20 @@
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>Pause</string>
-						<key>Time</key>
-						<string>0.5</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>Asynchronously</key>
-								<false/>
-								<key>Count</key>
-								<integer>1</integer>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>ExecuteMacro</string>
-								<key>MacroUID</key>
-								<string>47A9ACFF-BA5A-4665-9A23-77F9B2D3814A</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.02</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-						</array>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>ConditionType</key>
-									<string>Key</string>
-									<key>KeyCode</key>
-									<integer>28</integer>
-									<key>KeyConditionType</key>
-									<string>Down</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>While</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
 				</array>
 				<key>CustomIconData</key>
 				<string>KMEC=Circle=KMCOLOR:194,37,135,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441879910.11505699</real>
+				<real>447944214.51990998</real>
 				<key>Name</key>
 				<string>15 [8] Param/Macro 8 up</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>Pressed</string>
+						<string>WhileDown</string>
 						<key>KeyCode</key>
 						<integer>28</integer>
 						<key>MacroTriggerType</key>
@@ -2333,7 +1298,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2363,89 +1328,20 @@
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>Pause</string>
-						<key>Time</key>
-						<string>0.5</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>Asynchronously</key>
-								<false/>
-								<key>Count</key>
-								<integer>1</integer>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>ExecuteMacro</string>
-								<key>MacroUID</key>
-								<string>9E5951AE-BFA8-46DB-AAD2-DFCCAA4ABF51</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.02</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-						</array>
-						<key>Conditions</key>
-						<dict>
-							<key>ConditionList</key>
-							<array>
-								<dict>
-									<key>ConditionType</key>
-									<string>Key</string>
-									<key>KeyCode</key>
-									<integer>34</integer>
-									<key>KeyConditionType</key>
-									<string>Down</string>
-								</dict>
-							</array>
-							<key>ConditionListMatch</key>
-							<string>All</string>
-						</dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>While</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
 				</array>
 				<key>CustomIconData</key>
 				<string>KMEC=Circle=KMCOLOR:194,37,135,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441879913.67283201</real>
+				<real>447944226.80333698</real>
 				<key>Name</key>
 				<string>16 [I] Param/Macro 8 down</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>Pressed</string>
+						<string>WhileDown</string>
 						<key>KeyCode</key>
 						<integer>34</integer>
 						<key>MacroTriggerType</key>
@@ -2483,7 +1379,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2505,7 +1401,7 @@
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
-						<true/>
+						<false/>
 						<key>MacroActionType</key>
 						<string>ExecuteMacro</string>
 						<key>MacroUID</key>
@@ -2517,20 +1413,20 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441886657.67992902</real>
+				<real>447941903.25681299</real>
 				<key>Name</key>
-				<string>17 [⌥↑] Preset prev</string>
+				<string>17 [ [ ] Preset prev</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
 						<string>Pressed</string>
 						<key>KeyCode</key>
-						<integer>126</integer>
+						<integer>33</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
-						<integer>2048</integer>
+						<integer>0</integer>
 					</dict>
 				</array>
 				<key>UID</key>
@@ -2562,7 +1458,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2596,20 +1492,20 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441886665.67991501</real>
+				<real>447940441.19638997</real>
 				<key>Name</key>
-				<string>18 [⌥↓] Preset next</string>
+				<string>18 [ ] ] Preset next</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
 						<string>Pressed</string>
 						<key>KeyCode</key>
-						<integer>125</integer>
+						<integer>30</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
-						<integer>2048</integer>
+						<integer>0</integer>
 					</dict>
 				</array>
 				<key>UID</key>
@@ -2641,7 +1537,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2720,7 +1616,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2799,7 +1695,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2878,7 +1774,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2957,7 +1853,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -2991,20 +1887,20 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441887492.94876403</real>
+				<real>447941725.24826801</real>
 				<key>Name</key>
-				<string>23 [⌥←] Parameter Page prev</string>
+				<string>23 [ , ] Parameter Page prev</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
 						<string>Pressed</string>
 						<key>KeyCode</key>
-						<integer>123</integer>
+						<integer>43</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
-						<integer>2048</integer>
+						<integer>0</integer>
 					</dict>
 				</array>
 				<key>UID</key>
@@ -3036,7 +1932,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -3070,20 +1966,20 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>441888116.59758002</real>
+				<real>447941773.48098999</real>
 				<key>Name</key>
-				<string>24 [⌥→] Parameter Page next</string>
+				<string>24 [ . ] Parameter Page next</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
 						<string>Pressed</string>
 						<key>KeyCode</key>
-						<integer>124</integer>
+						<integer>47</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
-						<integer>2048</integer>
+						<integer>0</integer>
 					</dict>
 				</array>
 				<key>UID</key>
@@ -3115,7 +2011,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -3194,7 +2090,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -3275,7 +2171,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -3356,7 +2252,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -3437,7 +2333,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -3518,7 +2414,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -3599,7 +2495,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -3680,7 +2576,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
@@ -3761,7 +2657,7 @@
 	</dict>
 	<dict>
 		<key>Activate</key>
-		<string>AlwaysWithPalette</string>
+		<string>WithPalette</string>
 		<key>AddToMacroPalette</key>
 		<false/>
 		<key>AddToStatusMenu</key>
