@@ -17,6 +17,14 @@ propertyExcludes = [
   'wait'
 ]
 
+stringArrayAttrs = [
+  'pageNames'
+  'presetNames'
+  'presetCategories'
+  'presetCreators'
+  'slots'
+]
+
 #  Bitmonkey Model
 # ============================
 exports.Model =
@@ -38,12 +46,23 @@ class Model extends Backbone.Model
       @["_#{args[2]}"]  attr, vo, opts
     else
       observer = @api["add#{attr[0].toUpperCase()}#{attr[1..]}Observer"]
+      if not observer
+        console.error "observer not found. attr:#{attr}"
       args = args[1..]
       setter = undefined
       if args.length > 0 and _.isFunction args[args.length - 1]
         setter = args.pop()
         
-      cb = (value) => @set attr, value, observed: true
+      cb = (value) =>
+        @set attr, value, observed: true
+      if attr in stringArrayAttrs
+        cb = (values...) =>
+          # WTF! what a lack of consistency....
+          if "#{values[0]}".indexOf("[Ljava.lang.String") is 0
+            values = Array::slice.call values[0]
+          values = (String s for s in values)
+          @set attr, values, observed: true
+      
       if attr in @constructor.cbFirstObservers
         args.unshift cb
       else

@@ -268,4 +268,24 @@ exports.ids = [
     id: 'cursor device - macro 8 mapping - toggle'
     uuid: '4409766C-F91F-4243-BDDA-15467CD21B78'
   }
+  {
+    id: 'cursor device - chain slot - open/next/close'
+    uuid: '2D1552C6-398F-427A-B743-EDB4A7D82A89'
+  }
+  {
+    id: 'cursor device - chain slot - select first device in slot'
+    uuid: '4E364112-7797-4E35-8A7A-B4BCF133E8B3'
+  }
+  {
+    id: 'cursor device - chain/layer - select parrent device'
+    uuid: 'EEBC6E71-C824-4F63-8BE8-493CF9D6CD7F'
+  }
+  {
+    id: 'delta value - increase'
+    uuid: '498BD264-00FC-4246-AF4C-53D03A472EA7'
+  }
+  {
+    id: 'delta value - decrease'
+    uuid: '9C14950E-F398-4632-9632-B02C188BD9CD'
+  }
 ]

@@ -2,12 +2,28 @@ host = require './host'
 
 track =
 device =
+deviceSlot =
 macroValues =
 macroSources =
 macroIndicated =
 parameterValues =
 parameterIndicated = undefined
 NUM_SENDS = 4
+RESOLUTIONS = [
+  11
+  16
+  32
+  51
+  64
+  101
+  128
+  201
+  256
+  1001
+  1024
+]
+resolutionIndex = 5
+resolution = 101
 
 process.on 'init', ->
   host.getNotificationSettings()
@@ -21,12 +37,21 @@ process.on 'init', ->
     .setShouldShowValueNotifications true
 
   track = host.createArrangerCursorTrack NUM_SENDS, 0
+    .attribify 'isSelectedInMixer'
+    .attribify 'position'
+  
   device = host.createEditorCursorDevice NUM_SENDS
-  track.attribify 'isSelectedInMixer'
-  device.attribify 'hasSelectedDevice'
-  device.attribify 'isMacroSectionVisible', device.isMacroSectionVisible(), 'value'
-  device.attribify 'isParameterPageSectionVisible', device.isParameterPageSectionVisible(), 'value'
-
+  device
+    .attribify 'hasSelectedDevice'
+    .attribify 'isMacroSectionVisible', device.isMacroSectionVisible(), 'value'
+    .attribify 'isParameterPageSectionVisible', device.isParameterPageSectionVisible(), 'value'
+    .attribify 'slots'
+    
+  deviceSlot = device.getCursorSlot()
+  deviceSlot
+    .attribify 'name', 32, ''
+    .attribify 'isSelectedInEditor'
+  
   macroValues = for index in [0..7]
     device.getMacro(index).getAmount()
   macroSources = for index in [0..7]
@@ -48,9 +73,9 @@ process.on 'init', ->
 
 deviceValue = (i, delta) ->
   if macroIndicated
-    macroValues[i].inc delta, 101
+    macroValues[i].inc delta, resolution
   else if  parameterIndicated
-    parameterValues[i].inc delta, 101
+    parameterValues[i].inc delta, resolution
       # workarround for VST parameter dosen't display correctly.
       .once 'change:valueDisplay', (o, value) ->
         host.showPopupNotification "#{o.get('name')}: #{value}"
@@ -63,11 +88,11 @@ exports.actions = actions = [
   }
   {
     id: 'cursor track - volume - up'
-    fn: -> track.getVolume()?.inc 1, 101
+    fn: -> track.getVolume()?.inc 1, resolution
   }
   {
     id: 'cursor track - volume - down'
-    fn: -> track.getVolume()?.inc -1, 101
+    fn: -> track.getVolume()?.inc -1, resolution
   }
   {
     id: 'cursor track - volume - reset'
@@ -75,11 +100,11 @@ exports.actions = actions = [
   }
   {
     id: 'cursor track - pan - right'
-    fn: -> track.getPan()?.inc 1, 201
+    fn: -> track.getPan()?.inc 1, resolution * 2 - 1
   }
   {
     id: 'cursor track - pan - left'
-    fn: -> track.getPan()?.inc -1, 201
+    fn: -> track.getPan()?.inc -1, resolution * 2 - 1
   }
   {
     id: 'cursor track - pan - reset'
@@ -95,11 +120,11 @@ exports.actions = actions = [
   }
   {
     id: 'cursor track - send S1 - up'
-    fn: -> track.getSend(0)?.inc 1, 101
+    fn: -> track.getSend(0)?.inc 1, resolution
   }
   {
     id: 'cursor track - send S1 - down'
-    fn: -> track.getSend(0)?.inc -1, 101
+    fn: -> track.getSend(0)?.inc -1, resolution
   }
   {
     id: 'cursor track - send S1 - reset'
@@ -107,11 +132,11 @@ exports.actions = actions = [
   }
   {
     id: 'cursor track - send S2 - up'
-    fn: -> track.getSend(1)?.inc 1, 101
+    fn: -> track.getSend(1)?.inc 1, resolution
   }
   {
     id: 'cursor track - send S2 - down'
-    fn: -> track.getSend(1)?.inc -1, 101
+    fn: -> track.getSend(1)?.inc -1, resolution
   }
   {
     id: 'cursor track - send S2 - reset'
@@ -119,11 +144,11 @@ exports.actions = actions = [
   }
   {
     id: 'cursor track - send S3 - up'
-    fn: -> track.getSend(2)?.inc 1, 101
+    fn: -> track.getSend(2)?.inc 1, resolution
   }
   {
     id: 'cursor track - send S3 - down'
-    fn: -> track.getSend(2)?.inc -1, 101
+    fn: -> track.getSend(2)?.inc -1, resolution
   }
   {
     id: 'cursor track - send S3 - reset'
@@ -131,11 +156,11 @@ exports.actions = actions = [
   }
   {
     id: 'cursor track - send S4 - up'
-    fn: -> track.getSend(3)?.inc 1, 101
+    fn: -> track.getSend(3)?.inc 1, resolution
   }
   {
     id: 'cursor track - send S4 - down'
-    fn: -> track.getSend(3)?.inc -1, 101
+    fn: -> track.getSend(3)?.inc -1, resolution
   }
   {
     id: 'cursor track - send S4 - reset'
@@ -336,5 +361,53 @@ exports.actions = actions = [
   {
     id: 'cursor device - macro 8 mapping - toggle'
     fn: -> macroSources[7].toggleIsMapping()
+  }
+  
+  ## cursor device - chain slot
+  {
+    id: 'cursor device - chain slot - open/next/close'
+    fn: ->
+      slots = device.get('slots')
+      return if slots.length is 0
+      slot = deviceSlot.get('name')
+      if slot.length is 0
+        # open chain slot
+        deviceSlot.selectSlot slots[0]
+      else if slot is slots[slots.length - 1]
+        # close chain slot
+        
+        # unaveilable to close/unselect slot
+        # index = slots.indexOf(slot)
+        # deviceSlot.selectSlot slots[index]
+        
+        deviceSlot.selectSlot slots[0]
+      else
+        # select next chain slot
+        index = slots.indexOf(slot) + 1
+        deviceSlot.selectSlot slots[index]
+  }
+  {
+    id: 'cursor device - chain slot - select first device in slot'
+    fn: -> device.selectFirstInSlot deviceSlot.get 'name'
+  }
+  {
+    id: 'cursor device - chain/layer - select parrent device'
+    fn: -> device.selectParent()
+  }
+
+  ## RangedValue resolution
+  {
+    id: 'delta value - increase'
+    fn: ->
+      resolutionIndex-- if resolutionIndex > 0
+      resolution = RESOLUTIONS[resolutionIndex]
+      host.showPopupNotification "delta value: 1/#{resolution-1}"
+  }
+  {
+    id: 'delta value - decrease'
+    fn: ->
+      resolutionIndex++ if resolutionIndex < RESOLUTIONS.length - 1
+      resolution = RESOLUTIONS[resolutionIndex]
+      host.showPopupNotification "delta value: 1/#{resolution-1}"
   }
 ]
