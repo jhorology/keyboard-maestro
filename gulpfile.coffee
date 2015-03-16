@@ -126,8 +126,6 @@ gulp.task 'browserify', ->
     extensions: ['.coffee']
     debug: false
   b.transform 'coffeeify'
-    .require 'es5-shim'
-    .require 'JSON'
     .bundle()
     .pipe source $.build.browserifyJs
     .pipe header $.banner, pkg: pkg

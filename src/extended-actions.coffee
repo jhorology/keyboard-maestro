@@ -277,15 +277,27 @@ exports.ids = [
     uuid: '4E364112-7797-4E35-8A7A-B4BCF133E8B3'
   }
   {
-    id: 'cursor device - chain/layer - select parrent device'
+    id: 'experimental - cursor device - layer - select first layer'
+    uuid: '5E01F735-4C3C-4E58-857C-7CB02353F396'
+  }
+  {
+    id: 'cursor device - chain/layer - select parent device'
     uuid: 'EEBC6E71-C824-4F63-8BE8-493CF9D6CD7F'
   }
   {
-    id: 'delta value - increase'
+    id: 'experimental - cursor device - Drum Pads - page dowm'
+    uuid: '078A4F72-1F0E-4D6E-99B0-800F8C1BD36A'
+  }
+  {
+    id: 'experimental - cursor device - Drum Pads - page up'
+    uuid: '6EEE2C60-E4F8-49CF-BB71-B7822D736285'
+  }
+  {
+    id: 'delta value - inc'
     uuid: '498BD264-00FC-4246-AF4C-53D03A472EA7'
   }
   {
-    id: 'delta value - decrease'
+    id: 'delta value - dec'
     uuid: '9C14950E-F398-4632-9632-B02C188BD9CD'
   }
 ]

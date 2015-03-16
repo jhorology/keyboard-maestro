@@ -17,3 +17,4 @@ require('./host').prepare
 require './util'
 require './action'
 require './extended'
+require './macrolet'

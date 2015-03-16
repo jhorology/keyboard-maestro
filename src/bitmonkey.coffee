@@ -36,19 +36,18 @@ class Model extends Backbone.Model
   # attribify attr,valueObject, valueSpecifire[,opts]
   # attribify attr[,observer params...]
   # attribify attr[,observer params...][, setter]
-  attribify: (attr) ->
-    args = Array::slice.call arguments
-    if args.length > 1 and _.isObject args[1]
+  attribify: (attr, args...) ->
+#   args = Array::slice.call arguments
+    if args.length > 0 and _.isObject args[0]
       # observe value object inherited from Value or RangedValue
-      vo = args[1]
-      opts = args[3] if args.length > 3
+      vo = args[0]
+      opts = args[2] if args.length > 2
       opts or (opts = {})
-      @["_#{args[2]}"]  attr, vo, opts
+      @["_#{args[1]}"]  attr, vo, opts
     else
       observer = @api["add#{attr[0].toUpperCase()}#{attr[1..]}Observer"]
       if not observer
         console.error "observer not found. attr:#{attr}"
-      args = args[1..]
       setter = undefined
       if args.length > 0 and _.isFunction args[args.length - 1]
         setter = args.pop()
@@ -90,7 +89,7 @@ class Model extends Backbone.Model
 
   _function: (fn) ->
     # return java type of function
-    match = /(\S+) \w+\(([^\)]*)\)/.exec @api[fn].toString().split('\n',2)[1]
+    match = /(\S+) \w+\(([^\)]*)\)/.exec "#{@api[fn]}".split('\n',2)[1]
     returnType = match[1]
     paramTypes = match[2].split ','
 
@@ -100,9 +99,15 @@ class Model extends Backbone.Model
       if match = /add(\w+)(?=Observer)/.exec fn
         if paramTypes.indexOf('org.mozilla.javascript.Callable') is 0
           @constructor.cbFirstObservers.push "#{match[1][0].toLowerCase()}#{match[1][1..]}"
-      return ->
-        @api[fn].apply @api, arguments
-        @ # returning instance is useful.
+      if fn is 'set'
+        # confilict with backbone model
+        return ->
+          @api["_#{fn}"].apply @api, arguments
+          @ # returning instance is useful.
+      else
+        return ->
+          @api[fn].apply @api, arguments
+          @ # returning instance is useful.
 
     # return type of array?
     isArray = returnType.indexOf('[]', returnType.length - 2) isnt -1

@@ -3,6 +3,8 @@ host = require './host'
 track =
 device =
 deviceSlot =
+deviceLayer =
+drumPadBank =
 macroValues =
 macroSources =
 macroIndicated =
@@ -31,7 +33,7 @@ process.on 'init', ->
     .setShouldShowChannelSelectionNotifications true
     .setShouldShowTrackSelectionNotifications true
     .setShouldShowDeviceSelectionNotifications true
-    .setShouldShowDeviceLayerSelectionNotifications true
+    .setShouldShowDeviceLayerSelectionNotifications false
     .setShouldShowPresetNotifications true
     .setShouldShowMappingNotifications true
     .setShouldShowValueNotifications true
@@ -43,15 +45,27 @@ process.on 'init', ->
   device = host.createEditorCursorDevice NUM_SENDS
   device
     .attribify 'hasSelectedDevice'
-    .attribify 'isMacroSectionVisible', device.isMacroSectionVisible(), 'value'
-    .attribify 'isParameterPageSectionVisible', device.isParameterPageSectionVisible(), 'value'
+    .attribify 'isMacroSectionVisible'
+    , device.isMacroSectionVisible(), 'value'
+    .attribify 'isParameterPageSectionVisible'
+    , device.isParameterPageSectionVisible(), 'value'
+    .attribify 'isNested', device.isNested(), 'value'
     .attribify 'slots'
+    .attribify 'hasLayers', device.hasLayers(), 'value'
+    .attribify 'hasDrumPads', device.hasDrumPads(), 'value'
     
   deviceSlot = device.getCursorSlot()
-  deviceSlot
     .attribify 'name', 32, ''
     .attribify 'isSelectedInEditor'
-  
+    
+  deviceLayer = device.createCursorLayer()
+  deviceLayer
+    .attribify 'name', 32, ''
+    .attribify 'isSelectedInEditor'
+    .attribify 'isSelectedInMixer'
+
+  drumPadBank = device.createDrumPadBank 16
+    
   macroValues = for index in [0..7]
     device.getMacro(index).getAmount()
   macroSources = for index in [0..7]
@@ -65,11 +79,13 @@ process.on 'init', ->
 
   host.on 'midi', (port, s, d1, d2) ->
     # ch.2 for extended action
-    if s is 0xB1 and track.get('isSelectedInMixer')
-      index = (d1 << 7) + d2
-      return if actions[index].id.indexOf('cursor track') is 0 and not track.get('isSelectedInMixer')
-      return if actions[index].id.indexOf('cursor device') is 0 and not device.get('hasSelectedDevice')
-      actions[index].fn.call null if index < actions.length
+    return if s isnt 0xB1
+    index = (d1 << 7) + d2
+    if actions[index].id.lastIndexOf('cursor track', 0) is 0
+      return if not track.get('isSelectedInMixer')
+    else if actions[index].id.lastIndexOf('cursor device', 0) is 0
+      return if not device.get('hasSelectedDevice')
+    actions[index].fn.call null if index < actions.length
 
 deviceValue = (i, delta) ->
   if macroIndicated
@@ -370,7 +386,7 @@ exports.actions = actions = [
       slots = device.get('slots')
       return if slots.length is 0
       slot = deviceSlot.get('name')
-      if slot.length is 0
+      if slot is ''
         # open chain slot
         deviceSlot.selectSlot slots[0]
       else if slot is slots[slots.length - 1]
@@ -388,23 +404,55 @@ exports.actions = actions = [
   }
   {
     id: 'cursor device - chain slot - select first device in slot'
-    fn: -> device.selectFirstInSlot deviceSlot.get 'name'
+    fn: ->
+      slot = deviceSlot.get 'name'
+      if slot is ''
+        device.selectNext()
+      else
+        device.selectFirstInSlot slot
   }
   {
-    id: 'cursor device - chain/layer - select parrent device'
-    fn: -> device.selectParent()
+    id: 'experimental - cursor device - layer - select first layer'
+    fn: ->
+      # doesen't sync with UI
+      if device.get('hasLayers')
+        device.selectFirstInLayer 0
+      else
+        device.selectNext()
+  }
+  {
+    id: 'cursor device - chain/layer - select parent device'
+    fn: ->
+      if device.get('isNested')
+        device.selectParent()
+      else
+        device.selectPrevious()
+  }
+  {
+    id: 'experimental - cursor device - Drum Pads - page dowm'
+    fn: ->
+      # doesen't sync with UI
+      if device.get('hasDrumPads')
+        drumPadBank.scrollChannelsPageDown()
+  }
+  {
+    id: 'experimental - cursor device - Drum Pads - page up'
+    fn: ->
+      # doesen't sync with UI
+      if device.get('hasDrumPads')
+        drumPadBank.scrollChannelsPageUp()
   }
 
   ## RangedValue resolution
   {
-    id: 'delta value - increase'
+    id: 'delta value - inc'
     fn: ->
       resolutionIndex-- if resolutionIndex > 0
       resolution = RESOLUTIONS[resolutionIndex]
       host.showPopupNotification "delta value: 1/#{resolution-1}"
   }
   {
-    id: 'delta value - decrease'
+    id: 'delta value - dec'
     fn: ->
       resolutionIndex++ if resolutionIndex < RESOLUTIONS.length - 1
       resolution = RESOLUTIONS[resolutionIndex]

@@ -23655,11 +23655,11 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>extended - cursor device - chain/layer - select parrent device</string>
+            <string>extended - experimental - cursor device - layer - select first layer</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>EEBC6E71-C824-4F63-8BE8-493CF9D6CD7F</string>
+            <string>5E01F735-4C3C-4E58-857C-7CB02353F396</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -23724,11 +23724,11 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>extended - delta value - increase</string>
+            <string>extended - cursor device - chain/layer - select parent device</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>498BD264-00FC-4246-AF4C-53D03A472EA7</string>
+            <string>EEBC6E71-C824-4F63-8BE8-493CF9D6CD7F</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -23793,7 +23793,214 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>extended - delta value - decrease</string>
+            <string>extended - experimental - cursor device - Drum Pads - page dowm</string>
+            <key>Triggers</key>
+            <array/>
+            <key>UID</key>
+            <string>078A4F72-1F0E-4D6E-99B0-800F8C1BD36A</string>
+          </dict>
+        </array>
+        <key>Modifiers</key>
+        <integer>0</integer>
+        <key>Name</key>
+        <string>Bitwig Actions</string>
+        <key>Targeting</key>
+        <dict>
+          <key>Targeting</key>
+          <string>Included</string>
+          <key>TargetingApps</key>
+          <array>
+            <dict>
+              <key>BundleIdentifier</key>
+              <string>com.bitwig.studio</string>
+              <key>Name</key>
+              <string>Bitwig Studio</string>
+              <key>NewFile</key>
+              <string>/Applications/Bitwig Studio.app</string>
+            </dict>
+          </array>
+        </dict>
+      </dict>
+      
+      <dict>
+        <key>Activate</key>
+        <string>AlwaysWithPalette</string>
+        <key>AddToMacroPalette</key>
+        <true/>
+        <key>AddToStatusMenu</key>
+        <false/>
+        <key>IsActive</key>
+        <false/>
+        <key>KeyCode</key>
+        <integer>32767</integer>
+        <key>Macros</key>
+        <array>
+          <dict>
+            <key>Actions</key>
+            <array>
+              <dict>
+                <key>Channel</key>
+                <integer>2</integer>
+                <key>IsActive</key>
+                <true/>
+                <key>IsDisclosed</key>
+                <true/>
+                <key>MIDIMessageType</key>
+                <string>ControlChange</string>
+                <key>MacroActionType</key>
+                <string>SendMIDIMessage</string>
+                <key>Note</key>
+                <integer>0</integer>
+                <key>Value</key>
+                <integer>72</integer>
+              </dict>
+            </array>
+            <key>CustomIconData</key>
+            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+            <key>IsActive</key>
+            <true/>
+            <key>ModificationDate</key>
+            <real>440732432.86673301</real>
+            <key>Name</key>
+            <string>extended - experimental - cursor device - Drum Pads - page up</string>
+            <key>Triggers</key>
+            <array/>
+            <key>UID</key>
+            <string>6EEE2C60-E4F8-49CF-BB71-B7822D736285</string>
+          </dict>
+        </array>
+        <key>Modifiers</key>
+        <integer>0</integer>
+        <key>Name</key>
+        <string>Bitwig Actions</string>
+        <key>Targeting</key>
+        <dict>
+          <key>Targeting</key>
+          <string>Included</string>
+          <key>TargetingApps</key>
+          <array>
+            <dict>
+              <key>BundleIdentifier</key>
+              <string>com.bitwig.studio</string>
+              <key>Name</key>
+              <string>Bitwig Studio</string>
+              <key>NewFile</key>
+              <string>/Applications/Bitwig Studio.app</string>
+            </dict>
+          </array>
+        </dict>
+      </dict>
+      
+      <dict>
+        <key>Activate</key>
+        <string>AlwaysWithPalette</string>
+        <key>AddToMacroPalette</key>
+        <true/>
+        <key>AddToStatusMenu</key>
+        <false/>
+        <key>IsActive</key>
+        <false/>
+        <key>KeyCode</key>
+        <integer>32767</integer>
+        <key>Macros</key>
+        <array>
+          <dict>
+            <key>Actions</key>
+            <array>
+              <dict>
+                <key>Channel</key>
+                <integer>2</integer>
+                <key>IsActive</key>
+                <true/>
+                <key>IsDisclosed</key>
+                <true/>
+                <key>MIDIMessageType</key>
+                <string>ControlChange</string>
+                <key>MacroActionType</key>
+                <string>SendMIDIMessage</string>
+                <key>Note</key>
+                <integer>0</integer>
+                <key>Value</key>
+                <integer>73</integer>
+              </dict>
+            </array>
+            <key>CustomIconData</key>
+            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+            <key>IsActive</key>
+            <true/>
+            <key>ModificationDate</key>
+            <real>440732432.86673301</real>
+            <key>Name</key>
+            <string>extended - delta value - inc</string>
+            <key>Triggers</key>
+            <array/>
+            <key>UID</key>
+            <string>498BD264-00FC-4246-AF4C-53D03A472EA7</string>
+          </dict>
+        </array>
+        <key>Modifiers</key>
+        <integer>0</integer>
+        <key>Name</key>
+        <string>Bitwig Actions</string>
+        <key>Targeting</key>
+        <dict>
+          <key>Targeting</key>
+          <string>Included</string>
+          <key>TargetingApps</key>
+          <array>
+            <dict>
+              <key>BundleIdentifier</key>
+              <string>com.bitwig.studio</string>
+              <key>Name</key>
+              <string>Bitwig Studio</string>
+              <key>NewFile</key>
+              <string>/Applications/Bitwig Studio.app</string>
+            </dict>
+          </array>
+        </dict>
+      </dict>
+      
+      <dict>
+        <key>Activate</key>
+        <string>AlwaysWithPalette</string>
+        <key>AddToMacroPalette</key>
+        <true/>
+        <key>AddToStatusMenu</key>
+        <false/>
+        <key>IsActive</key>
+        <false/>
+        <key>KeyCode</key>
+        <integer>32767</integer>
+        <key>Macros</key>
+        <array>
+          <dict>
+            <key>Actions</key>
+            <array>
+              <dict>
+                <key>Channel</key>
+                <integer>2</integer>
+                <key>IsActive</key>
+                <true/>
+                <key>IsDisclosed</key>
+                <true/>
+                <key>MIDIMessageType</key>
+                <string>ControlChange</string>
+                <key>MacroActionType</key>
+                <string>SendMIDIMessage</string>
+                <key>Note</key>
+                <integer>0</integer>
+                <key>Value</key>
+                <integer>74</integer>
+              </dict>
+            </array>
+            <key>CustomIconData</key>
+            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+            <key>IsActive</key>
+            <true/>
+            <key>ModificationDate</key>
+            <real>440732432.86673301</real>
+            <key>Name</key>
+            <string>extended - delta value - dec</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
