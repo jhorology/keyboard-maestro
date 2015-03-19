@@ -30,34 +30,34 @@
 						<key>MacroActionType</key>
 						<string>ExecuteMacro</string>
 						<key>MacroUID</key>
-						<string>22A1B168-7788-4E3A-804A-41166E3EDEEB</string>
+						<string>83BA62DF-3B2E-429D-B63E-9131C9A00E42</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:89,200,120,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:194,37,135,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448000251.78892201</real>
+				<real>448496132.95745897</real>
 				<key>Name</key>
-				<string>09 [5] Param/Macro 5 - inc</string>
+				<string>MOD 8 Mapping - toggle			[⌥⇧8]</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>WhileDown</string>
+						<string>Pressed</string>
 						<key>KeyCode</key>
-						<integer>23</integer>
+						<integer>28</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
-						<integer>0</integer>
+						<integer>2560</integer>
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>687AEDAD-BBC1-4C38-8D6E-641BB3B6E7BC</string>
+				<string>6D19B76C-61D8-4F3E-9558-151A06D474CD</string>
 			</dict>
 		</array>
 		<key>Modifiers</key>
