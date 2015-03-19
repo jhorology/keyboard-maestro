@@ -1,4 +1,4 @@
-exports.version = '1.1.6'
+exports.version = '1.1.7 RC 1'
 exports.ids = [
   {
     id: 'New'

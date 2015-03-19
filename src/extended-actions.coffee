@@ -1,4 +1,4 @@
-exports.version = '1.1.6'
+exports.version = '1.1.7 RC 1'
 exports.ids = [
   {
     id: 'cursor track - activated - toggle'
@@ -267,6 +267,42 @@ exports.ids = [
   {
     id: 'cursor device - macro 8 mapping - toggle'
     uuid: '4409766C-F91F-4243-BDDA-15467CD21B78'
+  }
+  {
+    id: 'cursor device - macro 1 mapping - toggle'
+    uuid: 'DEF6F21E-69CD-439D-A960-00521F0D5188'
+  }
+  {
+    id: 'cursor device - MOD 1 mapping - toggle'
+    uuid: 'F463322B-536E-4A4F-8254-634B31EF12F8'
+  }
+  {
+    id: 'cursor device - MOD 2 mapping - toggle'
+    uuid: '48AA916E-0A5A-4E15-A4F0-EB26F5CC66CB'
+  }
+  {
+    id: 'cursor device - MOD 3 mapping - toggle'
+    uuid: 'F911E8EF-3437-4ED6-BE56-F23F4728E6BB'
+  }
+  {
+    id: 'cursor device - MOD 4 mapping - toggle'
+    uuid: '8CD083F5-8CF1-4774-92CE-A1BE1AC7CA62'
+  }
+  {
+    id: 'cursor device - MOD 5 mapping - toggle'
+    uuid: '771ACD0F-3ADA-4C76-922A-8188639E9F4E'
+  }
+  {
+    id: 'cursor device - MOD 6 mapping - toggle'
+    uuid: 'A587D0DC-83AE-461A-A20E-ADB688043C38'
+  }
+  {
+    id: 'cursor device - MOD 7 mapping - toggle'
+    uuid: '89CB3F83-1277-433C-B496-9DE2F5B402A8'
+  }
+  {
+    id: 'cursor device - MOD 8 mapping - toggle'
+    uuid: '83BA62DF-3B2E-429D-B63E-9131C9A00E42'
   }
   {
     id: 'cursor device - chain slot - open/next/close'

@@ -5,12 +5,12 @@ ctx     = require './scripting-context'
 NUM_SENDS = 4
 
 # macrolet
-# v:function($,v){ do something...},m:function($,on,v){do something...}
+# v:function($,v){ do something...},m:function($,s,v){do something...}
 #
 # property | type              | desc
 # ---------|-------------------|-----------------------------------------------
 #  v       | function($,v)     | called on value changed. $=context, v=value(0..1)
-#  m       | function($, s, v) | calledi on mapping on/off, $=context, s=on/off, v=value(0..1)
+#  m       | function($, s, v) | called on mapping on/off, $=context, s=on/off, v=value(0..1)
 
 process.on 'init', ->
   device = host.createEditorCursorDevice NUM_SENDS

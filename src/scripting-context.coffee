@@ -1,6 +1,4 @@
 host = require './host'
-host = require './host'
-
 module.exports = ctx = {}
 
 NUM_TRACKS = 64
@@ -23,7 +21,6 @@ process.on 'init', ->
   ctx.st6 = tracks.getTrack(5)
   ctx.st7 = tracks.getTrack(6)
   ctx.st8 = tracks.getTrack(7)
-
-ctx.msg = (s) -> host.showPopupNotification s
-ctx.trk = (id) -> trackBank.getTrack(id - 1)
+  ctx.msg = (s) -> host.showPopupNotification s
+  ctx.trk = (id) -> trackBank.getTrack(id - 1)
 

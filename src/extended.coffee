@@ -7,6 +7,7 @@ deviceLayer =
 drumPadBank =
 macroValues =
 macroSources =
+modSources =
 macroIndicated =
 parameterValues =
 parameterIndicated = undefined
@@ -70,6 +71,8 @@ process.on 'init', ->
     device.getMacro(index).getAmount()
   macroSources = for index in [0..7]
     device.getMacro(index).getModulationSource()
+  modSources = for index in [0..7]
+    device.getModulationSource(index)
   macroIndicated = false
   parameterValues = for index in [0..7]
     device.getParameter index
@@ -377,6 +380,42 @@ exports.actions = actions = [
   {
     id: 'cursor device - macro 8 mapping - toggle'
     fn: -> macroSources[7].toggleIsMapping()
+  }
+  {
+    id: 'cursor device - macro 1 mapping - toggle'
+    fn: -> macroSources[0].toggleIsMapping()
+  }
+  {
+    id: 'cursor device - MOD 1 mapping - toggle'
+    fn: -> modSources[0].toggleIsMapping()
+  }
+  {
+    id: 'cursor device - MOD 2 mapping - toggle'
+    fn: -> modSources[1].toggleIsMapping()
+  }
+  {
+    id: 'cursor device - MOD 3 mapping - toggle'
+    fn: -> modSources[2].toggleIsMapping()
+  }
+  {
+    id: 'cursor device - MOD 4 mapping - toggle'
+    fn: -> modSources[3].toggleIsMapping()
+  }
+  {
+    id: 'cursor device - MOD 5 mapping - toggle'
+    fn: -> modSources[4].toggleIsMapping()
+  }
+  {
+    id: 'cursor device - MOD 6 mapping - toggle'
+    fn: -> modSources[5].toggleIsMapping()
+  }
+  {
+    id: 'cursor device - MOD 7 mapping - toggle'
+    fn: -> modSources[6].toggleIsMapping()
+  }
+  {
+    id: 'cursor device - MOD 8 mapping - toggle'
+    fn: -> modSources[7].toggleIsMapping()
   }
   
   ## cursor device - chain slot
