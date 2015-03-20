@@ -59,11 +59,11 @@ class Model extends Backbone.Model
           if "#{values[0]}".indexOf("[Ljava.lang.String") is 0
             values = Array::slice.call values[0]
           values = (String s for s in values)
-          @set attr, values, observed: true
+          @set attr, values, observed: on
       else if attr is 'color'
-        cb = (r,g,b) => @set attr, {R: r, G: g, B: b}, observed: true
+        cb = (r,g,b) => @set attr, {R: r, G: g, B: b}, observed: on
       else
-        cb = (value) => @set attr, value, observed: true
+        cb = (value) => @set attr, value, observed: on
       args.push cb
       observer.apply @api, args
       if setter
@@ -135,26 +135,26 @@ class Model extends Backbone.Model
   _value: (attr, vo, opts) ->
     if opts?.range
       vo.addValueObserver opts.range, (value) =>
-        @set attr, value, observed: true
+        @set attr, value, observed: on
       @on "change:#{attr}", (model, value, opts) ->
         vo.api.set value, opts.resolution unless opts.observed
     else
       vo.addValueObserver (value) =>
-        @set attr, value, observed: true
+        @set attr, value, observed: on
       @on "change:#{attr}", (model, value, opts) ->
         vo.api.set value unless opts.observed
     @
 
   _rawValue: (attr, vo, opts) ->
     vo.addRawValueObserver (value) =>
-      @set attr, value, observed: true
+      @set attr, value, observed: on
     @on "change:#{attr}", (model, value, opts) ->
       vo.setRaw value unless opts.observed
     @
 
   _name: (attr, vo, opts) ->
     vo.addNameObserver opts.maxChar, opts.fallback, (value) =>
-      @set attr, value, observed: true
+      @set attr, value, observed: on
     @
 
   _valueDisplay: (attr, vo, opts) ->
@@ -162,7 +162,7 @@ class Model extends Backbone.Model
       maxChar: 12
       fallback: ''
     vo.addValueDisplayObserver opts.maxChar, opts.fallback, (value) =>
-      @set attr, value, observed: true
+      @set attr, value, observed: on
 
   _beatTime: (attr, vo, opts) ->
     _.defaults opts,
@@ -173,13 +173,6 @@ class Model extends Backbone.Model
       ticksLen: 0
     vo.addTimeObserver opts.separator, opts.barLen, opts.beatsLen, opts.subdivisionLen, opts.ticksLen, (value) =>
       @set attr, value, observed: true
-    @
-
-  _color: (obj, attr) ->
-    obj.addColorObserver (r, g, b) =>
-      @set attr, {R: r, G: g, B: b}, observed: true
-    @on "change:#{attr}", (model, value, opts) ->
-      model.set value unless opts.observed
     @
 
 #  Host
@@ -505,11 +498,11 @@ class Transport extends Model
     @
 
   incTempoSlow: (delta) ->
-    @incTempo delta, true
+    @incTempo delta, on
     @
 
   incTempoFast: (delta) ->
-    @incTempo delta, true
+    @incTempo delta, on
     @
 
 #  UserControlBank
