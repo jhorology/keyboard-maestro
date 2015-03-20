@@ -51,9 +51,8 @@ class Model extends Backbone.Model
       setter = undefined
       if args.length > 0 and _.isFunction args[args.length - 1]
         setter = args.pop()
-        
-      cb = (value) =>
-        @set attr, value, observed: true
+      #
+      cb = undefined
       if attr in stringArrayAttrs
         cb = (values...) =>
           # WTF! what a lack of consistency....
@@ -61,30 +60,31 @@ class Model extends Backbone.Model
             values = Array::slice.call values[0]
           values = (String s for s in values)
           @set attr, values, observed: true
-      
-      if attr in @constructor.cbFirstObservers
-        args.unshift cb
+      else if attr is 'color'
+        cb = (r,g,b) => @set attr, {R: r, G: g, B: b}, observed: true
       else
-        args.push cb
+        cb = (value) => @set attr, value, observed: true
+      args.push cb
       observer.apply @api, args
       if setter
         @on "change:#{attr}", (model, value, opts) ->
           setter.call model, value, opts unless opts.observed
     @
-    
+
   _class: ->
     # _wapped is a class variable.
     return if @constructor._wrapped
-    @constructor.cbFirstObservers = []
     console.info "# wrap class:#{@api}" if DEBUG
     for prop of @api
       try
         continue if prop in propertyExcludes
         continue if @constructor::[prop]
         continue if not _.isFunction @api[prop]
-        @constructor::[prop] = @_function prop
+        # confilict with backbone model
+        fn = if prop is 'set' then '_set' else prop
+        @constructor::[fn] = @_function prop
       catch error
-        console.info "# unsupported property:#{prop} error:#{error}" if DEBUG
+        console.info "  ## unsupported property:#{prop} error:#{error}" if DEBUG
     @constructor._wrapped = true
 
   _function: (fn) ->
@@ -97,18 +97,20 @@ class Model extends Backbone.Model
     if returnType is 'void'
       # observer ?
       if match = /add(\w+)(?=Observer)/.exec fn
-        if paramTypes.indexOf('org.mozilla.javascript.Callable') is 0
-          @constructor.cbFirstObservers.push "#{match[1][0].toLowerCase()}#{match[1][1..]}"
-      if fn is 'set'
-        # confilict with backbone model
-        return ->
-          @api["_#{fn}"].apply @api, arguments
-          @ # returning instance is useful.
+        # callback function to last paramater
+        if paramTypes.length > 0 and paramTypes.indexOf('org.mozilla.javascript.Callable') is 0
+          return (params...) ->
+            params.unshift params.pop()
+            @api[fn].apply @api, params
+            @ # returning instance is useful.
+        else
+          return ->
+            @api[fn].apply @api, arguments
+            @ # returning instance is useful.
       else
         return ->
           @api[fn].apply @api, arguments
           @ # returning instance is useful.
-
     # return type of array?
     isArray = returnType.indexOf('[]', returnType.length - 2) isnt -1
     returnType = returnType[..-3] if isArray
@@ -116,19 +118,19 @@ class Model extends Backbone.Model
       # java string to javascript string
       if isArray
         return -> String obj for obj in @api[fn].apply @api, arguments
-      return -> String @api[fn].apply @api, arguments
+      else
+        return -> String @api[fn].apply @api, arguments
 
     # API class?
     clazz = classes[returnType]
     if clazz
       if isArray
         return -> new clazz api for api in @api[fn].apply @api, arguments
-      return -> new clazz @api[fn].apply @api, arguments
+      else
+        return -> new clazz @api[fn].apply @api, arguments
     if returnType.indexOf('com.bitwig.') is 0
       console.info "  ## unwrap class:#{returnType} function:#{fn}(#{paramTypes})" if DEBUG
-    return ->
-      @api[fn].apply @api, arguments
-        
+    return -> @api[fn].apply @api, arguments
 
   _value: (attr, vo, opts) ->
     if opts?.range
@@ -142,7 +144,7 @@ class Model extends Backbone.Model
       @on "change:#{attr}", (model, value, opts) ->
         vo.api.set value unless opts.observed
     @
-    
+
   _rawValue: (attr, vo, opts) ->
     vo.addRawValueObserver (value) =>
       @set attr, value, observed: true
@@ -154,7 +156,7 @@ class Model extends Backbone.Model
     vo.addNameObserver opts.maxChar, opts.fallback, (value) =>
       @set attr, value, observed: true
     @
-    
+
   _valueDisplay: (attr, vo, opts) ->
     _.defaults opts,
       maxChar: 12
@@ -172,7 +174,7 @@ class Model extends Backbone.Model
     vo.addTimeObserver opts.separator, opts.barLen, opts.beatsLen, opts.subdivisionLen, opts.ticksLen, (value) =>
       @set attr, value, observed: true
     @
-    
+
   _color: (obj, attr) ->
     obj.addColorObserver (r, g, b) =>
       @set attr, {R: r, G: g, B: b}, observed: true
@@ -184,8 +186,9 @@ class Model extends Backbone.Model
 # ============================
 exports.Host = class Host extends Model
 
-  prepare: (def) ->
-    @defineController def.vender, def.name, def.version, def.uuid, def.author
+  prepare: (@def) ->
+    @defineController @def.vender, @def.name
+    , @def.version, @def.uuid, @def.author
     @numInPorts = 1
     @numOutPorts = 0
     defineMidi = (pairs) =>
@@ -195,12 +198,15 @@ exports.Host = class Host extends Model
       @defineMidiPorts @numInPorts, @numOutPorts
       for pair in pairs
         @addDeviceNameBasedDiscoveryPair pair.in, pair.out
-        
-    defineMidi def.midi.mac if @platformIsMac()
-    defineMidi def.midi.windows if @platformIsWindows()
-    defineMidi def.midi.linux if @platformIsLinux()
+
+    defineMidi @def.midi.mac if @platformIsMac()
+    defineMidi @def.midi.windows if @platformIsWindows()
+    defineMidi @def.midi.linux if @platformIsLinux()
 
     process.on 'init', =>
+      for key, value of @def.notification
+        host.getNotificationSettings()["setShouldShow#{key[0].toUpperCase()}#{key[1..]}Notifications"] value
+
       for index in [0...@numInPorts]
         port = @getMidiInPort(index)
         port.setMidiCallback (s, d1, d2) =>
@@ -232,19 +238,19 @@ class Application extends Model
 exports.Arranger =
 classes['com.bitwig.base.control_surface.iface.Arranger'] =
 class Arranger extends Model
-    
+
 #  AutomatableRangedValue
 # ============================
 exports.AutomatableRangedValue =
 classes['com.bitwig.base.control_surface.iface.AutomatableRangedValue'] =
 class AutomatableRangedValue extends Model
-    
+
 #  BeatTime
 # ============================
 exports.BeatTime =
 classes['com.bitwig.base.control_surface.iface.BeatTime'] =
 class BeatTime extends Model
-  
+
 #  BooleanValue
 # ============================
 exports.BooleanValue =
@@ -257,7 +263,7 @@ class BooleanValue extends Model
 exports.Channel =
 classes['com.bitwig.base.control_surface.iface.Channel'] =
 class Channel extends Model
-    
+
 #  Clip
 # ============================
 exports.Clip =
@@ -387,7 +393,7 @@ class MasterTrack extends Model
 exports.MidiIn =
 classes['com.bitwig.base.control_surface.iface.MidiIn'] =
 class MidiIn extends Model
-  
+
 #  MidiOut
 # ============================
 exports.MidiOut =
@@ -501,7 +507,7 @@ class Transport extends Model
   incTempoSlow: (delta) ->
     @incTempo delta, true
     @
-    
+
   incTempoFast: (delta) ->
     @incTempo delta, true
     @

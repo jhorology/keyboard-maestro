@@ -12,6 +12,15 @@ require('./host').prepare
     mac: [
       { in: ['Keyboard Maestro'], out: [] }
     ]
+  notification:
+    selection: on
+    channelSelection: on
+    trackSelection: on
+    deviceSelection: on
+    deviceLayerSelection: off
+    preset: on
+    mapping: on
+    value: on
 
 # function modules
 require './util'

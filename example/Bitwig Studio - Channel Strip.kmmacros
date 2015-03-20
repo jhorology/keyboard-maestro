@@ -30,40 +30,40 @@
 						<key>MacroActionType</key>
 						<string>ExecuteMacro</string>
 						<key>MacroUID</key>
-						<string>C4EA90F9-34B5-4DF2-B218-4C7AE00DE7AE</string>
+						<string>07DE9928-C4F5-4850-B3AC-4E9A60E6C156</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+				<string>KMEC=Rounded=KMCOLOR:255,0,0,255=⚫=82=4=4=1=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448018086.29817498</real>
+				<real>448569360.04042</real>
 				<key>Name</key>
-				<string>01 [⌥↑] Volumne - up</string>
+				<string>Arm - toggle					[A] </string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>WhileDown</string>
+						<string>Pressed</string>
 						<key>KeyCode</key>
-						<integer>126</integer>
+						<integer>0</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
-						<integer>2048</integer>
+						<integer>0</integer>
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>D571CC2E-98A0-4EE1-BA19-E24197A1AC03</string>
+				<string>D5F307A8-9B5B-4D89-BE84-B853C52ECF5B</string>
 			</dict>
 		</array>
 		<key>Modifiers</key>
 		<integer>2048</integer>
 		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -111,26 +111,26 @@
 						<key>MacroActionType</key>
 						<string>ExecuteMacro</string>
 						<key>MacroUID</key>
-						<string>BAB65BCD-8C25-43A7-BE0D-5599DB12B7E8</string>
+						<string>1CF1F98C-B30B-4168-A077-921D6CE6B1B6</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+				<string>KMEC=Rounded=KMCOLOR:247,83,0,255=A=82=4=2=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448018091.44207102</real>
+				<real>448569492.08554399</real>
 				<key>Name</key>
-				<string>02 [⌥↓] Volumne - down</string>
+				<string>Crossfade - A				[⌥A] </string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>WhileDown</string>
+						<string>Pressed</string>
 						<key>KeyCode</key>
-						<integer>125</integer>
+						<integer>0</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
@@ -138,13 +138,497 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>8C411628-AE58-42B6-B7B1-209282B3C5B1</string>
+				<string>AEDA092F-31C0-45D8-94D5-134DBDFA0E32</string>
 			</dict>
 		</array>
 		<key>Modifiers</key>
 		<integer>2048</integer>
 		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.bitwig.studio</string>
+					<key>Name</key>
+					<string>Bitwig Studio</string>
+					<key>NewFile</key>
+					<string>/Applications/Bitwig Studio.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>WithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>17</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>Count</key>
+						<integer>1</integer>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>0457FF82-1A94-40DD-986E-9DA31D9ABC82</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CustomIconData</key>
+				<string>KMEC=Rounded=KMCOLOR:247,83,0,255=♦=82=4=0=0=KMCOLOR:0,0,0,255</string>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>448569604.36588699</real>
+				<key>Name</key>
+				<string>Crossfade - AB				[⌥C] </string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>8</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2048</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>BAAA84F4-EB7B-42DC-9B56-B17CE5303610</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>2048</integer>
+		<key>Name</key>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.bitwig.studio</string>
+					<key>Name</key>
+					<string>Bitwig Studio</string>
+					<key>NewFile</key>
+					<string>/Applications/Bitwig Studio.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>WithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>17</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>Count</key>
+						<integer>1</integer>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>98C38744-F3C5-48F3-B0E9-ADFB2B529A6C</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CustomIconData</key>
+				<string>KMEC=Rounded=KMCOLOR:247,83,0,255=B=82=4=2=0=KMCOLOR:0,0,0,255</string>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>448569518.79435998</real>
+				<key>Name</key>
+				<string>Crossfade - B				[⌥B] </string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>11</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2048</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>E46F2E43-2EA0-42AF-91DE-83C21876BB7C</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>2048</integer>
+		<key>Name</key>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.bitwig.studio</string>
+					<key>Name</key>
+					<string>Bitwig Studio</string>
+					<key>NewFile</key>
+					<string>/Applications/Bitwig Studio.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>WithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>17</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>Count</key>
+						<integer>1</integer>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>F83991CE-2B48-4621-B338-01FD9A0FDA08</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>448568462.03578299</real>
+				<key>Name</key>
+				<string>Crossfade controls - toggle	[C] </string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>8</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>52DCEC80-5594-46B0-93E5-1D35094B2169</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>2048</integer>
+		<key>Name</key>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.bitwig.studio</string>
+					<key>Name</key>
+					<string>Bitwig Studio</string>
+					<key>NewFile</key>
+					<string>/Applications/Bitwig Studio.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>WithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>17</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>Count</key>
+						<integer>1</integer>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>9C14950E-F398-4632-9632-B02C188BD9CD</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CustomIconData</key>
+				<string>KMEP-Plus</string>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>448569007.52545601</real>
+				<key>Name</key>
+				<string>Delta value - dec				[-] </string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>27</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>6074A025-FA67-4B30-9E34-B2D29A4FF93A</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>2048</integer>
+		<key>Name</key>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.bitwig.studio</string>
+					<key>Name</key>
+					<string>Bitwig Studio</string>
+					<key>NewFile</key>
+					<string>/Applications/Bitwig Studio.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>WithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>17</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>Count</key>
+						<integer>1</integer>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>498BD264-00FC-4246-AF4C-53D03A472EA7</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CustomIconData</key>
+				<string>KMEP-Minus</string>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>448569012.29549098</real>
+				<key>Name</key>
+				<string>Delta value - inc				[=] </string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>24</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>802C6F21-AC89-4AF2-A788-E70DD0B192FC</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>2048</integer>
+		<key>Name</key>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.bitwig.studio</string>
+					<key>Name</key>
+					<string>Bitwig Studio</string>
+					<key>NewFile</key>
+					<string>/Applications/Bitwig Studio.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>WithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>17</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>Count</key>
+						<integer>1</integer>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>9E00086E-78FB-4A6A-92D1-F52858C5EB62</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CustomIconData</key>
+				<string>KMEC=Rounded=KMCOLOR:244,82,0,255=M=82=2=0=0=KMCOLOR:0,0,0,255</string>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>448569738.78934902</real>
+				<key>Name</key>
+				<string>Mute - toggle				[M] </string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>46</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>DE405722-5550-4EC4-BD81-9D840D530DC7</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>2048</integer>
+		<key>Name</key>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -198,13 +682,13 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+				<string>KMEP-Left</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448018246.74973202</real>
+				<real>448568992.00112802</real>
 				<key>Name</key>
-				<string>03 [⌥←] Pan - left</string>
+				<string>Pan - left					[⌥←] </string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -225,7 +709,7 @@
 		<key>Modifiers</key>
 		<integer>2048</integer>
 		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -279,13 +763,13 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+				<string>KMEP-Right</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448018253.22181201</real>
+				<real>448568996.95925701</real>
 				<key>Name</key>
-				<string>04 [⌥→] Pan - right</string>
+				<string>Pan - right					[⌥←] </string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -306,88 +790,7 @@
 		<key>Modifiers</key>
 		<integer>2048</integer>
 		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
-		<key>Targeting</key>
-		<dict>
-			<key>Targeting</key>
-			<string>Included</string>
-			<key>TargetingApps</key>
-			<array>
-				<dict>
-					<key>BundleIdentifier</key>
-					<string>com.bitwig.studio</string>
-					<key>Name</key>
-					<string>Bitwig Studio</string>
-					<key>NewFile</key>
-					<string>/Applications/Bitwig Studio.app</string>
-				</dict>
-			</array>
-		</dict>
-		<key>UID</key>
-		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>WithPalette</string>
-		<key>AddToMacroPalette</key>
-		<false/>
-		<key>AddToStatusMenu</key>
-		<false/>
-		<key>IsActive</key>
-		<true/>
-		<key>KeyCode</key>
-		<integer>17</integer>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>Count</key>
-						<integer>1</integer>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>92C3B055-295C-446D-9DE0-E0ED91FBF9AB</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-				</array>
-				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-				<key>IsActive</key>
-				<true/>
-				<key>ModificationDate</key>
-				<real>448018265.798168</real>
-				<key>Name</key>
-				<string>05 [1] Send S1 - up</string>
-				<key>Triggers</key>
-				<array>
-					<dict>
-						<key>FireType</key>
-						<string>WhileDown</string>
-						<key>KeyCode</key>
-						<integer>18</integer>
-						<key>MacroTriggerType</key>
-						<string>HotKey</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
-					</dict>
-				</array>
-				<key>UID</key>
-				<string>FDCA1E44-379D-45CF-B4FB-F6218FFFEF79</string>
-			</dict>
-		</array>
-		<key>Modifiers</key>
-		<integer>2048</integer>
-		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -441,13 +844,13 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+				<string>KMEP-Down</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448018295.77510202</real>
+				<real>448568864.860259</real>
 				<key>Name</key>
-				<string>06 [Q] Send S1 - down</string>
+				<string>Send S1 - down				[Q] </string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -468,7 +871,7 @@
 		<key>Modifiers</key>
 		<integer>2048</integer>
 		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -516,26 +919,26 @@
 						<key>MacroActionType</key>
 						<string>ExecuteMacro</string>
 						<key>MacroUID</key>
-						<string>7CB6EB8E-0DC4-4BBC-AC4F-163B26DF9ECD</string>
+						<string>92C3B055-295C-446D-9DE0-E0ED91FBF9AB</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+				<string>KMEP-Up</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448018275.93590403</real>
+				<real>448568868.79031199</real>
 				<key>Name</key>
-				<string>07 [2] Send S2 - up</string>
+				<string>Send S1 - up					[1] </string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
 						<string>WhileDown</string>
 						<key>KeyCode</key>
-						<integer>19</integer>
+						<integer>18</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
@@ -543,13 +946,13 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>837CCC83-D998-44D3-AAFE-86B94A8964FE</string>
+				<string>FDCA1E44-379D-45CF-B4FB-F6218FFFEF79</string>
 			</dict>
 		</array>
 		<key>Modifiers</key>
 		<integer>2048</integer>
 		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -603,13 +1006,13 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+				<string>KMEP-Down</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448018301.48703402</real>
+				<real>448568878.76656598</real>
 				<key>Name</key>
-				<string>08 [W] Send S2 - down</string>
+				<string>Send S2 - down				[W] </string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -630,7 +1033,7 @@
 		<key>Modifiers</key>
 		<integer>2048</integer>
 		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -678,26 +1081,26 @@
 						<key>MacroActionType</key>
 						<string>ExecuteMacro</string>
 						<key>MacroUID</key>
-						<string>195C9AF8-0D5A-4DE9-8DBA-E431703426ED</string>
+						<string>7CB6EB8E-0DC4-4BBC-AC4F-163B26DF9ECD</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+				<string>KMEP-Up</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448018281.11205101</real>
+				<real>448568882.78465402</real>
 				<key>Name</key>
-				<string>09 [3] Send S3 - up</string>
+				<string>Send S2 - up					[2] </string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
 						<string>WhileDown</string>
 						<key>KeyCode</key>
-						<integer>20</integer>
+						<integer>19</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
@@ -705,13 +1108,13 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>8B518859-13A7-4B33-A7E5-BB9166B4DDD1</string>
+				<string>837CCC83-D998-44D3-AAFE-86B94A8964FE</string>
 			</dict>
 		</array>
 		<key>Modifiers</key>
 		<integer>2048</integer>
 		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -765,13 +1168,13 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+				<string>KMEP-Down</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448018307.047041</real>
+				<real>448568889.18285102</real>
 				<key>Name</key>
-				<string>10 [E] Send S3 - down</string>
+				<string>Send S3 - down				[E] </string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -792,7 +1195,7 @@
 		<key>Modifiers</key>
 		<integer>2048</integer>
 		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -840,26 +1243,26 @@
 						<key>MacroActionType</key>
 						<string>ExecuteMacro</string>
 						<key>MacroUID</key>
-						<string>9153B027-D958-446E-A5EA-5224489EA289</string>
+						<string>195C9AF8-0D5A-4DE9-8DBA-E431703426ED</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+				<string>KMEP-Up</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448018286.17587698</real>
+				<real>448568894.31290698</real>
 				<key>Name</key>
-				<string>11 [4] Send S4 - up</string>
+				<string>Send S3 - up					[3] </string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
 						<string>WhileDown</string>
 						<key>KeyCode</key>
-						<integer>21</integer>
+						<integer>20</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
@@ -867,13 +1270,13 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>DD8532B6-ABF6-4F7E-808F-6C9C3EC3050E</string>
+				<string>8B518859-13A7-4B33-A7E5-BB9166B4DDD1</string>
 			</dict>
 		</array>
 		<key>Modifiers</key>
 		<integer>2048</integer>
 		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -927,13 +1330,13 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+				<string>KMEP-Down</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448018312.22331899</real>
+				<real>448568898.872962</real>
 				<key>Name</key>
-				<string>12 [R] Send S4 - down</string>
+				<string>Send S4 - down				[R] </string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -954,7 +1357,169 @@
 		<key>Modifiers</key>
 		<integer>2048</integer>
 		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.bitwig.studio</string>
+					<key>Name</key>
+					<string>Bitwig Studio</string>
+					<key>NewFile</key>
+					<string>/Applications/Bitwig Studio.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>WithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>17</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>Count</key>
+						<integer>1</integer>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>9153B027-D958-446E-A5EA-5224489EA289</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CustomIconData</key>
+				<string>KMEP-Up</string>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>448568902.80302399</real>
+				<key>Name</key>
+				<string>Send S4 - up					[4] </string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>WhileDown</string>
+						<key>KeyCode</key>
+						<integer>21</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>DD8532B6-ABF6-4F7E-808F-6C9C3EC3050E</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>2048</integer>
+		<key>Name</key>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.bitwig.studio</string>
+					<key>Name</key>
+					<string>Bitwig Studio</string>
+					<key>NewFile</key>
+					<string>/Applications/Bitwig Studio.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>WithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>17</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>Count</key>
+						<integer>1</integer>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>49C65227-C8A4-48CD-8C98-24A63E4E2916</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CustomIconData</key>
+				<string>KMEC=Rounded=KMCOLOR:207,186,0,255=S=82=2=0=0=KMCOLOR:0,0,0,255</string>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>448569698.96606201</real>
+				<key>Name</key>
+				<string>Solo - toggle				[S] </string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>1</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>B90ED1E8-6011-4F1A-BB18-CFEE1E30AF1D</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>2048</integer>
+		<key>Name</key>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -1092,9 +1657,9 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448018234.25376499</real>
+				<real>448568417.26537502</real>
 				<key>Name</key>
-				<string>13 [⌥R] Volume, Pan, Send - reset</string>
+				<string>Volume, Pan, Send - reset	[⌥R] </string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -1115,7 +1680,7 @@
 		<key>Modifiers</key>
 		<integer>2048</integer>
 		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -1163,340 +1728,26 @@
 						<key>MacroActionType</key>
 						<string>ExecuteMacro</string>
 						<key>MacroUID</key>
-						<string>07DE9928-C4F5-4850-B3AC-4E9A60E6C156</string>
+						<string>BAB65BCD-8C25-43A7-BE0D-5599DB12B7E8</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
 				</array>
+				<key>CustomIconData</key>
+				<string>KMEP-Down</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448018111.48235899</real>
+				<real>448568974.02276301</real>
 				<key>Name</key>
-				<string>14 [A] Arm - toggle</string>
+				<string>Volumne - down				[⌥↓] </string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>Pressed</string>
+						<string>WhileDown</string>
 						<key>KeyCode</key>
-						<integer>0</integer>
-						<key>MacroTriggerType</key>
-						<string>HotKey</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
-					</dict>
-				</array>
-				<key>UID</key>
-				<string>D5F307A8-9B5B-4D89-BE84-B853C52ECF5B</string>
-			</dict>
-		</array>
-		<key>Modifiers</key>
-		<integer>2048</integer>
-		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
-		<key>Targeting</key>
-		<dict>
-			<key>Targeting</key>
-			<string>Included</string>
-			<key>TargetingApps</key>
-			<array>
-				<dict>
-					<key>BundleIdentifier</key>
-					<string>com.bitwig.studio</string>
-					<key>Name</key>
-					<string>Bitwig Studio</string>
-					<key>NewFile</key>
-					<string>/Applications/Bitwig Studio.app</string>
-				</dict>
-			</array>
-		</dict>
-		<key>UID</key>
-		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>WithPalette</string>
-		<key>AddToMacroPalette</key>
-		<false/>
-		<key>AddToStatusMenu</key>
-		<false/>
-		<key>IsActive</key>
-		<true/>
-		<key>KeyCode</key>
-		<integer>17</integer>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>Count</key>
-						<integer>1</integer>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>49C65227-C8A4-48CD-8C98-24A63E4E2916</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-				</array>
-				<key>IsActive</key>
-				<true/>
-				<key>ModificationDate</key>
-				<real>448018121.466708</real>
-				<key>Name</key>
-				<string>15 [S] Solo - toggle</string>
-				<key>Triggers</key>
-				<array>
-					<dict>
-						<key>FireType</key>
-						<string>Pressed</string>
-						<key>KeyCode</key>
-						<integer>1</integer>
-						<key>MacroTriggerType</key>
-						<string>HotKey</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
-					</dict>
-				</array>
-				<key>UID</key>
-				<string>B90ED1E8-6011-4F1A-BB18-CFEE1E30AF1D</string>
-			</dict>
-		</array>
-		<key>Modifiers</key>
-		<integer>2048</integer>
-		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
-		<key>Targeting</key>
-		<dict>
-			<key>Targeting</key>
-			<string>Included</string>
-			<key>TargetingApps</key>
-			<array>
-				<dict>
-					<key>BundleIdentifier</key>
-					<string>com.bitwig.studio</string>
-					<key>Name</key>
-					<string>Bitwig Studio</string>
-					<key>NewFile</key>
-					<string>/Applications/Bitwig Studio.app</string>
-				</dict>
-			</array>
-		</dict>
-		<key>UID</key>
-		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>WithPalette</string>
-		<key>AddToMacroPalette</key>
-		<false/>
-		<key>AddToStatusMenu</key>
-		<false/>
-		<key>IsActive</key>
-		<true/>
-		<key>KeyCode</key>
-		<integer>17</integer>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>Count</key>
-						<integer>1</integer>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>9E00086E-78FB-4A6A-92D1-F52858C5EB62</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-				</array>
-				<key>IsActive</key>
-				<true/>
-				<key>ModificationDate</key>
-				<real>448018130.738931</real>
-				<key>Name</key>
-				<string>16 [M] Mute - toggle</string>
-				<key>Triggers</key>
-				<array>
-					<dict>
-						<key>FireType</key>
-						<string>Pressed</string>
-						<key>KeyCode</key>
-						<integer>46</integer>
-						<key>MacroTriggerType</key>
-						<string>HotKey</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
-					</dict>
-				</array>
-				<key>UID</key>
-				<string>DE405722-5550-4EC4-BD81-9D840D530DC7</string>
-			</dict>
-		</array>
-		<key>Modifiers</key>
-		<integer>2048</integer>
-		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
-		<key>Targeting</key>
-		<dict>
-			<key>Targeting</key>
-			<string>Included</string>
-			<key>TargetingApps</key>
-			<array>
-				<dict>
-					<key>BundleIdentifier</key>
-					<string>com.bitwig.studio</string>
-					<key>Name</key>
-					<string>Bitwig Studio</string>
-					<key>NewFile</key>
-					<string>/Applications/Bitwig Studio.app</string>
-				</dict>
-			</array>
-		</dict>
-		<key>UID</key>
-		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>WithPalette</string>
-		<key>AddToMacroPalette</key>
-		<false/>
-		<key>AddToStatusMenu</key>
-		<false/>
-		<key>IsActive</key>
-		<true/>
-		<key>KeyCode</key>
-		<integer>17</integer>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>Count</key>
-						<integer>1</integer>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>F83991CE-2B48-4621-B338-01FD9A0FDA08</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-				</array>
-				<key>IsActive</key>
-				<true/>
-				<key>ModificationDate</key>
-				<real>448018184.004053</real>
-				<key>Name</key>
-				<string>17 [C] Cross-fade controls - toggle</string>
-				<key>Triggers</key>
-				<array>
-					<dict>
-						<key>FireType</key>
-						<string>Pressed</string>
-						<key>KeyCode</key>
-						<integer>8</integer>
-						<key>MacroTriggerType</key>
-						<string>HotKey</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
-					</dict>
-				</array>
-				<key>UID</key>
-				<string>52DCEC80-5594-46B0-93E5-1D35094B2169</string>
-			</dict>
-		</array>
-		<key>Modifiers</key>
-		<integer>2048</integer>
-		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
-		<key>Targeting</key>
-		<dict>
-			<key>Targeting</key>
-			<string>Included</string>
-			<key>TargetingApps</key>
-			<array>
-				<dict>
-					<key>BundleIdentifier</key>
-					<string>com.bitwig.studio</string>
-					<key>Name</key>
-					<string>Bitwig Studio</string>
-					<key>NewFile</key>
-					<string>/Applications/Bitwig Studio.app</string>
-				</dict>
-			</array>
-		</dict>
-		<key>UID</key>
-		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>WithPalette</string>
-		<key>AddToMacroPalette</key>
-		<false/>
-		<key>AddToStatusMenu</key>
-		<false/>
-		<key>IsActive</key>
-		<true/>
-		<key>KeyCode</key>
-		<integer>17</integer>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>Count</key>
-						<integer>1</integer>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>1CF1F98C-B30B-4168-A077-921D6CE6B1B6</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-				</array>
-				<key>IsActive</key>
-				<true/>
-				<key>ModificationDate</key>
-				<real>448018199.68463999</real>
-				<key>Name</key>
-				<string>18 [⌥A] Cross-fade - A</string>
-				<key>Triggers</key>
-				<array>
-					<dict>
-						<key>FireType</key>
-						<string>Pressed</string>
-						<key>KeyCode</key>
-						<integer>0</integer>
+						<integer>125</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
@@ -1504,13 +1755,13 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>AEDA092F-31C0-45D8-94D5-134DBDFA0E32</string>
+				<string>8C411628-AE58-42B6-B7B1-209282B3C5B1</string>
 			</dict>
 		</array>
 		<key>Modifiers</key>
 		<integer>2048</integer>
 		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -1558,24 +1809,26 @@
 						<key>MacroActionType</key>
 						<string>ExecuteMacro</string>
 						<key>MacroUID</key>
-						<string>98C38744-F3C5-48F3-B0E9-ADFB2B529A6C</string>
+						<string>C4EA90F9-34B5-4DF2-B218-4C7AE00DE7AE</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
 				</array>
+				<key>CustomIconData</key>
+				<string>KMEP-Up</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448018210.37265801</real>
+				<real>448568980.81881702</real>
 				<key>Name</key>
-				<string>19 [⌥B] Cross-fade - B</string>
+				<string>Volumne - up				[⌥↑] </string>
 				<key>Triggers</key>
 				<array>
 					<dict>
 						<key>FireType</key>
-						<string>Pressed</string>
+						<string>WhileDown</string>
 						<key>KeyCode</key>
-						<integer>11</integer>
+						<integer>126</integer>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
@@ -1583,256 +1836,13 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>E46F2E43-2EA0-42AF-91DE-83C21876BB7C</string>
+				<string>D571CC2E-98A0-4EE1-BA19-E24197A1AC03</string>
 			</dict>
 		</array>
 		<key>Modifiers</key>
 		<integer>2048</integer>
 		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
-		<key>Targeting</key>
-		<dict>
-			<key>Targeting</key>
-			<string>Included</string>
-			<key>TargetingApps</key>
-			<array>
-				<dict>
-					<key>BundleIdentifier</key>
-					<string>com.bitwig.studio</string>
-					<key>Name</key>
-					<string>Bitwig Studio</string>
-					<key>NewFile</key>
-					<string>/Applications/Bitwig Studio.app</string>
-				</dict>
-			</array>
-		</dict>
-		<key>UID</key>
-		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>WithPalette</string>
-		<key>AddToMacroPalette</key>
-		<false/>
-		<key>AddToStatusMenu</key>
-		<false/>
-		<key>IsActive</key>
-		<true/>
-		<key>KeyCode</key>
-		<integer>17</integer>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>Count</key>
-						<integer>1</integer>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>0457FF82-1A94-40DD-986E-9DA31D9ABC82</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-				</array>
-				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-				<key>IsActive</key>
-				<true/>
-				<key>ModificationDate</key>
-				<real>448018219.60520202</real>
-				<key>Name</key>
-				<string>20 [⌥C] Cross-fade - AB</string>
-				<key>Triggers</key>
-				<array>
-					<dict>
-						<key>FireType</key>
-						<string>Pressed</string>
-						<key>KeyCode</key>
-						<integer>8</integer>
-						<key>MacroTriggerType</key>
-						<string>HotKey</string>
-						<key>Modifiers</key>
-						<integer>2048</integer>
-					</dict>
-				</array>
-				<key>UID</key>
-				<string>BAAA84F4-EB7B-42DC-9B56-B17CE5303610</string>
-			</dict>
-		</array>
-		<key>Modifiers</key>
-		<integer>2048</integer>
-		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
-		<key>Targeting</key>
-		<dict>
-			<key>Targeting</key>
-			<string>Included</string>
-			<key>TargetingApps</key>
-			<array>
-				<dict>
-					<key>BundleIdentifier</key>
-					<string>com.bitwig.studio</string>
-					<key>Name</key>
-					<string>Bitwig Studio</string>
-					<key>NewFile</key>
-					<string>/Applications/Bitwig Studio.app</string>
-				</dict>
-			</array>
-		</dict>
-		<key>UID</key>
-		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>WithPalette</string>
-		<key>AddToMacroPalette</key>
-		<false/>
-		<key>AddToStatusMenu</key>
-		<false/>
-		<key>IsActive</key>
-		<true/>
-		<key>KeyCode</key>
-		<integer>17</integer>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>Count</key>
-						<integer>1</integer>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>9C14950E-F398-4632-9632-B02C188BD9CD</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-				</array>
-				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-				<key>IsActive</key>
-				<true/>
-				<key>ModificationDate</key>
-				<real>448018067.99360102</real>
-				<key>Name</key>
-				<string>21 [-] Delta value - dec</string>
-				<key>Triggers</key>
-				<array>
-					<dict>
-						<key>FireType</key>
-						<string>Pressed</string>
-						<key>KeyCode</key>
-						<integer>27</integer>
-						<key>MacroTriggerType</key>
-						<string>HotKey</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
-					</dict>
-				</array>
-				<key>UID</key>
-				<string>6074A025-FA67-4B30-9E34-B2D29A4FF93A</string>
-			</dict>
-		</array>
-		<key>Modifiers</key>
-		<integer>2048</integer>
-		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
-		<key>Targeting</key>
-		<dict>
-			<key>Targeting</key>
-			<string>Included</string>
-			<key>TargetingApps</key>
-			<array>
-				<dict>
-					<key>BundleIdentifier</key>
-					<string>com.bitwig.studio</string>
-					<key>Name</key>
-					<string>Bitwig Studio</string>
-					<key>NewFile</key>
-					<string>/Applications/Bitwig Studio.app</string>
-				</dict>
-			</array>
-		</dict>
-		<key>UID</key>
-		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>WithPalette</string>
-		<key>AddToMacroPalette</key>
-		<false/>
-		<key>AddToStatusMenu</key>
-		<false/>
-		<key>IsActive</key>
-		<true/>
-		<key>KeyCode</key>
-		<integer>17</integer>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
-						<key>Asynchronously</key>
-						<false/>
-						<key>Count</key>
-						<integer>1</integer>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>498BD264-00FC-4246-AF4C-53D03A472EA7</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-				</array>
-				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-				<key>IsActive</key>
-				<true/>
-				<key>ModificationDate</key>
-				<real>448018076.38564003</real>
-				<key>Name</key>
-				<string>22 [=] Delta value - inc</string>
-				<key>Triggers</key>
-				<array>
-					<dict>
-						<key>FireType</key>
-						<string>Pressed</string>
-						<key>KeyCode</key>
-						<integer>24</integer>
-						<key>MacroTriggerType</key>
-						<string>HotKey</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
-					</dict>
-				</array>
-				<key>UID</key>
-				<string>802C6F21-AC89-4AF2-A788-E70DD0B192FC</string>
-			</dict>
-		</array>
-		<key>Modifiers</key>
-		<integer>2048</integer>
-		<key>Name</key>
-		<string>Bitwig Studio - [⌥T] Channel Strip</string>
+		<string>Bitwig Studio - Channel Strip [⌥T]</string>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>

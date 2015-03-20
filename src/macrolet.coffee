@@ -11,8 +11,7 @@ NUM_SENDS = 4
 # ---------|-------------------|-----------------------------------------------
 #  v       | function($,v)     | called on value changed. $=context, v=value(0..1)
 #  m       | function($, s, v) | called on mapping on/off, $=context, s=on/off, v=value(0..1)
-
-process.on 'init', ->
+ctx.on 'init', ->
   device = host.createEditorCursorDevice NUM_SENDS
   for index in [0..7]
     macro = device.getMacro(index)

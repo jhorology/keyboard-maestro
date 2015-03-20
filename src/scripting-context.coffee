@@ -1,5 +1,6 @@
 host = require './host'
-module.exports = ctx = {}
+events = require 'events'
+module.exports = ctx = new events()
 
 NUM_TRACKS = 64
 NUM_SENDS = 8
@@ -23,4 +24,4 @@ process.on 'init', ->
   ctx.st8 = tracks.getTrack(7)
   ctx.msg = (s) -> host.showPopupNotification s
   ctx.trk = (id) -> trackBank.getTrack(id - 1)
-
+  ctx.emit 'init'

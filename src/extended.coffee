@@ -29,16 +29,6 @@ resolutionIndex = 5
 resolution = 101
 
 process.on 'init', ->
-  host.getNotificationSettings()
-    .setShouldShowSelectionNotifications true
-    .setShouldShowChannelSelectionNotifications true
-    .setShouldShowTrackSelectionNotifications true
-    .setShouldShowDeviceSelectionNotifications true
-    .setShouldShowDeviceLayerSelectionNotifications false
-    .setShouldShowPresetNotifications true
-    .setShouldShowMappingNotifications true
-    .setShouldShowValueNotifications true
-
   track = host.createArrangerCursorTrack NUM_SENDS, 0
     .attribify 'isSelectedInMixer'
     .attribify 'position'
@@ -52,6 +42,12 @@ process.on 'init', ->
     , device.isParameterPageSectionVisible(), 'value'
     .attribify 'isNested', device.isNested(), 'value'
     .attribify 'slots'
+    .attribify 'pageNames'
+    .attribify 'selectedPage', -1
+    .attribify 'presetCategories'
+    .attribify 'presetCategory', 128, ''
+    .attribify 'presetCreators'
+    .attribify 'presetCreator', 128, ''
     .attribify 'hasLayers', device.hasLayers(), 'value'
     .attribify 'hasDrumPads', device.hasDrumPads(), 'value'
     
@@ -85,9 +81,9 @@ process.on 'init', ->
     return if s isnt 0xB1
     index = (d1 << 7) + d2
     if actions[index].id.lastIndexOf('cursor track', 0) is 0
-      return if not track.get('isSelectedInMixer')
+      return if not track.get 'isSelectedInMixer'
     else if actions[index].id.lastIndexOf('cursor device', 0) is 0
-      return if not device.get('hasSelectedDevice')
+      return if not device.get 'hasSelectedDevice'
     actions[index].fn.call null if index < actions.length
 
 deviceValue = (i, delta) ->
@@ -97,7 +93,7 @@ deviceValue = (i, delta) ->
     parameterValues[i].inc delta, resolution
       # workarround for VST parameter dosen't display correctly.
       .once 'change:valueDisplay', (o, value) ->
-        host.showPopupNotification "#{o.get('name')}: #{value}"
+        host.showPopupNotification "#{o.get 'name'}: #{value}"
       
 exports.actions = actions = [
   ## cursor track
@@ -239,16 +235,28 @@ exports.actions = actions = [
   }
   {
     id: 'cursor device - paramater page - prev'
-    fn: -> device.previousParameterPage()
+    fn: ->
+      page = device.get 'selectedPage'
+      names = device.get 'pageNames'
+      if names.length > 0 and page is 0
+        device.setParameterPage names.length - 1
+      else
+        device.previousParameterPage()
   }
   {
     id: 'cursor device - paramater page - next'
-    fn: -> device.nextParameterPage()
+    fn: ->
+      page = device.get 'selectedPage'
+      names = device.get 'pageNames'
+      if names.length > 0 and page is names.length - 1
+        device.setParameterPage 0
+      else
+        device.nextParameterPage()
   }
   {
     id: 'cursor device - preset - prev'
     fn: ->
-      device.switchToPreviousPreset()
+        device.switchToPreviousPreset()
   }
   {
     id: 'cursor device - preset - next'
@@ -258,22 +266,66 @@ exports.actions = actions = [
   {
     id: 'cursor device - preset category - prev'
     fn: ->
-      device.switchToPreviousPresetCategory()
+      name = device.get 'presetCategory'
+      names = device.get 'presetCategories'
+      if names.length > 0
+        if name is names[0]
+          device.setPresetCategory names.length - 1
+            # workaround for doesn't display correctly
+            .once 'change:presetCategory', (d, name) ->
+              host.showPopupNotification "Preset Category: #{name}"
+        else
+          device.switchToPreviousPresetCategory()
+          # workaround for doesn't display correctly
+          if name is names[names.length - 1]
+            device.once 'change:presetCategory', (d, name) ->
+              host.showPopupNotification "Preset Category: #{name}"
   }
   {
     id: 'cursor device - preset category - next'
     fn: ->
-      device.switchToNextPresetCategory()
+      name = device.get 'presetCategory'
+      names = device.get 'presetCategories'
+      if names.length > 0
+        if name is names[names.length - 1]
+          device.setPresetCategory 0
+            # workaround for doesn't display correctly
+            .once 'change:presetCategory', (d, name) ->
+              host.showPopupNotification "Preset Category: #{name}"
+        else
+          device.switchToNextPresetCategory()
   }
   {
     id: 'cursor device - preset creator - prev'
     fn: ->
-      device.switchToPreviousPresetCreator()
+      name = device.get 'presetCreator'
+      names = device.get 'presetCreators'
+      if names.length > 0
+        if name is names[0]
+          device.setPresetCreator names.length - 1
+            # workaround for doesn't display correctly
+            .once 'change:presetCreator', (d, name) ->
+              host.showPopupNotification "Preset Creator: #{name}"
+        else
+          device.switchToPreviousPresetCreator()
+          # workaround for doesn't display correctly
+          if name is names[names.length - 1]
+            device.once 'change:presetCreator', (d, name) ->
+              host.showPopupNotification "Preset Creator: #{name}"
   }
   {
     id: 'cursor device - preset creator - next'
     fn: ->
-      device.switchToNextPresetCreator()
+      name = device.get 'presetCreator'
+      names = device.get 'presetCreators'
+      if names.length > 0
+        if name is names[names.length - 1]
+          device.setPresetCreator 0
+            # workaround for doesn't display correctly
+            .once 'change:presetCreator', (d, name) ->
+              host.showPopupNotification "Preset Creator: #{name}"
+        else
+          device.switchToNextPresetCreator()
   }
   {
     id: 'cursor device - macro/param indication - toggle'
@@ -422,9 +474,9 @@ exports.actions = actions = [
   {
     id: 'cursor device - chain slot - open/next/close'
     fn: ->
-      slots = device.get('slots')
+      slots = device.get 'slots'
       return if slots.length is 0
-      slot = deviceSlot.get('name')
+      slot = deviceSlot.get 'name'
       if slot is ''
         # open chain slot
         deviceSlot.selectSlot slots[0]
@@ -454,7 +506,7 @@ exports.actions = actions = [
     id: 'experimental - cursor device - layer - select first layer'
     fn: ->
       # doesen't sync with UI
-      if device.get('hasLayers')
+      if device.get 'hasLayers'
         device.selectFirstInLayer 0
       else
         device.selectNext()
@@ -462,7 +514,7 @@ exports.actions = actions = [
   {
     id: 'cursor device - chain/layer - select parent device'
     fn: ->
-      if device.get('isNested')
+      if device.get 'isNested'
         device.selectParent()
       else
         device.selectPrevious()
@@ -471,14 +523,14 @@ exports.actions = actions = [
     id: 'experimental - cursor device - Drum Pads - page dowm'
     fn: ->
       # doesen't sync with UI
-      if device.get('hasDrumPads')
+      if device.get 'hasDrumPads'
         drumPadBank.scrollChannelsPageDown()
   }
   {
     id: 'experimental - cursor device - Drum Pads - page up'
     fn: ->
       # doesen't sync with UI
-      if device.get('hasDrumPads')
+      if device.get 'hasDrumPads'
         drumPadBank.scrollChannelsPageUp()
   }
 
