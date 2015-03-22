@@ -1,6 +1,7 @@
 host = require './host'
 
 track =
+crossfade =
 device =
 deviceSlot =
 deviceLayer =
@@ -32,6 +33,7 @@ host.on 'init', ->
   track = host.createArrangerCursorTrack NUM_SENDS, 0
     .attribify 'isSelectedInMixer'
     .attribify 'position'
+  crossfade = host.createTransport().getCrossfade()
   
   device = host.createEditorCursorDevice NUM_SENDS
   device
@@ -195,15 +197,15 @@ exports.actions = actions = [
   }
   {
     id: 'cursor track - crossfade - mode A'
-    fn: -> track.getCrossFadeMode()?.set 'A'
+    fn: -> track.getCrossFadeMode()?._set 'A'
   }
   {
     id: 'cursor track - crossfade - mode B'
-    fn: -> track.getCrossFadeMode()?.set 'B'
+    fn: -> track.getCrossFadeMode()?._set 'B'
   }
   {
     id: 'cursor track - crossfade - mode AB'
-    fn: -> track.getCrossFadeMode()?.set 'AB'
+    fn: -> track.getCrossFadeMode()?._set 'AB'
   }
   {
     id: 'cursor track - clip launcher - stop'
@@ -212,6 +214,14 @@ exports.actions = actions = [
   {
     id: 'cursor track - clip laucner - return to arrangement'
     fn: -> track.returnToArrangement()
+  }
+  {
+    id: 'transport - crossfade - turn A'
+    fn: -> crossfade.inc -1, resolution * 2 - 1
+  }
+  {
+    id: 'transport - crossfade - turn B'
+    fn: -> crossfade.inc 1, resolution * 2 - 1
   }
   {
     id: 'cursor device - enable state - toggle'

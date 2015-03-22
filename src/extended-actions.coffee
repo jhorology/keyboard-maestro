@@ -117,6 +117,14 @@ exports.ids = [
     uuid: '3C05B39A-9E85-4252-A1F3-CE855696FF17'
   }
   {
+    id: 'transport - crossfade - turn A'
+    uuid: '8711917D-D790-4998-B8A0-975E61587D0F'
+  }
+  {
+    id: 'transport - crossfade - turn B'
+    uuid: 'A5C4188B-03B9-41F9-BCEB-9D5B3454974F'
+  }
+  {
     id: 'cursor device - enable state - toggle'
     uuid: 'A3735F3D-E90E-4A80-BE7E-6BA19BAAEF4A'
   }

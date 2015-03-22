@@ -78,7 +78,7 @@ class Model extends Backbone.Model
     for prop of @api
       try
         continue if prop in propertyExcludes
-        continue if @constructor::[prop]
+        continue if @constructor::[prop] and prop isnt 'set'
         continue if not _.isFunction @api[prop]
         # confilict with backbone model
         fn = if prop is 'set' then '_set' else prop

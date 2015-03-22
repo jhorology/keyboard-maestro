@@ -8,6 +8,10 @@ NUM_SCENES = 32
 
 trackBank = undefined
 host.on 'init', ->
+  scripting = host.getPreferences()
+    .getEnumSetting 'Scripting(affect on next restart)'
+    , 'Scripting', ['off', 'on'], 'off'
+  return if scripting isnt 'on'
   ctx.app = host.createApplication()
   ctx.trp = host.createTransport()
   ctx.grv = host.createGroove()
