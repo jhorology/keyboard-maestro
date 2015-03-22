@@ -3760,11 +3760,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEP-iTunesNext</string>
+				<string>KMEP-iTunesPrevious</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448470002.217866</real>
+				<real>448702758.86340803</real>
 				<key>Name</key>
 				<string>Preset Creator - prev				[⇧A]</string>
 				<key>Triggers</key>
@@ -3782,6 +3782,87 @@
 				</array>
 				<key>UID</key>
 				<string>8B01449B-60C4-4C96-8E29-F10F0A64ABC2</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>2048</integer>
+		<key>Name</key>
+		<string>Bitwig Studio - Device [⌥D]</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.bitwig.studio</string>
+					<key>Name</key>
+					<string>Bitwig Studio</string>
+					<key>NewFile</key>
+					<string>/Applications/Bitwig Studio.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>ED9F441B-9685-47E4-B448-5B5E5E5DFAAE</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>WithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>2</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Asynchronously</key>
+						<false/>
+						<key>Count</key>
+						<integer>1</integer>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>D39A4B2C-6EF5-4DFA-BAC9-AB51A8F45216</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CustomIconData</key>
+				<string>KMEP-iTunesNext</string>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>448697350.88168597</real>
+				<key>Name</key>
+				<string>Preset Creator - prev				[⇧A] copy</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>0</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>512</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>8D99C13B-3999-453B-9B13-E59AF820C094</string>
 			</dict>
 		</array>
 		<key>Modifiers</key>
