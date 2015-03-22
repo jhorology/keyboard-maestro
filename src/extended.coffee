@@ -28,7 +28,7 @@ RESOLUTIONS = [
 resolutionIndex = 5
 resolution = 101
 
-process.on 'init', ->
+host.on 'init', ->
   track = host.createArrangerCursorTrack NUM_SENDS, 0
     .attribify 'isSelectedInMixer'
     .attribify 'position'

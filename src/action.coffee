@@ -1,7 +1,7 @@
 actions     = require './bitwig-actions'
 host        = require './host'
 
-process.on 'init', ->
+host.on 'init', ->
   hostVersion = host.getHostVersion()
   if hostVersion isnt actions.version
     throw new Error "Invalid version. host:[#{hostVersion}] actions:[#{actions.version}]"

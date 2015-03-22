@@ -206,6 +206,7 @@ exports.Host = class Host extends Model
           @trigger 'midi', port, s, d1, d2
         port.setSysexCallback (d) =>
           @trigger 'sysex', port, d
+      @trigger 'init'
     @
 
 #  Action
@@ -502,7 +503,7 @@ class Transport extends Model
     @
 
   incTempoFast: (delta) ->
-    @incTempo delta, on
+    @incTempo delta, off
     @
 
 #  UserControlBank

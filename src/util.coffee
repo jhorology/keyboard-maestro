@@ -5,7 +5,7 @@ extendedActions = require './extended-actions'
 extendedModule  = require './extended'
 application = undefined
 
-process.on 'init', ->
+host.on 'init', ->
   application = host.createApplication()
   host.on 'midi', (port, s, d1, d2) ->
     # CC ch 16 for utility

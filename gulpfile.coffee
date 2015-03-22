@@ -94,11 +94,6 @@ gulp.task 'coffeelint', ->
     .pipe coffeelint './coffeelint.json'
     .pipe coffeelint.reporter()
 
-gulp.task 'coffeelint', ->
-  gulp.src ['*.coffee', "#{$.src.dir}/**/*.coffee"]
-    .pipe coffeelint 'coffeelint.json'
-    .pipe coffeelint.reporter()
-
 gulp.task 'generate-kmLib', ->
   gulp.src ["#{$.template.dir}/#{$.template.kmLib}"]
     .pipe data -> require "./#{$.actions.dir}/#{$.actions.json}"

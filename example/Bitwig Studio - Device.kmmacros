@@ -279,11 +279,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEP-Down</string>
+				<string>KMEP-Minus</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469633.30578601</real>
+				<real>448689743.46339798</real>
 				<key>Name</key>
 				<string>Delta value - dec					[-]</string>
 				<key>Triggers</key>
@@ -360,11 +360,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEP-Up</string>
+				<string>KMEP-Plus</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469636.47378302</real>
+				<real>448689751.190458</real>
 				<key>Name</key>
 				<string>Delta value - inc					[=]</string>
 				<key>Triggers</key>
@@ -441,11 +441,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:206,0,36,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:205,2,36,255=⇄=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448470109.03531301</real>
+				<real>448690879.92719197</real>
 				<key>Name</key>
 				<string>Macro 1 Mapping - toggle		[⌥1]</string>
 				<key>Triggers</key>
@@ -522,11 +522,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:251,108,0,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:252,108,0,255=⇄=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448470114.81956202</real>
+				<real>448690984.40044302</real>
 				<key>Name</key>
 				<string>Macro 2 Mapping - toggle		[⌥2]</string>
 				<key>Triggers</key>
@@ -603,11 +603,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:251,237,0,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:252,237,0,255=⇄=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448470120.31549901</real>
+				<real>448691004.67786098</real>
 				<key>Name</key>
 				<string>Macro 3 Mapping - toggle		[⌥3]</string>
 				<key>Triggers</key>
@@ -684,11 +684,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:70,165,0,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:70,165,1,255=⇄=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448470126.23561603</real>
+				<real>448691028.80257899</real>
 				<key>Name</key>
 				<string>Macro 4 Mapping - toggle		[⌥4]</string>
 				<key>Triggers</key>
@@ -765,11 +765,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:89,200,120,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:90,200,120,255=⇄=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448470130.54786801</real>
+				<real>448691079.12116301</real>
 				<key>Name</key>
 				<string>Macro 5 Mapping - toggle		[⌥5]</string>
 				<key>Triggers</key>
@@ -846,11 +846,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:69,131,214,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:70,131,214,255=⇄=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448470135.38800502</real>
+				<real>448691105.56774002</real>
 				<key>Name</key>
 				<string>Macro 6 Mapping - toggle		[⌥6]</string>
 				<key>Triggers</key>
@@ -927,11 +927,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:147,55,223,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:146,55,223,255=⇄=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448470140.22803599</real>
+				<real>448691146.12063098</real>
 				<key>Name</key>
 				<string>Macro 7 Mapping - toggle		[⌥7]</string>
 				<key>Triggers</key>
@@ -1008,11 +1008,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:194,37,135,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:194,36,134,255=⇄=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448470145.47629899</real>
+				<real>448691181.94997197</real>
 				<key>Name</key>
 				<string>Macro 8 Mapping - toggle		[⌥8]</string>
 				<key>Triggers</key>
@@ -1089,11 +1089,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:206,0,36,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:205,2,36,255=⇄=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448496099.98912501</real>
+				<real>448691210.686836</real>
 				<key>Name</key>
 				<string>MOD 1 Mapping - toggle			[⌥⇧1]</string>
 				<key>Triggers</key>
@@ -1170,11 +1170,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:251,108,0,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:252,108,0,255=⇄=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448496138.23749799</real>
+				<real>448691227.25906903</real>
 				<key>Name</key>
 				<string>MOD 2 Mapping - toggle			[⌥⇧2]</string>
 				<key>Triggers</key>
@@ -1251,11 +1251,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:251,237,0,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:252,237,0,255=⇄=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448496153.53390998</real>
+				<real>448691015.20968598</real>
 				<key>Name</key>
 				<string>MOD 3 Mapping - toggle			[⌥⇧3]</string>
 				<key>Triggers</key>
@@ -1332,11 +1332,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:70,165,0,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:70,165,1,255=⇄=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448496157.71794099</real>
+				<real>448691037.54026699</real>
 				<key>Name</key>
 				<string>MOD 4 Mapping - toggle			[⌥⇧4]</string>
 				<key>Triggers</key>
@@ -1413,11 +1413,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:89,200,120,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:90,200,120,255=⇄=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448496162.16595</real>
+				<real>448691092.58917999</real>
 				<key>Name</key>
 				<string>MOD 5 Mapping - toggle			[⌥⇧5]</string>
 				<key>Triggers</key>
@@ -1494,11 +1494,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:69,131,214,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:70,131,214,255=⇄=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448496168.83068299</real>
+				<real>448691112.73885798</real>
 				<key>Name</key>
 				<string>MOD 6 Mapping - toggle			[⌥⇧6]</string>
 				<key>Triggers</key>
@@ -1575,11 +1575,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:147,55,223,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:146,55,223,255=⇄=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448496176.25450498</real>
+				<real>448691152.32357502</real>
 				<key>Name</key>
 				<string>MOD 7 Mapping - toggle			[⌥⇧7]</string>
 				<key>Triggers</key>
@@ -1656,11 +1656,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:194,37,135,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:194,36,134,255=⇄=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448496132.95745897</real>
+				<real>448691197.41324902</real>
 				<key>Name</key>
 				<string>MOD 8 Mapping - toggle			[⌥⇧8]</string>
 				<key>Triggers</key>
@@ -1737,11 +1737,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:206,0,36,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:205,2,36,255=━=82=0=0=0=KMCOLOR:231,231,231,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469650.23394901</real>
+				<real>448690196.10071498</real>
 				<key>Name</key>
 				<string>Param/Macro 1 - dec				[Q]</string>
 				<key>Triggers</key>
@@ -1818,11 +1818,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:206,0,36,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:205,2,36,255=╋=82=0=0=0=KMCOLOR:231,231,231,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469670.71381003</real>
+				<real>448690214.62128001</real>
 				<key>Name</key>
 				<string>Param/Macro 1 - inc				[1]</string>
 				<key>Triggers</key>
@@ -1899,11 +1899,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:251,108,0,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:252,108,0,255=━=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469699.319408</real>
+				<real>448690589.59609598</real>
 				<key>Name</key>
 				<string>Param/Macro 2 - dec				[W]</string>
 				<key>Triggers</key>
@@ -1980,11 +1980,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:251,108,0,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:252,108,0,255=╋=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469716.71572</real>
+				<real>448690337.89880598</real>
 				<key>Name</key>
 				<string>Param/Macro 2 - inc				[2]</string>
 				<key>Triggers</key>
@@ -2061,11 +2061,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:251,237,0,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:252,237,0,255=━=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469768.05247903</real>
+				<real>448690609.31699097</real>
 				<key>Name</key>
 				<string>Param/Macro 3 - dec				[E]</string>
 				<key>Triggers</key>
@@ -2142,11 +2142,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:251,237,0,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:252,237,0,255=╋=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469771.244533</real>
+				<real>448690498.72550499</real>
 				<key>Name</key>
 				<string>Param/Macro 3 - inc				[3]</string>
 				<key>Triggers</key>
@@ -2223,11 +2223,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:70,165,0,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:70,165,1,255=━=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469784.98930103</real>
+				<real>448690624.115646</real>
 				<key>Name</key>
 				<string>Param/Macro 4 - dec				[R]</string>
 				<key>Triggers</key>
@@ -2304,11 +2304,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:70,165,0,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:70,165,1,255=╋=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469774.73294401</real>
+				<real>448690484.93262398</real>
 				<key>Name</key>
 				<string>Param/Macro 4 - inc				[4]</string>
 				<key>Triggers</key>
@@ -2385,11 +2385,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:89,200,120,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:90,200,120,255=━=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469788.12769997</real>
+				<real>448690639.91032398</real>
 				<key>Name</key>
 				<string>Param/Macro 5 - dec				[T]</string>
 				<key>Triggers</key>
@@ -2466,11 +2466,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:89,200,120,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:90,200,120,255=╋=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469898.34240597</real>
+				<real>448690472.48482603</real>
 				<key>Name</key>
 				<string>Param/Macro 5 - inc				[5]</string>
 				<key>Triggers</key>
@@ -2547,11 +2547,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:69,131,214,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:70,131,214,255=━=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469839.614806</real>
+				<real>448690653.50527501</real>
 				<key>Name</key>
 				<string>Param/Macro 6  - inc				[6]</string>
 				<key>Triggers</key>
@@ -2628,11 +2628,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:69,131,214,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:70,131,214,255=╋=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469844.94256997</real>
+				<real>448690456.122199</real>
 				<key>Name</key>
 				<string>Param/Macro 6 - dec				[Y]</string>
 				<key>Triggers</key>
@@ -2709,11 +2709,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:147,55,223,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:146,55,223,255=━=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469851.84695399</real>
+				<real>448690669.569417</real>
 				<key>Name</key>
 				<string>Param/Macro 7 - dec				[U]</string>
 				<key>Triggers</key>
@@ -2790,11 +2790,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:147,55,223,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:146,55,223,255=╋=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469857.61475199</real>
+				<real>448690434.23831999</real>
 				<key>Name</key>
 				<string>Param/Macro 7 - inc				[7]</string>
 				<key>Triggers</key>
@@ -2871,11 +2871,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:194,37,135,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:194,36,134,255=━=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469907.55077702</real>
+				<real>448690684.60393101</real>
 				<key>Name</key>
 				<string>Param/Macro 8 - dec				[I]</string>
 				<key>Triggers</key>
@@ -2952,11 +2952,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEC=Circle=KMCOLOR:194,37,135,255==86=2=0=0=KMCOLOR:0,0,0,255</string>
+				<string>KMEC=Circle=KMCOLOR:194,36,134,255=╋=82=0=0=0=KMCOLOR:255,255,255,255</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469883.80777699</real>
+				<real>448690414.70791698</real>
 				<key>Name</key>
 				<string>Param/Macro 8 - inc				[8]</string>
 				<key>Triggers</key>
@@ -3112,11 +3112,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEP-Right</string>
+				<string>KMEP-iTunesNext</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469936.13060302</real>
+				<real>448689769.596165</real>
 				<key>Name</key>
 				<string>Parameter Page - next			[ . ]</string>
 				<key>Triggers</key>
@@ -3193,11 +3193,11 @@
 					</dict>
 				</array>
 				<key>CustomIconData</key>
-				<string>KMEP-Left</string>
+				<string>KMEP-iTunesPrevious</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448469944.55292898</real>
+				<real>448689776.25852603</real>
 				<key>Name</key>
 				<string>Parameter Page - prev			[ , ]</string>
 				<key>Triggers</key>

@@ -7,7 +7,7 @@ NUM_SENDS = 8
 NUM_SCENES = 32
 
 trackBank = undefined
-process.on 'init', ->
+host.on 'init', ->
   ctx.app = host.createApplication()
   ctx.trp = host.createTransport()
   ctx.grv = host.createGroove()
