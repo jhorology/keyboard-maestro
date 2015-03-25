@@ -1,4 +1,4 @@
-exports.version = '1.1.7 RC 1'
+exports.version = '1.1.7 RC 2'
 exports.ids = [
   {
     id: 'cursor track - activated - toggle'
@@ -313,8 +313,8 @@ exports.ids = [
     uuid: '83BA62DF-3B2E-429D-B63E-9131C9A00E42'
   }
   {
-    id: 'cursor device - chain slot - open/next/close'
-    uuid: '2D1552C6-398F-427A-B743-EDB4A7D82A89'
+    id: 'cursor device - chain slot - open/next'
+    uuid: '2F18DADC-5AE4-4D2A-A05C-6CED22E8F84D'
   }
   {
     id: 'cursor device - chain slot - select first device in slot'

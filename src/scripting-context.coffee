@@ -1,31 +1,55 @@
-host = require './host'
-events = require 'events'
+events    = require 'events'
+Backbone  = require 'backbone'
+_         = require 'underscore'
+host      = require './host'
+Bitmonkey = require './bitmonkey'
+
 module.exports = ctx = new events()
 
-NUM_TRACKS = 64
-NUM_SENDS = 8
-NUM_SCENES = 32
+class Tracks extends Backbone.Collection
+  model: Bitmonkey.Track
 
-trackBank = undefined
+tracks = new Tracks
 host.on 'init', ->
   scripting = host.getPreferences()
-    .getEnumSetting 'Scripting(affect on next restart)'
+    .getEnumSetting 'Scripting (affect on reload)'
     , 'Scripting', ['off', 'on'], 'off'
+  
+  numTracks = parseInt(
+    host.getPreferences()
+      .getEnumSetting 'Number of Main Tracks'
+      , 'Scripting', ['8', '16', '32', '64'], '32'
+  )
+  numSends = parseInt(
+    host.getPreferences()
+      .getEnumSetting 'Number of Sends(Effect Tracks)'
+      , 'Scripting', ['2', '4', '8', '16'], '4'
+  )
+  numScenes = parseInt(
+    host.getPreferences()
+      .getEnumSetting 'Number of Scenes'
+      , 'Scripting', ['8', '16', '32', '64'], '16'
+  )
+
   return if scripting isnt 'on'
   ctx.app = host.createApplication()
   ctx.trp = host.createTransport()
   ctx.grv = host.createGroove()
-  trackBank = host.createMainTrackBank NUM_TRACKS, NUM_SENDS, NUM_SCENES
-  ctx.mst = host.createMasterTrack NUM_SCENES
-  tracks = host.createEffectTrackBank NUM_SENDS, NUM_SCENES
-  ctx.st1 = tracks.getTrack(0)
-  ctx.st2 = tracks.getTrack(1)
-  ctx.st3 = tracks.getTrack(2)
-  ctx.st4 = tracks.getTrack(3)
-  ctx.st5 = tracks.getTrack(4)
-  ctx.st6 = tracks.getTrack(5)
-  ctx.st7 = tracks.getTrack(6)
-  ctx.st8 = tracks.getTrack(7)
+  
+  mainTracks = host.createMainTrackBank numTracks, numSends, numScenes
+  for index in [0...numTracks]
+    ctx["mt#{index + 1}"] = effecTracks.getTrack index
+      .attribify 'name', 64, ''
+      
+  ctx.mst = host.createMasterTrack numScenes
+      .attribify 'name', 64, ''
+  
+  effectTracks = host.createEffectTrackBank numSends, numScenes
+  for index in [0...numSends]
+    ctx["st#{index + 1}"] = effecTracks.getTrack index
+      .attribify 'name', 64, ''
+    
   ctx.msg = (s) -> host.showPopupNotification s
   ctx.trk = (id) -> trackBank.getTrack(id - 1)
+
   ctx.emit 'init'

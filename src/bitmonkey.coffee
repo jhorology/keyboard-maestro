@@ -23,6 +23,7 @@ stringArrayAttrs = [
   'presetCategories'
   'presetCreators'
   'slots'
+  'directParameterId'
 ]
 
 #  Bitmonkey Model
@@ -122,8 +123,8 @@ class Model extends Backbone.Model
         return -> String @api[fn].apply @api, arguments
 
     # API class?
-    clazz = classes[returnType]
-    if clazz
+    
+    if clazz = classes[returnType]
       if isArray
         return -> new clazz api for api in @api[fn].apply @api, arguments
       else
@@ -153,15 +154,15 @@ class Model extends Backbone.Model
     @
 
   _name: (attr, vo, opts) ->
-    vo.addNameObserver opts.maxChar, opts.fallback, (value) =>
+    vo.addNameObserver opts.maxChars, opts.fallback, (value) =>
       @set attr, value, observed: on
     @
 
   _valueDisplay: (attr, vo, opts) ->
     _.defaults opts,
-      maxChar: 12
+      maxChars: 12
       fallback: ''
-    vo.addValueDisplayObserver opts.maxChar, opts.fallback, (value) =>
+    vo.addValueDisplayObserver opts.maxChars, opts.fallback, (value) =>
       @set attr, value, observed: on
 
   _beatTime: (attr, vo, opts) ->
@@ -279,11 +280,52 @@ classes['com.bitwig.base.control_surface.iface.ClipLauncherSlots'] =
 classes['com.bitwig.flt.control_surface.intention.sections.ClipLauncherSlotsSection'] =
 class ClipLauncherSlots extends Model
 
+#  DirectParameter
+# ============================
+exports.DirectParameter =
+class DirectParameter extends Backbone.Model
+
+#  DirectParameter
+# ============================
+exports.DirectParameterCollection =
+class DirectParameterCollection extends Backbone.Collection
+  model: DirectParameter
+
+#  Device
+# ============================
+exports.Device =
+classes['com.bitwig.base.control_surface.iface.Device'] =
+class Device extends Model
+  useDirectParameter: (opts) ->
+    opts or (opts = {})
+    _.defaults opts,
+      maxNameChars: 64
+      maxValueDisplayChars: 32
+    @addDirectParameterIdObserver (ids) =>
+      params = new DirectParameterCollection
+      params.add id: String(id) for id in ids
+      @set 'directParameters', params
+    @addDirectParameterNameObserver opts.maxNameChars, (id, name) =>
+      @get 'directParameters'
+        .add {id: id, name: name}, {merge: on}
+    @addDirectParameterNormalizedValueObserver (id, value) =>
+      @get 'directParameters'
+        .add {id: id, normalizedValue: value}, {merge: on}
+    @_observer =
+      @addDirectParameterValueDisplayObserver opts.maxValueDisplayChars, (id, value) =>
+        @get 'directParameters'
+          .add {id: id, valueDisplay: value}, {merge: on}
+    @
+
+  observeDirectParameters: (params) ->
+    @_observer.setObservedParameterIds params?.pluck('id')
+
+      
 #  CursorDevice
 # ============================
 exports.CursorDevice =
 classes['com.bitwig.base.control_surface.iface.CursorDevice'] =
-class CursorDevice extends Model
+class CursorDevice extends Device
 
 #  CursorDeviceLayer
 # ============================
@@ -297,18 +339,18 @@ exports.CursorDeviceSlot =
 classes['com.bitwig.base.control_surface.iface.CursorDeviceSlot'] =
 class CursorDeviceLayer extends Model
 
-#  CursorTrack
+#  Track
+# ============================
+exports.Track =
+classes['com.bitwig.base.control_surface.iface.Track'] =
+class Track extends Model
+
+  #  CursorTrack
 # ============================
 exports.CursorTrack =
 classes['com.bitwig.base.control_surface.iface.CursorTrack'] =
 classes['com.bitwig.flt.control_surface.intention.sections.CursorTrackSection'] =
-class CursorTrack extends Model
-
-#  Device
-# ============================
-exports.Device =
-classes['com.bitwig.base.control_surface.iface.Device'] =
-class Device extends Model
+class CursorTrack extends Track
 
 #  DeviceBank
 # ============================
@@ -380,7 +422,7 @@ class Macro extends Model
 # ============================
 exports.MasterTrack =
 classes['com.bitwig.flt.control_surface.intention.sections.MasterTrackSection'] =
-class MasterTrack extends Model
+class MasterTrack extends Track
 
 #  MidiIn
 # ============================
@@ -475,11 +517,6 @@ exports.TimeSignatureValue =
 classes['com.bitwig.base.control_surface.iface.TimeSignatureValue'] =
 class TimeSignatureValue extends Model
 
-#  Track
-# ============================
-exports.Track =
-classes['com.bitwig.base.control_surface.iface.Track'] =
-class Track extends Model
 
 #  Track
 # ============================

@@ -24276,11 +24276,11 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>extended - cursor device - chain slot - open/next/close</string>
+            <string>extended - cursor device - chain slot - open/next</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>2D1552C6-398F-427A-B743-EDB4A7D82A89</string>
+            <string>2F18DADC-5AE4-4D2A-A05C-6CED22E8F84D</string>
           </dict>
         </array>
         <key>Modifiers</key>

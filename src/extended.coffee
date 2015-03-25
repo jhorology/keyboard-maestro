@@ -1,4 +1,5 @@
 host = require './host'
+_    = require 'underscore'
 
 track =
 crossfade =
@@ -31,8 +32,11 @@ resolution = 101
 
 host.on 'init', ->
   track = host.createArrangerCursorTrack NUM_SENDS, 0
+  track
     .attribify 'isSelectedInMixer'
     .attribify 'position'
+    .attribify 'crossFadeMode', track.getCrossFadeMode(), 'value'
+    
   crossfade = host.createTransport().getCrossfade()
   
   device = host.createEditorCursorDevice NUM_SENDS
@@ -52,6 +56,7 @@ host.on 'init', ->
     .attribify 'presetCreator', 128, ''
     .attribify 'hasLayers', device.hasLayers(), 'value'
     .attribify 'hasDrumPads', device.hasDrumPads(), 'value'
+    .useDirectParameter()
     
   deviceSlot = device.getCursorSlot()
     .attribify 'name', 32, ''
@@ -82,10 +87,10 @@ host.on 'init', ->
     # ch.2 for extended action
     return if s isnt 0xB1
     index = (d1 << 7) + d2
-    if actions[index].id.lastIndexOf('cursor track', 0) is 0
-      return if not track.get 'isSelectedInMixer'
-    else if actions[index].id.lastIndexOf('cursor device', 0) is 0
-      return if not device.get 'hasSelectedDevice'
+    return if actions[index].id[0...12] is
+      'cursor track' and not track.get 'isSelectedInMixer'
+    return if actions[index].id[0...13] is
+      'cursor device' and not device.get 'hasSelectedDevice'
     actions[index].fn.call null if index < actions.length
 
 deviceValue = (i, delta) ->
@@ -197,15 +202,15 @@ exports.actions = actions = [
   }
   {
     id: 'cursor track - crossfade - mode A'
-    fn: -> track.getCrossFadeMode()?._set 'A'
+    fn: -> track.set 'crossFadeMode', 'A'
   }
   {
     id: 'cursor track - crossfade - mode B'
-    fn: -> track.getCrossFadeMode()?._set 'B'
+    fn: -> track.set 'crossFadeMode', 'B'
   }
   {
     id: 'cursor track - crossfade - mode AB'
-    fn: -> track.getCrossFadeMode()?._set 'AB'
+    fn: -> track.set 'crossFadeMode', 'AB'
   }
   {
     id: 'cursor track - clip launcher - stop'
@@ -482,7 +487,7 @@ exports.actions = actions = [
   
   ## cursor device - chain slot
   {
-    id: 'cursor device - chain slot - open/next/close'
+    id: 'cursor device - chain slot - open/next'
     fn: ->
       slots = device.get 'slots'
       return if slots.length is 0
@@ -492,11 +497,7 @@ exports.actions = actions = [
         deviceSlot.selectSlot slots[0]
       else if slot is slots[slots.length - 1]
         # close chain slot
-        
-        # unaveilable to close/unselect slot
-        # index = slots.indexOf(slot)
-        # deviceSlot.selectSlot slots[index]
-        
+        # return top, unaveilable to close/unselect slot
         deviceSlot.selectSlot slots[0]
       else
         # select next chain slot

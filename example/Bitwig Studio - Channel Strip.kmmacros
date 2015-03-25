@@ -524,9 +524,9 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448717535.89848799</real>
+				<real>448729927.24081802</real>
 				<key>Name</key>
-				<string>Crossfade - turn B			[⌘ →]</string>
+				<string>Crossfade - turn B			[⌘→]</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -686,7 +686,7 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>448691579.13191199</real>
+				<real>448899877.63390499</real>
 				<key>Name</key>
 				<string>Delta value - inc				[=] </string>
 				<key>Triggers</key>
