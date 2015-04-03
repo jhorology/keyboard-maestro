@@ -9,9 +9,9 @@ ctx       = require './scripting-context'
 #
 # property | type              | desc
 # ---------|-------------------|-----------------------------------------------
-#  name    | String            | reference name.
-#  v       | function($, v)    | called on Volume changed. $=context, v=value(0..1)
-#  p       | function($, v)    | called on pan changed, $=context, v=value(0..1)
+#  name    | String            | reference name. not implemented yet.
+#  v       | function($, v)    | called on Volume changed. $=context, v=value(0..1.26)
+#  p       | function($, v)    | called on pan changed, $=context, v=value(-1..1)
 #  s[1-n]  | function($, v)    | called on send changed, $=context, v=value(0..1)
 #  a       | function($, v)    | called on arm on/off, $=context, v=on/off
 #  s       | function($, v)    | called on solo on/off, $=context, v=on/off
