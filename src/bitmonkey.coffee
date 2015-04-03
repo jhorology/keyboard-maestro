@@ -26,6 +26,7 @@ stringArrayAttrs = [
   'directParameterId'
 ]
 
+
 #  Bitmonkey Model
 # ============================
 exports.Model =
@@ -57,7 +58,7 @@ class Model extends Backbone.Model
       if attr in stringArrayAttrs
         cb = (values...) =>
           # WTF! what a lack of consistency....
-          if "#{values[0]}".indexOf("[Ljava.lang.String") is 0
+          if /^\[Ljava.lang.String/.test "#{values[0]}"
             values = Array::slice.call values[0]
           values = (String s for s in values)
           @set attr, values, observed: on
@@ -73,19 +74,21 @@ class Model extends Backbone.Model
     @
 
   _class: ->
+    if DEBUG
+      monkeyClass = (/^function (\w+)/m.exec "#{@constructor}")[1]
+      console.info "# _class: #{monkeyClass}(#{@api})  wrapped: #{@constructor._wrapped}"
     # _wapped is a class variable.
     return if @constructor._wrapped
-    console.info "# wrap class:#{@api}" if DEBUG
     for prop of @api
       try
         continue if prop in propertyExcludes
-        continue if @constructor::[prop] and prop isnt 'set'
+        fn = if prop is 'set' then '_set' else prop
+        continue if @constructor::[fn]
         continue if not _.isFunction @api[prop]
         # confilict with backbone model
-        fn = if prop is 'set' then '_set' else prop
         @constructor::[fn] = @_function prop
       catch error
-        console.info "  ## unsupported property:#{prop} error:#{error}" if DEBUG
+        console.info "    ## prohibited property: #{prop} error: #{error}" if DEBUG
     @constructor._wrapped = true
 
   _function: (fn) ->
@@ -93,13 +96,14 @@ class Model extends Backbone.Model
     match = /(\S+) \w+\(([^\)]*)\)/.exec "#{@api[fn]}".split('\n',2)[1]
     returnType = match[1]
     paramTypes = match[2].split ','
-
+    if DEBUG
+      console.info "  # _function: #{returnType} #{fn}(#{paramTypes})"
     # void method
     if returnType is 'void'
       # observer ?
       if match = /add(\w+)(?=Observer)/.exec fn
         # callback function to last paramater
-        if paramTypes.length > 0 and paramTypes.indexOf('org.mozilla.javascript.Callable') is 0
+        if paramTypes.length > 0 and paramTypes[0] is 'org.mozilla.javascript.Callable'
           return (params...) ->
             params.unshift params.pop()
             @api[fn].apply @api, params
@@ -113,7 +117,7 @@ class Model extends Backbone.Model
           @api[fn].apply @api, arguments
           @ # returning instance is useful.
     # return type of array?
-    isArray = returnType.indexOf('[]', returnType.length - 2) isnt -1
+    isArray = returnType[-2..] is '[]'
     returnType = returnType[..-3] if isArray
     if returnType is 'java.lang.String'
       # java string to javascript string
@@ -129,8 +133,6 @@ class Model extends Backbone.Model
         return -> new clazz api for api in @api[fn].apply @api, arguments
       else
         return -> new clazz @api[fn].apply @api, arguments
-    if returnType.indexOf('com.bitwig.') is 0
-      console.info "  ## unwrap class:#{returnType} function:#{fn}(#{paramTypes})" if DEBUG
     return -> @api[fn].apply @api, arguments
 
   _value: (attr, vo, opts) ->
@@ -175,6 +177,48 @@ class Model extends Backbone.Model
     vo.addTimeObserver opts.separator, opts.barLen, opts.beatsLen, opts.subdivisionLen, opts.ticksLen, (value) =>
       @set attr, value, observed: true
     @
+
+
+#
+#  non API classes
+# ------------------------------------------------------------------------------
+ 
+#  DirectParameter
+# ============================
+exports.DirectParameter =
+class DirectParameter extends Backbone.Model
+
+#  DirectParameters
+# ============================
+exports.DirectParameters =
+class DirectParameters extends Backbone.Collection
+  model: DirectParameter
+
+#  SceneSlot
+# ============================
+exports.SceneSlot =
+class SceneSlot extends Backbone.Model
+
+#  ClipSlot
+# ============================
+exports.ClipSlot =
+class ClipSlot extends SceneSlot
+
+#  SceneSlots
+# ============================
+exports.SceneSlots =
+class SceneSlots extends Backbone.Collection
+  model: SceneSlot
+
+#  ClipSlots
+# ============================
+exports.ClipSlots =
+class ClipSlots extends Backbone.Collection
+  model: ClipSlot
+
+#
+#  API classes
+# ------------------------------------------------------------------------------
 
 #  Host
 # ============================
@@ -280,16 +324,6 @@ classes['com.bitwig.base.control_surface.iface.ClipLauncherSlots'] =
 classes['com.bitwig.flt.control_surface.intention.sections.ClipLauncherSlotsSection'] =
 class ClipLauncherSlots extends Model
 
-#  DirectParameter
-# ============================
-exports.DirectParameter =
-class DirectParameter extends Backbone.Model
-
-#  DirectParameter
-# ============================
-exports.DirectParameterCollection =
-class DirectParameterCollection extends Backbone.Collection
-  model: DirectParameter
 
 #  Device
 # ============================
@@ -302,7 +336,7 @@ class Device extends Model
       maxNameChars: 64
       maxValueDisplayChars: 32
     @addDirectParameterIdObserver (ids) =>
-      params = new DirectParameterCollection
+      params = new DirectParameters
       params.add id: String(id) for id in ids
       @set 'directParameters', params
     @addDirectParameterNameObserver opts.maxNameChars, (id, name) =>
@@ -399,7 +433,7 @@ class DrumPadBank extends Model
 exports.EnumValue =
 classes['com.bitwig.base.control_surface.iface.EnumValue'] =
 class EnumValue extends Model
-
+    
 #  Groove
 # ============================
 exports.Groove =
@@ -484,13 +518,18 @@ class RangedValue extends Model
 exports.RemoteSocket =
 classes['com.bitwig.base.control_surface.iface.RemoteSocket'] =
 class RemoteSocket extends Model
-  initialize: ->
 
 #  SceneBank
 # ============================
 exports.SceneBank =
 classes['com.bitwig.base.control_surface.iface.SceneBank'] =
 class SceneBank extends Model
+
+#  Signal
+# ============================
+exports.Signal =
+classes['com.bitwig.base.control_surface.iface.Signal'] =
+class Signal extends Model
 
 #  SoloValue
 # ============================

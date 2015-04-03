@@ -1,8 +1,5 @@
 _       = require 'underscore'
-host    = require './host'
 ctx     = require './scripting-context'
-
-NUM_SENDS = 4
 
 # macrolet
 # v:function($,v){ do something...},m:function($,s,v){do something...}
@@ -12,9 +9,8 @@ NUM_SENDS = 4
 #  v       | function($,v)     | called on value changed. $=context, v=value(0..1)
 #  m       | function($, s, v) | called on mapping on/off, $=context, s=on/off, v=value(0..1)
 ctx.on 'init', ->
-  device = host.createEditorCursorDevice NUM_SENDS
   for index in [0..7]
-    macro = device.getMacro(index)
+    macro = ctx.cdv.getMacro index
     amount = macro.getAmount()
       .attribify 'name', 2048, ''
       .attribify 'rawValue'
@@ -25,16 +21,16 @@ ctx.on 'init', ->
           try
             o = eval "({#{match[1]}})"
           catch error
-          if _.isObject(o)
+          if _.isObject o
             @macrolet = {}
-            @macrolet.v = if _.isFunction(o.v) then o.v else undefined
-            @macrolet.m = if _.isFunction(o.m) then o.m else undefined
+            @macrolet.v = if _.isFunction(o.v) then o.v
+            @macrolet.m = if _.isFunction(o.m) then o.m
       .on 'change:rawValue', (a, v) ->
         @macrolet?.v?.call ctx, ctx, v
         
     macro.getModulationSource()
       .attribify 'isMapping'
       .on 'change:isMapping', (ms, s) ->
-        @macrolet?.m?.call ctx, ctx, s, @get('rawValue')
+        @macrolet?.m?.call ctx, ctx, s, @get 'rawValue'
       , amount
         

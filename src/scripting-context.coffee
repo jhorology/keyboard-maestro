@@ -8,48 +8,80 @@ module.exports = ctx = new events()
 
 class Tracks extends Backbone.Collection
   model: Bitmonkey.Track
-
-tracks = new Tracks
-host.on 'init', ->
-  scripting = host.getPreferences()
-    .getEnumSetting 'Scripting (affect on reload)'
-    , 'Scripting', ['off', 'on'], 'off'
   
-  numTracks = parseInt(
-    host.getPreferences()
-      .getEnumSetting 'Number of Main Tracks'
-      , 'Scripting', ['8', '16', '32', '64'], '32'
-  )
-  numSends = parseInt(
-    host.getPreferences()
-      .getEnumSetting 'Number of Sends(Effect Tracks)'
-      , 'Scripting', ['2', '4', '8', '16'], '4'
-  )
-  numScenes = parseInt(
-    host.getPreferences()
-      .getEnumSetting 'Number of Scenes'
-      , 'Scripting', ['8', '16', '32', '64'], '16'
-  )
+ctx.PREF_CATEGORY = PREF_CATEGORY = 'Scripting (affect on reload)'
 
-  return if scripting isnt 'on'
+scripting = 'on'
+numTracks = 32
+numSends = 4
+numScenes = 16
+
+
+host.on 'init', ->
+  # how could get preference value in init()?
+  # -----------------------------------
+  # pref = host.getPreferences()
+  # pref.getEnumSetting 'Scripting'
+  # , PREF_CATEGORY, ['off', 'on'], 'off'
+  #   .attribify 'value'
+  #   .once 'change:value', (model, value) ->
+  #     scripting = value
+
+  # pref.getEnumSetting 'Number of Main Tracks'
+  #   , PREF_CATEGORY, ['8', '16', '32', '64'], '32'
+  #     .attribify 'value'
+  #     .once 'change:value', (model, value) ->
+  #       numTracks = parseInt(value)
+
+  # pref.getEnumSetting 'Number of Sends(Effect Tracks)'
+  #   , PREF_CATEGORY, ['2', '4', '8', '16'], '4'
+  #     .attribify 'value'
+  #     .once 'change:value', (model, value) ->
+  #       numSends = parseInt(value)
+  # pref.getEnumSetting 'Number of Scenes'
+  #   , PREF_CATEGORY, ['8', '16', '32', '64'], '16'
+  #     .attribify 'value'
+  #     .once 'change:value', (model, value) ->
+  #       numScenes = parseInt(value)
+  #       console.info "scripting context scripting:#{scripting}"
+  #       console.info "scripting context numScenes:#{numTracks}"
+  #       console.info "scripting context numScenes:#{numSends}"
+  #       console.info "scripting context numScenes:#{numScenes}"
+  #       do initialize if scripting is 'on'
+  #     , @
+
+  ctx.numTracks = numTracks
+  ctx.numSends = numSends
+  ctx.numTracks = numScenes
+  
   ctx.app = host.createApplication()
   ctx.trp = host.createTransport()
   ctx.grv = host.createGroove()
+  ctx.cdv = host.createEditorCursorDevice numSends
   
-  mainTracks = host.createMainTrackBank numTracks, numSends, numScenes
-  for index in [0...numTracks]
-    ctx["mt#{index + 1}"] = effecTracks.getTrack index
-      .attribify 'name', 64, ''
-      
+  ctx.trs = new Tracks
+  mainTrackBank = host.createMainTrackBank numTracks, numSends, numScenes
+  ctx.trs.add(
+    for index in [0...numTracks]
+      ctx["mt#{index + 1}"] = mainTrackBank.getTrack index
+        .set
+          id: index + 1
+          category: 'Main'
+  )
   ctx.mst = host.createMasterTrack numScenes
-      .attribify 'name', 64, ''
-  
-  effectTracks = host.createEffectTrackBank numSends, numScenes
-  for index in [0...numSends]
-    ctx["st#{index + 1}"] = effecTracks.getTrack index
-      .attribify 'name', 64, ''
-    
-  ctx.msg = (s) -> host.showPopupNotification s
-  ctx.trk = (id) -> trackBank.getTrack(id - 1)
+    .set
+      id: 'Master'
+      category: 'Master'
 
+  ctx.trs.add ctx.mst
+  
+  effectTrackBank = host.createEffectTrackBank numSends, numScenes
+  ctx.trs.add(
+    for index in [0...numSends]
+      ctx["st#{index + 1}"] = effectTrackBank.getTrack index
+        .set
+          id: "S#{index + 1}"
+          category: 'Effect'
+  )
+  ctx.msg = (s) -> host.showPopupNotification s
   ctx.emit 'init'

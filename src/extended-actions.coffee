@@ -1,4 +1,4 @@
-exports.version = '1.1.7 RC 2'
+exports.version = '1.1.7'
 exports.ids = [
   {
     id: 'cursor track - activated - toggle'
@@ -343,5 +343,9 @@ exports.ids = [
   {
     id: 'delta value - dec'
     uuid: '9C14950E-F398-4632-9632-B02C188BD9CD'
+  }
+  {
+    id: 'experimental - direct paramater - print'
+    uuid: '207B3860-6BD3-4A8F-9A43-6FE7CA5FCB47'
   }
 ]

@@ -28,7 +28,7 @@ builtins._process = require.resolve './lib/process'
 $ =
   actions:
     dir: 'actions'
-    json: 'bitwig-studio-actions-1.1.7RC2.json'
+    json: 'bitwig-studio-actions-1.1.7.json'
   src:
     dir: 'src'
     bitwigActions: 'bitwig-actions.coffee'

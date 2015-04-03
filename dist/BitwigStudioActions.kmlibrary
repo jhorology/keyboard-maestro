@@ -24805,6 +24805,75 @@
             <key>Actions</key>
             <array>
               <dict>
+                <key>Channel</key>
+                <integer>2</integer>
+                <key>IsActive</key>
+                <true/>
+                <key>IsDisclosed</key>
+                <true/>
+                <key>MIDIMessageType</key>
+                <string>ControlChange</string>
+                <key>MacroActionType</key>
+                <string>SendMIDIMessage</string>
+                <key>Note</key>
+                <integer>0</integer>
+                <key>Value</key>
+                <integer>86</integer>
+              </dict>
+            </array>
+            <key>CustomIconData</key>
+            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+            <key>IsActive</key>
+            <true/>
+            <key>ModificationDate</key>
+            <real>440732432.86673301</real>
+            <key>Name</key>
+            <string>extended - experimental - direct paramater - print</string>
+            <key>Triggers</key>
+            <array/>
+            <key>UID</key>
+            <string>207B3860-6BD3-4A8F-9A43-6FE7CA5FCB47</string>
+          </dict>
+        </array>
+        <key>Modifiers</key>
+        <integer>0</integer>
+        <key>Name</key>
+        <string>Bitwig Actions</string>
+        <key>Targeting</key>
+        <dict>
+          <key>Targeting</key>
+          <string>Included</string>
+          <key>TargetingApps</key>
+          <array>
+            <dict>
+              <key>BundleIdentifier</key>
+              <string>com.bitwig.studio</string>
+              <key>Name</key>
+              <string>Bitwig Studio</string>
+              <key>NewFile</key>
+              <string>/Applications/Bitwig Studio.app</string>
+            </dict>
+          </array>
+        </dict>
+      </dict>
+      
+      <dict>
+        <key>Activate</key>
+        <string>AlwaysWithPalette</string>
+        <key>AddToMacroPalette</key>
+        <true/>
+        <key>AddToStatusMenu</key>
+        <false/>
+        <key>IsActive</key>
+        <false/>
+        <key>KeyCode</key>
+        <integer>32767</integer>
+        <key>Macros</key>
+        <array>
+          <dict>
+            <key>Actions</key>
+            <array>
+              <dict>
                 <key>AllWindows</key>
                 <true/>
                 <key>AlreadyActivatedActionType</key>

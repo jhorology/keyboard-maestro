@@ -1,5 +1,5 @@
 {
-	"hostVersion": "1.1.7 RC 1",
+	"hostVersion": "1.1.7",
 	"hostApiVersion": 1,
 	"actions": [
 		{
@@ -3513,8 +3513,8 @@
 			}
 		},
 		{
-			"id": "cursor device - chain slot - open/next/close",
-			"uuid": "2D1552C6-398F-427A-B743-EDB4A7D82A89",
+			"id": "cursor device - chain slot - open/next",
+			"uuid": "2F18DADC-5AE4-4D2A-A05C-6CED22E8F84D",
 			"category": "extended",
 			"on": {
 				"ch": 2,
@@ -3590,6 +3590,16 @@
 				"ch": 2,
 				"cc": 0,
 				"value": 85
+			}
+		},
+		{
+			"id": "experimental - direct paramater - print",
+			"uuid": "207B3860-6BD3-4A8F-9A43-6FE7CA5FCB47",
+			"category": "extended",
+			"on": {
+				"ch": 2,
+				"cc": 0,
+				"value": 86
 			}
 		}
 	]

@@ -560,4 +560,9 @@ exports.actions = actions = [
       resolution = RESOLUTIONS[resolutionIndex]
       host.showPopupNotification "delta value: 1/#{resolution-1}"
   }
+  {
+    id: 'experimental - direct paramater - print'
+    fn: ->
+      console.info JSON.stringify device.get('directParameters')?.toJSON()
+  }
 ]
