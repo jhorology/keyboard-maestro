@@ -15,7 +15,7 @@ scripting = 'on'
 numTracks = 32
 numSends = 4
 numScenes = 16
-
+noteInput = undefined
 
 host.on 'init', ->
   # how could get preference value in init()?
@@ -84,4 +84,8 @@ host.on 'init', ->
           category: 'Effect'
   )
   ctx.msg = (s) -> host.showPopupNotification s
+  # scripting channel 10ch only
+  noteInput = host.getMidiInPort(0).createNoteInput 'Scripting','?9????'
+  ctx.midi = (s, d1, d2) ->
+    noteInput.sendRawMidiEvent s, d1, d2
   ctx.emit 'init'
