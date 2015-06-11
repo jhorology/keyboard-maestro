@@ -1,6 +1,13 @@
-host = require './host'
-_    = require 'underscore'
+host     = require './host'
+Backbone = require 'backbone'
+_        = require 'underscore'
 
+class PluginOperation extends Backbone.Model
+
+class PluginOperations extends Backbone.Collection
+  model: PluginOperation
+
+application =
 track =
 crossfade =
 device =
@@ -30,7 +37,12 @@ RESOLUTIONS = [
 resolutionIndex = 5
 resolution = 101
 
+MAX_UNDO = 128
+pluginUndoBuffer = new PluginOperations
+pluginUndoPointer = -1
+pluginOperations = new PluginOperations
 host.on 'init', ->
+  application = host.createApplication()
   track = host.createArrangerCursorTrack NUM_SENDS, 0
   track
     .attribify 'isSelectedInMixer'
@@ -57,6 +69,42 @@ host.on 'init', ->
     .attribify 'hasLayers', device.hasLayers(), 'value'
     .attribify 'hasDrumPads', device.hasDrumPads(), 'value'
     .useDirectParameter()
+  #   .on 'change:directParameters', (d, params) ->
+  #     pluginOperations.reset()
+  #     pluginUndoBuffer.reset()
+  #     pluginUndoPointer = -1
+  #     # prevent initial value
+  #     setTimeout (params) ->
+  #       params.on 'change:normalizedValue', (param, value, opts) ->
+  #         id = param.get 'id'
+  #         # plugin paramater only
+  #         return if id[0..4] isnt 'PARAM'
+  #         return if opts?.undo or opts?.redo
+  #         console.info "## change normalizedValue pointer:#{pluginUndoPointer} buffer lenth:#{pluginOperations.length} value:#{value}"
+  #         operation = pluginOperations.findWhere paramId: id
+  #         console.info "## change normalizedValue id:#{id} operatin:#{operation?.id}"
+  #         if operation
+  #           operation.set 'endValue', value
+  #         else
+  #           pluginOperations.add
+  #             paramId: id
+  #             startValue: param.get 'normalizedValue'
+  #             endValue: value
+  #     , 1000, params
+            
+  # pluginOperations.on 'change:endValue', (operation, value, opts) ->
+  #   console.info "## change value pointer:#{pluginUndoPointer} buffer lenth:#{pluginUndoBuffer.length} value:#{value}"
+  #   clearTimeout operation.timer if operation.timer
+  #   operation.timer = setTimeout (operation) ->
+  #     pluginOperations.remove operation
+  #     if operation.get('startValue') isnt operation.get('endValue')
+  #       if pluginUndoPointer < (pluginUndoBuffer.length - 1)
+  #         pluginUndoBuffer = pluginUndoBuffer.slice 0, (pluginUndoPointer + 1)
+  #       pluginUndoBuffer.push operation
+  #       pluginUndoBuffer.shfit() if pluginUndoBuffer.length > MAX_UNDO
+  #       pluginUndoPointer = pluginUndoBuffer.length - 1
+  #       console.info "## timeout pointer:#{pluginUndoPointer} buffer lenth:#{pluginUndoBuffer.length}"
+  #   , 500, operation
     
   deviceSlot = device.getCursorSlot()
     .attribify 'name', 32, ''
@@ -98,7 +146,7 @@ deviceValue = (i, delta) ->
     macroValues[i].inc delta, resolution
   else if  parameterIndicated
     parameterValues[i].inc delta, resolution
-      # workarround for VST parameter dosen't display correctly.
+      # workarround for PLUGIN parameter dosen't display correctly.
       .once 'change:valueDisplay', (o, value) ->
         host.showPopupNotification "#{o.get 'name'}: #{value}"
       
@@ -565,4 +613,21 @@ exports.actions = actions = [
     fn: ->
       console.info JSON.stringify device.get('directParameters')?.toJSON()
   }
+  # {
+  #   id: 'cursor device - direct paramater - undo'
+  #   fn: ->
+  #     if pluginUndoPointer >= 0 and pluginUndoBuffer.length > 0
+  #       console.info "## undo pointer:#{pluginUndoPointer} buffer lenth:#{pluginUndoBuffer.length}"
+  #       opertion = pluginUndoBuffer.at pluginUndoPointer
+  #       param = device.get 'directParameters'
+  #         .findWhere id: operation.id
+  #       param?.set 'normalizedValue', operation.get 'startValue', undo: on
+  #       pluginUndoPointer--
+  #     else
+  #       application.undo()
+  # }
+  # {
+  #   id: 'cursor device - direct paramater - redo'
+  #   fn: ->
+  # }
 ]

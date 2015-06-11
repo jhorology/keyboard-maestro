@@ -336,19 +336,23 @@ class Device extends Model
       maxNameChars: 64
       maxValueDisplayChars: 32
     @addDirectParameterIdObserver (ids) =>
+      params = @get 'directParameters'
+      params?.off()
       params = new DirectParameters
       params.add id: String(id) for id in ids
       @set 'directParameters', params
+      params.on 'change:normalizedValue', (p, v, opts) =>
+        @setDirectParameterValueNormalized p.id, v, 1 unless opts.observed
     @addDirectParameterNameObserver opts.maxNameChars, (id, name) =>
       @get 'directParameters'
-        .add {id: id, name: name}, {merge: on}
+        .add {id: id, name: name}, {merge: on, observed: on}
     @addDirectParameterNormalizedValueObserver (id, value) =>
       @get 'directParameters'
-        .add {id: id, normalizedValue: value}, {merge: on}
+        .add {id: id, normalizedValue: value}, {merge: on, observed: on}
     @_observer =
       @addDirectParameterValueDisplayObserver opts.maxValueDisplayChars, (id, value) =>
         @get 'directParameters'
-          .add {id: id, valueDisplay: value}, {merge: on}
+          .add {id: id, valueDisplay: value}, {merge: on, observed: on}
     @
 
   observeDirectParameters: (params) ->

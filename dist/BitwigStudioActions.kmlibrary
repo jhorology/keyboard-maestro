@@ -9441,6 +9441,75 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
+            <string>general - help_user_guide_de</string>
+            <key>Triggers</key>
+            <array/>
+            <key>UID</key>
+            <string>4E4D682C-670B-4A0A-A8B3-3EB350F79105</string>
+          </dict>
+        </array>
+        <key>Modifiers</key>
+        <integer>0</integer>
+        <key>Name</key>
+        <string>Bitwig Actions</string>
+        <key>Targeting</key>
+        <dict>
+          <key>Targeting</key>
+          <string>Included</string>
+          <key>TargetingApps</key>
+          <array>
+            <dict>
+              <key>BundleIdentifier</key>
+              <string>com.bitwig.studio</string>
+              <key>Name</key>
+              <string>Bitwig Studio</string>
+              <key>NewFile</key>
+              <string>/Applications/Bitwig Studio.app</string>
+            </dict>
+          </array>
+        </dict>
+      </dict>
+      
+      <dict>
+        <key>Activate</key>
+        <string>AlwaysWithPalette</string>
+        <key>AddToMacroPalette</key>
+        <true/>
+        <key>AddToStatusMenu</key>
+        <false/>
+        <key>IsActive</key>
+        <false/>
+        <key>KeyCode</key>
+        <integer>32767</integer>
+        <key>Macros</key>
+        <array>
+          <dict>
+            <key>Actions</key>
+            <array>
+              <dict>
+                <key>Channel</key>
+                <integer>1</integer>
+                <key>IsActive</key>
+                <true/>
+                <key>IsDisclosed</key>
+                <true/>
+                <key>MIDIMessageType</key>
+                <string>ControlChange</string>
+                <key>MacroActionType</key>
+                <string>SendMIDIMessage</string>
+                <key>Note</key>
+                <integer>1</integer>
+                <key>Value</key>
+                <integer>9</integer>
+              </dict>
+            </array>
+            <key>CustomIconData</key>
+            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+            <key>IsActive</key>
+            <true/>
+            <key>ModificationDate</key>
+            <real>440732432.86673301</real>
+            <key>Name</key>
             <string>general - check_for_updates</string>
             <key>Triggers</key>
             <array/>
@@ -9500,7 +9569,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>9</integer>
+                <integer>10</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -9569,7 +9638,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>10</integer>
+                <integer>11</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -9638,7 +9707,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>11</integer>
+                <integer>12</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -9707,7 +9776,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>12</integer>
+                <integer>13</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -9776,7 +9845,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>13</integer>
+                <integer>14</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -9845,7 +9914,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>14</integer>
+                <integer>15</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -9914,7 +9983,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>15</integer>
+                <integer>16</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -9983,7 +10052,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>16</integer>
+                <integer>17</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -10052,7 +10121,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>17</integer>
+                <integer>18</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -10121,7 +10190,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>18</integer>
+                <integer>19</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -10190,7 +10259,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>19</integer>
+                <integer>20</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -10259,7 +10328,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>20</integer>
+                <integer>21</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -10328,7 +10397,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>21</integer>
+                <integer>22</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -10397,7 +10466,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>22</integer>
+                <integer>23</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -10466,7 +10535,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>23</integer>
+                <integer>24</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -10535,7 +10604,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>24</integer>
+                <integer>25</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -10604,7 +10673,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>25</integer>
+                <integer>26</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -10673,7 +10742,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>26</integer>
+                <integer>27</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -10742,7 +10811,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>27</integer>
+                <integer>28</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -10811,7 +10880,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>28</integer>
+                <integer>29</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -10880,7 +10949,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>29</integer>
+                <integer>30</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -10949,7 +11018,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>30</integer>
+                <integer>31</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -11018,7 +11087,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>31</integer>
+                <integer>32</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -11087,7 +11156,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>32</integer>
+                <integer>33</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -11156,7 +11225,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>33</integer>
+                <integer>34</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -11225,7 +11294,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>34</integer>
+                <integer>35</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -11294,7 +11363,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>35</integer>
+                <integer>36</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -11363,7 +11432,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>36</integer>
+                <integer>37</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -11432,7 +11501,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>37</integer>
+                <integer>38</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -11501,7 +11570,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>38</integer>
+                <integer>39</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -11570,7 +11639,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>39</integer>
+                <integer>40</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -11639,7 +11708,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>40</integer>
+                <integer>41</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -11708,7 +11777,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>41</integer>
+                <integer>42</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -11777,7 +11846,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>42</integer>
+                <integer>43</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -11846,7 +11915,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>43</integer>
+                <integer>44</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -11915,7 +11984,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>44</integer>
+                <integer>45</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -11984,7 +12053,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>45</integer>
+                <integer>46</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -12053,7 +12122,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>46</integer>
+                <integer>47</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -12122,7 +12191,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>47</integer>
+                <integer>48</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -12191,7 +12260,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>48</integer>
+                <integer>49</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -12260,7 +12329,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>49</integer>
+                <integer>50</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -12329,7 +12398,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>50</integer>
+                <integer>51</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -12398,7 +12467,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>51</integer>
+                <integer>52</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -12467,7 +12536,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>52</integer>
+                <integer>53</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -12536,7 +12605,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>53</integer>
+                <integer>54</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -12605,7 +12674,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>54</integer>
+                <integer>55</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -12674,7 +12743,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>55</integer>
+                <integer>56</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -12743,7 +12812,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>56</integer>
+                <integer>57</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -12812,7 +12881,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>57</integer>
+                <integer>58</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -12881,7 +12950,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>58</integer>
+                <integer>59</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -12950,7 +13019,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>59</integer>
+                <integer>60</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -13019,7 +13088,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>60</integer>
+                <integer>61</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -13088,7 +13157,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>61</integer>
+                <integer>62</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -13157,7 +13226,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>62</integer>
+                <integer>63</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -13226,7 +13295,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>63</integer>
+                <integer>64</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -13295,7 +13364,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>64</integer>
+                <integer>65</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -13364,7 +13433,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>65</integer>
+                <integer>66</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -13433,7 +13502,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>66</integer>
+                <integer>67</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -13502,7 +13571,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>67</integer>
+                <integer>68</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -13571,7 +13640,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>68</integer>
+                <integer>69</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -13640,7 +13709,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>69</integer>
+                <integer>70</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -13709,7 +13778,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>70</integer>
+                <integer>71</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -13778,7 +13847,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>71</integer>
+                <integer>72</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -13847,7 +13916,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>72</integer>
+                <integer>73</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -13916,7 +13985,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>73</integer>
+                <integer>74</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -13985,7 +14054,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>74</integer>
+                <integer>75</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -14054,7 +14123,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>75</integer>
+                <integer>76</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -14123,7 +14192,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>76</integer>
+                <integer>77</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -14192,7 +14261,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>77</integer>
+                <integer>78</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -14261,7 +14330,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>78</integer>
+                <integer>79</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -14330,7 +14399,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>79</integer>
+                <integer>80</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -14399,7 +14468,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>80</integer>
+                <integer>81</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -14468,7 +14537,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>81</integer>
+                <integer>82</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -14537,7 +14606,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>82</integer>
+                <integer>83</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -14606,7 +14675,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>83</integer>
+                <integer>84</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -14675,7 +14744,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>84</integer>
+                <integer>85</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -14744,7 +14813,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>85</integer>
+                <integer>86</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -14813,7 +14882,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>86</integer>
+                <integer>87</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -14882,7 +14951,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>87</integer>
+                <integer>88</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -14951,7 +15020,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>88</integer>
+                <integer>89</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -15020,7 +15089,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>89</integer>
+                <integer>90</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -15089,7 +15158,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>90</integer>
+                <integer>91</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -15158,7 +15227,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>91</integer>
+                <integer>92</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -15227,7 +15296,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>92</integer>
+                <integer>93</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -15296,7 +15365,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>93</integer>
+                <integer>94</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -15365,7 +15434,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>94</integer>
+                <integer>95</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -15434,7 +15503,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>95</integer>
+                <integer>96</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -15503,7 +15572,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>96</integer>
+                <integer>97</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -15572,7 +15641,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>97</integer>
+                <integer>98</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -15641,7 +15710,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>98</integer>
+                <integer>99</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -15710,7 +15779,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>99</integer>
+                <integer>100</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -15779,7 +15848,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>100</integer>
+                <integer>101</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -15848,7 +15917,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>101</integer>
+                <integer>102</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -15917,7 +15986,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>102</integer>
+                <integer>103</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -15986,7 +16055,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>103</integer>
+                <integer>104</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -16055,7 +16124,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>104</integer>
+                <integer>105</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -16124,7 +16193,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>105</integer>
+                <integer>106</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -16193,7 +16262,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>106</integer>
+                <integer>107</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -16262,7 +16331,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>107</integer>
+                <integer>108</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -16331,7 +16400,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>108</integer>
+                <integer>109</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -16400,7 +16469,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>109</integer>
+                <integer>110</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -16469,7 +16538,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>110</integer>
+                <integer>111</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -16538,7 +16607,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>111</integer>
+                <integer>112</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -16607,7 +16676,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>112</integer>
+                <integer>113</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -16676,7 +16745,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>113</integer>
+                <integer>114</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -16745,7 +16814,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>114</integer>
+                <integer>115</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -16814,7 +16883,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>115</integer>
+                <integer>116</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -16883,7 +16952,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>116</integer>
+                <integer>117</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -16952,7 +17021,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>117</integer>
+                <integer>118</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -17021,7 +17090,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>118</integer>
+                <integer>119</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -17090,7 +17159,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>119</integer>
+                <integer>120</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -17159,7 +17228,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>120</integer>
+                <integer>121</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -17228,7 +17297,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>121</integer>
+                <integer>122</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -17297,7 +17366,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>122</integer>
+                <integer>123</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -17366,7 +17435,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>123</integer>
+                <integer>124</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -17435,7 +17504,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>124</integer>
+                <integer>125</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -17504,7 +17573,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>125</integer>
+                <integer>126</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -17573,7 +17642,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>126</integer>
+                <integer>127</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -17640,9 +17709,9 @@
                 <key>MacroActionType</key>
                 <string>SendMIDIMessage</string>
                 <key>Note</key>
-                <integer>1</integer>
+                <integer>2</integer>
                 <key>Value</key>
-                <integer>127</integer>
+                <integer>0</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -17711,7 +17780,7 @@
                 <key>Note</key>
                 <integer>2</integer>
                 <key>Value</key>
-                <integer>0</integer>
+                <integer>1</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -17780,7 +17849,7 @@
                 <key>Note</key>
                 <integer>2</integer>
                 <key>Value</key>
-                <integer>1</integer>
+                <integer>2</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -17849,7 +17918,7 @@
                 <key>Note</key>
                 <integer>2</integer>
                 <key>Value</key>
-                <integer>2</integer>
+                <integer>3</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -17918,7 +17987,7 @@
                 <key>Note</key>
                 <integer>2</integer>
                 <key>Value</key>
-                <integer>3</integer>
+                <integer>4</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -17987,7 +18056,7 @@
                 <key>Note</key>
                 <integer>2</integer>
                 <key>Value</key>
-                <integer>4</integer>
+                <integer>5</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -18056,7 +18125,7 @@
                 <key>Note</key>
                 <integer>2</integer>
                 <key>Value</key>
-                <integer>5</integer>
+                <integer>6</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -18125,7 +18194,7 @@
                 <key>Note</key>
                 <integer>2</integer>
                 <key>Value</key>
-                <integer>6</integer>
+                <integer>7</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -18194,7 +18263,7 @@
                 <key>Note</key>
                 <integer>2</integer>
                 <key>Value</key>
-                <integer>7</integer>
+                <integer>8</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -18263,7 +18332,7 @@
                 <key>Note</key>
                 <integer>2</integer>
                 <key>Value</key>
-                <integer>8</integer>
+                <integer>9</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -18332,7 +18401,7 @@
                 <key>Note</key>
                 <integer>2</integer>
                 <key>Value</key>
-                <integer>9</integer>
+                <integer>10</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -18401,7 +18470,7 @@
                 <key>Note</key>
                 <integer>2</integer>
                 <key>Value</key>
-                <integer>10</integer>
+                <integer>11</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -18470,7 +18539,7 @@
                 <key>Note</key>
                 <integer>2</integer>
                 <key>Value</key>
-                <integer>11</integer>
+                <integer>12</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -18539,7 +18608,7 @@
                 <key>Note</key>
                 <integer>2</integer>
                 <key>Value</key>
-                <integer>12</integer>
+                <integer>13</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -18608,7 +18677,7 @@
                 <key>Note</key>
                 <integer>2</integer>
                 <key>Value</key>
-                <integer>13</integer>
+                <integer>14</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -18677,7 +18746,7 @@
                 <key>Note</key>
                 <integer>2</integer>
                 <key>Value</key>
-                <integer>14</integer>
+                <integer>15</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -18746,7 +18815,7 @@
                 <key>Note</key>
                 <integer>2</integer>
                 <key>Value</key>
-                <integer>15</integer>
+                <integer>16</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -18815,7 +18884,7 @@
                 <key>Note</key>
                 <integer>2</integer>
                 <key>Value</key>
-                <integer>16</integer>
+                <integer>17</integer>
               </dict>
             </array>
             <key>CustomIconData</key>

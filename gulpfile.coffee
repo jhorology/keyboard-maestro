@@ -21,6 +21,8 @@ builtins.assert = require.resolve './lib/assert'
 builtins.timers = require.resolve './lib/timers'
 builtins.process = require.resolve './lib/process'
 builtins._process = require.resolve './lib/process'
+# workaround for now backbone require jquery
+builtins.jquery = require.resolve './lib/_empty.js'
 
 
 # paths/misc settings
@@ -28,7 +30,7 @@ builtins._process = require.resolve './lib/process'
 $ =
   actions:
     dir: 'actions'
-    json: 'bitwig-studio-actions-1.1.7.json'
+    json: 'bitwig-studio-actions-1.1.8.json'
   src:
     dir: 'src'
     bitwigActions: 'bitwig-actions.coffee'

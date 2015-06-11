@@ -1,4 +1,4 @@
-exports.version = '1.1.7'
+exports.version = '1.1.8'
 exports.ids = [
   {
     id: 'New'
@@ -543,6 +543,10 @@ exports.ids = [
   {
     id: 'help_user_guide_jp'
     uuid: '75AA0299-524E-4EE0-B996-24298E1F8921'
+  }
+  {
+    id: 'help_user_guide_de'
+    uuid: '4E4D682C-670B-4A0A-A8B3-3EB350F79105'
   }
   {
     id: 'check_for_updates'
