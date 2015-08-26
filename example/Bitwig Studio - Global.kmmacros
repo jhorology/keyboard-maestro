@@ -5,6 +5,8 @@
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>Macros</key>
@@ -15,8 +17,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -27,8 +27,12 @@
 						<string>B2208FFB-6631-44D6-9E94-B735CD4EE16F</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
@@ -70,12 +74,16 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>DA0E5C07-C410-45EE-A3AF-39E2585DFDC8</string>
 		<key>UID</key>
 		<string>736A400D-790D-42F5-9183-E070DE171E53</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>Macros</key>
@@ -86,8 +94,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -98,8 +104,12 @@
 						<string>B2208FFB-6631-44D6-9E94-B735CD4EE16F</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
@@ -141,12 +151,16 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>DA0E5C07-C410-45EE-A3AF-39E2585DFDC8</string>
 		<key>UID</key>
 		<string>736A400D-790D-42F5-9183-E070DE171E53</string>
 	</dict>
 	<dict>
 		<key>Activate</key>
 		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>Macros</key>
@@ -157,8 +171,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -169,8 +181,12 @@
 						<string>F307E7AC-806D-456B-ACA1-46C1B0C3B237</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
@@ -212,6 +228,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>DA0E5C07-C410-45EE-A3AF-39E2585DFDC8</string>
 		<key>UID</key>
 		<string>736A400D-790D-42F5-9183-E070DE171E53</string>
 	</dict>

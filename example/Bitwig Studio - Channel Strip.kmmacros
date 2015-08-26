@@ -9,6 +9,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -21,8 +23,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -33,8 +33,12 @@
 						<string>07DE9928-C4F5-4850-B3AC-4E9A60E6C156</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEC=Rounded=KMCOLOR:255,0,0,255=⚫=82=4=4=1=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
@@ -64,6 +68,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -80,6 +86,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -90,6 +98,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -102,8 +112,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -114,8 +122,12 @@
 						<string>1CF1F98C-B30B-4168-A077-921D6CE6B1B6</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEC=Rounded=KMCOLOR:247,83,0,255=A=82=4=2=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
@@ -145,6 +157,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -161,6 +175,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -171,6 +187,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -183,8 +201,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -195,8 +211,12 @@
 						<string>0457FF82-1A94-40DD-986E-9DA31D9ABC82</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEC=Rounded=KMCOLOR:247,83,0,255=♦=82=4=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
@@ -226,6 +246,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -242,6 +264,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -252,6 +276,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -264,8 +290,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -276,8 +300,12 @@
 						<string>98C38744-F3C5-48F3-B0E9-ADFB2B529A6C</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEC=Rounded=KMCOLOR:247,83,0,255=B=82=4=2=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
@@ -307,6 +335,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -323,6 +353,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -333,6 +365,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -345,8 +379,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -357,8 +389,12 @@
 						<string>F83991CE-2B48-4621-B338-01FD9A0FDA08</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
@@ -386,6 +422,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -402,6 +440,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -412,6 +452,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -424,8 +466,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -436,8 +476,12 @@
 						<string>8711917D-D790-4998-B8A0-975E61587D0F</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEP-Left</string>
 				<key>IsActive</key>
@@ -467,6 +511,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -483,6 +529,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -493,6 +541,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -505,8 +555,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -517,8 +565,12 @@
 						<string>A5C4188B-03B9-41F9-BCEB-9D5B3454974F</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEP-Right</string>
 				<key>IsActive</key>
@@ -548,6 +600,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -564,6 +618,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -574,6 +630,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -586,8 +644,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -598,8 +654,12 @@
 						<string>9C14950E-F398-4632-9632-B02C188BD9CD</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEP-Minus</string>
 				<key>IsActive</key>
@@ -629,6 +689,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -645,6 +707,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -655,6 +719,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -667,8 +733,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -679,8 +743,12 @@
 						<string>498BD264-00FC-4246-AF4C-53D03A472EA7</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEP-Plus</string>
 				<key>IsActive</key>
@@ -710,6 +778,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -726,6 +796,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -736,6 +808,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -748,8 +822,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -760,8 +832,12 @@
 						<string>9E00086E-78FB-4A6A-92D1-F52858C5EB62</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEC=Rounded=KMCOLOR:244,82,0,255=M=82=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
@@ -791,6 +867,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -807,6 +885,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -817,6 +897,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -829,8 +911,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -841,8 +921,12 @@
 						<string>09507833-DEC1-48BC-B77E-2E3CF4DB45A2</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEP-Left</string>
 				<key>IsActive</key>
@@ -872,6 +956,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -888,6 +974,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -898,6 +986,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -910,8 +1000,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -922,8 +1010,12 @@
 						<string>E3047EB3-7956-43BA-BAF3-E4C3ACA166AD</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEP-Right</string>
 				<key>IsActive</key>
@@ -953,6 +1045,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -969,6 +1063,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -979,6 +1075,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -991,8 +1089,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -1003,8 +1099,12 @@
 						<string>882E41F7-7A8C-474A-AB65-A65AC6213F7E</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEP-Down</string>
 				<key>IsActive</key>
@@ -1034,6 +1134,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -1050,6 +1152,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -1060,6 +1164,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -1072,8 +1178,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -1084,8 +1188,12 @@
 						<string>92C3B055-295C-446D-9DE0-E0ED91FBF9AB</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEP-Up</string>
 				<key>IsActive</key>
@@ -1115,6 +1223,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -1131,6 +1241,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -1141,6 +1253,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -1153,8 +1267,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -1165,8 +1277,12 @@
 						<string>36AEF03D-40DF-4432-93F2-DD35AA4A75BF</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEP-Down</string>
 				<key>IsActive</key>
@@ -1196,6 +1312,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -1212,6 +1330,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -1222,6 +1342,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -1234,8 +1356,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -1246,8 +1366,12 @@
 						<string>7CB6EB8E-0DC4-4BBC-AC4F-163B26DF9ECD</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEP-Up</string>
 				<key>IsActive</key>
@@ -1277,6 +1401,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -1293,6 +1419,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -1303,6 +1431,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -1315,8 +1445,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -1327,8 +1455,12 @@
 						<string>DC9A3790-18D7-457E-B0F1-F011A9412ECA</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEP-Down</string>
 				<key>IsActive</key>
@@ -1358,6 +1490,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -1374,6 +1508,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -1384,6 +1520,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -1396,8 +1534,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -1408,8 +1544,12 @@
 						<string>195C9AF8-0D5A-4DE9-8DBA-E431703426ED</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEP-Up</string>
 				<key>IsActive</key>
@@ -1439,6 +1579,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -1455,6 +1597,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -1465,6 +1609,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -1477,8 +1623,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -1489,8 +1633,12 @@
 						<string>86FD6DB2-608B-4C1A-9DDA-831BC0AFD95B</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEP-Down</string>
 				<key>IsActive</key>
@@ -1520,6 +1668,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -1536,6 +1686,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -1546,6 +1698,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -1558,8 +1712,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -1570,8 +1722,12 @@
 						<string>9153B027-D958-446E-A5EA-5224489EA289</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEP-Up</string>
 				<key>IsActive</key>
@@ -1601,6 +1757,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -1617,6 +1775,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -1627,6 +1787,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -1639,8 +1801,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -1651,8 +1811,12 @@
 						<string>49C65227-C8A4-48CD-8C98-24A63E4E2916</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEC=Rounded=KMCOLOR:207,186,0,255=S=82=2=0=0=KMCOLOR:0,0,0,255</string>
 				<key>IsActive</key>
@@ -1682,6 +1846,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -1698,6 +1864,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -1708,6 +1876,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -1720,8 +1890,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -1732,12 +1900,12 @@
 						<string>E843DDFE-0D70-4FEE-B452-EB618A388956</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -1748,12 +1916,12 @@
 						<string>C8AE8B0C-5068-4E63-A7FF-32A2371353EE</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -1764,12 +1932,12 @@
 						<string>4A2C3ED8-2D95-4C46-8D5E-E887C71C3F1D</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -1780,12 +1948,12 @@
 						<string>0BDE4FA5-731B-411C-A894-93A4B80ABD9A</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -1796,12 +1964,12 @@
 						<string>40A8CEE1-D169-4C70-BE1B-434FFBAE438F</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -1812,8 +1980,12 @@
 						<string>AA07EBDA-B1BF-4C47-8424-0E63887181A5</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
 				<key>IsActive</key>
@@ -1843,6 +2015,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -1859,6 +2033,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -1869,6 +2045,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -1881,8 +2059,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -1893,8 +2069,12 @@
 						<string>BAB65BCD-8C25-43A7-BE0D-5599DB12B7E8</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEP-Down</string>
 				<key>IsActive</key>
@@ -1924,6 +2104,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -1940,6 +2122,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
@@ -1950,6 +2134,8 @@
 		<false/>
 		<key>AddToStatusMenu</key>
 		<false/>
+		<key>CreationDate</key>
+		<real>460533631.24593598</real>
 		<key>IsActive</key>
 		<true/>
 		<key>KeyCode</key>
@@ -1962,8 +2148,6 @@
 					<dict>
 						<key>Asynchronously</key>
 						<false/>
-						<key>Count</key>
-						<integer>1</integer>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -1974,8 +2158,12 @@
 						<string>C4EA90F9-34B5-4DF2-B218-4C7AE00DE7AE</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+						<key>UseParameter</key>
+						<false/>
 					</dict>
 				</array>
+				<key>CreationDate</key>
+				<real>460533631.24593598</real>
 				<key>CustomIconData</key>
 				<string>KMEP-Up</string>
 				<key>IsActive</key>
@@ -2005,6 +2193,8 @@
 		<integer>2048</integer>
 		<key>Name</key>
 		<string>Bitwig Studio - Channel Strip [⌥T]</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
 		<key>Targeting</key>
 		<dict>
 			<key>Targeting</key>
@@ -2021,6 +2211,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>ToggleMacroUID</key>
+		<string>5BE1FCD1-CEC9-4EBB-B580-5EFF15C3531D</string>
 		<key>UID</key>
 		<string>E2CF8412-585D-47B2-9A4F-6D6CD89EA69B</string>
 	</dict>
