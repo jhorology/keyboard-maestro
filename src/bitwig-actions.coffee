@@ -1,4 +1,4 @@
-exports.version = '1.2 BETA 5'
+exports.version = '1.3.0 RC 2'
 exports.ids = [
   {
     id: 'New'
@@ -242,11 +242,11 @@ exports.ids = [
   }
   {
     id: 'select_next_auto_complete_item'
-    uuid: 'FD297FDF-9095-4AEC-AF58-C5AB185334A8'
+    uuid: 'D2F7530C-3013-42A0-914A-F1A4D5DDF40D'
   }
   {
     id: 'select_prev_auto_complete_item'
-    uuid: 'C34891A9-AF89-4AFA-B50E-C75B3AB5E119'
+    uuid: '6BF0CFA6-AD1E-4ACC-99A6-5A7741F2BA04'
   }
   {
     id: 'Select first item'
@@ -518,7 +518,7 @@ exports.ids = [
   }
   {
     id: 'Restore window'
-    uuid: '9068ED8E-640F-4139-83C4-968A25173A38'
+    uuid: '5736E444-4FD0-4F2F-BE87-EB80C981819F'
   }
   {
     id: 'Full screen'
@@ -542,15 +542,11 @@ exports.ids = [
   }
   {
     id: 'new_from_template'
-    uuid: 'BD6E8F7B-754B-40E8-9E91-80EF27414621'
+    uuid: 'E808A923-E6D7-456B-BE12-164E68D52C52'
   }
   {
     id: 'save_as_template'
-    uuid: '83AEAB97-D978-438B-A1A4-5A58EE931808'
-  }
-  {
-    id: 'Connect to Remote Project'
-    uuid: '5B637A20-1E68-4147-A785-3AAB7083E9DD'
+    uuid: '6C0394A9-BB3F-4AA0-8F42-62508ACB72B8'
   }
   {
     id: 'Show Controller Script Console'
@@ -566,7 +562,7 @@ exports.ids = [
   }
   {
     id: 'help_user_guide_de'
-    uuid: '4E4D682C-670B-4A0A-A8B3-3EB350F79105'
+    uuid: 'FA971F05-B3B9-4AD8-AA3A-C931B214B86C'
   }
   {
     id: 'check_for_updates'
@@ -574,7 +570,11 @@ exports.ids = [
   }
   {
     id: 'toggle_performance_profiler'
-    uuid: '6680DC99-D3D1-4D11-8D9E-A70E45F881B7'
+    uuid: '67656FA5-D457-4356-9F19-036E57ECDBBD'
+  }
+  {
+    id: 'toggle_computer_keyboard_note_input'
+    uuid: '6BA783B1-4B70-4F3A-A319-7364A94AE49C'
   }
   {
     id: 'invoke_action'
@@ -602,7 +602,7 @@ exports.ids = [
   }
   {
     id: 'Create Group Track'
-    uuid: 'B6E2BDA4-9B07-4E82-A401-F8165C62440F'
+    uuid: 'D262ED10-7A63-41B1-AB17-B279E036666B'
   }
   {
     id: 'Create Scene'
@@ -666,31 +666,31 @@ exports.ids = [
   }
   {
     id: 'toggle_arranger_loop'
-    uuid: 'B330A9C9-8F4B-489D-92AB-5C0D00DFE497'
+    uuid: '59875962-CAF0-43F1-9757-FE1002C2B8C5'
   }
   {
     id: 'toggle_punch_in'
-    uuid: '31E7820E-68E7-48FC-9D64-FC298A367FEB'
+    uuid: 'DCE2A1F0-10E7-4D9D-AEFE-22B9BE0F2C2D'
   }
   {
     id: 'toggle_punch_out'
-    uuid: 'D276CCE0-6D65-419F-8377-1E890A1C3D5C'
+    uuid: '44F6033F-111F-41DF-ADCC-B5333D78CDD9'
   }
   {
     id: 'toggle_playhead_follow'
-    uuid: '5A2B6C34-FF49-4211-9F64-3C2A4FEE52F3'
+    uuid: 'DF1CECAB-2C46-4E8B-AA2D-DEC5CA7B9D12'
   }
   {
     id: 'toggle_automation_follow'
-    uuid: '251EDD28-025A-43B7-AD98-EC395B08A49D'
+    uuid: '44038FAA-2D78-472F-9B97-7FDCBE85A19A'
   }
   {
     id: 'toggle_metronome'
-    uuid: '283BB9F3-E276-4C16-BF3B-B822ACA1701D'
+    uuid: '496DCB20-31AB-4BD1-8638-E1AEED7C7B64'
   }
   {
     id: 'toggle_groove'
-    uuid: 'C055CFFB-F002-417D-BA0E-2E91D13EAF22'
+    uuid: '144C0EEC-60E8-44D3-ABF8-2C14CD277189'
   }
   {
     id: 'Toggle Record'
@@ -754,11 +754,11 @@ exports.ids = [
   }
   {
     id: 'focus_or_toggle_onscreen_keyboard_panel'
-    uuid: 'DA4D3784-F2DC-4FA7-AC53-C40FEEB2F3BD'
+    uuid: 'C425336D-3958-437E-98C1-5F311B5F0D74'
   }
   {
     id: 'focus_or_toggle_touch_controls_panel'
-    uuid: '1B421603-29E7-49B0-85CF-5B1FB4AD053C'
+    uuid: 'F2CA9A40-641B-4FD7-8222-85FEB70EC549'
   }
   {
     id: 'toggle_inspector'
@@ -774,7 +774,7 @@ exports.ids = [
   }
   {
     id: 'toggle_mappings_browser_panel'
-    uuid: '48D70444-8820-41DA-BCD4-75B9BFDE885A'
+    uuid: '1D5DF2F4-83F6-4AD4-8E3E-58E3DC094AE2'
   }
   {
     id: 'focus_or_toggle_browser_panel'
@@ -886,671 +886,671 @@ exports.ids = [
   }
   {
     id: 'select_track1'
-    uuid: 'B68A49C2-C34C-428C-A75C-6FF937A458B0'
+    uuid: 'A5A664A8-E5CB-4129-BB08-A4D4F6AC7506'
   }
   {
     id: 'select_track2'
-    uuid: 'E617593B-9F2C-4B19-BA38-5342CA4B7916'
+    uuid: '8ABF2FF1-8CE6-48FC-81D3-FC6CCB4FF543'
   }
   {
     id: 'select_track3'
-    uuid: '38EC4E56-6347-4FD5-AA4C-159713E4C0D8'
+    uuid: 'DD04D95B-3114-4120-8E2F-AD74E288225E'
   }
   {
     id: 'select_track4'
-    uuid: 'C5AB4F61-5442-4D4E-AADA-4803DC9B9977'
+    uuid: '925E7916-3990-40BF-A41B-F02D363FB147'
   }
   {
     id: 'select_track5'
-    uuid: 'A3C60792-ADC9-465F-93E0-A3E273B27FCE'
+    uuid: '0CD7DB15-75BD-4F36-AA7D-D283838C1D9C'
   }
   {
     id: 'select_track6'
-    uuid: 'C51BB8EA-BD08-4D51-AF84-E18DBDF91C85'
+    uuid: 'EE80681E-CFB1-425E-87F9-55EB217103C3'
   }
   {
     id: 'select_track7'
-    uuid: '1EAF82E1-52B3-432C-B18F-D57335E523CB'
+    uuid: 'C0AC15A0-3890-4997-B909-AF5FE854CA42'
   }
   {
     id: 'select_track8'
-    uuid: 'D06CE92B-799D-4CCB-A7FF-C2ED072B4C81'
+    uuid: '0872D941-40B2-41E2-A36D-B863415A4E4B'
   }
   {
     id: 'select_track9'
-    uuid: 'B3FEB09C-D8E3-4D73-A09B-472E0BF5121C'
+    uuid: 'E682554E-64A4-4192-A4EB-F55B8C81712C'
   }
   {
     id: 'select_track10'
-    uuid: '0FB099D6-46A4-4400-8FA7-6E8227A020BF'
+    uuid: 'C253B7F0-B9EE-4978-9E5C-C0E5449ABE3F'
   }
   {
     id: 'select_track11'
-    uuid: 'AA62A0B2-8947-4619-879C-BCBC700D764A'
+    uuid: '88920656-D9B0-4410-B60C-7509730688C7'
   }
   {
     id: 'select_track12'
-    uuid: 'FA92B99C-BB57-422E-A4F7-450A9482C354'
+    uuid: '47EC5B54-C40B-4EA4-9767-C246264C2C69'
   }
   {
     id: 'select_track13'
-    uuid: '4F6C38D6-0CEA-4672-9513-23A20F1B8B58'
+    uuid: '7423BA2E-5E5C-4F91-86F8-6B83FD796A33'
   }
   {
     id: 'select_track14'
-    uuid: 'E3EE5381-4897-4974-A119-D3B761C7F0AB'
+    uuid: '0A778369-DA45-476E-BCB8-1FD64156F094'
   }
   {
     id: 'select_track15'
-    uuid: 'D7217C95-B704-475C-B0FA-5FD9F1DD5935'
+    uuid: '7459C568-558C-485E-A9AB-3600F1658C42'
   }
   {
     id: 'select_track16'
-    uuid: '345A7160-6EFA-4A73-887B-556A8A3C3E31'
+    uuid: '7775D4BE-90BF-49D7-B3D1-7A2A79BAADCF'
   }
   {
     id: 'select_track17'
-    uuid: '1B8D4F04-F60E-43FD-B152-DD3CBDF7CCC7'
+    uuid: '0906F3A6-67B5-4FE0-8262-4C225E971BA7'
   }
   {
     id: 'select_track18'
-    uuid: '59B6FF76-01DD-4D17-AA56-92627D9B46A3'
+    uuid: 'E67CFB24-D8D3-4C28-9D5E-C0E59CE40E25'
   }
   {
     id: 'select_track19'
-    uuid: '3F4CC1E3-BACE-48C7-89B5-DC2EEDFB2E32'
+    uuid: '4C7849A8-E92B-4F61-BD6C-92C6316F17CF'
   }
   {
     id: 'select_track20'
-    uuid: '8BC2BDF3-0373-4E3A-B847-E90CA896B8C2'
+    uuid: '80095BDD-2C64-47F9-AD05-04CD60FD7609'
   }
   {
     id: 'select_track21'
-    uuid: 'DA21D86E-AD68-477B-87E6-8D3B70810B2F'
+    uuid: '5D4CE48E-D772-429B-B5F8-024DC730DC34'
   }
   {
     id: 'select_track22'
-    uuid: '30A92ADA-46D5-4F17-B5DB-ACB9F0EB4964'
+    uuid: 'EC4B4F14-7129-40F9-B934-31D11238A7D2'
   }
   {
     id: 'select_track23'
-    uuid: '8E84E435-FB6E-434E-B25E-E9AD743074A8'
+    uuid: '193BE2D0-3A8D-40D5-B6E8-A798F3522229'
   }
   {
     id: 'select_track24'
-    uuid: '3F9179C0-4413-42B3-BA1D-BF5C29738E25'
+    uuid: 'AAF905B4-D003-42DB-96F3-8FE5312358E4'
   }
   {
     id: 'select_track25'
-    uuid: '153056B1-0BF2-4E79-9CE0-4E50B7D3A9EA'
+    uuid: '66EB6680-BF4C-4A7D-B99E-E943DACF715B'
   }
   {
     id: 'select_track26'
-    uuid: '732D8931-3A43-4CBC-B52C-72AD9F2DB345'
+    uuid: '4E1EEADC-ED4A-44F0-90B2-1DC125F8C675'
   }
   {
     id: 'select_track27'
-    uuid: 'C3B21575-2891-45CD-BF07-E8D136682913'
+    uuid: '2BC1B0D7-F4A1-4C77-A0CE-31C6CF7409A6'
   }
   {
     id: 'select_track28'
-    uuid: '574DDFBB-DD90-4A7A-80C2-AC3FAE571D63'
+    uuid: 'D6E9A390-9A1D-4743-A31C-BAE739EC3615'
   }
   {
     id: 'select_track29'
-    uuid: 'E400622D-B889-4C0C-99D6-CE89762D1D9D'
+    uuid: 'DDAC4236-CAED-4697-B84C-E287DD323AE2'
   }
   {
     id: 'select_track30'
-    uuid: '226DA8F6-504E-40DF-9DCE-526FCB77ED1E'
+    uuid: '7982AC5C-95B1-435B-AEE5-27989C7F664E'
   }
   {
     id: 'select_track31'
-    uuid: 'E50132CE-7BC6-462B-9348-F890A6B4312C'
+    uuid: 'A1FD21FC-F94F-45F3-B6DF-9F21526D36CA'
   }
   {
     id: 'select_track32'
-    uuid: '0644BB05-D004-4ECD-80FE-F136E56E66E7'
+    uuid: '81D27511-0FA4-40E8-AE98-E17BF9CDF818'
   }
   {
     id: 'select_track33'
-    uuid: 'F9211A9E-8AF1-4CC0-B0E2-E26BAFF1CEF6'
+    uuid: '472E28F0-C2F6-4E14-B70E-F143DF4B552D'
   }
   {
     id: 'select_track34'
-    uuid: 'C856A065-9B82-4B11-A84E-B24A1B87386A'
+    uuid: 'FB5A26D3-9849-4AF2-BD6D-C235CADDD2F3'
   }
   {
     id: 'select_track35'
-    uuid: '15E1B505-2183-4935-BE3E-09BD534AB570'
+    uuid: '01B8681E-8770-4821-AEF2-3004B208CAFB'
   }
   {
     id: 'select_track36'
-    uuid: '5F859D08-38ED-45BF-859D-8A105386B06F'
+    uuid: '5F00E910-E8FD-4E6E-A513-832C47F16CD2'
   }
   {
     id: 'select_track37'
-    uuid: '1564954C-21D1-488E-9FA2-18B954A7FE16'
+    uuid: 'EDE0AA5B-DEFA-4991-A004-D68B0741CFEE'
   }
   {
     id: 'select_track38'
-    uuid: 'E19CC50D-6ECF-41E5-933A-B94E4EBBCA1F'
+    uuid: 'E2DDD02F-F673-4F32-8E81-0A2ECBD51741'
   }
   {
     id: 'select_track39'
-    uuid: '8403AFAC-E71F-4DCF-8688-EB55DC82837E'
+    uuid: 'CD8BF7DA-EDD1-490C-BAF0-0C67B74646D2'
   }
   {
     id: 'select_track40'
-    uuid: '8EE50B9B-FB2A-41C1-8472-80A91F102AF2'
+    uuid: 'BD1351F6-AE05-43C1-B7CA-92C8E5333665'
   }
   {
     id: 'launch_scene1'
-    uuid: 'F5DC5465-0EB2-465E-A537-486D86F9A305'
+    uuid: 'D0093B82-A381-4A75-8761-A7EFDF6CCAB4'
   }
   {
     id: 'launch_scene2'
-    uuid: '21B55BA3-C187-4DE9-BD24-27498618F3C9'
+    uuid: '25964805-DE04-4060-B5E9-A17609DF69BE'
   }
   {
     id: 'launch_scene3'
-    uuid: 'C860AEB6-CDD8-4FE4-B64A-634CDFDA74CA'
+    uuid: 'AEE8FAEA-2E35-4D4B-A5D6-5E917F5B3883'
   }
   {
     id: 'launch_scene4'
-    uuid: 'DDFCB3A1-0504-4621-AA4F-3D41BD228BFE'
+    uuid: '7C00A2EB-120A-4865-A991-D6FA8226B5CD'
   }
   {
     id: 'launch_scene5'
-    uuid: '6EE5B5EE-7803-4D8C-9247-26699AB750C6'
+    uuid: 'D7C21F3C-DC06-48E4-A96E-6BE4125DA9D4'
   }
   {
     id: 'launch_scene6'
-    uuid: '54DA4692-3164-41C2-82A3-249282463B52'
+    uuid: 'FE6187A1-4945-48C2-9F01-8988B4249007'
   }
   {
     id: 'launch_scene7'
-    uuid: '2134BAF0-22CF-40A4-922C-3A367CF3CC2F'
+    uuid: '5B11D349-0150-4023-B1B8-6EDBACAFE2EB'
   }
   {
     id: 'launch_scene8'
-    uuid: '8C279DB2-3622-44ED-AE0F-DDDD5F77B717'
+    uuid: '560F2A78-E1CD-4D2F-A9CF-3F96B00EF2B5'
   }
   {
     id: 'launch_scene9'
-    uuid: '051B64E0-9417-44FD-8BFD-D54E06D41284'
+    uuid: '72F970A8-1DFA-48B5-AF86-B281E2D33833'
   }
   {
     id: 'launch_scene10'
-    uuid: 'D90ABED1-3D7F-4AF7-B853-1529E1918907'
+    uuid: '55731ECB-CAF1-4D7C-B4BA-F87645854EAF'
   }
   {
     id: 'launch_scene11'
-    uuid: '8DFC3FD9-FA06-428D-9359-517396919CD8'
+    uuid: 'D41D8E9F-B9CC-44F5-8FBB-BB06FBDEE6B7'
   }
   {
     id: 'launch_scene12'
-    uuid: '27865A39-5492-46BF-A28E-7F41C06C6086'
+    uuid: 'F8DC4B00-7287-42EC-927E-451739E58607'
   }
   {
     id: 'launch_scene13'
-    uuid: '6C5FCBDB-CC24-4837-A806-7B0F1A665656'
+    uuid: 'B76E112A-20BF-4CFA-A21A-3114D2C7D969'
   }
   {
     id: 'launch_scene14'
-    uuid: '7908FD78-E058-42E0-ADD1-69A2E7E9425D'
+    uuid: '215170A3-663B-4AA0-AF9B-3C7BAD94CF1F'
   }
   {
     id: 'launch_scene15'
-    uuid: 'D67D0659-BA68-4AB6-9281-B3436C9E23FF'
+    uuid: '52F96170-0648-4A7D-9119-16ABBFB9EF24'
   }
   {
     id: 'launch_scene16'
-    uuid: 'B5FC3C9C-75C6-45F1-83AD-9AF0F604A724'
+    uuid: 'A45938AA-B0E1-4C77-A42D-3EDA385789BA'
   }
   {
     id: 'launch_scene17'
-    uuid: '00D78905-0646-4B09-8793-CBA921A9C71E'
+    uuid: '38B8A869-ADAD-4592-A5AD-59058C62ABC8'
   }
   {
     id: 'launch_scene18'
-    uuid: '9C59F694-AAD4-4041-BDC2-716604E36CE3'
+    uuid: '8ED5EA2D-14C6-43E8-93BA-8C759D990EF8'
   }
   {
     id: 'launch_scene19'
-    uuid: 'AEBE1FDD-F7C0-47EB-ACD9-A64E2C273308'
+    uuid: '1E632691-A354-485D-BC1F-B9383C445BE3'
   }
   {
     id: 'launch_scene20'
-    uuid: '683385E2-F193-49BF-8350-4CC963E5BDA2'
+    uuid: 'B3C9A827-56FB-45B8-AB00-BA86CCC57461'
   }
   {
     id: 'launch_scene21'
-    uuid: 'F2EBE17F-D879-4732-B75A-A2998EFB3400'
+    uuid: '4C3F9DDC-1A11-434B-A5D8-F697B402B5B5'
   }
   {
     id: 'launch_scene22'
-    uuid: 'D24805BF-323A-4E0B-B2CA-2DC150B5CFF7'
+    uuid: '1A2F41FC-05AB-489C-86C6-E7E2AE8F4166'
   }
   {
     id: 'launch_scene23'
-    uuid: '820ADB51-6AC0-400E-9A17-BF1A5A5C8F76'
+    uuid: 'CEEECE60-1A77-4871-9430-650F39B6E493'
   }
   {
     id: 'launch_scene24'
-    uuid: '9E96955B-0034-4BCC-9E61-ACAB66588BC4'
+    uuid: '52C598E4-D366-4316-ABAD-DC2F484614F2'
   }
   {
     id: 'launch_scene25'
-    uuid: '294B2C06-53A2-409B-9E96-9078CCE070EE'
+    uuid: '5B410E51-5C29-4B10-8A45-C5F9FB3910E9'
   }
   {
     id: 'launch_scene26'
-    uuid: '40E49FF4-CD34-45CD-B896-2143E03C18B0'
+    uuid: '44E0A57F-DF76-482B-8EFF-ECC7602543FF'
   }
   {
     id: 'launch_scene27'
-    uuid: '1CF1B67E-81FB-463C-8777-EFF678935137'
+    uuid: 'E303E546-F929-4075-83C2-792A237C4E62'
   }
   {
     id: 'launch_scene28'
-    uuid: 'A75624C7-E544-4791-9DCC-1EB3304C4B18'
+    uuid: '6339001B-DA2A-41CB-A97F-B7A905A26C4B'
   }
   {
     id: 'launch_scene29'
-    uuid: '90E54929-0786-4696-AD03-704F1D0034D7'
+    uuid: 'D3CFCDFE-E329-45A1-9FB5-0D2AA0CE1206'
   }
   {
     id: 'launch_scene30'
-    uuid: '1DFE0830-18D4-4442-9AD4-25F382F9F97C'
+    uuid: '27BF047F-FA29-4EE9-B63A-B61047BEFC92'
   }
   {
     id: 'launch_scene31'
-    uuid: '3F455343-F4EA-4848-95BA-9CD444454AC7'
+    uuid: '65DD01F7-5BDA-4A76-825E-0FE22A360C3D'
   }
   {
     id: 'launch_scene32'
-    uuid: 'E3676D7E-8EC7-4F3C-AD82-A5809B5231A6'
+    uuid: 'E2658D4B-18C2-4BB7-BB56-A3932E56A6F8'
   }
   {
     id: 'launch_scene33'
-    uuid: 'DFF015AD-16D0-46A2-96E5-F418E123FFE3'
+    uuid: '6AD05A9D-983A-435D-BEFD-3E352FBB7811'
   }
   {
     id: 'launch_scene34'
-    uuid: 'DE2C0242-8A8B-4296-9637-3AD1500F5106'
+    uuid: 'A9F63C32-0839-4A7F-93E1-B1E58471D07D'
   }
   {
     id: 'launch_scene35'
-    uuid: '0C1E6335-C4EA-43F2-A624-AF922D0F63B1'
+    uuid: 'C98A48F9-1EEA-4391-98A3-1141B1B8EC29'
   }
   {
     id: 'launch_scene36'
-    uuid: '9A82641E-F621-4E6C-A278-3216DCA10A19'
+    uuid: '9EDF5E9B-5C1B-4A0A-83A3-9A97B293F7B0'
   }
   {
     id: 'launch_scene37'
-    uuid: '4FE6D786-830E-4F3F-9200-40F5A33BFD54'
+    uuid: '3CFCDAFE-DA76-4C96-AB03-88456E2D8E44'
   }
   {
     id: 'launch_scene38'
-    uuid: 'A0CA7D6C-D932-4CC6-B776-572A744644C0'
+    uuid: '94045B82-CE8C-4C87-B2EF-7C75690A03F7'
   }
   {
     id: 'launch_scene39'
-    uuid: '66D79E1F-7F3C-4670-897B-A439A3B100E6'
+    uuid: 'DEEFDFF7-F0AE-407C-9441-59703B0BC437'
   }
   {
     id: 'launch_scene40'
-    uuid: 'EF22E732-3A1D-4560-8AA6-F9C2BE13E0DF'
+    uuid: '858EBD96-1D99-476F-A36E-935E673F8E14'
   }
   {
     id: 'launch_slot1'
-    uuid: '4E83B5FC-D0B3-4E47-A29E-708E555AE574'
+    uuid: '43E014B0-9FEE-46F3-BFC4-7108488759BD'
   }
   {
     id: 'launch_slot2'
-    uuid: '8DF5503E-6505-4AB7-894B-413DB80A67B9'
+    uuid: '87BBD2EE-3D82-4ED5-A6F6-BCB3B50726DC'
   }
   {
     id: 'launch_slot3'
-    uuid: '6010B6E1-6303-41B5-B10C-A2A82312656B'
+    uuid: 'C7C36C51-1272-4A5E-AF00-C6B6626A158D'
   }
   {
     id: 'launch_slot4'
-    uuid: '1189EE62-FFE6-420E-AB09-C3A0792698C8'
+    uuid: '7BAFD6D8-3B12-4E17-9B52-D9B91AF37926'
   }
   {
     id: 'launch_slot5'
-    uuid: 'D4C82466-D616-4951-A28E-362ED0B6DC25'
+    uuid: 'A6DE691D-1AA5-415B-B84F-79E9E95FC58B'
   }
   {
     id: 'launch_slot6'
-    uuid: '0090E52F-BBA2-4069-9175-58B0516CDB21'
+    uuid: '5142B997-A0E9-4CEC-BC1B-FA8CF49C8179'
   }
   {
     id: 'launch_slot7'
-    uuid: 'E3AB4131-D048-4A14-96A6-8633583911E7'
+    uuid: '33928B70-DF71-4875-9AB9-588E5546BD13'
   }
   {
     id: 'launch_slot8'
-    uuid: '83B9C19D-BC10-439A-9AA2-3C22CCFB9893'
+    uuid: '82D27518-D7D0-4F35-B27E-678154FB9503'
   }
   {
     id: 'launch_slot9'
-    uuid: '7EFC5D0D-3172-479C-9C20-640441AC5887'
+    uuid: '9B2CD0BC-7C92-4EF6-9BC9-A9A15280CA9B'
   }
   {
     id: 'launch_slot10'
-    uuid: '9E40EC80-570E-43DE-A2B7-6C58321F740B'
+    uuid: '2413FFEC-AC07-4221-9416-790FF4B07ECF'
   }
   {
     id: 'launch_slot11'
-    uuid: 'A7D1B5BB-16F9-4E93-9C9E-FCB1B5542780'
+    uuid: 'ECB94A68-97DF-490A-B55A-4D4E1D439B41'
   }
   {
     id: 'launch_slot12'
-    uuid: 'A77C27C9-1A90-40C1-B977-4C32395A6A00'
+    uuid: '7ADCBE19-2794-416C-B2B4-42A7FF597356'
   }
   {
     id: 'launch_slot13'
-    uuid: 'CEA6CDB1-9EE3-4A02-AC2B-801EDBB90035'
+    uuid: '2ED3CCBC-3EA2-4CB1-826A-369C62E799FC'
   }
   {
     id: 'launch_slot14'
-    uuid: '71710ED7-C0AF-4422-ACD7-8ED0547BD6E2'
+    uuid: 'ECFBA982-DD94-4FEB-9D35-1509E4DE10D5'
   }
   {
     id: 'launch_slot15'
-    uuid: '9CEC5329-CFE4-44A1-99CA-8B7F2FB5CC9A'
+    uuid: 'E16EA455-2FE1-4F2C-BBE5-34EADE383C7E'
   }
   {
     id: 'launch_slot16'
-    uuid: '575E9870-BBBE-47A8-848E-626441AB57D3'
+    uuid: '2605E804-A78E-449D-BB4C-D3FF4AC34208'
   }
   {
     id: 'launch_slot17'
-    uuid: '2896862B-B26E-4E7C-9908-58903682909E'
+    uuid: '12B06DB8-8BB3-41D8-B17D-14B0DBC6C604'
   }
   {
     id: 'launch_slot18'
-    uuid: '7450A01D-EC52-4BFE-B7A2-E262127D9C21'
+    uuid: '831F0F8A-3FBE-48E2-B458-1A9A43762037'
   }
   {
     id: 'launch_slot19'
-    uuid: '28AC1C81-98C0-4C7D-B088-ABEC66CF8BEC'
+    uuid: '3FB8F805-DB8F-47BE-8E70-0F46B33384A5'
   }
   {
     id: 'launch_slot20'
-    uuid: '4CAF70F5-D359-4894-96F7-CAB543FD1154'
+    uuid: '4AD9F3A1-0067-40B3-AD30-3F3F6CA1BEAE'
   }
   {
     id: 'launch_slot21'
-    uuid: '38DBB3AF-07F9-48A1-8E96-914DB8CCB9F8'
+    uuid: 'D37443F0-EC9A-4433-9E62-95AE118570D3'
   }
   {
     id: 'launch_slot22'
-    uuid: '2AD05226-EF26-41D8-90E4-70C22FC476B9'
+    uuid: '8EF40C70-0024-4CE4-AFF5-1E3D3F7AF414'
   }
   {
     id: 'launch_slot23'
-    uuid: 'DE03C26D-9924-44F9-8CB6-D4A0B13CB669'
+    uuid: '51718762-65F9-4352-8024-669FF7735827'
   }
   {
     id: 'launch_slot24'
-    uuid: '898322C0-6B83-470D-B1C0-FF5F580252C5'
+    uuid: '52396BF9-CA37-4DCD-9FE0-C3ABE3101537'
   }
   {
     id: 'launch_slot25'
-    uuid: '1BCB0A36-FA4D-4FBB-8135-3D3422840647'
+    uuid: '9EA65B88-561F-473B-BF8D-004761BC6CAE'
   }
   {
     id: 'launch_slot26'
-    uuid: '20A7E58A-7CBF-4639-9C72-F915B5944EB8'
+    uuid: '29454520-A8DB-4DEF-BD14-DEC35FA19C39'
   }
   {
     id: 'launch_slot27'
-    uuid: 'BE2A99E3-A48D-47FB-9DB8-936D1BBAC68B'
+    uuid: 'E749EA20-B91F-484C-B141-658BAF6D4944'
   }
   {
     id: 'launch_slot28'
-    uuid: '9AB367F2-B2C0-41E4-8000-FB3B57107A55'
+    uuid: 'D05917DA-CA8F-4D60-B16E-1005D6E2D14D'
   }
   {
     id: 'launch_slot29'
-    uuid: 'A8FF3C7F-621B-46DE-B6CD-67C8ECB7BAFE'
+    uuid: 'A19E3A4B-BDFC-4FD1-8C86-2DBF4B3A71BD'
   }
   {
     id: 'launch_slot30'
-    uuid: '354FD94F-B013-457A-AB21-C5D380D667A5'
+    uuid: '4C2F576D-E66C-4124-BC52-11C95E575B52'
   }
   {
     id: 'launch_slot31'
-    uuid: 'EC9B8CA7-285C-444C-8777-9A128428C370'
+    uuid: '08C58E38-05F8-40D4-B316-F609DCC83CE7'
   }
   {
     id: 'launch_slot32'
-    uuid: '9ADB731A-3CFB-4CAB-A1CE-883653213808'
+    uuid: 'C6C2BBC3-8971-48BB-AE81-9F20AE9CC803'
   }
   {
     id: 'launch_slot33'
-    uuid: 'BD556A3C-1BF4-4389-BBC6-AC20869AB6C2'
+    uuid: 'C28AD571-82E2-440D-84EA-1D01D1013EA2'
   }
   {
     id: 'launch_slot34'
-    uuid: 'D80621C8-AB7F-4F1A-A8CD-77EEDD158317'
+    uuid: '3626191E-FBD4-437A-A4E1-4A1752BB0FA2'
   }
   {
     id: 'launch_slot35'
-    uuid: 'C2160E37-BFD4-4A2B-945E-D2726A8D9E53'
+    uuid: 'A93A309D-446C-4F1D-850B-D92DF561179C'
   }
   {
     id: 'launch_slot36'
-    uuid: 'BD5B2667-4E80-4A12-A347-995540D32719'
+    uuid: 'C450D0B6-E653-4388-8554-11BB5277FE2F'
   }
   {
     id: 'launch_slot37'
-    uuid: '71EE92D7-844E-4354-B70E-C883668358B8'
+    uuid: '736C8CF0-EE74-4492-A567-977D8348C76D'
   }
   {
     id: 'launch_slot38'
-    uuid: '45D0D439-B7C2-4545-8555-E2D2DA82FF03'
+    uuid: 'CEEFD21F-F683-4597-A384-CF8443A09FB1'
   }
   {
     id: 'launch_slot39'
-    uuid: 'C99E0891-C61F-4031-875C-6EBA60119BDD'
+    uuid: '6CD551BE-675A-4268-889A-BFD9C5486723'
   }
   {
     id: 'launch_slot40'
-    uuid: '3B583CDD-D801-49A8-8E8D-92CE57687457'
+    uuid: '90343B69-0321-4CA4-93B5-85FE6260940E'
   }
   {
     id: 'launch_arranger_cue_marker1'
-    uuid: '492F095D-5985-441E-B117-2837BDED5EF5'
+    uuid: '551824C9-054B-40F1-B0C2-BD63CB785F72'
   }
   {
     id: 'launch_arranger_cue_marker2'
-    uuid: '3872E3C3-3B00-46FA-8D9A-D4B6A6F1FC46'
+    uuid: '92A6775D-1D5F-445E-9095-70C44E8D617D'
   }
   {
     id: 'launch_arranger_cue_marker3'
-    uuid: '4E7BD25F-194A-40F3-80E6-FCF56D01ACD0'
+    uuid: '3095B84B-A593-4068-9A4F-661230C20D23'
   }
   {
     id: 'launch_arranger_cue_marker4'
-    uuid: 'A7B9820D-7895-468E-A4C4-A2AD9BC67AFA'
+    uuid: '25F20A60-6A38-43FD-8909-F63D4FF8B09C'
   }
   {
     id: 'launch_arranger_cue_marker5'
-    uuid: '11C2E305-37D7-4F50-B1D8-7FFEF277CA86'
+    uuid: '8138C0E1-A1F0-469A-92D3-ACADDF30E172'
   }
   {
     id: 'launch_arranger_cue_marker6'
-    uuid: '2276C404-FEBF-4E5E-B585-EFB8A1D97DE4'
+    uuid: 'FAB8DFBB-D4BE-45A9-9401-66ABFABD869F'
   }
   {
     id: 'launch_arranger_cue_marker7'
-    uuid: '65371F04-1344-40FA-83F3-799A90CED78A'
+    uuid: '584DE5BE-A3DD-4260-9ECE-AE655F45E973'
   }
   {
     id: 'launch_arranger_cue_marker8'
-    uuid: 'F12B08CC-72B4-428A-A115-128EDD776B6F'
+    uuid: 'FD61306E-CA6B-45C5-9646-8F65ED946A31'
   }
   {
     id: 'launch_arranger_cue_marker9'
-    uuid: '72936FE3-4266-479E-97C9-58CC50E5BF90'
+    uuid: '584ADDE0-B0E5-4DD9-A685-12828042D9AE'
   }
   {
     id: 'launch_arranger_cue_marker10'
-    uuid: 'D32A2A02-70ED-40B9-82FF-765182578982'
+    uuid: '24E902BB-FE6F-40A8-A049-286C982085F7'
   }
   {
     id: 'launch_arranger_cue_marker11'
-    uuid: '42A2F100-36E2-4F7A-84FF-607E320E9AE2'
+    uuid: '2EA58E29-4DF2-4D9F-AFCC-B9E6117F7F8C'
   }
   {
     id: 'launch_arranger_cue_marker12'
-    uuid: '971F4F68-2F3C-400E-BDAD-94E327AAEC9F'
+    uuid: '71B03818-7A02-46A7-BEF6-0BA02D3FB1D3'
   }
   {
     id: 'launch_arranger_cue_marker13'
-    uuid: 'B4D4A12B-7839-49D9-86E8-A423721D6A07'
+    uuid: '009F4A8E-6F9D-4B64-95D9-C86A58B4B04B'
   }
   {
     id: 'launch_arranger_cue_marker14'
-    uuid: 'A5A2B3D1-CED7-419C-BBF8-23942B2B4D9C'
+    uuid: 'F94D323C-9FB2-4678-9F81-4A465159814E'
   }
   {
     id: 'launch_arranger_cue_marker15'
-    uuid: '48CF8D48-D7DC-4B54-9C0B-BFC3007945DC'
+    uuid: '3D181BC9-017F-4CBB-8613-013F934FA788'
   }
   {
     id: 'launch_arranger_cue_marker16'
-    uuid: '3BC97FE6-686E-479A-B0BC-9C54A52FBC31'
+    uuid: 'DF5D075D-C5B6-4856-A838-0EB1C9B338CD'
   }
   {
     id: 'launch_arranger_cue_marker17'
-    uuid: '40FB89A6-193B-4145-8DB8-50AA5F2ADC80'
+    uuid: '225C2439-8C7F-41ED-8CE2-6FE05FC0D69A'
   }
   {
     id: 'launch_arranger_cue_marker18'
-    uuid: '99B39E82-0133-4DAC-B463-F6C20CB83FEE'
+    uuid: '9C5152ED-283C-405E-B953-542B88BEB878'
   }
   {
     id: 'launch_arranger_cue_marker19'
-    uuid: 'E4156BEA-EDD0-4FE5-8B98-44332FEC65B8'
+    uuid: '82F51ADF-EE25-4923-8180-71549FCA324E'
   }
   {
     id: 'launch_arranger_cue_marker20'
-    uuid: '6E209AB9-A7F0-4714-AA77-ACA56C7E513F'
+    uuid: '323F9063-BFB7-4B1A-9DC1-79849A6462FA'
   }
   {
     id: 'launch_arranger_cue_marker21'
-    uuid: '83C0C3BC-8C39-4BFA-9E3E-D56CEF3BF39F'
+    uuid: '147BCDA2-0AE8-454B-9FC9-07ABAFD4EABC'
   }
   {
     id: 'launch_arranger_cue_marker22'
-    uuid: '7EF879C8-DE16-479B-9935-07B23D07429B'
+    uuid: '49B214D9-CF34-4435-89FB-9BD81E5CEB73'
   }
   {
     id: 'launch_arranger_cue_marker23'
-    uuid: '211126A2-AA3E-4818-93B1-5788E46822DB'
+    uuid: 'D860C24E-027C-4877-A507-85045F38994E'
   }
   {
     id: 'launch_arranger_cue_marker24'
-    uuid: '98E1A77E-6BCC-4A81-9918-A8B54AB07F09'
+    uuid: '237C918D-6BA7-41BF-81D5-CD7265762757'
   }
   {
     id: 'launch_arranger_cue_marker25'
-    uuid: '9421E9A6-8DE7-44CD-8703-CA5294A43898'
+    uuid: 'D1C8E9EE-4326-4EA8-ACC8-8A974F93E621'
   }
   {
     id: 'launch_arranger_cue_marker26'
-    uuid: '84CED6E6-1FFE-4DC9-966A-5A7CA5C3C18A'
+    uuid: '8C82329C-5639-4388-AB4B-20E655F0C502'
   }
   {
     id: 'launch_arranger_cue_marker27'
-    uuid: '4DA072C7-B48A-4448-ACDF-252E90139F0C'
+    uuid: 'F951637F-4E0B-4333-B6AC-5C745715A165'
   }
   {
     id: 'launch_arranger_cue_marker28'
-    uuid: '9B8DEE38-216F-44AC-A1DA-270BEE831722'
+    uuid: 'A0914D6F-E19C-4B74-BB51-7FBA46C20249'
   }
   {
     id: 'launch_arranger_cue_marker29'
-    uuid: 'C25F043E-DEDB-4F47-BA16-7744F4DBC34A'
+    uuid: '4CE75718-717E-4844-BB31-8702B2D24766'
   }
   {
     id: 'launch_arranger_cue_marker30'
-    uuid: '1459FB5D-BDC8-4C0C-8301-B109113EDB7F'
+    uuid: '1D29A6BF-915A-41D4-B9A7-624A10EF4B45'
   }
   {
     id: 'launch_arranger_cue_marker31'
-    uuid: '12E70D1F-A9FD-4866-9033-B6ED27365F92'
+    uuid: '7793E703-B751-4F22-9C8A-DA75B9110A55'
   }
   {
     id: 'launch_arranger_cue_marker32'
-    uuid: '1168218F-45AA-462F-9FFE-C972595A898F'
+    uuid: 'B64F452C-CA22-4318-93A3-52AEA0D5DA25'
   }
   {
     id: 'launch_arranger_cue_marker33'
-    uuid: 'A40002ED-8190-431A-9009-6781A77C1C7C'
+    uuid: 'D84B2B6B-5827-463B-A067-B9B7B79C3A0D'
   }
   {
     id: 'launch_arranger_cue_marker34'
-    uuid: '1D7E94D8-04BA-4C1F-AFFD-5AE5636A7B69'
+    uuid: '1560E5B7-E41C-407D-A207-41D3717F41CE'
   }
   {
     id: 'launch_arranger_cue_marker35'
-    uuid: '224CB00C-FFC3-40E7-9A42-FB0CD03CA7A1'
+    uuid: '13C54A87-60C0-4B1F-8DCE-BB811711375D'
   }
   {
     id: 'launch_arranger_cue_marker36'
-    uuid: 'C8799389-D3B3-426D-A0CA-842E6E3A8769'
+    uuid: 'CDDAF1B8-9937-4473-82CE-B51862F1EB77'
   }
   {
     id: 'launch_arranger_cue_marker37'
-    uuid: '06CD2243-7164-4FAA-A0F1-F8A7FF451CA3'
+    uuid: 'B33FA683-304D-45E3-88E2-A5A68C2FC397'
   }
   {
     id: 'launch_arranger_cue_marker38'
-    uuid: 'A8E767DA-087A-4742-A263-09E66CE0816B'
+    uuid: 'CF351B09-3F79-48EF-B2FB-CF13187C95B5'
   }
   {
     id: 'launch_arranger_cue_marker39'
-    uuid: '167BFFA5-F6ED-4FFF-8121-E55E2EB9DEAA'
+    uuid: '465A147E-23BD-48A8-88BB-B2C6082CD872'
   }
   {
     id: 'launch_arranger_cue_marker40'
-    uuid: 'D78E6951-2425-4BF2-A086-F835BFCDA66E'
+    uuid: 'BBAB7E81-1F4E-47DD-8169-1A54D20AB27E'
   }
   {
     id: 'launch_next_scene'
-    uuid: 'A0D26DA7-E999-4C1A-9367-F2ED7B1AD1D0'
+    uuid: '54E03352-740F-4B2F-9A2E-33EC9DFDE778'
   }
   {
     id: 'launch_prev_scene'
-    uuid: '120406B0-D413-497D-8A40-A02657DCE220'
+    uuid: 'DB0C6210-8BDB-4468-ABA0-3447B974CB27'
   }
   {
     id: 'launch_next_slot'
-    uuid: '63638026-6770-45A4-A66E-73C4E25FF2FD'
+    uuid: 'A59AD11C-B8A1-42B8-A2A6-80CDA3AE9491'
   }
   {
     id: 'launch_prev_slot'
-    uuid: '6B37CC70-5AFB-45B9-857F-C10703620313'
+    uuid: '608E83F5-144D-4BCF-B89F-4F9832CBD26C'
   }
   {
     id: 'toggle_track_mute'
-    uuid: '2F6222AD-A257-4065-898B-110ABE015F31'
+    uuid: '2F1F62A4-B281-4D9F-BEEB-43B1E8ACDB66'
   }
   {
     id: 'toggle_track_solo'
-    uuid: '99057C1F-3AF7-410A-9EA2-08D04B3EC996'
+    uuid: '619BFDF1-6225-4BF4-9EAE-7EA8DCAB65F2'
   }
   {
     id: 'toggle_track_arm'
-    uuid: 'FA378944-D523-4DDA-BF49-C79E680AB647'
+    uuid: '3CA18F13-B7BB-4B6C-8EF9-0F322F19B5AB'
   }
   {
     id: 'Consolidate'
@@ -1685,88 +1685,16 @@ exports.ids = [
     uuid: 'FFDF116B-4A94-431D-BA2E-E74157FB9518'
   }
   {
-    id: 'Create New Instrument'
-    uuid: '9D9C7919-8DAB-4946-9058-5A661E76755D'
-  }
-  {
-    id: 'Create New Audio Effect'
-    uuid: 'A0CC4EFA-4F66-4242-B0B4-8EA5CBDA124E'
-  }
-  {
-    id: 'Create New Note Effect'
-    uuid: '09BA624B-A487-457D-866E-8193CAE80EBC'
-  }
-  {
-    id: 'Create New Detector'
-    uuid: '31DA02FF-9BEC-47BD-9EEC-A0FA93D0380F'
-  }
-  {
-    id: 'Nudge Left'
-    uuid: '7D8D7D02-A280-4374-9016-0D646BF1C0DA'
-  }
-  {
-    id: 'Nudge Right'
-    uuid: 'E6704E1B-4042-4963-882D-688F80A5565A'
-  }
-  {
-    id: 'Nudge Up'
-    uuid: '6E3E5412-9A56-4F96-9037-BA65CA1E8323'
-  }
-  {
-    id: 'Nudge Down'
-    uuid: '603CB2AE-2C2F-4D54-A1F5-2821D152D3CF'
-  }
-  {
-    id: 'Nudge Left (coarse)'
-    uuid: '9F3F3FD4-49BD-4715-9F6B-861913F8A2A4'
-  }
-  {
-    id: 'Nudge Right (coarse)'
-    uuid: '3C3AA4F3-12B7-4FEA-A8F9-F7E337929A45'
-  }
-  {
-    id: 'Nudge Up (coarse)'
-    uuid: 'A45D8CDC-81EC-43BF-8806-383A428D324F'
-  }
-  {
-    id: 'Nudge Down (coarse)'
-    uuid: 'F0C988EC-A4AA-49AA-9C33-346CE26CCD4E'
-  }
-  {
-    id: 'Increase Width'
-    uuid: '4FCF8987-DC30-4D45-AD2C-0AF53D063BEE'
-  }
-  {
-    id: 'Decrease Width'
-    uuid: 'D1BD0FC1-8835-4C2C-A0F6-A42A55CDB650'
-  }
-  {
-    id: 'Increase Height'
-    uuid: '1D46751F-597A-4C26-BEE0-7CE55132B38F'
-  }
-  {
-    id: 'Decrease Height'
-    uuid: 'FA69F56C-DD70-4058-80F7-3B6C6A0D04FE'
-  }
-  {
-    id: 'Bring To Front'
-    uuid: 'F8FC4E9C-57EE-4B94-9912-49E5D41A3A58'
-  }
-  {
-    id: 'Send To Back'
-    uuid: '97B427E1-50F1-4A70-BD65-7B0EEA874151'
-  }
-  {
     id: 'focus_browser_search_field'
     uuid: 'BDC9903E-9A75-4C13-81B0-7801BB8F95FA'
   }
   {
     id: 'select_next_search_result'
-    uuid: 'F5C71914-7898-4EDF-9906-CA8B44EADF87'
+    uuid: '93A3BE78-C08E-4FE8-B62F-DCFC648F07E3'
   }
   {
     id: 'select_prev_search_result'
-    uuid: '90112A89-EDA7-4DF9-BBFD-9E4E7A26E2A5'
+    uuid: '72C1DBB2-FEAB-4D44-B1CC-505E91172789'
   }
   {
     id: 'focus_file_overview'
@@ -1790,11 +1718,11 @@ exports.ids = [
   }
   {
     id: 'show_insert_popup_browser'
-    uuid: 'D1E2055A-58F7-486C-A79B-0234168AB880'
+    uuid: '13EC942C-2CAB-4614-856D-82BF6E194F8D'
   }
   {
     id: 'launch_current_slot'
-    uuid: '077033E7-EEC4-41C2-8F54-35B22AB54668'
+    uuid: '815D558E-C34C-4600-8832-8EF1AE1FCDB6'
   }
   {
     id: 'slice_to_drum_track'
@@ -1843,5 +1771,9 @@ exports.ids = [
   {
     id: 'toggle_layer_visibility'
     uuid: 'A036B219-3036-40CE-BE48-E609A8F91725'
+  }
+  {
+    id: 'toggle_plugin_device_window'
+    uuid: 'A55FCE38-9EE2-4DD4-906C-58B0ED680728'
   }
 ]

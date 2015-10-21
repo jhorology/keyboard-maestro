@@ -4201,7 +4201,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>FD297FDF-9095-4AEC-AF58-C5AB185334A8</string>
+            <string>D2F7530C-3013-42A0-914A-F1A4D5DDF40D</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -4270,7 +4270,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>C34891A9-AF89-4AFA-B50E-C75B3AB5E119</string>
+            <string>6BF0CFA6-AD1E-4ACC-99A6-5A7741F2BA04</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -8962,7 +8962,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>9068ED8E-640F-4139-83C4-968A25173A38</string>
+            <string>5736E444-4FD0-4F2F-BE87-EB80C981819F</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -9376,7 +9376,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>BD6E8F7B-754B-40E8-9E91-80EF27414621</string>
+            <string>E808A923-E6D7-456B-BE12-164E68D52C52</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -9445,7 +9445,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>83AEAB97-D978-438B-A1A4-5A58EE931808</string>
+            <string>6C0394A9-BB3F-4AA0-8F42-62508ACB72B8</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -9501,75 +9501,6 @@
                 <integer>1</integer>
                 <key>Value</key>
                 <integer>9</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>general - Connect to Remote Project</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>5B637A20-1E68-4147-A785-3AAB7083E9DD</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>1</integer>
-                <key>Value</key>
-                <integer>10</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -9638,7 +9569,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>11</integer>
+                <integer>10</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -9707,7 +9638,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>12</integer>
+                <integer>11</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -9776,7 +9707,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>13</integer>
+                <integer>12</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -9790,7 +9721,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>4E4D682C-670B-4A0A-A8B3-3EB350F79105</string>
+            <string>FA971F05-B3B9-4AD8-AA3A-C931B214B86C</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -9845,7 +9776,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>14</integer>
+                <integer>13</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -9914,7 +9845,7 @@
                 <key>Note</key>
                 <integer>1</integer>
                 <key>Value</key>
-                <integer>15</integer>
+                <integer>14</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -9928,7 +9859,76 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>6680DC99-D3D1-4D11-8D9E-A70E45F881B7</string>
+            <string>67656FA5-D457-4356-9F19-036E57ECDBBD</string>
+          </dict>
+        </array>
+        <key>Modifiers</key>
+        <integer>0</integer>
+        <key>Name</key>
+        <string>Bitwig Actions</string>
+        <key>Targeting</key>
+        <dict>
+          <key>Targeting</key>
+          <string>Included</string>
+          <key>TargetingApps</key>
+          <array>
+            <dict>
+              <key>BundleIdentifier</key>
+              <string>com.bitwig.studio</string>
+              <key>Name</key>
+              <string>Bitwig Studio</string>
+              <key>NewFile</key>
+              <string>/Applications/Bitwig Studio.app</string>
+            </dict>
+          </array>
+        </dict>
+      </dict>
+      
+      <dict>
+        <key>Activate</key>
+        <string>AlwaysWithPalette</string>
+        <key>AddToMacroPalette</key>
+        <true/>
+        <key>AddToStatusMenu</key>
+        <false/>
+        <key>IsActive</key>
+        <false/>
+        <key>KeyCode</key>
+        <integer>32767</integer>
+        <key>Macros</key>
+        <array>
+          <dict>
+            <key>Actions</key>
+            <array>
+              <dict>
+                <key>Channel</key>
+                <integer>1</integer>
+                <key>IsActive</key>
+                <true/>
+                <key>IsDisclosed</key>
+                <true/>
+                <key>MIDIMessageType</key>
+                <string>ControlChange</string>
+                <key>MacroActionType</key>
+                <string>SendMIDIMessage</string>
+                <key>Note</key>
+                <integer>1</integer>
+                <key>Value</key>
+                <integer>15</integer>
+              </dict>
+            </array>
+            <key>CustomIconData</key>
+            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+            <key>IsActive</key>
+            <true/>
+            <key>ModificationDate</key>
+            <real>440732432.86673301</real>
+            <key>Name</key>
+            <string>general - toggle_computer_keyboard_note_input</string>
+            <key>Triggers</key>
+            <array/>
+            <key>UID</key>
+            <string>6BA783B1-4B70-4F3A-A319-7364A94AE49C</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -10411,7 +10411,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>B6E2BDA4-9B07-4E82-A401-F8165C62440F</string>
+            <string>D262ED10-7A63-41B1-AB17-B279E036666B</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -11515,7 +11515,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>B330A9C9-8F4B-489D-92AB-5C0D00DFE497</string>
+            <string>59875962-CAF0-43F1-9757-FE1002C2B8C5</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -11584,7 +11584,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>31E7820E-68E7-48FC-9D64-FC298A367FEB</string>
+            <string>DCE2A1F0-10E7-4D9D-AEFE-22B9BE0F2C2D</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -11653,7 +11653,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>D276CCE0-6D65-419F-8377-1E890A1C3D5C</string>
+            <string>44F6033F-111F-41DF-ADCC-B5333D78CDD9</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -11722,7 +11722,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>5A2B6C34-FF49-4211-9F64-3C2A4FEE52F3</string>
+            <string>DF1CECAB-2C46-4E8B-AA2D-DEC5CA7B9D12</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -11791,7 +11791,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>251EDD28-025A-43B7-AD98-EC395B08A49D</string>
+            <string>44038FAA-2D78-472F-9B97-7FDCBE85A19A</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -11860,7 +11860,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>283BB9F3-E276-4C16-BF3B-B822ACA1701D</string>
+            <string>496DCB20-31AB-4BD1-8638-E1AEED7C7B64</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -11929,7 +11929,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>C055CFFB-F002-417D-BA0E-2E91D13EAF22</string>
+            <string>144C0EEC-60E8-44D3-ABF8-2C14CD277189</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -13033,7 +13033,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>DA4D3784-F2DC-4FA7-AC53-C40FEEB2F3BD</string>
+            <string>C425336D-3958-437E-98C1-5F311B5F0D74</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -13102,7 +13102,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>1B421603-29E7-49B0-85CF-5B1FB4AD053C</string>
+            <string>F2CA9A40-641B-4FD7-8222-85FEB70EC549</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -13378,7 +13378,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>48D70444-8820-41DA-BCD4-75B9BFDE885A</string>
+            <string>1D5DF2F4-83F6-4AD4-8E3E-58E3DC094AE2</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -15310,7 +15310,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>B68A49C2-C34C-428C-A75C-6FF937A458B0</string>
+            <string>A5A664A8-E5CB-4129-BB08-A4D4F6AC7506</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -15379,7 +15379,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>E617593B-9F2C-4B19-BA38-5342CA4B7916</string>
+            <string>8ABF2FF1-8CE6-48FC-81D3-FC6CCB4FF543</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -15448,7 +15448,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>38EC4E56-6347-4FD5-AA4C-159713E4C0D8</string>
+            <string>DD04D95B-3114-4120-8E2F-AD74E288225E</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -15517,7 +15517,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>C5AB4F61-5442-4D4E-AADA-4803DC9B9977</string>
+            <string>925E7916-3990-40BF-A41B-F02D363FB147</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -15586,7 +15586,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>A3C60792-ADC9-465F-93E0-A3E273B27FCE</string>
+            <string>0CD7DB15-75BD-4F36-AA7D-D283838C1D9C</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -15655,7 +15655,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>C51BB8EA-BD08-4D51-AF84-E18DBDF91C85</string>
+            <string>EE80681E-CFB1-425E-87F9-55EB217103C3</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -15724,7 +15724,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>1EAF82E1-52B3-432C-B18F-D57335E523CB</string>
+            <string>C0AC15A0-3890-4997-B909-AF5FE854CA42</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -15793,7 +15793,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>D06CE92B-799D-4CCB-A7FF-C2ED072B4C81</string>
+            <string>0872D941-40B2-41E2-A36D-B863415A4E4B</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -15862,7 +15862,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>B3FEB09C-D8E3-4D73-A09B-472E0BF5121C</string>
+            <string>E682554E-64A4-4192-A4EB-F55B8C81712C</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -15931,7 +15931,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>0FB099D6-46A4-4400-8FA7-6E8227A020BF</string>
+            <string>C253B7F0-B9EE-4978-9E5C-C0E5449ABE3F</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -16000,7 +16000,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>AA62A0B2-8947-4619-879C-BCBC700D764A</string>
+            <string>88920656-D9B0-4410-B60C-7509730688C7</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -16069,7 +16069,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>FA92B99C-BB57-422E-A4F7-450A9482C354</string>
+            <string>47EC5B54-C40B-4EA4-9767-C246264C2C69</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -16138,7 +16138,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>4F6C38D6-0CEA-4672-9513-23A20F1B8B58</string>
+            <string>7423BA2E-5E5C-4F91-86F8-6B83FD796A33</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -16207,7 +16207,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>E3EE5381-4897-4974-A119-D3B761C7F0AB</string>
+            <string>0A778369-DA45-476E-BCB8-1FD64156F094</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -16276,7 +16276,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>D7217C95-B704-475C-B0FA-5FD9F1DD5935</string>
+            <string>7459C568-558C-485E-A9AB-3600F1658C42</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -16345,7 +16345,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>345A7160-6EFA-4A73-887B-556A8A3C3E31</string>
+            <string>7775D4BE-90BF-49D7-B3D1-7A2A79BAADCF</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -16414,7 +16414,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>1B8D4F04-F60E-43FD-B152-DD3CBDF7CCC7</string>
+            <string>0906F3A6-67B5-4FE0-8262-4C225E971BA7</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -16483,7 +16483,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>59B6FF76-01DD-4D17-AA56-92627D9B46A3</string>
+            <string>E67CFB24-D8D3-4C28-9D5E-C0E59CE40E25</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -16552,7 +16552,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>3F4CC1E3-BACE-48C7-89B5-DC2EEDFB2E32</string>
+            <string>4C7849A8-E92B-4F61-BD6C-92C6316F17CF</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -16621,7 +16621,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>8BC2BDF3-0373-4E3A-B847-E90CA896B8C2</string>
+            <string>80095BDD-2C64-47F9-AD05-04CD60FD7609</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -16690,7 +16690,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>DA21D86E-AD68-477B-87E6-8D3B70810B2F</string>
+            <string>5D4CE48E-D772-429B-B5F8-024DC730DC34</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -16759,7 +16759,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>30A92ADA-46D5-4F17-B5DB-ACB9F0EB4964</string>
+            <string>EC4B4F14-7129-40F9-B934-31D11238A7D2</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -16828,7 +16828,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>8E84E435-FB6E-434E-B25E-E9AD743074A8</string>
+            <string>193BE2D0-3A8D-40D5-B6E8-A798F3522229</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -16897,7 +16897,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>3F9179C0-4413-42B3-BA1D-BF5C29738E25</string>
+            <string>AAF905B4-D003-42DB-96F3-8FE5312358E4</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -16966,7 +16966,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>153056B1-0BF2-4E79-9CE0-4E50B7D3A9EA</string>
+            <string>66EB6680-BF4C-4A7D-B99E-E943DACF715B</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -17035,7 +17035,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>732D8931-3A43-4CBC-B52C-72AD9F2DB345</string>
+            <string>4E1EEADC-ED4A-44F0-90B2-1DC125F8C675</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -17104,7 +17104,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>C3B21575-2891-45CD-BF07-E8D136682913</string>
+            <string>2BC1B0D7-F4A1-4C77-A0CE-31C6CF7409A6</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -17173,7 +17173,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>574DDFBB-DD90-4A7A-80C2-AC3FAE571D63</string>
+            <string>D6E9A390-9A1D-4743-A31C-BAE739EC3615</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -17242,7 +17242,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>E400622D-B889-4C0C-99D6-CE89762D1D9D</string>
+            <string>DDAC4236-CAED-4697-B84C-E287DD323AE2</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -17311,7 +17311,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>226DA8F6-504E-40DF-9DCE-526FCB77ED1E</string>
+            <string>7982AC5C-95B1-435B-AEE5-27989C7F664E</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -17380,7 +17380,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>E50132CE-7BC6-462B-9348-F890A6B4312C</string>
+            <string>A1FD21FC-F94F-45F3-B6DF-9F21526D36CA</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -17449,7 +17449,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>0644BB05-D004-4ECD-80FE-F136E56E66E7</string>
+            <string>81D27511-0FA4-40E8-AE98-E17BF9CDF818</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -17518,7 +17518,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>F9211A9E-8AF1-4CC0-B0E2-E26BAFF1CEF6</string>
+            <string>472E28F0-C2F6-4E14-B70E-F143DF4B552D</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -17587,7 +17587,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>C856A065-9B82-4B11-A84E-B24A1B87386A</string>
+            <string>FB5A26D3-9849-4AF2-BD6D-C235CADDD2F3</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -17656,7 +17656,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>15E1B505-2183-4935-BE3E-09BD534AB570</string>
+            <string>01B8681E-8770-4821-AEF2-3004B208CAFB</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -17725,7 +17725,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>5F859D08-38ED-45BF-859D-8A105386B06F</string>
+            <string>5F00E910-E8FD-4E6E-A513-832C47F16CD2</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -17794,7 +17794,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>1564954C-21D1-488E-9FA2-18B954A7FE16</string>
+            <string>EDE0AA5B-DEFA-4991-A004-D68B0741CFEE</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -17863,7 +17863,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>E19CC50D-6ECF-41E5-933A-B94E4EBBCA1F</string>
+            <string>E2DDD02F-F673-4F32-8E81-0A2ECBD51741</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -17932,7 +17932,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>8403AFAC-E71F-4DCF-8688-EB55DC82837E</string>
+            <string>CD8BF7DA-EDD1-490C-BAF0-0C67B74646D2</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -18001,7 +18001,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>8EE50B9B-FB2A-41C1-8472-80A91F102AF2</string>
+            <string>BD1351F6-AE05-43C1-B7CA-92C8E5333665</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -18070,7 +18070,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>F5DC5465-0EB2-465E-A537-486D86F9A305</string>
+            <string>D0093B82-A381-4A75-8761-A7EFDF6CCAB4</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -18139,7 +18139,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>21B55BA3-C187-4DE9-BD24-27498618F3C9</string>
+            <string>25964805-DE04-4060-B5E9-A17609DF69BE</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -18208,7 +18208,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>C860AEB6-CDD8-4FE4-B64A-634CDFDA74CA</string>
+            <string>AEE8FAEA-2E35-4D4B-A5D6-5E917F5B3883</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -18277,7 +18277,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>DDFCB3A1-0504-4621-AA4F-3D41BD228BFE</string>
+            <string>7C00A2EB-120A-4865-A991-D6FA8226B5CD</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -18346,7 +18346,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>6EE5B5EE-7803-4D8C-9247-26699AB750C6</string>
+            <string>D7C21F3C-DC06-48E4-A96E-6BE4125DA9D4</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -18415,7 +18415,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>54DA4692-3164-41C2-82A3-249282463B52</string>
+            <string>FE6187A1-4945-48C2-9F01-8988B4249007</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -18484,7 +18484,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>2134BAF0-22CF-40A4-922C-3A367CF3CC2F</string>
+            <string>5B11D349-0150-4023-B1B8-6EDBACAFE2EB</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -18553,7 +18553,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>8C279DB2-3622-44ED-AE0F-DDDD5F77B717</string>
+            <string>560F2A78-E1CD-4D2F-A9CF-3F96B00EF2B5</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -18622,7 +18622,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>051B64E0-9417-44FD-8BFD-D54E06D41284</string>
+            <string>72F970A8-1DFA-48B5-AF86-B281E2D33833</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -18691,7 +18691,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>D90ABED1-3D7F-4AF7-B853-1529E1918907</string>
+            <string>55731ECB-CAF1-4D7C-B4BA-F87645854EAF</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -18760,7 +18760,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>8DFC3FD9-FA06-428D-9359-517396919CD8</string>
+            <string>D41D8E9F-B9CC-44F5-8FBB-BB06FBDEE6B7</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -18829,7 +18829,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>27865A39-5492-46BF-A28E-7F41C06C6086</string>
+            <string>F8DC4B00-7287-42EC-927E-451739E58607</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -18898,7 +18898,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>6C5FCBDB-CC24-4837-A806-7B0F1A665656</string>
+            <string>B76E112A-20BF-4CFA-A21A-3114D2C7D969</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -18967,7 +18967,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>7908FD78-E058-42E0-ADD1-69A2E7E9425D</string>
+            <string>215170A3-663B-4AA0-AF9B-3C7BAD94CF1F</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -19036,7 +19036,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>D67D0659-BA68-4AB6-9281-B3436C9E23FF</string>
+            <string>52F96170-0648-4A7D-9119-16ABBFB9EF24</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -19105,7 +19105,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>B5FC3C9C-75C6-45F1-83AD-9AF0F604A724</string>
+            <string>A45938AA-B0E1-4C77-A42D-3EDA385789BA</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -19174,7 +19174,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>00D78905-0646-4B09-8793-CBA921A9C71E</string>
+            <string>38B8A869-ADAD-4592-A5AD-59058C62ABC8</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -19243,7 +19243,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>9C59F694-AAD4-4041-BDC2-716604E36CE3</string>
+            <string>8ED5EA2D-14C6-43E8-93BA-8C759D990EF8</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -19312,7 +19312,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>AEBE1FDD-F7C0-47EB-ACD9-A64E2C273308</string>
+            <string>1E632691-A354-485D-BC1F-B9383C445BE3</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -19381,7 +19381,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>683385E2-F193-49BF-8350-4CC963E5BDA2</string>
+            <string>B3C9A827-56FB-45B8-AB00-BA86CCC57461</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -19450,7 +19450,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>F2EBE17F-D879-4732-B75A-A2998EFB3400</string>
+            <string>4C3F9DDC-1A11-434B-A5D8-F697B402B5B5</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -19519,7 +19519,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>D24805BF-323A-4E0B-B2CA-2DC150B5CFF7</string>
+            <string>1A2F41FC-05AB-489C-86C6-E7E2AE8F4166</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -19588,7 +19588,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>820ADB51-6AC0-400E-9A17-BF1A5A5C8F76</string>
+            <string>CEEECE60-1A77-4871-9430-650F39B6E493</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -19657,7 +19657,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>9E96955B-0034-4BCC-9E61-ACAB66588BC4</string>
+            <string>52C598E4-D366-4316-ABAD-DC2F484614F2</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -19726,7 +19726,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>294B2C06-53A2-409B-9E96-9078CCE070EE</string>
+            <string>5B410E51-5C29-4B10-8A45-C5F9FB3910E9</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -19795,7 +19795,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>40E49FF4-CD34-45CD-B896-2143E03C18B0</string>
+            <string>44E0A57F-DF76-482B-8EFF-ECC7602543FF</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -19864,7 +19864,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>1CF1B67E-81FB-463C-8777-EFF678935137</string>
+            <string>E303E546-F929-4075-83C2-792A237C4E62</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -19933,7 +19933,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>A75624C7-E544-4791-9DCC-1EB3304C4B18</string>
+            <string>6339001B-DA2A-41CB-A97F-B7A905A26C4B</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -20002,7 +20002,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>90E54929-0786-4696-AD03-704F1D0034D7</string>
+            <string>D3CFCDFE-E329-45A1-9FB5-0D2AA0CE1206</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -20071,7 +20071,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>1DFE0830-18D4-4442-9AD4-25F382F9F97C</string>
+            <string>27BF047F-FA29-4EE9-B63A-B61047BEFC92</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -20140,7 +20140,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>3F455343-F4EA-4848-95BA-9CD444454AC7</string>
+            <string>65DD01F7-5BDA-4A76-825E-0FE22A360C3D</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -20209,7 +20209,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>E3676D7E-8EC7-4F3C-AD82-A5809B5231A6</string>
+            <string>E2658D4B-18C2-4BB7-BB56-A3932E56A6F8</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -20278,7 +20278,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>DFF015AD-16D0-46A2-96E5-F418E123FFE3</string>
+            <string>6AD05A9D-983A-435D-BEFD-3E352FBB7811</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -20347,7 +20347,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>DE2C0242-8A8B-4296-9637-3AD1500F5106</string>
+            <string>A9F63C32-0839-4A7F-93E1-B1E58471D07D</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -20416,7 +20416,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>0C1E6335-C4EA-43F2-A624-AF922D0F63B1</string>
+            <string>C98A48F9-1EEA-4391-98A3-1141B1B8EC29</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -20485,7 +20485,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>9A82641E-F621-4E6C-A278-3216DCA10A19</string>
+            <string>9EDF5E9B-5C1B-4A0A-83A3-9A97B293F7B0</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -20554,7 +20554,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>4FE6D786-830E-4F3F-9200-40F5A33BFD54</string>
+            <string>3CFCDAFE-DA76-4C96-AB03-88456E2D8E44</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -20623,7 +20623,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>A0CA7D6C-D932-4CC6-B776-572A744644C0</string>
+            <string>94045B82-CE8C-4C87-B2EF-7C75690A03F7</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -20692,7 +20692,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>66D79E1F-7F3C-4670-897B-A439A3B100E6</string>
+            <string>DEEFDFF7-F0AE-407C-9441-59703B0BC437</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -20761,7 +20761,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>EF22E732-3A1D-4560-8AA6-F9C2BE13E0DF</string>
+            <string>858EBD96-1D99-476F-A36E-935E673F8E14</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -20830,7 +20830,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>4E83B5FC-D0B3-4E47-A29E-708E555AE574</string>
+            <string>43E014B0-9FEE-46F3-BFC4-7108488759BD</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -20899,7 +20899,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>8DF5503E-6505-4AB7-894B-413DB80A67B9</string>
+            <string>87BBD2EE-3D82-4ED5-A6F6-BCB3B50726DC</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -20968,7 +20968,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>6010B6E1-6303-41B5-B10C-A2A82312656B</string>
+            <string>C7C36C51-1272-4A5E-AF00-C6B6626A158D</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -21037,7 +21037,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>1189EE62-FFE6-420E-AB09-C3A0792698C8</string>
+            <string>7BAFD6D8-3B12-4E17-9B52-D9B91AF37926</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -21106,7 +21106,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>D4C82466-D616-4951-A28E-362ED0B6DC25</string>
+            <string>A6DE691D-1AA5-415B-B84F-79E9E95FC58B</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -21175,7 +21175,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>0090E52F-BBA2-4069-9175-58B0516CDB21</string>
+            <string>5142B997-A0E9-4CEC-BC1B-FA8CF49C8179</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -21244,7 +21244,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>E3AB4131-D048-4A14-96A6-8633583911E7</string>
+            <string>33928B70-DF71-4875-9AB9-588E5546BD13</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -21313,7 +21313,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>83B9C19D-BC10-439A-9AA2-3C22CCFB9893</string>
+            <string>82D27518-D7D0-4F35-B27E-678154FB9503</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -21382,7 +21382,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>7EFC5D0D-3172-479C-9C20-640441AC5887</string>
+            <string>9B2CD0BC-7C92-4EF6-9BC9-A9A15280CA9B</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -21451,7 +21451,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>9E40EC80-570E-43DE-A2B7-6C58321F740B</string>
+            <string>2413FFEC-AC07-4221-9416-790FF4B07ECF</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -21520,7 +21520,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>A7D1B5BB-16F9-4E93-9C9E-FCB1B5542780</string>
+            <string>ECB94A68-97DF-490A-B55A-4D4E1D439B41</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -21589,7 +21589,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>A77C27C9-1A90-40C1-B977-4C32395A6A00</string>
+            <string>7ADCBE19-2794-416C-B2B4-42A7FF597356</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -21658,7 +21658,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>CEA6CDB1-9EE3-4A02-AC2B-801EDBB90035</string>
+            <string>2ED3CCBC-3EA2-4CB1-826A-369C62E799FC</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -21727,7 +21727,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>71710ED7-C0AF-4422-ACD7-8ED0547BD6E2</string>
+            <string>ECFBA982-DD94-4FEB-9D35-1509E4DE10D5</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -21796,7 +21796,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>9CEC5329-CFE4-44A1-99CA-8B7F2FB5CC9A</string>
+            <string>E16EA455-2FE1-4F2C-BBE5-34EADE383C7E</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -21865,7 +21865,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>575E9870-BBBE-47A8-848E-626441AB57D3</string>
+            <string>2605E804-A78E-449D-BB4C-D3FF4AC34208</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -21934,7 +21934,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>2896862B-B26E-4E7C-9908-58903682909E</string>
+            <string>12B06DB8-8BB3-41D8-B17D-14B0DBC6C604</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -22003,7 +22003,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>7450A01D-EC52-4BFE-B7A2-E262127D9C21</string>
+            <string>831F0F8A-3FBE-48E2-B458-1A9A43762037</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -22072,7 +22072,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>28AC1C81-98C0-4C7D-B088-ABEC66CF8BEC</string>
+            <string>3FB8F805-DB8F-47BE-8E70-0F46B33384A5</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -22141,7 +22141,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>4CAF70F5-D359-4894-96F7-CAB543FD1154</string>
+            <string>4AD9F3A1-0067-40B3-AD30-3F3F6CA1BEAE</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -22210,7 +22210,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>38DBB3AF-07F9-48A1-8E96-914DB8CCB9F8</string>
+            <string>D37443F0-EC9A-4433-9E62-95AE118570D3</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -22279,7 +22279,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>2AD05226-EF26-41D8-90E4-70C22FC476B9</string>
+            <string>8EF40C70-0024-4CE4-AFF5-1E3D3F7AF414</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -22348,7 +22348,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>DE03C26D-9924-44F9-8CB6-D4A0B13CB669</string>
+            <string>51718762-65F9-4352-8024-669FF7735827</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -22417,7 +22417,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>898322C0-6B83-470D-B1C0-FF5F580252C5</string>
+            <string>52396BF9-CA37-4DCD-9FE0-C3ABE3101537</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -22486,7 +22486,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>1BCB0A36-FA4D-4FBB-8135-3D3422840647</string>
+            <string>9EA65B88-561F-473B-BF8D-004761BC6CAE</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -22555,7 +22555,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>20A7E58A-7CBF-4639-9C72-F915B5944EB8</string>
+            <string>29454520-A8DB-4DEF-BD14-DEC35FA19C39</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -22624,7 +22624,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>BE2A99E3-A48D-47FB-9DB8-936D1BBAC68B</string>
+            <string>E749EA20-B91F-484C-B141-658BAF6D4944</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -22693,7 +22693,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>9AB367F2-B2C0-41E4-8000-FB3B57107A55</string>
+            <string>D05917DA-CA8F-4D60-B16E-1005D6E2D14D</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -22762,7 +22762,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>A8FF3C7F-621B-46DE-B6CD-67C8ECB7BAFE</string>
+            <string>A19E3A4B-BDFC-4FD1-8C86-2DBF4B3A71BD</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -22831,7 +22831,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>354FD94F-B013-457A-AB21-C5D380D667A5</string>
+            <string>4C2F576D-E66C-4124-BC52-11C95E575B52</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -22900,7 +22900,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>EC9B8CA7-285C-444C-8777-9A128428C370</string>
+            <string>08C58E38-05F8-40D4-B316-F609DCC83CE7</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -22969,7 +22969,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>9ADB731A-3CFB-4CAB-A1CE-883653213808</string>
+            <string>C6C2BBC3-8971-48BB-AE81-9F20AE9CC803</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -23038,7 +23038,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>BD556A3C-1BF4-4389-BBC6-AC20869AB6C2</string>
+            <string>C28AD571-82E2-440D-84EA-1D01D1013EA2</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -23107,7 +23107,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>D80621C8-AB7F-4F1A-A8CD-77EEDD158317</string>
+            <string>3626191E-FBD4-437A-A4E1-4A1752BB0FA2</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -23176,7 +23176,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>C2160E37-BFD4-4A2B-945E-D2726A8D9E53</string>
+            <string>A93A309D-446C-4F1D-850B-D92DF561179C</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -23245,7 +23245,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>BD5B2667-4E80-4A12-A347-995540D32719</string>
+            <string>C450D0B6-E653-4388-8554-11BB5277FE2F</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -23314,7 +23314,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>71EE92D7-844E-4354-B70E-C883668358B8</string>
+            <string>736C8CF0-EE74-4492-A567-977D8348C76D</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -23383,7 +23383,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>45D0D439-B7C2-4545-8555-E2D2DA82FF03</string>
+            <string>CEEFD21F-F683-4597-A384-CF8443A09FB1</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -23452,7 +23452,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>C99E0891-C61F-4031-875C-6EBA60119BDD</string>
+            <string>6CD551BE-675A-4268-889A-BFD9C5486723</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -23521,7 +23521,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>3B583CDD-D801-49A8-8E8D-92CE57687457</string>
+            <string>90343B69-0321-4CA4-93B5-85FE6260940E</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -23590,7 +23590,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>492F095D-5985-441E-B117-2837BDED5EF5</string>
+            <string>551824C9-054B-40F1-B0C2-BD63CB785F72</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -23659,7 +23659,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>3872E3C3-3B00-46FA-8D9A-D4B6A6F1FC46</string>
+            <string>92A6775D-1D5F-445E-9095-70C44E8D617D</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -23728,7 +23728,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>4E7BD25F-194A-40F3-80E6-FCF56D01ACD0</string>
+            <string>3095B84B-A593-4068-9A4F-661230C20D23</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -23797,7 +23797,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>A7B9820D-7895-468E-A4C4-A2AD9BC67AFA</string>
+            <string>25F20A60-6A38-43FD-8909-F63D4FF8B09C</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -23866,7 +23866,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>11C2E305-37D7-4F50-B1D8-7FFEF277CA86</string>
+            <string>8138C0E1-A1F0-469A-92D3-ACADDF30E172</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -23935,7 +23935,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>2276C404-FEBF-4E5E-B585-EFB8A1D97DE4</string>
+            <string>FAB8DFBB-D4BE-45A9-9401-66ABFABD869F</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -24004,7 +24004,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>65371F04-1344-40FA-83F3-799A90CED78A</string>
+            <string>584DE5BE-A3DD-4260-9ECE-AE655F45E973</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -24073,7 +24073,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>F12B08CC-72B4-428A-A115-128EDD776B6F</string>
+            <string>FD61306E-CA6B-45C5-9646-8F65ED946A31</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -24142,7 +24142,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>72936FE3-4266-479E-97C9-58CC50E5BF90</string>
+            <string>584ADDE0-B0E5-4DD9-A685-12828042D9AE</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -24211,7 +24211,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>D32A2A02-70ED-40B9-82FF-765182578982</string>
+            <string>24E902BB-FE6F-40A8-A049-286C982085F7</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -24280,7 +24280,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>42A2F100-36E2-4F7A-84FF-607E320E9AE2</string>
+            <string>2EA58E29-4DF2-4D9F-AFCC-B9E6117F7F8C</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -24349,7 +24349,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>971F4F68-2F3C-400E-BDAD-94E327AAEC9F</string>
+            <string>71B03818-7A02-46A7-BEF6-0BA02D3FB1D3</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -24418,7 +24418,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>B4D4A12B-7839-49D9-86E8-A423721D6A07</string>
+            <string>009F4A8E-6F9D-4B64-95D9-C86A58B4B04B</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -24487,7 +24487,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>A5A2B3D1-CED7-419C-BBF8-23942B2B4D9C</string>
+            <string>F94D323C-9FB2-4678-9F81-4A465159814E</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -24556,7 +24556,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>48CF8D48-D7DC-4B54-9C0B-BFC3007945DC</string>
+            <string>3D181BC9-017F-4CBB-8613-013F934FA788</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -24625,7 +24625,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>3BC97FE6-686E-479A-B0BC-9C54A52FBC31</string>
+            <string>DF5D075D-C5B6-4856-A838-0EB1C9B338CD</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -24694,7 +24694,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>40FB89A6-193B-4145-8DB8-50AA5F2ADC80</string>
+            <string>225C2439-8C7F-41ED-8CE2-6FE05FC0D69A</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -24763,7 +24763,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>99B39E82-0133-4DAC-B463-F6C20CB83FEE</string>
+            <string>9C5152ED-283C-405E-B953-542B88BEB878</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -24832,7 +24832,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>E4156BEA-EDD0-4FE5-8B98-44332FEC65B8</string>
+            <string>82F51ADF-EE25-4923-8180-71549FCA324E</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -24901,7 +24901,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>6E209AB9-A7F0-4714-AA77-ACA56C7E513F</string>
+            <string>323F9063-BFB7-4B1A-9DC1-79849A6462FA</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -24970,7 +24970,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>83C0C3BC-8C39-4BFA-9E3E-D56CEF3BF39F</string>
+            <string>147BCDA2-0AE8-454B-9FC9-07ABAFD4EABC</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -25039,7 +25039,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>7EF879C8-DE16-479B-9935-07B23D07429B</string>
+            <string>49B214D9-CF34-4435-89FB-9BD81E5CEB73</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -25108,7 +25108,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>211126A2-AA3E-4818-93B1-5788E46822DB</string>
+            <string>D860C24E-027C-4877-A507-85045F38994E</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -25177,7 +25177,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>98E1A77E-6BCC-4A81-9918-A8B54AB07F09</string>
+            <string>237C918D-6BA7-41BF-81D5-CD7265762757</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -25246,7 +25246,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>9421E9A6-8DE7-44CD-8703-CA5294A43898</string>
+            <string>D1C8E9EE-4326-4EA8-ACC8-8A974F93E621</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -25315,7 +25315,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>84CED6E6-1FFE-4DC9-966A-5A7CA5C3C18A</string>
+            <string>8C82329C-5639-4388-AB4B-20E655F0C502</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -25384,7 +25384,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>4DA072C7-B48A-4448-ACDF-252E90139F0C</string>
+            <string>F951637F-4E0B-4333-B6AC-5C745715A165</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -25453,7 +25453,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>9B8DEE38-216F-44AC-A1DA-270BEE831722</string>
+            <string>A0914D6F-E19C-4B74-BB51-7FBA46C20249</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -25522,7 +25522,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>C25F043E-DEDB-4F47-BA16-7744F4DBC34A</string>
+            <string>4CE75718-717E-4844-BB31-8702B2D24766</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -25591,7 +25591,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>1459FB5D-BDC8-4C0C-8301-B109113EDB7F</string>
+            <string>1D29A6BF-915A-41D4-B9A7-624A10EF4B45</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -25660,7 +25660,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>12E70D1F-A9FD-4866-9033-B6ED27365F92</string>
+            <string>7793E703-B751-4F22-9C8A-DA75B9110A55</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -25729,7 +25729,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>1168218F-45AA-462F-9FFE-C972595A898F</string>
+            <string>B64F452C-CA22-4318-93A3-52AEA0D5DA25</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -25798,7 +25798,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>A40002ED-8190-431A-9009-6781A77C1C7C</string>
+            <string>D84B2B6B-5827-463B-A067-B9B7B79C3A0D</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -25867,7 +25867,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>1D7E94D8-04BA-4C1F-AFFD-5AE5636A7B69</string>
+            <string>1560E5B7-E41C-407D-A207-41D3717F41CE</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -25936,7 +25936,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>224CB00C-FFC3-40E7-9A42-FB0CD03CA7A1</string>
+            <string>13C54A87-60C0-4B1F-8DCE-BB811711375D</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -26005,7 +26005,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>C8799389-D3B3-426D-A0CA-842E6E3A8769</string>
+            <string>CDDAF1B8-9937-4473-82CE-B51862F1EB77</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -26074,7 +26074,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>06CD2243-7164-4FAA-A0F1-F8A7FF451CA3</string>
+            <string>B33FA683-304D-45E3-88E2-A5A68C2FC397</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -26143,7 +26143,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>A8E767DA-087A-4742-A263-09E66CE0816B</string>
+            <string>CF351B09-3F79-48EF-B2FB-CF13187C95B5</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -26212,7 +26212,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>167BFFA5-F6ED-4FFF-8121-E55E2EB9DEAA</string>
+            <string>465A147E-23BD-48A8-88BB-B2C6082CD872</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -26281,7 +26281,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>D78E6951-2425-4BF2-A086-F835BFCDA66E</string>
+            <string>BBAB7E81-1F4E-47DD-8169-1A54D20AB27E</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -26350,7 +26350,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>A0D26DA7-E999-4C1A-9367-F2ED7B1AD1D0</string>
+            <string>54E03352-740F-4B2F-9A2E-33EC9DFDE778</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -26419,7 +26419,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>120406B0-D413-497D-8A40-A02657DCE220</string>
+            <string>DB0C6210-8BDB-4468-ABA0-3447B974CB27</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -26488,7 +26488,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>63638026-6770-45A4-A66E-73C4E25FF2FD</string>
+            <string>A59AD11C-B8A1-42B8-A2A6-80CDA3AE9491</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -26557,7 +26557,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>6B37CC70-5AFB-45B9-857F-C10703620313</string>
+            <string>608E83F5-144D-4BCF-B89F-4F9832CBD26C</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -26626,7 +26626,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>2F6222AD-A257-4065-898B-110ABE015F31</string>
+            <string>2F1F62A4-B281-4D9F-BEEB-43B1E8ACDB66</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -26695,7 +26695,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>99057C1F-3AF7-410A-9EA2-08D04B3EC996</string>
+            <string>619BFDF1-6225-4BF4-9EAE-7EA8DCAB65F2</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -26764,7 +26764,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>FA378944-D523-4DDA-BF49-C79E680AB647</string>
+            <string>3CA18F13-B7BB-4B6C-8EF9-0F322F19B5AB</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -29106,11 +29106,11 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>general - Create New Instrument</string>
+            <string>browser - focus_browser_search_field</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>9D9C7919-8DAB-4946-9058-5A661E76755D</string>
+            <string>BDC9903E-9A75-4C13-81B0-7801BB8F95FA</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -29175,11 +29175,11 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>general - Create New Audio Effect</string>
+            <string>general - select_next_search_result</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>A0CC4EFA-4F66-4242-B0B4-8EA5CBDA124E</string>
+            <string>93A3BE78-C08E-4FE8-B62F-DCFC648F07E3</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -29244,11 +29244,11 @@
             <key>ModificationDate</key>
             <real>440732432.86673301</real>
             <key>Name</key>
-            <string>general - Create New Note Effect</string>
+            <string>general - select_prev_search_result</string>
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>09BA624B-A487-457D-866E-8193CAE80EBC</string>
+            <string>72C1DBB2-FEAB-4D44-B1CC-505E91172789</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -29304,1248 +29304,6 @@
                 <integer>3</integer>
                 <key>Value</key>
                 <integer>40</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>general - Create New Detector</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>31DA02FF-9BEC-47BD-9EEC-A0FA93D0380F</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>3</integer>
-                <key>Value</key>
-                <integer>41</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>general - Nudge Left</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>7D8D7D02-A280-4374-9016-0D646BF1C0DA</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>3</integer>
-                <key>Value</key>
-                <integer>42</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>general - Nudge Right</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>E6704E1B-4042-4963-882D-688F80A5565A</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>3</integer>
-                <key>Value</key>
-                <integer>43</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>general - Nudge Up</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>6E3E5412-9A56-4F96-9037-BA65CA1E8323</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>3</integer>
-                <key>Value</key>
-                <integer>44</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>general - Nudge Down</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>603CB2AE-2C2F-4D54-A1F5-2821D152D3CF</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>3</integer>
-                <key>Value</key>
-                <integer>45</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>general - Nudge Left (coarse)</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>9F3F3FD4-49BD-4715-9F6B-861913F8A2A4</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>3</integer>
-                <key>Value</key>
-                <integer>46</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>general - Nudge Right (coarse)</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>3C3AA4F3-12B7-4FEA-A8F9-F7E337929A45</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>3</integer>
-                <key>Value</key>
-                <integer>47</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>general - Nudge Up (coarse)</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>A45D8CDC-81EC-43BF-8806-383A428D324F</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>3</integer>
-                <key>Value</key>
-                <integer>48</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>general - Nudge Down (coarse)</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>F0C988EC-A4AA-49AA-9C33-346CE26CCD4E</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>3</integer>
-                <key>Value</key>
-                <integer>49</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>general - Increase Width</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>4FCF8987-DC30-4D45-AD2C-0AF53D063BEE</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>3</integer>
-                <key>Value</key>
-                <integer>50</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>general - Decrease Width</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>D1BD0FC1-8835-4C2C-A0F6-A42A55CDB650</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>3</integer>
-                <key>Value</key>
-                <integer>51</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>general - Increase Height</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>1D46751F-597A-4C26-BEE0-7CE55132B38F</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>3</integer>
-                <key>Value</key>
-                <integer>52</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>general - Decrease Height</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>FA69F56C-DD70-4058-80F7-3B6C6A0D04FE</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>3</integer>
-                <key>Value</key>
-                <integer>53</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>general - Bring To Front</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>F8FC4E9C-57EE-4B94-9912-49E5D41A3A58</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>3</integer>
-                <key>Value</key>
-                <integer>54</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>general - Send To Back</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>97B427E1-50F1-4A70-BD65-7B0EEA874151</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>3</integer>
-                <key>Value</key>
-                <integer>55</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>browser - focus_browser_search_field</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>BDC9903E-9A75-4C13-81B0-7801BB8F95FA</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>3</integer>
-                <key>Value</key>
-                <integer>56</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>general - select_next_search_result</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>F5C71914-7898-4EDF-9906-CA8B44EADF87</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>3</integer>
-                <key>Value</key>
-                <integer>57</integer>
-              </dict>
-            </array>
-            <key>CustomIconData</key>
-            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
-            <key>IsActive</key>
-            <true/>
-            <key>ModificationDate</key>
-            <real>440732432.86673301</real>
-            <key>Name</key>
-            <string>general - select_prev_search_result</string>
-            <key>Triggers</key>
-            <array/>
-            <key>UID</key>
-            <string>90112A89-EDA7-4DF9-BBFD-9E4E7A26E2A5</string>
-          </dict>
-        </array>
-        <key>Modifiers</key>
-        <integer>0</integer>
-        <key>Name</key>
-        <string>Bitwig Actions</string>
-        <key>Targeting</key>
-        <dict>
-          <key>Targeting</key>
-          <string>Included</string>
-          <key>TargetingApps</key>
-          <array>
-            <dict>
-              <key>BundleIdentifier</key>
-              <string>com.bitwig.studio</string>
-              <key>Name</key>
-              <string>Bitwig Studio</string>
-              <key>NewFile</key>
-              <string>/Applications/Bitwig Studio.app</string>
-            </dict>
-          </array>
-        </dict>
-      </dict>
-      
-      <dict>
-        <key>Activate</key>
-        <string>AlwaysWithPalette</string>
-        <key>AddToMacroPalette</key>
-        <true/>
-        <key>AddToStatusMenu</key>
-        <false/>
-        <key>IsActive</key>
-        <false/>
-        <key>KeyCode</key>
-        <integer>32767</integer>
-        <key>Macros</key>
-        <array>
-          <dict>
-            <key>Actions</key>
-            <array>
-              <dict>
-                <key>Channel</key>
-                <integer>1</integer>
-                <key>IsActive</key>
-                <true/>
-                <key>IsDisclosed</key>
-                <true/>
-                <key>MIDIMessageType</key>
-                <string>ControlChange</string>
-                <key>MacroActionType</key>
-                <string>SendMIDIMessage</string>
-                <key>Note</key>
-                <integer>3</integer>
-                <key>Value</key>
-                <integer>58</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -30614,7 +29372,7 @@
                 <key>Note</key>
                 <integer>3</integer>
                 <key>Value</key>
-                <integer>59</integer>
+                <integer>41</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -30683,7 +29441,7 @@
                 <key>Note</key>
                 <integer>3</integer>
                 <key>Value</key>
-                <integer>60</integer>
+                <integer>42</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -30752,7 +29510,7 @@
                 <key>Note</key>
                 <integer>3</integer>
                 <key>Value</key>
-                <integer>61</integer>
+                <integer>43</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -30821,7 +29579,7 @@
                 <key>Note</key>
                 <integer>3</integer>
                 <key>Value</key>
-                <integer>62</integer>
+                <integer>44</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -30890,7 +29648,7 @@
                 <key>Note</key>
                 <integer>3</integer>
                 <key>Value</key>
-                <integer>63</integer>
+                <integer>45</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -30904,7 +29662,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>D1E2055A-58F7-486C-A79B-0234168AB880</string>
+            <string>13EC942C-2CAB-4614-856D-82BF6E194F8D</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -30959,7 +29717,7 @@
                 <key>Note</key>
                 <integer>3</integer>
                 <key>Value</key>
-                <integer>64</integer>
+                <integer>46</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -30973,7 +29731,7 @@
             <key>Triggers</key>
             <array/>
             <key>UID</key>
-            <string>077033E7-EEC4-41C2-8F54-35B22AB54668</string>
+            <string>815D558E-C34C-4600-8832-8EF1AE1FCDB6</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -31028,7 +29786,7 @@
                 <key>Note</key>
                 <integer>3</integer>
                 <key>Value</key>
-                <integer>65</integer>
+                <integer>47</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -31097,7 +29855,7 @@
                 <key>Note</key>
                 <integer>3</integer>
                 <key>Value</key>
-                <integer>66</integer>
+                <integer>48</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -31166,7 +29924,7 @@
                 <key>Note</key>
                 <integer>3</integer>
                 <key>Value</key>
-                <integer>67</integer>
+                <integer>49</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -31235,7 +29993,7 @@
                 <key>Note</key>
                 <integer>3</integer>
                 <key>Value</key>
-                <integer>68</integer>
+                <integer>50</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -31304,7 +30062,7 @@
                 <key>Note</key>
                 <integer>3</integer>
                 <key>Value</key>
-                <integer>69</integer>
+                <integer>51</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -31373,7 +30131,7 @@
                 <key>Note</key>
                 <integer>3</integer>
                 <key>Value</key>
-                <integer>70</integer>
+                <integer>52</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -31442,7 +30200,7 @@
                 <key>Note</key>
                 <integer>3</integer>
                 <key>Value</key>
-                <integer>71</integer>
+                <integer>53</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -31511,7 +30269,7 @@
                 <key>Note</key>
                 <integer>3</integer>
                 <key>Value</key>
-                <integer>72</integer>
+                <integer>54</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -31580,7 +30338,7 @@
                 <key>Note</key>
                 <integer>3</integer>
                 <key>Value</key>
-                <integer>73</integer>
+                <integer>55</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -31649,7 +30407,7 @@
                 <key>Note</key>
                 <integer>3</integer>
                 <key>Value</key>
-                <integer>74</integer>
+                <integer>56</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -31718,7 +30476,7 @@
                 <key>Note</key>
                 <integer>3</integer>
                 <key>Value</key>
-                <integer>75</integer>
+                <integer>57</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -31787,7 +30545,7 @@
                 <key>Note</key>
                 <integer>3</integer>
                 <key>Value</key>
-                <integer>76</integer>
+                <integer>58</integer>
               </dict>
             </array>
             <key>CustomIconData</key>
@@ -31802,6 +30560,75 @@
             <array/>
             <key>UID</key>
             <string>A036B219-3036-40CE-BE48-E609A8F91725</string>
+          </dict>
+        </array>
+        <key>Modifiers</key>
+        <integer>0</integer>
+        <key>Name</key>
+        <string>Bitwig Actions</string>
+        <key>Targeting</key>
+        <dict>
+          <key>Targeting</key>
+          <string>Included</string>
+          <key>TargetingApps</key>
+          <array>
+            <dict>
+              <key>BundleIdentifier</key>
+              <string>com.bitwig.studio</string>
+              <key>Name</key>
+              <string>Bitwig Studio</string>
+              <key>NewFile</key>
+              <string>/Applications/Bitwig Studio.app</string>
+            </dict>
+          </array>
+        </dict>
+      </dict>
+      
+      <dict>
+        <key>Activate</key>
+        <string>AlwaysWithPalette</string>
+        <key>AddToMacroPalette</key>
+        <true/>
+        <key>AddToStatusMenu</key>
+        <false/>
+        <key>IsActive</key>
+        <false/>
+        <key>KeyCode</key>
+        <integer>32767</integer>
+        <key>Macros</key>
+        <array>
+          <dict>
+            <key>Actions</key>
+            <array>
+              <dict>
+                <key>Channel</key>
+                <integer>1</integer>
+                <key>IsActive</key>
+                <true/>
+                <key>IsDisclosed</key>
+                <true/>
+                <key>MIDIMessageType</key>
+                <string>ControlChange</string>
+                <key>MacroActionType</key>
+                <string>SendMIDIMessage</string>
+                <key>Note</key>
+                <integer>3</integer>
+                <key>Value</key>
+                <integer>59</integer>
+              </dict>
+            </array>
+            <key>CustomIconData</key>
+            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+            <key>IsActive</key>
+            <true/>
+            <key>ModificationDate</key>
+            <real>440732432.86673301</real>
+            <key>Name</key>
+            <string>general - toggle_plugin_device_window</string>
+            <key>Triggers</key>
+            <array/>
+            <key>UID</key>
+            <string>A55FCE38-9EE2-4DD4-906C-58B0ED680728</string>
           </dict>
         </array>
         <key>Modifiers</key>
@@ -37805,6 +36632,144 @@
             <array/>
             <key>UID</key>
             <string>207B3860-6BD3-4A8F-9A43-6FE7CA5FCB47</string>
+          </dict>
+        </array>
+        <key>Modifiers</key>
+        <integer>0</integer>
+        <key>Name</key>
+        <string>Bitwig Actions</string>
+        <key>Targeting</key>
+        <dict>
+          <key>Targeting</key>
+          <string>Included</string>
+          <key>TargetingApps</key>
+          <array>
+            <dict>
+              <key>BundleIdentifier</key>
+              <string>com.bitwig.studio</string>
+              <key>Name</key>
+              <string>Bitwig Studio</string>
+              <key>NewFile</key>
+              <string>/Applications/Bitwig Studio.app</string>
+            </dict>
+          </array>
+        </dict>
+      </dict>
+      
+      <dict>
+        <key>Activate</key>
+        <string>AlwaysWithPalette</string>
+        <key>AddToMacroPalette</key>
+        <true/>
+        <key>AddToStatusMenu</key>
+        <false/>
+        <key>IsActive</key>
+        <false/>
+        <key>KeyCode</key>
+        <integer>32767</integer>
+        <key>Macros</key>
+        <array>
+          <dict>
+            <key>Actions</key>
+            <array>
+              <dict>
+                <key>Channel</key>
+                <integer>2</integer>
+                <key>IsActive</key>
+                <true/>
+                <key>IsDisclosed</key>
+                <true/>
+                <key>MIDIMessageType</key>
+                <string>ControlChange</string>
+                <key>MacroActionType</key>
+                <string>SendMIDIMessage</string>
+                <key>Note</key>
+                <integer>0</integer>
+                <key>Value</key>
+                <integer>87</integer>
+              </dict>
+            </array>
+            <key>CustomIconData</key>
+            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+            <key>IsActive</key>
+            <true/>
+            <key>ModificationDate</key>
+            <real>440732432.86673301</real>
+            <key>Name</key>
+            <string>extended - cursor device - direct paramater - undo</string>
+            <key>Triggers</key>
+            <array/>
+            <key>UID</key>
+            <string>BB3845D0-EFE8-458D-805E-4F2969A25D72</string>
+          </dict>
+        </array>
+        <key>Modifiers</key>
+        <integer>0</integer>
+        <key>Name</key>
+        <string>Bitwig Actions</string>
+        <key>Targeting</key>
+        <dict>
+          <key>Targeting</key>
+          <string>Included</string>
+          <key>TargetingApps</key>
+          <array>
+            <dict>
+              <key>BundleIdentifier</key>
+              <string>com.bitwig.studio</string>
+              <key>Name</key>
+              <string>Bitwig Studio</string>
+              <key>NewFile</key>
+              <string>/Applications/Bitwig Studio.app</string>
+            </dict>
+          </array>
+        </dict>
+      </dict>
+      
+      <dict>
+        <key>Activate</key>
+        <string>AlwaysWithPalette</string>
+        <key>AddToMacroPalette</key>
+        <true/>
+        <key>AddToStatusMenu</key>
+        <false/>
+        <key>IsActive</key>
+        <false/>
+        <key>KeyCode</key>
+        <integer>32767</integer>
+        <key>Macros</key>
+        <array>
+          <dict>
+            <key>Actions</key>
+            <array>
+              <dict>
+                <key>Channel</key>
+                <integer>2</integer>
+                <key>IsActive</key>
+                <true/>
+                <key>IsDisclosed</key>
+                <true/>
+                <key>MIDIMessageType</key>
+                <string>ControlChange</string>
+                <key>MacroActionType</key>
+                <string>SendMIDIMessage</string>
+                <key>Note</key>
+                <integer>0</integer>
+                <key>Value</key>
+                <integer>88</integer>
+              </dict>
+            </array>
+            <key>CustomIconData</key>
+            <string>KMEP-GenericApplication-/Applications/Bitwig Studio.app</string>
+            <key>IsActive</key>
+            <true/>
+            <key>ModificationDate</key>
+            <real>440732432.86673301</real>
+            <key>Name</key>
+            <string>extended - cursor device - direct paramater - redo</string>
+            <key>Triggers</key>
+            <array/>
+            <key>UID</key>
+            <string>1D432B39-51E8-460A-B39A-D96F53903BCB</string>
           </dict>
         </array>
         <key>Modifiers</key>
