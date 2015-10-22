@@ -1,5 +1,5 @@
 {
-	"hostVersion": "1.3.0 RC 2",
+	"hostVersion": "1.3.0",
 	"hostApiVersion": 1,
 	"actions": [
 		{
@@ -5310,26 +5310,6 @@
 				"ch": 2,
 				"cc": 0,
 				"value": 86
-			}
-		},
-		{
-			"id": "cursor device - direct paramater - undo",
-			"uuid": "BB3845D0-EFE8-458D-805E-4F2969A25D72",
-			"category": "extended",
-			"on": {
-				"ch": 2,
-				"cc": 0,
-				"value": 87
-			}
-		},
-		{
-			"id": "cursor device - direct paramater - redo",
-			"uuid": "1D432B39-51E8-460A-B39A-D96F53903BCB",
-			"category": "extended",
-			"on": {
-				"ch": 2,
-				"cc": 0,
-				"value": 88
 			}
 		}
 	]

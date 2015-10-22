@@ -1,4 +1,4 @@
-exports.version = '1.3.0 RC 2'
+exports.version = '1.3.0'
 exports.ids = [
   {
     id: 'cursor track - activated - toggle'
@@ -347,13 +347,5 @@ exports.ids = [
   {
     id: 'experimental - direct paramater - print'
     uuid: '207B3860-6BD3-4A8F-9A43-6FE7CA5FCB47'
-  }
-  {
-    id: 'cursor device - direct paramater - undo'
-    uuid: 'BB3845D0-EFE8-458D-805E-4F2969A25D72'
-  }
-  {
-    id: 'cursor device - direct paramater - redo'
-    uuid: '1D432B39-51E8-460A-B39A-D96F53903BCB'
   }
 ]
