@@ -1,4 +1,4 @@
-exports.version = '1.3.0'
+exports.version = '1.3.6'
 exports.ids = [
   {
     id: 'New'
@@ -117,6 +117,14 @@ exports.ids = [
     uuid: '3F3D33A7-213F-40B4-B4EF-B7C1E074D4CE'
   }
   {
+    id: 'increase_gui_scaling'
+    uuid: '38954FD9-AE57-4BA8-8653-A174E85E3207'
+  }
+  {
+    id: 'decrease_gui_scaling'
+    uuid: '9B12F6FF-B839-4323-88C2-13D248309031'
+  }
+  {
     id: 'Cancel Dialog'
     uuid: 'B80184F5-9AD4-472F-8E6B-D21BD01D743A'
   }
@@ -225,12 +233,12 @@ exports.ids = [
     uuid: '3BAD856D-E5F9-4682-9DBB-41FFA80C252B'
   }
   {
-    id: 'Move cursor and extend selection to start of document'
-    uuid: '6F59E689-7246-4EE8-883D-55CACCF9224E'
+    id: 'Move cursor and extend selection to start of line'
+    uuid: '99D012D5-B11E-474E-9FD2-D7C2CD8F7854'
   }
   {
-    id: 'Move cursor and extend selection to end of document'
-    uuid: '3BAD856D-E5F9-4682-9DBB-41FFA80C252B'
+    id: 'Move cursor and extend selection to end of line'
+    uuid: '5C9EB035-E03C-44B1-91A7-79AC7E1267C9'
   }
   {
     id: 'Move cursor and extend selection word left'
@@ -281,8 +289,8 @@ exports.ids = [
     uuid: 'EE0B874E-946D-4843-B77B-ED127AF13E8C'
   }
   {
-    id: 'Extend selection to next item'
-    uuid: 'BBB54760-FAF7-4F76-94D0-AB60988451C3'
+    id: 'Extend selection range to next item'
+    uuid: '10E07E2A-6CFC-4672-93AF-BC374703F890'
   }
   {
     id: 'Extend selection range to previous item'
@@ -775,6 +783,10 @@ exports.ids = [
   {
     id: 'toggle_mappings_browser_panel'
     uuid: '1D5DF2F4-83F6-4AD4-8E3E-58E3DC094AE2'
+  }
+  {
+    id: 'toggle_automation_shown_for_all_tracks'
+    uuid: '761F0703-400D-4425-9EAF-E5892E6D11E0'
   }
   {
     id: 'focus_or_toggle_browser_panel'

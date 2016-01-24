@@ -31,3 +31,4 @@ if DEBUG
   console.trace = console.warn
 else
   console.trace = ->
+    
