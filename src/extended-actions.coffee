@@ -1,4 +1,4 @@
-exports.version = '1.3.6'
+exports.version = '1.3.8 RC 5'
 exports.ids = [
   {
     id: 'cursor track - activated - toggle'

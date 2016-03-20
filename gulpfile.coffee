@@ -30,7 +30,7 @@ builtins.jquery = require.resolve './lib/_empty.js'
 $ =
   actions:
     dir: 'actions'
-    json: 'bitwig-studio-actions-1.3.6.json'
+    json: 'bitwig-studio-actions-1.3.8RC5.json'
   src:
     dir: 'src'
     bitwigActions: 'bitwig-actions.coffee'
