@@ -7,8 +7,10 @@ template    = require 'gulp-template'
 data        = require 'gulp-data'
 rename      = require 'gulp-rename'
 browserify  = require 'browserify'
+coffeeify   = require 'coffeeify'
 builtins    = require 'browserify/lib/builtins.js'
 source      = require 'vinyl-source-stream'
+buffer      = require 'vinyl-buffer'
 uglify      = require 'gulp-uglify'
 header      = require 'gulp-header'
 del         = require 'del'
@@ -119,12 +121,15 @@ gulp.task 'generate-extended-actions', ->
 
 gulp.task 'browserify', ->
   b = browserify
-    entries: ["./#{$.src.dir}/main.coffee"]
     extensions: ['.coffee']
     debug: false
-  b.transform 'coffeeify'
+  b.transform coffeeify,
+    bare: false
+    header: true
+  b.add "./#{$.src.dir}/main.coffee"
     .bundle()
     .pipe source $.build.browserifyJs
+    .pipe buffer()
     .pipe header $.banner, pkg: pkg
     .pipe gulp.dest $.build.dir
 
