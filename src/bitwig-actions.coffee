@@ -1,4 +1,4 @@
-exports.version = '1.3.8 RC 5'
+exports.version = '1.3.9 RC 1'
 exports.ids = [
   {
     id: 'New'
@@ -1567,6 +1567,22 @@ exports.ids = [
   {
     id: 'Consolidate'
     uuid: 'F3B2EF6D-81BF-41A5-BB25-467DFEBEC4AC'
+  }
+  {
+    id: 'reverse'
+    uuid: 'A424249E-2329-4978-9122-4AA18D708AFE'
+  }
+  {
+    id: 'reverse_pattern'
+    uuid: 'DFD3518D-3755-4827-9D40-66130890C06B'
+  }
+  {
+    id: 'scale_time_double'
+    uuid: '5CEA4159-5A07-4534-BC67-4925036836D9'
+  }
+  {
+    id: 'scale_time_half'
+    uuid: '1679F22C-D5FC-4828-84F0-3DA27033C47E'
   }
   {
     id: 'bounce_in_place'
