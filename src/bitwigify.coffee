@@ -7,9 +7,10 @@ global.loadAPI 1
 # support es5-shim 4.5.7
 # patch for bitwig's Array#sort never throw execption.
 Array::_originalSort = Array::sort
-Array::sort = ->
-  if arguments.length isnt 0
-    throw new Error("original Array#sortt dosn't support arguments.")
+Array::sort = (f) ->
+  type = typeof f
+  if type isnt 'function' and type isnt 'undefined'
+    throw new Error("Array#sort argument should be a function or undefined.")
   @_originalSort()
 
 require 'es5-shim'
