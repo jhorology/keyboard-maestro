@@ -3,7 +3,17 @@
 global.loadAPI 1
 
 # Bitwig Studio Rhino engine is ES3
+
+# support es5-shim 4.5.7
+# patch for bitwig's Array#sort never throw execption.
+Array::_originalSort = Array::sort
+Array::sort = ->
+  if arguments.length isnt 0
+    throw new Error("original Array#sortt dosn't support arguments.")
+  @_originalSort()
+
 require 'es5-shim'
+
 
 # global modules
 global.JSON    = require 'JSON'
