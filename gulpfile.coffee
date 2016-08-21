@@ -1,14 +1,18 @@
 # require modules
 # ==================
+
+
+
 gulp        = require 'gulp'
 jshint      = require 'gulp-jshint'
 coffeelint  = require 'gulp-coffeelint'
 template    = require 'gulp-template'
 data        = require 'gulp-data'
 rename      = require 'gulp-rename'
+builtins    = require 'browserify/lib/builtins.js'
+# builtins.assert = require.resolve './lib/assert'
 browserify  = require 'browserify'
 coffeeify   = require 'coffeeify'
-builtins    = require 'browserify/lib/builtins.js'
 source      = require 'vinyl-source-stream'
 buffer      = require 'vinyl-buffer'
 uglify      = require 'gulp-uglify'
@@ -26,13 +30,12 @@ builtins._process = require.resolve './lib/process'
 # workaround for now backbone require jquery
 builtins.jquery = require.resolve './lib/_empty.js'
 
-
 # paths/misc settings
 # ==================
 $ =
   actions:
     dir: 'actions'
-    json: 'bitwig-studio-actions-1.3.9RC3.json'
+    json: 'bitwig-studio-actions-1.3.13RC1.json'
   src:
     dir: 'src'
     bitwigActions: 'bitwig-actions.coffee'
@@ -67,24 +70,33 @@ $ =
 var global = window = this;
 
 '''
+  # output options http://lisperator.net/uglifyjs/codegen
+  # comress options http://lisperator.net/uglifyjs/compress
+  # ==================
   uglify:
     debug:
-      warning: true
-      fromString: true
-      mangle: false
+      warning: on
+      fromString: on
+      mangle: off
       output:
-        indent_start: 0      # start indentation on every line (only when `beautify`)
-        indent_level: 2      # indentation level (only when `beautify`)
-        beautify: true       # beautify output?
+        indent_start: 0       # start indentation on every line (only when `beautify`)
+        indent_level: 2       # indentation level (only when `beautify`)
+        beautify: on          # beautify output?
+        keep_quoted_props: on # when turned on, prevents stripping quotes from property names in object literals.
       compress:
-        global_defs:         # global definitions
+        properties: off       # optimize property access: a["foo"] → a.foo
+        global_defs:          # global definitions
           DEBUG: true
+        warnings: on
     dist:
       warning: true
+      output:
+        keep_quoted_props: on # when turned on, prevents stripping quotes from property names in object literals.
       compress:
+        properties: off      # optimize property access: a["foo"] → a.foo
         global_defs:         # global definitions
           DEBUG: false
-
+        warnings: on
 
 # tasks
 # ==================
@@ -122,7 +134,7 @@ gulp.task 'generate-extended-actions', ->
 gulp.task 'browserify', ->
   b = browserify
     extensions: ['.coffee']
-    debug: false
+    debug: true
   b.transform coffeeify,
     bare: false
     header: true
